@@ -1,72 +1,173 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink } from "vue-router";
+
+function CloseNavbar() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  if ($(".navbar-toggler").is(":visible")) {
+    $(".navbar-collapse").collapse("toggle");
+  }
+}
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">
+        <span class="brand-icon"> <img src="favicon.ico" /> </span>Svaštaonica
+        Za Bebače</a
+      >
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
+            >Početna</RouterLink
+          >
+          <RouterLink class="nav-link" @click="CloseNavbar()" to="/gallery"
+            >Galerija</RouterLink
+          >
+          <RouterLink class="nav-link" @click="CloseNavbar()" to="/aboutus"
+            >O nama</RouterLink
+          >
+          <RouterLink class="nav-link" @click="CloseNavbar()" to="/contact"
+            >Kontakt</RouterLink
+          >
+        </div>
+        <div class="ms-auto navbar-language-div d-grid me-lg-3">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              <RouterLink to="/">Home</RouterLink>
-              <RouterLink to="/about">About</RouterLink>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
+              Jezik
+              <!-- - {{ $i18n.locale.toUpperCase() }} -->
+            </button>
+            <!--             <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuButton1"
             >
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  @click="
+                    () => {
+                      $i18n.locale = 'hr';
+                    }
+                  "
+                  ><img src="hr.png" class="me-3" /><span>Croatian</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  @click="
+                    () => {
+                      $i18n.locale = 'en';
+                    }
+                  "
+                  ><img src="en.png" class="me-3" /><span>English</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="#"
+                  @click="
+                    () => {
+                      $i18n.locale = 'de';
+                    }
+                  "
+                  ><img src="de.png" class="me-3" /><span>German</span></a
+                >
+              </li>
+            </ul> -->
+          </div>
+        </div>
       </div>
     </div>
   </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+.navbar {
+  min-height: 62px;
+}
+
+.navbar-brand {
+  /*font-family: PinkPanther !important;*/
+  font-size: 20px;
+}
+.brand-icon img {
+  width: 40px;
+}
+
+.nav-link {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 20px !important;
+}
+
+.dropdown button {
+  background-color: #f977aa;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.dropdown-item img {
+  height: 40px;
+  width: 40px;
+}
+
+/* kad je mobile da bude pozadina roza */
+@media (max-width: 992px) {
+  .dropdown button {
+    width: 100%;
+    height: 54px;
+    margin-top: 3px;
+  }
+  .dropdown ul {
+    width: 100%;
+    position: static;
+  }
+}
+
+/* podigne lijevu i desnu stranu da bi ovo uzelo u sredini cijelu duzinu i onda postavi u sredinu */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .navbar-language-div {
+    position: absolute;
+  }
+
+  .navbar-language-div {
+    right: 0;
+  }
+}
+
+/* kombinacija da itemi u navbaru ne prelaze preko loga */
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .navbar-nav {
+    padding-left: 10% !important;
+  }
+}
+</style>
