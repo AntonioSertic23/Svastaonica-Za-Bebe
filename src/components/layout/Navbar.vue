@@ -10,7 +10,7 @@ function CloseNavbar() {
 </script>
 
 <template>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <span class="brand-icon"> <img src="favicon.ico" /> </span>Svaštaonica
@@ -40,6 +40,9 @@ function CloseNavbar() {
           >
           <RouterLink class="nav-link" @click="CloseNavbar()" to="/contact"
             >Kontakt</RouterLink
+          >
+          <RouterLink class="nav-link" @click="CloseNavbar()" to="/fonts"
+            >Fonts</RouterLink
           >
         </div>
         <div class="ms-auto navbar-language-div d-grid me-lg-3">
@@ -105,11 +108,14 @@ function CloseNavbar() {
 <style scoped>
 .navbar {
   min-height: 62px;
+  font-family: bubbleboddyneue;
+  background-color: #a2d2ff;
 }
 
 .navbar-brand {
-  /*font-family: PinkPanther !important;*/
-  font-size: 20px;
+  font-family: bubbleboddyneue;
+  font-size: 25px;
+  color: #222;
 }
 .brand-icon img {
   width: 40px;
@@ -120,12 +126,14 @@ function CloseNavbar() {
   justify-content: center;
   margin-top: 3px;
   margin-bottom: 3px;
-  font-size: 20px !important;
+  font-size: 25px !important;
+  color: #222;
 }
 
 .dropdown button {
-  background-color: #f977aa;
+  background-color: #ffafcc;
   text-transform: capitalize;
+  font-family: Montserrat;
   font-size: 20px;
 }
 

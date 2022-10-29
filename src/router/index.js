@@ -24,6 +24,11 @@ const router = createRouter({
       name: "contact",
       component: () => import("../views/ContactView.vue"),
     },
+    {
+      path: "/fonts",
+      name: "fonts",
+      component: () => import("../views/FontsView.vue"),
+    },
   ],
 });
 
