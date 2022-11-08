@@ -57,6 +57,14 @@ function CloseNavbar() {
               Jezik
               <!-- - {{ $i18n.locale.toUpperCase() }} -->
             </button>
+
+            <a
+              class="ms-3"
+              style="font-family: Montserrat; color: black"
+              href=""
+              >+385 99 478 85 86</a
+            >
+
             <!--             <ul
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton1"

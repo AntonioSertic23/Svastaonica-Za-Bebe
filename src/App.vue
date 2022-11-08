@@ -12,7 +12,7 @@ import Navbar from "./components/layout/Navbar.vue";
 
 <style scoped>
 .body-div {
-  margin-top: 68px;
+  margin-top: 75.5px;
 }
 
 @media (max-width: 992px) {
