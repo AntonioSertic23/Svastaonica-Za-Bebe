@@ -10,7 +10,8 @@ function CloseNavbar() {
 </script>
 
 <template>
-  <nav class="navbar fixed-top navbar-expand-lg">
+  <!-- fixed-top maknut -->
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <span class="brand-icon"> <img src="favicon.ico" /> </span>Svaštaonica
