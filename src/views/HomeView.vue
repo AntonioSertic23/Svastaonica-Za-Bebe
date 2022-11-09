@@ -4,6 +4,9 @@ import Jumbotron2 from "../components/layout/Jumbotron2.vue";
 import Jumbotron3 from "../components/layout/Jumbotron3.vue";
 import Jumbotron4 from "../components/layout/Jumbotron4.vue";
 import Jumbotron5 from "../components/layout/Jumbotron5.vue";
+import AboutUsShort from "../components/layout/AboutUsShort.vue";
+import Products1 from "../components/layout/Products.vue";
+import Products2 from "../components/layout/Products2.vue";
 </script>
 
 <template>
@@ -16,6 +19,12 @@ import Jumbotron5 from "../components/layout/Jumbotron5.vue";
   <Jumbotron4 />
   <hr />
   <Jumbotron5 />
+  <hr />
+  <AboutUsShort />
+  <hr />
+  <Products1 />
+  <hr />
+  <Products2 />
   <hr />
   <div class="container">
     <h1>Toys as art</h1>
