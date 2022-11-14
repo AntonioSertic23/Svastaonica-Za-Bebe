@@ -9,6 +9,7 @@ import AboutUsShort2 from "../components/layout/AboutUsShort2.vue";
 import Products1 from "../components/layout/Products.vue";
 import Products2 from "../components/layout/Products2.vue";
 import Products3 from "../components/layout/Products3.vue";
+import Badges from "../components/layout/Badges.vue";
 </script>
 
 <template>
@@ -31,6 +32,8 @@ import Products3 from "../components/layout/Products3.vue";
   <Products2 />
   <hr />
   <Products3 />
+  <hr />
+  <Badges />
   <hr />
   <div class="container">
     <h1>Toys as art</h1>
