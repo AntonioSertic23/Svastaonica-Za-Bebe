@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <div class="col">
         <div class="item-big">
@@ -53,6 +53,10 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-lg mt-5">SEE ALL</button>
     </div>
   </div>
 </template>
@@ -112,5 +116,9 @@ p {
 .item-small {
   border-radius: 15px;
   overflow: hidden;
+}
+
+.btn {
+  background-color: #a2d2ff;
 }
 </style>

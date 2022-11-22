@@ -13,11 +13,11 @@ import Badges from "../components/layout/Badges.vue";
 </script>
 
 <template>
+  <Jumbotron3 />
+  <hr />
   <Jumbotron1 />
   <hr />
   <Jumbotron2 />
-  <hr />
-  <Jumbotron3 />
   <hr />
   <Jumbotron4 />
   <hr />

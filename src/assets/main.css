@@ -62,3 +62,9 @@
   background-color: #bde0fe;
   background-color: #a2d2ff;
 */
+
+.navbar-nav a:hover,
+.navbar-nav a.router-link-active,
+.navbar-nav a.router-link-exact-active {
+  font-weight: bold;
+}
