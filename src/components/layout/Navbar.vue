@@ -11,20 +11,13 @@ function CloseNavbar() {
 
 <template>
   <!-- fixed-top maknut -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-light p-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <span class="brand-icon"> <img src="favicon.ico" /> </span>Svaštaonica
-        Za Bebače</a
-      >
+      <a class="navbar-brand" href="#">Svaštaonica Za Bebače</a>
       <button
         class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        @click="$emit('openCloseNavbar')"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,7 +39,7 @@ function CloseNavbar() {
             >Fonts</RouterLink
           >
         </div>
-        <div class="ms-auto navbar-language-div d-grid me-lg-3">
+        <div class="ms-auto navbar-language-div d-grid me-lg-3 pe-4">
           <div class="dropdown">
             <button
               class="btn dropdown-toggle"
@@ -117,12 +110,14 @@ function CloseNavbar() {
 <style scoped>
 .navbar {
   min-height: 62px;
-  font-family: bubbleboddyneue;
-  background-color: #a2d2ff;
+  font-family: Poiret_One;
+  background-color: #eff7f6;
+  position: relative;
 }
 
 .navbar-brand {
-  font-family: bubbleboddyneue;
+  font-family: Poiret_One;
+  font-weight: bold;
   font-size: 25px;
   color: #222;
 }
@@ -142,8 +137,8 @@ function CloseNavbar() {
 .dropdown button {
   background-color: #ffafcc;
   text-transform: capitalize;
-  font-family: Montserrat;
-  font-size: 20px;
+  font-family: Poiret_One;
+  font-size: 25px;
 }
 
 .dropdown-item {
@@ -154,6 +149,10 @@ function CloseNavbar() {
 .dropdown-item img {
   height: 40px;
   width: 40px;
+}
+
+#dropdownMenuButton1 {
+  font-weight: bold;
 }
 
 /* kad je mobile da bude pozadina roza */
@@ -167,6 +166,14 @@ function CloseNavbar() {
     width: 100%;
     position: static;
   }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
 }
 
 /* podigne lijevu i desnu stranu da bi ovo uzelo u sredini cijelu duzinu i onda postavi u sredinu */
@@ -178,13 +185,6 @@ function CloseNavbar() {
 
   .navbar-language-div {
     right: 0;
-  }
-}
-
-/* kombinacija da itemi u navbaru ne prelaze preko loga */
-@media (min-width: 991.98px) and (max-width: 1199.98px) {
-  .navbar-nav {
-    padding-left: 10% !important;
   }
 }
 </style>
