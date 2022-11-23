@@ -3,20 +3,123 @@ import PageTitle from "../components/ui/PageTitle.vue";
 </script>
 
 <template>
-  <section class="aboutus-section">
+  <section class="aboutus-section py-4">
     <div class="container">
-      <PageTitle
-        pageTitle="O Nama"
-        pageSubTitle="Kratka priča o nama i našem rastu"
-      ></PageTitle>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          <!-- Section Heading-->
-          <div class="section_heading text-center">
-            <div class="aboutus-description px-4">
-              <p>Neki tekst...</p>
-              <p>Neki tekst...</p>
-              <p>Neki tekst...</p>
+      <div class="row justify-content-center text-center">
+        <p class="mb-5 menu-title">Tko smo mi?</p>
+        <div class="col-6">
+          <p class="aboutus-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+            facilis tempora porro, suscipit ducimus delectus quaerat alias
+            corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime
+            nulla exercitationem illo dolores.
+          </p>
+        </div>
+      </div>
+
+      <div class="section2 row my-5 py-5 justify-content-evenly">
+        <div class="background-connector"></div>
+
+        <div class="col-4">
+          <img class="image1" src="../assets/img/5.jpg" alt="" />
+
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            soluta quae reprehenderit dolorem deleniti eos.
+          </p>
+
+          <div class="social-media mt-4">
+            <a href="#" class="m-2">
+              <img src="../assets/img/facebook-messenger.png" />
+            </a>
+            <a href="#" class="m-2">
+              <img src="../assets/img/whatsapp.png" />
+            </a>
+            <a href="#" class="m-2">
+              <img src="../assets/img/facebook.png" />
+            </a>
+            <a href="#" class="m-2">
+              <img src="../assets/img/instagram.png" />
+            </a>
+            <a href="#" class="m-2">
+              <img src="../assets/img/viber.png" />
+            </a>
+            <a href="#" class="m-2">
+              <img src="../assets/img/google.png" />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h1 class="my-4">Naslov</h1>
+          <img class="image2" src="../assets/img/67661.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="section3 row my-5 py-5 justify-content-around">
+        <div class="background-image"></div>
+        <div class="section3-1 col-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            quam amet nemo nesciunt neque nulla autem. Architecto sunt possimus
+            minus ab ut recusandae expedita cumque non earum! Similique, sequi
+            ipsum.
+          </p>
+          <button class="btn btn-primary btn-lg mt-3">nesto</button>
+        </div>
+
+        <div class="section3-2 col-4">
+          <img class="section3-image1" src="../assets/img/55.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="section4 my-5 py-5">
+        <div class="row justify-content-end">
+          <div class="col-3 some-text-div me-5">
+            <p class="some-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
+              voluptas voluptate nobis nihil vel veniam? Vero libero voluptates
+              laborum consectetur!
+            </p>
+          </div>
+          <div class="col-3">
+            <div class="photo-div p-4">
+              <div class="mark"></div>
+              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <h1 class="text-center mt-4">Naslov</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="photo2-div p-4">
+              <div class="mark"></div>
+              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <h1 class="text-center mt-4">Naslov</h1>
+            </div>
+          </div>
+          <div class="col-3 some-text-div ms-5">
+            <p class="some-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eum
+              dicta vel eaque, dolor architecto commodi et quaerat, tenetur, ad
+              repellat adipisci neque nisi consequuntur!
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-end">
+          <div class="col-3 some-text-div me-5">
+            <p class="some-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+              ipsum repellat. Repudiandae modi suscipit dolores!
+            </p>
+          </div>
+          <div class="col-3">
+            <div class="photo-div p-4">
+              <div class="mark"></div>
+              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <h1 class="text-center mt-4">Naslov</h1>
             </div>
           </div>
         </div>
@@ -26,6 +129,111 @@ import PageTitle from "../components/ui/PageTitle.vue";
 </template>
 
 <style scoped>
+.some-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.some-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.photo2-div {
+  background-color: thistle;
+  border-radius: 15px;
+  position: relative;
+  transform: rotate(-10deg);
+}
+
+.photo-div {
+  background-color: thistle;
+  border-radius: 15px;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.mark {
+  background-color: hotpink;
+  border-radius: 10px;
+  width: 60px;
+  height: 70px;
+  position: absolute;
+  top: -30px;
+  left: 60px;
+}
+
+.photo-photo {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.section3-image1 {
+  width: 520px;
+  margin-left: -52px;
+}
+
+.section3-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section3-1 p {
+  font-size: 20px;
+}
+
+.section3-2 {
+  background-color: #eff7f6;
+  display: flex;
+  align-items: center;
+}
+
+.aboutus-section {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  height: 450px;
+  background-color: thistle;
+  left: 0;
+}
+
+.section3 {
+  height: 550px;
+}
+
+.section2 {
+  position: relative;
+}
+.background-connector {
+  position: absolute;
+  height: 180px;
+  background-color: thistle;
+  z-index: 0;
+  margin-top: 140px;
+}
+
+.col-4 {
+  z-index: 1;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+}
+
+.image1,
+.image2 {
+  width: 100%;
+}
+
+.menu-title {
+  /* font-family: ""; */
+  font-size: 48.83px;
+}
+
 .aboutus-description {
   font-size: 20px;
 }

@@ -13,7 +13,7 @@ function CloseNavbar() {
   <div class="">
     <footer class="text-center" style="background-color: #cdb4db">
       <div class="container">
-        <section class="mt-5">
+        <section>
           <div class="row text-center d-flex justify-content-center pt-5">
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
