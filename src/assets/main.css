@@ -68,3 +68,8 @@
 .navbar-nav a.router-link-exact-active {
   font-weight: bold;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}
