@@ -73,3 +73,7 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+.lock-scroll {
+  overflow: hidden;
+}

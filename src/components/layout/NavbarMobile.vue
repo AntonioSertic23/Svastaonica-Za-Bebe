@@ -70,7 +70,6 @@ import { RouterLink } from "vue-router";
 
 <style scoped>
 .navbar-nav {
-  margin-top: 95.5px;
   height: calc(100vh - 95.5px);
   display: flex;
   justify-content: space-evenly;

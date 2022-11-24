@@ -43,7 +43,7 @@
 </script>
 
 <template>
-  <div class="progress-wrap">
+  <div id="progress-wrap" class="progress-wrap">
     <svg
       class="progress-circle svg-content"
       width="100%"

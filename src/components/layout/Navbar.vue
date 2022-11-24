@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
+import NavbarMobile from "./NavbarMobile.vue";
 
 function CloseNavbar() {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -17,11 +18,18 @@ function CloseNavbar() {
       <button
         class="navbar-toggler"
         type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
         @click="$emit('openCloseNavbar')"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <NavbarMobile />
+        <!-- 
         <div class="navbar-nav mx-auto">
           <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
             >Početna</RouterLink
@@ -49,7 +57,6 @@ function CloseNavbar() {
               aria-expanded="false"
             >
               Jezik
-              <!-- - {{ $i18n.locale.toUpperCase() }} -->
             </button>
 
             <a
@@ -58,50 +65,9 @@ function CloseNavbar() {
               href=""
               >+385 99 478 85 86</a
             >
-
-            <!--             <ul
-              class="dropdown-menu dropdown-menu-end"
-              aria-labelledby="dropdownMenuButton1"
-            >
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  @click="
-                    () => {
-                      $i18n.locale = 'hr';
-                    }
-                  "
-                  ><img src="hr.png" class="me-3" /><span>Croatian</span></a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  @click="
-                    () => {
-                      $i18n.locale = 'en';
-                    }
-                  "
-                  ><img src="en.png" class="me-3" /><span>English</span></a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="#"
-                  @click="
-                    () => {
-                      $i18n.locale = 'de';
-                    }
-                  "
-                  ><img src="de.png" class="me-3" /><span>German</span></a
-                >
-              </li>
-            </ul> -->
           </div>
         </div>
+       -->
       </div>
     </div>
   </nav>
