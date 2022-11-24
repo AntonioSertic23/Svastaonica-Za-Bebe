@@ -1,32 +1,29 @@
 <script setup>
 import { RouterLink } from "vue-router";
+
+const emit = defineEmits(["closeNavbar"]);
+
+function CloseNavbar() {
+  emit("closeNavbar");
+}
 </script>
 
 <template>
   <div class="navbar-nav">
     <div class="links-div text-center w-100 px-5">
-      <RouterLink class="nav-link" @click="$emit('openCloseNavbar')" to="/"
+      <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
         >Početna</RouterLink
       >
       <hr />
-      <RouterLink
-        class="nav-link"
-        @click="$emit('openCloseNavbar')"
-        to="/gallery"
+      <RouterLink class="nav-link" @click="CloseNavbar()" to="/gallery"
         >Galerija</RouterLink
       >
       <hr />
-      <RouterLink
-        class="nav-link"
-        @click="$emit('openCloseNavbar')"
-        to="/aboutus"
+      <RouterLink class="nav-link" @click="CloseNavbar()" to="/aboutus"
         >O nama</RouterLink
       >
       <hr />
-      <RouterLink
-        class="nav-link"
-        @click="$emit('openCloseNavbar')"
-        to="/contact"
+      <RouterLink class="nav-link" @click="CloseNavbar()" to="/contact"
         >Kontakt</RouterLink
       >
       <hr />

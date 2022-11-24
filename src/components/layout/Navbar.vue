@@ -1,8 +1,28 @@
 <script setup>
 import { RouterLink } from "vue-router";
 import NavbarMobile from "./NavbarMobile.vue";
+import { ref } from "vue";
 
 function CloseNavbar() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+const emit = defineEmits(["openCloseNavbar"]);
+var isMobile = ref(false);
+
+function btnClick() {
+  emit("openCloseNavbar");
+}
+
+$(window).on("resize", function () {
+  if ($(window).width() < 992) {
+    isMobile.value = true;
+  } else {
+    isMobile.value = false;
+  }
+});
+
+function close() {
   window.scrollTo({ top: 0, behavior: "smooth" });
   if ($(".navbar-toggler").is(":visible")) {
     $(".navbar-collapse").collapse("toggle");
@@ -23,14 +43,14 @@ function CloseNavbar() {
         aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        @click="$emit('openCloseNavbar')"
+        @click="btnClick()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <NavbarMobile />
-        <!-- 
-        <div class="navbar-nav mx-auto">
+        <NavbarMobile v-if="isMobile" @close-navbar="close" />
+
+        <div v-if="!isMobile" class="navbar-nav mx-auto">
           <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
             >Početna</RouterLink
           >
@@ -47,7 +67,10 @@ function CloseNavbar() {
             >Fonts</RouterLink
           >
         </div>
-        <div class="ms-auto navbar-language-div d-grid me-lg-3 pe-4">
+        <div
+          v-if="!isMobile"
+          class="ms-auto navbar-language-div d-grid me-lg-3 pe-4"
+        >
           <div class="dropdown">
             <button
               class="btn dropdown-toggle"
@@ -67,7 +90,6 @@ function CloseNavbar() {
             >
           </div>
         </div>
-       -->
       </div>
     </div>
   </nav>

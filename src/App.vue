@@ -11,10 +11,9 @@ function openClose() {
   isNavbarOpen.value = !isNavbarOpen.value;
   document.body.classList.toggle("lock-scroll");
   if (!isNavbarOpen.value) {
-    $('#progress-wrap').addClass('active-progress');
-  }
-  else {
-    $('#progress-wrap').removeClass('active-progress');
+    $("#progress-wrap").addClass("active-progress");
+  } else {
+    $("#progress-wrap").removeClass("active-progress");
   }
 }
 </script>
@@ -26,7 +25,7 @@ function openClose() {
     <RouterView />
   </div>
 
-  <ScrollToTop v-if="!isNavbarOpen" />
+  <ScrollToTop />
 
   <Footer />
 </template>
