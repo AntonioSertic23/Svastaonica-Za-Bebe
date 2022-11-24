@@ -4,31 +4,32 @@ import { RouterLink } from "vue-router";
 
 <template>
   <div class="navbar-nav">
-    <div class="links-div text-center">
+    <div class="links-div text-center w-100 px-5">
       <RouterLink class="nav-link" @click="$emit('openCloseNavbar')" to="/"
         >Početna</RouterLink
       >
+      <hr />
       <RouterLink
         class="nav-link"
         @click="$emit('openCloseNavbar')"
         to="/gallery"
         >Galerija</RouterLink
       >
+      <hr />
       <RouterLink
         class="nav-link"
         @click="$emit('openCloseNavbar')"
         to="/aboutus"
         >O nama</RouterLink
       >
+      <hr />
       <RouterLink
         class="nav-link"
         @click="$emit('openCloseNavbar')"
         to="/contact"
         >Kontakt</RouterLink
       >
-      <RouterLink class="nav-link" @click="$emit('openCloseNavbar')" to="/fonts"
-        >Fonts</RouterLink
-      >
+      <hr />
       <button
         class="btn dropdown-toggle language-btn"
         type="button"
@@ -38,7 +39,6 @@ import { RouterLink } from "vue-router";
       >
         Jezik
       </button>
-      <RouterLink class="nav-link" to="">+385 99 478 85 86</RouterLink>
     </div>
 
     <div></div>
@@ -62,6 +62,8 @@ import { RouterLink } from "vue-router";
       <a href="#" class="m-2">
         <img src="../../assets/img/google.png" />
       </a>
+
+      <RouterLink class="nav-link mt-3" to="">+385 99 478 85 86</RouterLink>
     </div>
   </div>
 </template>
@@ -92,16 +94,57 @@ import { RouterLink } from "vue-router";
   text-transform: capitalize;
   font-family: Poiret_One;
   font-size: 25px;
+  width: 100%;
+}
+
+.links-div {
+  animation: fadein 1.2s;
 }
 
 .icons-div {
   position: absolute;
   bottom: 0;
-  margin-bottom: 50px;
+  animation: fadein 1.2s;
 }
 
 .icons-div img {
   width: 40px;
   height: 40px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

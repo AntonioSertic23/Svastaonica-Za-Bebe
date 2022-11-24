@@ -20,7 +20,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
       <div class="section2 row my-5 py-5 justify-content-evenly">
         <div class="background-connector"></div>
 
-        <div class="col-4">
+        <div class="col-4 section2-left">
           <img class="image1" src="../assets/img/5.jpg" alt="" />
 
           <p class="mt-4">
@@ -50,7 +50,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-4 section2-right">
           <h1 class="my-4">Naslov</h1>
           <img class="image2" src="../assets/img/67661.jpg" alt="" />
         </div>
@@ -68,8 +68,12 @@ import PageTitle from "../components/ui/PageTitle.vue";
           <button class="btn btn-primary btn-lg mt-3">nesto</button>
         </div>
 
-        <div class="section3-2 col-4">
+        <div class="section3-2 col-3">
           <img class="section3-image1" src="../assets/img/55.jpg" alt="" />
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
         </div>
       </div>
 
@@ -129,6 +133,40 @@ import PageTitle from "../components/ui/PageTitle.vue";
 </template>
 
 <style scoped>
+.section2-left,
+.section2-right {
+  z-index: 1;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  width: 20px;
+  height: 20px;
+  background-color: thistle;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid gray;
+}
+
+.circle1 {
+  left: -60px;
+  top: 70px;
+}
+.circle2 {
+  right: -60px;
+  top: 70px;
+}
+.circle3 {
+  left: -60px;
+  bottom: 70px;
+}
+.circle4 {
+  right: -60px;
+  bottom: 70px;
+}
+
 .some-text-div {
   display: flex;
   flex-direction: column;
@@ -170,14 +208,17 @@ import PageTitle from "../components/ui/PageTitle.vue";
 }
 
 .section3-image1 {
-  width: 520px;
-  margin-left: -52px;
+  width: 480px;
+  margin-left: -87px;
+  border-radius: 15px;
+  border: 2px solid gray;
 }
 
 .section3-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 .section3-1 p {
   font-size: 20px;
@@ -187,6 +228,8 @@ import PageTitle from "../components/ui/PageTitle.vue";
   background-color: #eff7f6;
   display: flex;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
 .aboutus-section {
@@ -213,10 +256,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
   background-color: thistle;
   z-index: 0;
   margin-top: 140px;
-}
-
-.col-4 {
-  z-index: 1;
 }
 
 .social-media img {

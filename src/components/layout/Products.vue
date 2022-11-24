@@ -78,19 +78,20 @@ img {
 }
 
 .mask {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
-  color: white;
 }
 
 .mask:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+
   cursor: pointer;
   transition: 0.8s;
-  color: black;
 }
 
 p {
