@@ -3,15 +3,21 @@ import { RouterLink } from "vue-router";
 import NavbarMobile from "./NavbarMobile.vue";
 import { ref } from "vue";
 
+const emit = defineEmits(["openCloseNavbar"]);
+var isMobile = ref(false);
+
 function CloseNavbar() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-const emit = defineEmits(["openCloseNavbar"]);
-var isMobile = ref(false);
-
 function btnClick() {
-  emit("openCloseNavbar");
+  emit("openCloseNavbar", 1);
+}
+
+if ($(window).width() < 992) {
+  isMobile.value = true;
+} else {
+  isMobile.value = false;
 }
 
 $(window).on("resize", function () {
@@ -24,6 +30,7 @@ $(window).on("resize", function () {
 
 function close() {
   window.scrollTo({ top: 0, behavior: "smooth" });
+  emit("openCloseNavbar", 2);
   if ($(".navbar-toggler").is(":visible")) {
     $(".navbar-collapse").collapse("toggle");
   }

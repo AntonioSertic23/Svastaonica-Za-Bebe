@@ -7,11 +7,20 @@ import { ref } from "vue";
 
 var isNavbarOpen = ref(false);
 
-function openClose() {
+function openClose(n) {
   isNavbarOpen.value = !isNavbarOpen.value;
-  document.body.classList.toggle("lock-scroll");
   if (!isNavbarOpen.value) {
-    $("#progress-wrap").addClass("active-progress");
+    $("body").removeClass("lock-scroll");
+  } else {
+    $("body").addClass("lock-scroll");
+  }
+
+  if (n != 2) {
+    if (!isNavbarOpen.value) {
+      $("#progress-wrap").addClass("active-progress");
+    } else {
+      $("#progress-wrap").removeClass("active-progress");
+    }
   } else {
     $("#progress-wrap").removeClass("active-progress");
   }
