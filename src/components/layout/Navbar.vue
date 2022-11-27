@@ -3,23 +3,18 @@ import { RouterLink } from "vue-router";
 import NavbarMobile from "./NavbarMobile.vue";
 import { ref } from "vue";
 
-const emit = defineEmits(["openCloseNavbar"]);
+// defining emits so we can call them from this script tags
+const emit = defineEmits(["updateNavbar"]);
+
 var isMobile = ref(false);
 
-function CloseNavbar() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function btnClick() {
-  emit("openCloseNavbar", 1);
-}
-
+// we see screen width end set which navbar to use (desktop or mobile)
 if ($(window).width() < 992) {
   isMobile.value = true;
 } else {
   isMobile.value = false;
 }
-
+// when screen is resized we check screen width again to set right navbar
 $(window).on("resize", function () {
   if ($(window).width() < 992) {
     isMobile.value = true;
@@ -28,9 +23,20 @@ $(window).on("resize", function () {
   }
 });
 
-function close() {
+// if link in DESKTOP navbar is pressed we scroll to top smoothly
+function closeDesktopNavbar() {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  emit("openCloseNavbar", 2);
+}
+
+// if MOBILE navbar button is pressed we emit to update navbar
+function switchMobileNavbar() {
+  emit("updateNavbar");
+}
+
+// if link in MOBILE navbar is pressed this is function that is called after emit
+function closeMobileNavbar() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  emit("updateNavbar");
   if ($(".navbar-toggler").is(":visible")) {
     $(".navbar-collapse").collapse("toggle");
   }
@@ -38,7 +44,6 @@ function close() {
 </script>
 
 <template>
-  <!-- fixed-top maknut -->
   <nav class="navbar navbar-expand-lg navbar-light p-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Svaštaonica Za Bebače</a>
@@ -50,27 +55,39 @@ function close() {
         aria-controls="navbarNavAltMarkup"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        @click="btnClick()"
+        @click="switchMobileNavbar()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <NavbarMobile v-if="isMobile" @close-navbar="close" />
+        <NavbarMobile
+          v-if="isMobile"
+          @close-mobile-navbar="closeMobileNavbar"
+        />
 
         <div v-if="!isMobile" class="navbar-nav mx-auto">
-          <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
+          <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/"
             >Početna</RouterLink
           >
-          <RouterLink class="nav-link" @click="CloseNavbar()" to="/gallery"
+          <RouterLink
+            class="nav-link"
+            @click="closeDesktopNavbar()"
+            to="/gallery"
             >Galerija</RouterLink
           >
-          <RouterLink class="nav-link" @click="CloseNavbar()" to="/aboutus"
+          <RouterLink
+            class="nav-link"
+            @click="closeDesktopNavbar()"
+            to="/aboutus"
             >O nama</RouterLink
           >
-          <RouterLink class="nav-link" @click="CloseNavbar()" to="/contact"
+          <RouterLink
+            class="nav-link"
+            @click="closeDesktopNavbar()"
+            to="/contact"
             >Kontakt</RouterLink
           >
-          <RouterLink class="nav-link" @click="CloseNavbar()" to="/fonts"
+          <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/fonts"
             >Fonts</RouterLink
           >
         </div>

@@ -7,20 +7,20 @@ import { ref } from "vue";
 
 var isNavbarOpen = ref(false);
 
-function openClose(n) {
+function updateNavbar() {
+  // switch
   isNavbarOpen.value = !isNavbarOpen.value;
+
+  // lock/unlock scrolling
   if (!isNavbarOpen.value) {
     $("body").removeClass("lock-scroll");
   } else {
     $("body").addClass("lock-scroll");
   }
 
-  if (n != 2) {
-    if (!isNavbarOpen.value) {
-      $("#progress-wrap").addClass("active-progress");
-    } else {
-      $("#progress-wrap").removeClass("active-progress");
-    }
+  // show/hide scrolltoTop
+  if (!isNavbarOpen.value && $(window).scrollTop() != 0) {
+    $("#progress-wrap").addClass("active-progress");
   } else {
     $("#progress-wrap").removeClass("active-progress");
   }
@@ -28,7 +28,7 @@ function openClose(n) {
 </script>
 
 <template>
-  <Navbar @open-close-navbar="openClose" />
+  <Navbar @update-navbar="updateNavbar" />
 
   <div class="body-div">
     <RouterView />

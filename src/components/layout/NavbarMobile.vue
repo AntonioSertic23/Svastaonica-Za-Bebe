@@ -1,29 +1,31 @@
 <script setup>
 import { RouterLink } from "vue-router";
 
-const emit = defineEmits(["closeNavbar"]);
+// defining emits so we can call them from this script tags
+const emit = defineEmits(["closeMobileNavbar"]);
 
-function CloseNavbar() {
-  emit("closeNavbar");
+// if link in MOBILE navbar is pressed we emit
+function closeNavbar() {
+  emit("closeMobileNavbar");
 }
 </script>
 
 <template>
   <div class="navbar-nav">
     <div class="links-div text-center w-100 px-5">
-      <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
+      <RouterLink class="nav-link" @click="closeNavbar()" to="/"
         >Početna</RouterLink
       >
       <hr />
-      <RouterLink class="nav-link" @click="CloseNavbar()" to="/gallery"
+      <RouterLink class="nav-link" @click="closeNavbar()" to="/gallery"
         >Galerija</RouterLink
       >
       <hr />
-      <RouterLink class="nav-link" @click="CloseNavbar()" to="/aboutus"
+      <RouterLink class="nav-link" @click="closeNavbar()" to="/aboutus"
         >O nama</RouterLink
       >
       <hr />
-      <RouterLink class="nav-link" @click="CloseNavbar()" to="/contact"
+      <RouterLink class="nav-link" @click="closeNavbar()" to="/contact"
         >Kontakt</RouterLink
       >
       <hr />

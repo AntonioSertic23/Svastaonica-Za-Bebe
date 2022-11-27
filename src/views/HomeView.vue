@@ -13,7 +13,7 @@ import Badges from "../components/layout/Badges.vue";
 </script>
 
 <template>
-  <!--   <Jumbotron3 />
+  <Jumbotron3 />
   <hr />
   <Jumbotron1 />
   <hr />
@@ -29,7 +29,7 @@ import Badges from "../components/layout/Badges.vue";
   <hr />
   <Products1 />
   <hr />
-  <Products2 /> -->
+  <Products2 />
   <hr />
   <Products3 />
   <hr />
