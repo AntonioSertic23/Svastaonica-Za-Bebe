@@ -173,7 +173,6 @@ img {
 
 .slider-div {
   position: sticky;
-  position: -webkit-sticky;
-  top: 0; /* required */
+  top: 155px;
 }
 </style>
