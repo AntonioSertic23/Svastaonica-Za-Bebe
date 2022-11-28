@@ -46,7 +46,7 @@ function closeMobileNavbar() {
 <template>
   <nav class="navbar navbar-expand-lg navbar-light p-4">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Svaštaonica Za Bebače</a>
+      <a class="navbar-brand" href="#">Svaštaonica Za Bebe</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -87,9 +87,9 @@ function closeMobileNavbar() {
             to="/contact"
             >Kontakt</RouterLink
           >
-          <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/fonts"
+          <!-- <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/fonts"
             >Fonts</RouterLink
-          >
+          > -->
         </div>
         <div
           v-if="!isMobile"
@@ -122,13 +122,11 @@ function closeMobileNavbar() {
 <style scoped>
 .navbar {
   min-height: 62px;
-  font-family: Poiret_One;
   background-color: #eff7f6;
   position: relative;
 }
 
 .navbar-brand {
-  font-family: Poiret_One;
   font-weight: bold;
   font-size: 25px;
   color: #222;
@@ -149,7 +147,6 @@ function closeMobileNavbar() {
 .dropdown button {
   background-color: #ffafcc;
   text-transform: capitalize;
-  font-family: Poiret_One;
   font-size: 25px;
 }
 

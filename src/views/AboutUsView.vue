@@ -1,6 +1,4 @@
-<script setup>
-import PageTitle from "../components/ui/PageTitle.vue";
-</script>
+<script setup></script>
 
 <template>
   <section class="aboutus-section py-4">
@@ -133,9 +131,85 @@ import PageTitle from "../components/ui/PageTitle.vue";
 </template>
 
 <style scoped>
+.aboutus-section {
+  position: relative;
+}
+
+.menu-title {
+  font-size: 48.83px;
+}
+
+.aboutus-description {
+  font-size: 20px;
+}
+
+/* SECTION 2 > */
+
+.section2 {
+  position: relative;
+}
+
+.background-connector {
+  position: absolute;
+  height: 180px;
+  background-color: thistle;
+  z-index: 0;
+  margin-top: 140px;
+}
+
 .section2-left,
 .section2-right {
   z-index: 1;
+}
+
+.image1,
+.image2 {
+  width: 100%;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+}
+
+/* < SECTION 2 */
+
+/* SECTION 3 > */
+
+.section3 {
+  height: 550px;
+}
+
+.background-image {
+  position: absolute;
+  height: 450px;
+  background-color: thistle;
+  left: 0;
+}
+
+.section3-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.section3-1 p {
+  font-size: 20px;
+}
+
+.section3-2 {
+  background-color: #eff7f6;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.section3-image1 {
+  width: 480px;
+  margin-left: -87px;
+  border-radius: 15px;
+  border: 2px solid gray;
 }
 
 .circle1,
@@ -167,6 +241,10 @@ import PageTitle from "../components/ui/PageTitle.vue";
   bottom: 70px;
 }
 
+/* < SECTION 3 */
+
+/* SECTION 4 > */
+
 .some-text-div {
   display: flex;
   flex-direction: column;
@@ -178,18 +256,17 @@ import PageTitle from "../components/ui/PageTitle.vue";
   text-align: center;
 }
 
-.photo2-div {
-  background-color: thistle;
-  border-radius: 15px;
-  position: relative;
-  transform: rotate(-10deg);
-}
-
 .photo-div {
   background-color: thistle;
   border-radius: 15px;
   position: relative;
   transform: rotate(10deg);
+}
+.photo2-div {
+  background-color: thistle;
+  border-radius: 15px;
+  position: relative;
+  transform: rotate(-10deg);
 }
 
 .mark {
@@ -207,73 +284,5 @@ import PageTitle from "../components/ui/PageTitle.vue";
   border-radius: 15px;
 }
 
-.section3-image1 {
-  width: 480px;
-  margin-left: -87px;
-  border-radius: 15px;
-  border: 2px solid gray;
-}
-
-.section3-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 1;
-}
-.section3-1 p {
-  font-size: 20px;
-}
-
-.section3-2 {
-  background-color: #eff7f6;
-  display: flex;
-  align-items: center;
-  z-index: 1;
-  position: relative;
-}
-
-.aboutus-section {
-  position: relative;
-}
-
-.background-image {
-  position: absolute;
-  height: 450px;
-  background-color: thistle;
-  left: 0;
-}
-
-.section3 {
-  height: 550px;
-}
-
-.section2 {
-  position: relative;
-}
-.background-connector {
-  position: absolute;
-  height: 180px;
-  background-color: thistle;
-  z-index: 0;
-  margin-top: 140px;
-}
-
-.social-media img {
-  width: 32px;
-  height: 32px;
-}
-
-.image1,
-.image2 {
-  width: 100%;
-}
-
-.menu-title {
-  /* font-family: ""; */
-  font-size: 48.83px;
-}
-
-.aboutus-description {
-  font-size: 20px;
-}
+/* < SECTION 4 */
 </style>
