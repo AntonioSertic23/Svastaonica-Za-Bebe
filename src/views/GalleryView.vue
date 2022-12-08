@@ -115,9 +115,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
         <div class="container text-center">
           <div class="row row-cols-3 g-5">
             <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/new.png" alt="" />
-              </div>
               <div class="p-4 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -141,9 +138,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/new (2).png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -154,9 +148,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/promotional.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -167,9 +158,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/tag.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -180,9 +168,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/trending.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -193,9 +178,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/best-seller.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -206,9 +188,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/discount.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -219,9 +198,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/flash-sale.png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -232,9 +208,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/new (3).png" alt="" />
-              </div>
               <div class="p-3 border bg-light">
                 <img src="../assets/img/55.jpg" alt="" />
 
@@ -262,16 +235,16 @@ import PageTitle from "../components/ui/PageTitle.vue";
 
       <!-- gallery cards 3 -->
       <div class="section-cards3 mt-5 pt-5 row justify-content-evenly">
-        <div class="container text-center">
-          <div class="row row-cols-3 g-5">
-            <div class="col">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
               </div>
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
                 <div class="badge px-4">
@@ -281,14 +254,14 @@ import PageTitle from "../components/ui/PageTitle.vue";
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
               </div>
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
                 <div class="badge px-4">
@@ -298,28 +271,28 @@ import PageTitle from "../components/ui/PageTitle.vue";
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
+            <div class="col-8">
+              <div class="border bg-light coupon-div">
+                <img src="../assets/img/55.jpg" alt="" />
+                <div class="coupon-card"></div>
+              </div>
+            </div>
+
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
               </div>
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
               </div>
               <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
 
-            <div class="col">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col">
+            <div class="col-4">
               <div class="border bg-light">
                 <img src="../assets/img/5.jpg" alt="" />
               </div>
@@ -392,9 +365,10 @@ import PageTitle from "../components/ui/PageTitle.vue";
 
 .section-cards3 .border img {
   width: 100%;
+  height: 100%;
 }
 .section-cards3 .border {
-  height: auto;
+  height: 400px;
   border-radius: 0;
 }
 
@@ -409,9 +383,29 @@ import PageTitle from "../components/ui/PageTitle.vue";
 .section-cards3 .border {
   position: relative;
   border: 1px solid #999 !important;
+  cursor: pointer;
 }
 .section-cards3 .border p {
   font-size: 16px;
   letter-spacing: 2px;
+}
+
+.coupon-div {
+  border-radius: 30px !important;
+}
+.coupon-div img {
+  border-radius: 30px;
+}
+.coupon-card {
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  position: absolute;
+  border: 5px dashed white;
+  top: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
 }
 </style>

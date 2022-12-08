@@ -7,6 +7,7 @@ import Jumbotron5 from "../components/layout/Jumbotron5.vue";
 import AboutUsShort from "../components/layout/AboutUsShort.vue";
 import AboutUsShort2 from "../components/layout/AboutUsShort2.vue";
 import Products1 from "../components/layout/Products.vue";
+import Products1v2 from "../components/layout/Products-v2.vue";
 import Products2 from "../components/layout/Products2.vue";
 import Products3 from "../components/layout/Products3.vue";
 import Badges from "../components/layout/Badges.vue";
@@ -28,6 +29,8 @@ import Badges from "../components/layout/Badges.vue";
   <AboutUsShort2 />
   <hr />
   <Products1 />
+  <hr />
+  <Products1v2 />
   <hr />
   <Products2 />
   <hr />
