@@ -44,7 +44,7 @@ function closeMobileNavbar() {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light p-4">
+  <nav class="navbar navbar-expand-lg navbar-light py-4 px-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Svaštaonica Za Bebe</a>
       <button
@@ -105,13 +105,14 @@ function closeMobileNavbar() {
             >
               Jezik
             </button>
-
+            <!-- 
             <a
               class="ms-3"
               style="font-family: Montserrat; color: black"
               href=""
               >+385 99 478 85 86</a
             >
+             -->
           </div>
         </div>
       </div>
@@ -122,7 +123,6 @@ function closeMobileNavbar() {
 <style scoped>
 .navbar {
   min-height: 62px;
-  background-color: #eff7f6;
   position: relative;
 }
 
@@ -133,6 +133,10 @@ function closeMobileNavbar() {
 }
 .brand-icon img {
   width: 40px;
+}
+
+.navbar-nav {
+  gap: 1rem;
 }
 
 .nav-link {
@@ -147,7 +151,7 @@ function closeMobileNavbar() {
 .dropdown button {
   background-color: #ffafcc;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .dropdown-item {
@@ -182,6 +186,7 @@ function closeMobileNavbar() {
     right: 0;
     left: 0;
     z-index: 1030;
+    background-color: #ede4f2;
   }
 }
 

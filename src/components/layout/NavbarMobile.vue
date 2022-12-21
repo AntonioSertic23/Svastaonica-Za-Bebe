@@ -74,7 +74,6 @@ function closeNavbar() {
   justify-content: space-evenly;
   align-items: center;
   font-family: Poiret_One;
-  background-color: #eff7f6;
 }
 
 .nav-link {

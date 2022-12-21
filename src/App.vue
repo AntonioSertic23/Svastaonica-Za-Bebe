@@ -40,10 +40,6 @@ function updateNavbar() {
 </template>
 
 <style scoped>
-.body-div {
-  background-color: #eff7f6;
-}
-
 @media (max-width: 992px) {
   .body-div {
     margin-top: 62px;
