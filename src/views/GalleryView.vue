@@ -7,7 +7,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Gallery</p>
-        <div class="col-6">
+        <div class="col-8">
           <p class="gallery-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
             facilis tempora porro, suscipit ducimus delectus quaerat alias
@@ -27,14 +27,15 @@ import PageTitle from "../components/ui/PageTitle.vue";
           <a class="mx-2 category-link" href="">Paketi</a>
         </div>
       </div>
-      <div class="section-cards row justify-content-evenly">
+      <div class="section-cards row justify-content-evenly mb-5">
         <div class="container text-center">
-          <div class="row row-cols-4 g-5">
+          <div class="row row-cols-3 gx-5 gy-4">
             <div class="col">
               <div class="image-div2">
                 <img src="../assets/img/new.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Lorem, ipsum dolor</h1>
             </div>
 
             <div class="col">
@@ -42,6 +43,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/new (1).png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Ipsum dolor</h1>
             </div>
 
             <div class="col">
@@ -49,6 +51,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/new (2).png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Dolor</h1>
             </div>
 
             <div class="col">
@@ -56,6 +59,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/promotional.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Dolor</h1>
             </div>
 
             <div class="col">
@@ -63,6 +67,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/tag.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Lorem dolor</h1>
             </div>
 
             <div class="col">
@@ -70,6 +75,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/trending.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Lorem ipsum</h1>
             </div>
 
             <div class="col">
@@ -77,6 +83,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/best-seller.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Lorem, ipsum dolor</h1>
             </div>
 
             <div class="col">
@@ -84,6 +91,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/discount.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Loremipsumdolor</h1>
             </div>
 
             <div class="col">
@@ -91,6 +99,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/flash-sale.png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Dolor</h1>
             </div>
 
             <div class="col">
@@ -98,6 +107,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/new (3).png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
+              <h1>Lorem, ipsum</h1>
             </div>
 
             <div class="col">
@@ -105,198 +115,16 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 <img src="../assets/img/new (4).png" alt="" />
               </div>
               <div class="p-3 border bg-light"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- gallery cards 2 -->
-      <div class="section-cards2 mt-5 pt-5 row justify-content-evenly">
-        <div class="container text-center">
-          <div class="row row-cols-3 g-5">
-            <div class="col">
-              <div class="p-4 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
+              <h1>Ipsum dolor</h1>
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/new (1).png" alt="" />
-              </div>
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/new (4).png" alt="" />
-              </div>
-              <div class="p-3 border bg-light">
-                <img src="../assets/img/55.jpg" alt="" />
-
-                <h1 class="my-3 text-start">Naziv</h1>
-
-                <button class="btn btn-primary w-100">Pročitaj više</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- gallery cards 3 -->
-      <div class="section-cards3 mt-5 pt-5 row justify-content-evenly">
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
               <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-                <div class="badge px-4">
-                  <p class="my-2">SOLD OUT</p>
+                <div class="soldout-div showhim">
+                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
                 </div>
+                <h1>Lorem dolor</h1>
               </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-                <div class="badge px-4">
-                  <p class="my-2">-70%</p>
-                </div>
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-8">
-              <div class="border bg-light coupon-div">
-                <img src="../assets/img/55.jpg" alt="" />
-                <div class="coupon-card"></div>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
-            </div>
-
-            <div class="col-4">
-              <div class="border bg-light">
-                <img src="../assets/img/5.jpg" alt="" />
-              </div>
-              <h1 class="my-3 ms-2 text-start">Naziv</h1>
             </div>
           </div>
         </div>
@@ -323,12 +151,12 @@ import PageTitle from "../components/ui/PageTitle.vue";
   padding: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 20px;
 }
 
 .border {
-  height: 250px;
+  height: 350px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .section-cards img {
@@ -344,6 +172,44 @@ import PageTitle from "../components/ui/PageTitle.vue";
   margin-top: -20px;
   margin-right: -20px;
 }
+
+/* new - soldout item */
+.soldout-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.soldout-div img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 128px;
+}
+
+.showme {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.showhim:hover .showme {
+  visibility: visible;
+  opacity: 1;
+}
+
+.col h1 {
+  text-align: start;
+  margin-top: 1rem;
+  font-size: 32px;
+}
+/* new */
 
 .section-cards2 .image-div2 img,
 .section-cards2 .image-div img {
