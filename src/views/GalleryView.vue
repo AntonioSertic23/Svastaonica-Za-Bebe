@@ -18,7 +18,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
       </div>
 
       <!-- gallery cards -->
-      <div class="row my-5 pt-5 pb-4">
+      <div class="row my-5 py-5">
         <div class="d-flex justify-content-center">
           <a class="mx-2 category-link" href="">U trendu</a>
           <a class="mx-2 category-link" href="">Novo u ponudi</a>
@@ -29,102 +29,195 @@ import PageTitle from "../components/ui/PageTitle.vue";
       </div>
       <div class="section-cards row justify-content-evenly mb-5">
         <div class="container text-center">
-          <div class="row row-cols-3 gx-5 gy-4">
+          <div class="row row-cols-3 g-5">
             <div class="col">
-              <div class="image-div2">
+              <div class="image-div">
+                <div class="image-div-background"></div>
                 <img src="../assets/img/new.png" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/1.jpg" alt="" />
+              </div>
               <h1>Lorem, ipsum dolor</h1>
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/new (1).png" alt="" />
+              <div class="border product-image-div">
+                <img src="../assets/img/products/5.jpg" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Ipsum dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/new (2).png" alt="" />
-              </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/promotional.png" alt="" />
-              </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/tag.png" alt="" />
-              </div>
-              <div class="p-3 border bg-light"></div>
               <h1>Lorem dolor</h1>
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/trending.png" alt="" />
+              <div class="border product-image-div">
+                <img src="../assets/img/products/6.jpg" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
               <h1>Lorem ipsum</h1>
             </div>
 
             <div class="col">
               <div class="image-div">
-                <img src="../assets/img/best-seller.png" alt="" />
+                <div class="image-div-background"></div>
+                <img src="../assets/img/trending.png" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Lorem, ipsum dolor</h1>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/2.jpg" alt="" />
+              </div>
+              <h1>Ipsum dolor</h1>
             </div>
 
             <div class="col">
-              <div class="image-div2">
-                <img src="../assets/img/discount.png" alt="" />
+              <div class="border product-image-div">
+                <img src="../assets/img/products/3.jpg" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Loremipsumdolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <img src="../assets/img/flash-sale.png" alt="" />
-              </div>
-              <div class="p-3 border bg-light"></div>
               <h1>Dolor</h1>
             </div>
 
             <div class="col">
               <div class="image-div">
-                <img src="../assets/img/new (3).png" alt="" />
+                <div class="image-div-background"></div>
+                <img src="../assets/img/trending.png" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Lorem, ipsum</h1>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/4.jpg" alt="" />
+              </div>
+              <h1>Dolor</h1>
             </div>
 
             <div class="col">
               <div class="image-div">
-                <img src="../assets/img/new (4).png" alt="" />
+                <div class="image-div-background"></div>
+                <img src="../assets/img/discount.png" alt="" />
               </div>
-              <div class="p-3 border bg-light"></div>
-              <h1>Ipsum dolor</h1>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/5.jpg" alt="" />
+              </div>
+              <h1>Lorem dolor</h1>
             </div>
 
             <div class="col">
-              <div class="border bg-light">
+              <div class="image-div">
+                <div class="image-div-background"></div>
+                <img src="../assets/img/positive-vote.png" alt="" />
+              </div>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/6.jpg" alt="" />
+              </div>
+              <h1>Lorem ipsum</h1>
+            </div>
+
+            <div class="col">
+              <div class="image-div">
+                <div
+                  class="image-div-background"
+                  style="width: 55%; border-radius: 40%; height: 110px"
+                ></div>
+                <img
+                  style="margin-left: 28%"
+                  src="../assets/img/new.png"
+                  alt=""
+                />
+                <img
+                  style="margin-right: 28%"
+                  src="../assets/img/limited-edition.png"
+                  alt=""
+                />
+              </div>
+              <div class="border product-image-div">
+                <img src="../assets/img/products/1.jpg" alt="" />
+              </div>
+              <h1>Lorem, ipsum</h1>
+            </div>
+
+            <div class="col">
+              <div class="border">
                 <div class="soldout-div showhim">
+                  <img
+                    src="../assets/img/products/2.jpg"
+                    class="product-image"
+                    alt=""
+                    style="filter: brightness(60%)"
+                  />
                   <img src="../assets/img/sold-out.png" class="showme" alt="" />
                 </div>
-                <h1>Lorem dolor</h1>
               </div>
+              <h1 style="opacity: 0.5">Lorem.</h1>
+            </div>
+
+            <div class="col">
+              <div class="image-div">
+                <div class="image-div-background" style="z-index: 1"></div>
+                <img
+                  src="../assets/img/positive-vote.png"
+                  style="z-index: 1; filter: brightness(60%)"
+                  alt=""
+                />
+              </div>
+              <div class="border">
+                <div class="soldout-div showhim">
+                  <img
+                    src="../assets/img/products/3.jpg"
+                    class="product-image"
+                    alt=""
+                    style="filter: brightness(60%)"
+                  />
+                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
+                </div>
+              </div>
+              <h1 style="opacity: 0.5">Lorem dolor</h1>
+            </div>
+
+            <div class="col">
+              <div class="border">
+                <div class="soldout-div showhim">
+                  <img
+                    src="../assets/img/products/4.jpg"
+                    class="product-image"
+                    alt=""
+                    style="filter: brightness(60%)"
+                  />
+                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
+                </div>
+              </div>
+              <h1 style="opacity: 0.5">Lorem dolor</h1>
+            </div>
+
+            <div class="col">
+              <div class="image-div">
+                <div class="image-div-background" style="z-index: 1"></div>
+                <img
+                  src="../assets/img/trending.png"
+                  style="z-index: 1; filter: brightness(60%)"
+                  alt=""
+                />
+              </div>
+              <div class="border">
+                <div class="soldout-div showhim">
+                  <img
+                    src="../assets/img/products/5.jpg"
+                    class="product-image"
+                    alt=""
+                    style="filter: brightness(60%)"
+                  />
+                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
+                </div>
+              </div>
+              <h1 style="opacity: 0.5">Lorem dolor</h1>
+            </div>
+
+            <div class="col">
+              <div class="border">
+                <div class="soldout-div showhim">
+                  <img
+                    src="../assets/img/products/6.jpg"
+                    class="product-image"
+                    alt=""
+                    style="filter: brightness(60%)"
+                  />
+                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
+                </div>
+              </div>
+              <h1 style="opacity: 0.5">Lorem dolor</h1>
             </div>
           </div>
         </div>
@@ -149,28 +242,31 @@ import PageTitle from "../components/ui/PageTitle.vue";
   background-color: rgb(205, 180, 219);
   border-radius: 15px;
   padding: 1rem;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 2px;
+}
+.category-link:hover {
+  background-color: #a375bd;
 }
 
 .border {
-  height: 350px;
+  height: 400px;
   border-radius: 15px;
   cursor: pointer;
 }
 
-.section-cards img {
-  width: 64px;
+.section-cards .image-div img {
+  width: 70px;
   position: absolute;
+
+  margin-top: -35px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
   right: 0;
 }
-.image-div,
-.image-div2 {
+.image-div {
   position: relative;
-}
-.image-div2 img {
-  margin-top: -20px;
-  margin-right: -20px;
 }
 
 /* new - soldout item */
@@ -180,7 +276,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
   height: 100%;
 }
 
-.soldout-div img {
+.soldout-div .showme {
   position: absolute;
   left: 0;
   right: 0;
@@ -205,13 +301,14 @@ import PageTitle from "../components/ui/PageTitle.vue";
 }
 
 .col h1 {
-  text-align: start;
+  text-align: center;
   margin-top: 1rem;
   font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 /* new */
 
-.section-cards2 .image-div2 img,
 .section-cards2 .image-div img {
   width: 64px;
   position: absolute;
@@ -273,5 +370,26 @@ import PageTitle from "../components/ui/PageTitle.vue";
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 30px;
+}
+
+.product-image-div img,
+.soldout-div .product-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.image-div-background {
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  background-color: #ede4f2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  margin-top: -50px;
 }
 </style>
