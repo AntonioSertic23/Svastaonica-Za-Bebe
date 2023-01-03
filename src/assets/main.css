@@ -27,6 +27,7 @@
   font-family: "Montserrat";
   src: URL("fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
+  font-weight: 100 1000;
 }
 @font-face {
   font-family: "Nunito_Sans";
@@ -82,7 +83,7 @@
 .navbar-nav a:hover,
 .navbar-nav a.router-link-active,
 .navbar-nav a.router-link-exact-active {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 html,

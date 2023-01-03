@@ -55,23 +55,15 @@ function CloseNavbar() {
                 >
               </h6>
             </div>
-
-            <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
-                <RouterLink class="nav-link" @click="CloseNavbar()" to="/fonts"
-                  >Fonts</RouterLink
-                >
-              </h6>
-            </div>
           </div>
         </section>
 
-        <hr class="my-5" />
+        <hr class="mt-4 mb-5" />
 
         <section class="mb-5">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8">
-              <p>
+              <p class="footer-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 distinctio earum repellat quaerat voluptatibus placeat nam,
                 commodi optio pariatur est quia magnam eum harum corrupti dicta,
@@ -103,8 +95,11 @@ function CloseNavbar() {
         </section>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright: Svaštaonica za Bebače
+      <div
+        class="text-center p-3 footer-copyright-text"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2020 Copyright: Svaštaonica za Bebe
       </div>
     </footer>
   </div>
@@ -118,5 +113,14 @@ function CloseNavbar() {
 
 .nav-link {
   color: black;
+  font-size: 20px;
+}
+
+.footer-text {
+  font-size: 20px;
+}
+
+.footer-copyright-text {
+  font-size: 16px;
 }
 </style>

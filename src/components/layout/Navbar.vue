@@ -127,7 +127,7 @@ function closeMobileNavbar() {
 }
 
 .navbar-brand {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 25px;
   color: #222;
 }
@@ -145,7 +145,7 @@ function closeMobileNavbar() {
   margin-top: 3px;
   margin-bottom: 3px;
   font-size: 25px !important;
-  color: #222;
+  color: #444 !important;
 }
 
 .dropdown button {
@@ -165,7 +165,7 @@ function closeMobileNavbar() {
 }
 
 #dropdownMenuButton1 {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* kad je mobile da bude pozadina roza */
