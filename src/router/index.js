@@ -34,6 +34,11 @@ const router = createRouter({
       name: "singleitem",
       component: () => import("../views/SingleItemView.vue"),
     },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "pagenotfound",
+      component: () => import("../views/PageNotFound.vue"),
+    },
   ],
 });
 
