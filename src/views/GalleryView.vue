@@ -23,7 +23,6 @@ import PageTitle from "../components/ui/PageTitle.vue";
           <a class="mx-2 category-link" href="">U trendu</a>
           <a class="mx-2 category-link" href="">Novo u ponudi</a>
           <a class="mx-2 category-link" href="">Akcija</a>
-          <a class="mx-2 category-link" href="">Ograničeno izdanje</a>
           <a class="mx-2 category-link" href="">Paketi</a>
         </div>
       </div>
@@ -67,6 +66,10 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
+              <div class="image-div">
+                <div class="image-div-background"></div>
+                <img src="../assets/img/gift-box.png" alt="" />
+              </div>
               <div class="border product-image-div">
                 <img src="../assets/img/products/3.jpg" alt="" />
               </div>
@@ -119,7 +122,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
                 />
                 <img
                   style="margin-right: 28%"
-                  src="../assets/img/limited-edition.png"
+                  src="../assets/img/gift-box.png"
                   alt=""
                 />
               </div>
@@ -130,6 +133,14 @@ import PageTitle from "../components/ui/PageTitle.vue";
             </div>
 
             <div class="col">
+              <div class="image-div">
+                <div class="image-div-background" style="z-index: 1"></div>
+                <img
+                  src="../assets/img/gift-box.png"
+                  style="z-index: 1; filter: brightness(60%)"
+                  alt=""
+                />
+              </div>
               <div class="border">
                 <div class="soldout-div showhim">
                   <img
@@ -253,6 +264,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
   height: 400px;
   border-radius: 15px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .section-cards .image-div img {
@@ -264,6 +276,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
   margin-left: auto;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 .image-div {
   position: relative;
@@ -391,5 +404,13 @@ import PageTitle from "../components/ui/PageTitle.vue";
   right: 0;
   border-radius: 50%;
   margin-top: -50px;
+  z-index: 1;
+}
+
+img {
+  transition: transform 0.5s;
+}
+img:hover {
+  transform: scale(1.2);
 }
 </style>
