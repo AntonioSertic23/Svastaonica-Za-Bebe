@@ -3,15 +3,15 @@ import PageTitle from "../components/ui/PageTitle.vue";
 </script>
 
 <template>
-  <section class="contact-section">
+  <section class="contact-section py-4">
     <div class="container">
       <div class="row text-center">
         <p class="mb-5 menu-title">Kontakt</p>
       </div>
 
       <div class="col-8 p-4 py-0 mx-auto">
-        <div class="contact-information px-md-4 mt-5 mb-4">
-          <div class="my-5 text-center">
+        <div class="contact-information px-md-4 mb-4">
+          <div class="mb-5 text-center">
             <p class="mb-5" style="font-size: 25px">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
               facilis tempora porro, suscipit ducimus delectus quaerat alias
@@ -19,7 +19,9 @@ import PageTitle from "../components/ui/PageTitle.vue";
               maxime nulla exercitationem illo dolores.
             </p>
 
-            <a class="call-btn btn mb-0 mx-auto w-auto" href="tel:0919375976"
+            <a
+              class="call-btn btn mb-0 mx-auto w-auto py-3 px-4"
+              href="tel:0919375976"
               ><i class="fa fa-phone me-2"></i>
               0919375976
             </a>
@@ -80,9 +82,18 @@ import PageTitle from "../components/ui/PageTitle.vue";
 }
 
 .call-btn {
-  font-size: 25px !important;
-  background-color: #f977aa !important;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(205, 180, 219);
+  border-radius: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 20px;
   box-shadow: 0 0.25rem 1rem 0 grey;
+}
+.call-btn:hover {
+  background-color: #a375bd;
 }
 
 .getintouch {

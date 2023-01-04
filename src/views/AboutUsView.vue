@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Tko smo mi?</p>
-        <div class="col-6">
+        <div class="col-8">
           <p class="aboutus-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
             facilis tempora porro, suscipit ducimus delectus quaerat alias
@@ -140,7 +140,7 @@
 }
 
 .aboutus-description {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* SECTION 2 > */
