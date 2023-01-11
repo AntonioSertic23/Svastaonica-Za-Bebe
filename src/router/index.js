@@ -30,7 +30,7 @@ const router = createRouter({
       component: () => import("../views/FontsView.vue"),
     },
     {
-      path: "/singleitem",
+      path: "/singleitem/:id",
       name: "singleitem",
       component: () => import("../views/SingleItemView.vue"),
     },

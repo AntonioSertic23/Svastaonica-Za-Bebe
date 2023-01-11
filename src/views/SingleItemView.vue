@@ -1,4 +1,14 @@
-<script setup></script>
+<script setup>
+import sourceData from "@/data.json";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+const paramId = parseInt(route.params.id);
+
+var data = sourceData.data.find((d) => d.id === paramId);
+
+console.log(data);
+</script>
 
 <template>
   <section class="item-section py-5">
@@ -6,12 +16,9 @@
       <div class="row">
         <div class="col-6 item-info">
           <div class="text-center">
-            <p class="mb-5 menu-title">Kockica</p>
+            <p class="mb-5 menu-title">{{ data.name }}</p>
             <p class="item-description col-7 m-auto">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-              facilis tempora porro, suscipit ducimus delectus quaerat alias
-              corporis a obcaecati, molestiae expedita dolorem nisi commodi
-              maxime nulla exercitationem illo dolores.
+              {{ data.description }}
             </p>
           </div>
 
@@ -45,20 +52,19 @@
               <li>Lorem, ipsum dolor.</li>
             </ul>
           </div>
-
         </div>
 
         <div class="col-6">
           <div class="slider-div col-8 m-auto">
             <button
-                class="carousel-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-              <img src="../assets/img/left-chevron.png" alt="">
-                <span class="visually-hidden">Previous</span>
-              </button>
+              class="carousel-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <img src="../assets/img/left-chevron.png" alt="" />
+              <span class="visually-hidden">Previous</span>
+            </button>
 
             <div
               id="carouselExampleIndicators"
@@ -66,31 +72,25 @@
               data-bs-ride="carousel"
             >
               <div class="carousel-inner h-100">
-                <div class="carousel-item active">
-                  <img class="d-block" src="../assets/img/55.jpg" alt="" />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="d-block"
-                    src="../assets/img/baby-care-accessories-flat-lay.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block" src="../assets/img/5.jpg" alt="" />
+                <div
+                  v-for="image in data.images"
+                  :class="{ active: image.isActive }"
+                  class="carousel-item"
+                >
+                  <img class="d-block" v-bind:src="image.path" alt="" />
                 </div>
               </div>
             </div>
 
             <button
-                class="carousel-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-              <img src="../assets/img/chevron.png" alt="">
-                <span class="visually-hidden">Next</span>
-              </button>
+              class="carousel-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <img src="../assets/img/chevron.png" alt="" />
+              <span class="visually-hidden">Next</span>
+            </button>
 
             <h1 class="text-center mt-4">3/20</h1>
           </div>
