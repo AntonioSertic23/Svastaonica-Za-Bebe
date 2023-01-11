@@ -75,6 +75,12 @@
         </div>
       </div>
 
+      <div class="container my-5">
+        <h1>Igračke kao umjetnost</h1>
+        <h1>Igračke za moderne obitelji</h1>
+        <h1>Igračke za zajedničko provođenje vremena</h1>
+      </div>
+
       <div class="section4 my-5 py-5">
         <div class="row justify-content-end">
           <div class="col-3 some-text-div me-5">

@@ -2,6 +2,8 @@
 
 <template>
   <div class="container py-5">
+    <p class="title text-center mb-5">Proces narudžbe</p>
+
     <div class="row justify-content-center">
       <div class="col-3">
         <img class="" src="../../assets/img/message.png" alt="" />
@@ -35,6 +37,10 @@
 </template>
 
 <style scoped>
+.title {
+  font-size: 48.83px;
+}
+
 img {
   height: 130px;
 }

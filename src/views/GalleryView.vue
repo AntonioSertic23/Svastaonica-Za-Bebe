@@ -254,7 +254,7 @@ import PageTitle from "../components/ui/PageTitle.vue";
   border-radius: 15px;
   padding: 1rem;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .category-link:hover {
   background-color: #a375bd;
@@ -339,31 +339,12 @@ import PageTitle from "../components/ui/PageTitle.vue";
   font-size: 20px;
 }
 
-.section-cards3 .border img {
-  width: 100%;
-  height: 100%;
-}
-.section-cards3 .border {
-  height: 400px;
-  border-radius: 0;
-}
-
 .badge {
   position: absolute;
   background-color: gray;
   left: 20px;
   top: 20px;
   border-radius: 0;
-}
-
-.section-cards3 .border {
-  position: relative;
-  border: 1px solid #999 !important;
-  cursor: pointer;
-}
-.section-cards3 .border p {
-  font-size: 16px;
-  letter-spacing: 2px;
 }
 
 .coupon-div {

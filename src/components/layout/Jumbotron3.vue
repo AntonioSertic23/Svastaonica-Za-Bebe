@@ -30,7 +30,8 @@
               "Svi smo djeca. Jedina razlika je igračka koju imamo."
             </p>
             <p class="text-end fst-italic fw-bold">Pablo Larrain</p>
-            <button class="gallery-btn btn btn-lg">Galerija</button>
+
+            <a class="category-link mt-5 px-4" href="">Galerija</a>
           </div>
         </div>
       </div>
@@ -89,18 +90,21 @@
   border-radius: 15px;
 }
 
-.gallery-btn {
-  background-color: #b391ca;
-  border-color: #b391ca;
+.category-link {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(205, 180, 219);
+  border-radius: 15px;
+  padding: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   position: absolute;
   bottom: 0;
   box-shadow: -2px 2px 8px grey;
 }
-.gallery-btn:hover {
+.category-link:hover {
   background-color: #a375bd;
-  border-color: #a375bd;
-  position: absolute;
-  bottom: 0;
-  box-shadow: -2px 2px 8px grey;
 }
 </style>
