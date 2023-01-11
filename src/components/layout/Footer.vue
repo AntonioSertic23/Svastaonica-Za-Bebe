@@ -3,9 +3,6 @@ import { RouterLink } from "vue-router";
 
 function CloseNavbar() {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  if ($(".navbar-toggler").is(":visible")) {
-    $(".navbar-collapse").collapse("toggle");
-  }
 }
 </script>
 
@@ -16,7 +13,7 @@ function CloseNavbar() {
         <section>
           <div class="row text-center d-flex justify-content-center pt-5">
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
+              <h6 class="text-uppercase">
                 <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
                   >Početna</RouterLink
                 >
@@ -24,7 +21,7 @@ function CloseNavbar() {
             </div>
 
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
+              <h6 class="text-uppercase">
                 <RouterLink
                   class="nav-link"
                   @click="CloseNavbar()"
@@ -35,7 +32,7 @@ function CloseNavbar() {
             </div>
 
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
+              <h6 class="text-uppercase">
                 <RouterLink
                   class="nav-link"
                   @click="CloseNavbar()"
@@ -46,7 +43,7 @@ function CloseNavbar() {
             </div>
 
             <div class="col-md-2">
-              <h6 class="text-uppercase font-weight-bold">
+              <h6 class="text-uppercase">
                 <RouterLink
                   class="nav-link"
                   @click="CloseNavbar()"

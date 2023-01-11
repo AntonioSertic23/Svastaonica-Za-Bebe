@@ -198,7 +198,7 @@
 }
 
 .section3-2 {
-  background-color: #eff7f6;
+  background-color: #ede4f2;
   display: flex;
   align-items: center;
   z-index: 1;
