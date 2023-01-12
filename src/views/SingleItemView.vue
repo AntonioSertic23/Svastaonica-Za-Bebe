@@ -15,47 +15,57 @@ console.log(data);
     <div class="container-fluid">
       <div class="row">
         <div class="col-6 item-info">
-          <div class="text-center">
+          <div class="col-8 m-auto">
             <p class="mb-5 menu-title">{{ data.name }}</p>
-            <p class="item-description col-7 m-auto">
+            <p class="item-description">
               {{ data.description }}
             </p>
-          </div>
 
-          <div class="col-6 m-auto my-5">
-            <p>Neki tekst ovdje:</p>
-            <ul>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem, ipsum dolor.</li>
-            </ul>
-          </div>
+            <div class="age-div my-5">
+              <p>Za uzraste od:</p>
+              <div class="age">{{ data.age }}</div>
+            </div>
 
-          <div class="text-center">
-            <p class="item-description col-7 m-auto">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-              facilis tempora porro, suscipit ducimus delectus quaerat alias
-              corporis a obcaecati, molestiae expedita dolorem nisi commodi
-              maxime nulla exercitationem illo dolores.
-            </p>
-          </div>
+            <div class="sizes-div">
+              <p>Dostupne veličine:</p>
+              <ul>
+                <li v-for="size in data.sizes" :key="size.id">{{ size }}</li>
+              </ul>
+            </div>
 
-          <div class="col-8 m-auto my-5 p-4 ingredients">
-            <p>Neki tekst ovdje:</p>
-            <ul>
-              <li>Lorem, ipsum dolor.</li>
-              <li>Lorem ipsum dolor sit.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem, ipsum dolor.</li>
-            </ul>
+            <div class="my-5 p-4 ingredients">
+              <p>Korišteni materijali:</p>
+              <ul>
+                <li v-for="material in data.materials" :key="material.id">
+                  {{ material }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="reviews-div">
+              <p class="title">Recenzije</p>
+
+              <div class="my-5">
+                <p class="name">Netko</p>
+                <p class="review">
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                  consectetur.
+                </p>
+              </div>
+
+              <div class="my-5">
+                <p class="name">Netko 2</p>
+                <p class="review">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Labore amet dicta harum!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-6">
-          <div class="slider-div col-8 m-auto">
+          <div class="slider-div col-9 m-auto">
             <button
               class="carousel-prev"
               type="button"
@@ -75,6 +85,7 @@ console.log(data);
                 <div
                   v-for="image in data.images"
                   :class="{ active: image.isActive }"
+                  :key="image.id"
                   class="carousel-item"
                 >
                   <img class="d-block" v-bind:src="image.path" alt="" />
@@ -96,17 +107,68 @@ console.log(data);
           </div>
         </div>
       </div>
+
+      <div class="row demo mt-5">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.title {
+  font-size: 39.06px;
+}
+.name {
+  font-size: 31.25px;
+}
+.demo {
+  justify-content: center;
+  gap: 25px;
+}
+.demo .col-2 {
+  background-color: rgb(205, 180, 219);
+  height: 200px;
+  border-radius: 15px;
+}
+
+/* for real */
+
 .menu-title {
   font-size: 48.83px;
+  text-align: center;
 }
 
 .item-info {
   font-size: 25px;
+}
+
+.age-div .age {
+  background-color: rgb(205, 180, 219);
+  width: 75px;
+  height: 75px;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizes-div ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+.sizes-div ul li {
+  background-color: rgb(205, 180, 219);
+  width: 70px;
+  height: 70px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 15px;
 }
 
 .ingredients {
@@ -117,7 +179,10 @@ console.log(data);
 /* right */
 
 .carousel {
-  height: 500px;
+  height: 700px;
+  box-shadow: 0 0.25rem 1rem 0 grey;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .carousel-inner {
@@ -132,7 +197,7 @@ console.log(data);
 img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  object-fit: cover;
 }
 
 .slider-div {
@@ -141,36 +206,34 @@ img {
 }
 
 .carousel-prev {
-  position: absolute;
-  z-index: 2;
   left: -35px;
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  border: none;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 12px;
-  background-color: thistle;
-  border: 2px solid gray;
 }
 
 .carousel-next {
+  right: -35px;
+}
+
+.carousel-prev,
+.carousel-next {
   position: absolute;
   z-index: 2;
-  right: -35px;
   border-radius: 50%;
   width: 64px;
   height: 64px;
-  border: none;
   top: 0;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
   padding: 12px;
-  background-color: thistle;
-  border: 2px solid gray;
+  border: none;
+  transition: transform 0.5s;
+  background-color: #ffafcc;
+  box-shadow: 0 0.25rem 1rem 0 grey;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: #ff85b1;
+  transform: scale(1.2);
 }
 </style>

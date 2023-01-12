@@ -15,7 +15,12 @@
         {
           "path": "/src/assets/img/products/3.jpg"
         }
-      ]
+      ],
+      "age": "0-5",
+      "sizes": ["S", "L", "XL"],
+      "materials": ["Pamuk", "Plastika"],
+      "reviews": "...",
+      "similarItems": "..."
     },
     {
       "id": 2,
@@ -32,7 +37,12 @@
         {
           "path": "/src/assets/img/products/6.jpg"
         }
-      ]
+      ],
+      "age": "2-6",
+      "sizes": ["L", "XL"],
+      "materials": ["Pamuk"],
+      "reviews": "...",
+      "similarItems": "..."
     }
   ]
 }
