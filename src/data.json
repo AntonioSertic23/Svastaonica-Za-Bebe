@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Kockica",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
+      "thumbnail": "/src/assets/img/products/1.jpg",
       "images": [
         {
           "path": "/src/assets/img/products/1.jpg",
@@ -20,12 +21,14 @@
       "sizes": ["S", "L", "XL"],
       "materials": ["Pamuk", "Plastika"],
       "reviews": "...",
-      "similarItems": "..."
+      "similarItems": "...",
+      "badges": ["1"]
     },
     {
       "id": 2,
       "name": "Nesto 2",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
+      "thumbnail": "/src/assets/img/products/4.jpg",
       "images": [
         {
           "path": "/src/assets/img/products/4.jpg",
@@ -42,7 +45,32 @@
       "sizes": ["L", "XL"],
       "materials": ["Pamuk"],
       "reviews": "...",
-      "similarItems": "..."
+      "similarItems": "...",
+      "badges": ["2", "3"]
+    },
+    {
+      "id": 3,
+      "name": "Nesto 33",
+      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
+      "thumbnail": "/src/assets/img/products/5.jpg",
+      "images": [
+        {
+          "path": "/src/assets/img/products/2.jpg",
+          "isActive": true
+        },
+        {
+          "path": "/src/assets/img/products/3.jpg"
+        },
+        {
+          "path": "/src/assets/img/products/6.jpg"
+        }
+      ],
+      "age": "1-4",
+      "sizes": ["L"],
+      "materials": ["Plastika"],
+      "reviews": "...",
+      "similarItems": "...",
+      "badges": ["5"]
     }
   ]
 }

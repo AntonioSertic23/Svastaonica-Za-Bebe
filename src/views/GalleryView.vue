@@ -1,5 +1,8 @@
 <script setup>
-import PageTitle from "../components/ui/PageTitle.vue";
+import sourceData from "@/data.json";
+import { RouterLink } from "vue-router";
+
+var data = sourceData.data;
 </script>
 
 <template>
@@ -29,10 +32,48 @@ import PageTitle from "../components/ui/PageTitle.vue";
       <div class="section-cards row justify-content-evenly mb-5">
         <div class="container text-center">
           <div class="row row-cols-3 g-5">
+            <div class="col" v-for="item in data" :key="item.id">
+              <div class="image-div" v-if="item.badges.length == 1">
+                <div class="image-div-background oneBadge"></div>
+                <img
+                  v-bind:src="
+                    '/src/assets/img/badges/' + item.badges[0] + '.png'
+                  "
+                  alt=""
+                />
+              </div>
+
+              <div class="image-div" v-if="item.badges.length > 1">
+                <div class="image-div-background moreBadges"></div>
+                <img
+                  style="margin-left: 28%"
+                  v-bind:src="
+                    '/src/assets/img/badges/' + item.badges[0] + '.png'
+                  "
+                  alt=""
+                />
+                <img
+                  style="margin-right: 28%"
+                  v-bind:src="
+                    '/src/assets/img/badges/' + item.badges[1] + '.png'
+                  "
+                  alt=""
+                />
+              </div>
+
+              <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
+                <div class="border product-image-div">
+                  <img v-bind:src="item.thumbnail" alt="" />
+                </div>
+              </RouterLink>
+
+              <h1>{{ item.name }}</h1>
+            </div>
+
             <div class="col">
               <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/new.png" alt="" />
+                <div class="image-div-background oneBadge"></div>
+                <img src="../assets/img/badges/1.png" alt="" />
               </div>
               <div class="border product-image-div">
                 <img src="../assets/img/products/1.jpg" alt="" />
@@ -112,17 +153,17 @@ import PageTitle from "../components/ui/PageTitle.vue";
             <div class="col">
               <div class="image-div">
                 <div
-                  class="image-div-background"
+                  class="image-div-background moreBadge"
                   style="width: 55%; border-radius: 40%; height: 110px"
                 ></div>
                 <img
                   style="margin-left: 28%"
-                  src="../assets/img/new.png"
+                  src="../assets/img/badges/2.png"
                   alt=""
                 />
                 <img
                   style="margin-right: 28%"
-                  src="../assets/img/gift-box.png"
+                  src="../assets/img/badges/4.png"
                   alt=""
                 />
               </div>
@@ -134,9 +175,12 @@ import PageTitle from "../components/ui/PageTitle.vue";
 
             <div class="col">
               <div class="image-div">
-                <div class="image-div-background" style="z-index: 1"></div>
+                <div
+                  class="image-div-background oneBadge"
+                  style="z-index: 1"
+                ></div>
                 <img
-                  src="../assets/img/gift-box.png"
+                  src="../assets/img/badges/5.png"
                   style="z-index: 1; filter: brightness(60%)"
                   alt=""
                 />
@@ -375,17 +419,24 @@ import PageTitle from "../components/ui/PageTitle.vue";
 }
 
 .image-div-background {
-  height: 100px;
   position: absolute;
-  width: 100px;
   background-color: #ede4f2;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  border-radius: 50%;
   margin-top: -50px;
   z-index: 1;
+}
+.oneBadge {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+.moreBadges {
+  width: 55%;
+  border-radius: 40%;
+  height: 110px;
 }
 
 img {
