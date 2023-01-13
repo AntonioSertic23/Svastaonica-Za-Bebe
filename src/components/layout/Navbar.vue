@@ -24,9 +24,9 @@ $(window).on("resize", function () {
 });
 
 // if link in DESKTOP navbar is pressed we scroll to top smoothly
-function closeDesktopNavbar() {
+/* function closeDesktopNavbar() {
   window.scrollTo({ top: 0, behavior: "smooth" });
-}
+} */
 
 // if MOBILE navbar button is pressed we emit to update navbar
 function switchMobileNavbar() {
@@ -35,7 +35,7 @@ function switchMobileNavbar() {
 
 // if link in MOBILE navbar is pressed this is function that is called after emit
 function closeMobileNavbar() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  //window.scrollTo({ top: 0, behavior: "smooth" });
   emit("updateNavbar");
   if ($(".navbar-toggler").is(":visible")) {
     $(".navbar-collapse").collapse("toggle");

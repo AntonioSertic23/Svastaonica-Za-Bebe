@@ -40,6 +40,19 @@ const router = createRouter({
       component: () => import("../views/PageNotFound.vue"),
     },
   ],
+  scrollBehavior: function (to, _from, savedPosition) {
+    if (savedPosition) {
+      console.log("saved position");
+      return savedPosition;
+    }
+    if (to.hash) {
+      console.log("hash!");
+      return { el: to.hash, behavior: "smooth" };
+    } else {
+      console.log("moving to top of the page");
+      window.scrollTo(0, 0);
+    }
+  },
 });
 
 export default router;

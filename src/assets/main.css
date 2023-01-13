@@ -86,10 +86,10 @@
   font-weight: 600;
 }
 
-html,
+/* html,
 body {
   scroll-behavior: smooth;
-}
+} */
 
 .lock-scroll {
   overflow: hidden;

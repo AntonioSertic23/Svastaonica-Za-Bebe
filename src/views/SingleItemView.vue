@@ -7,7 +7,7 @@ const paramId = parseInt(route.params.id);
 
 var data = sourceData.data.find((d) => d.id === paramId);
 
-console.log(data);
+document.body.scrollTop = document.documentElement.scrollTop = 0;
 </script>
 
 <template>

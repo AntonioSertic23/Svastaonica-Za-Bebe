@@ -1,9 +1,5 @@
 <script setup>
 import { RouterLink } from "vue-router";
-
-function CloseNavbar() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
 </script>
 
 <template>
@@ -14,42 +10,25 @@ function CloseNavbar() {
           <div class="row text-center d-flex justify-content-center pt-5">
             <div class="col-md-2">
               <h6 class="text-uppercase">
-                <RouterLink class="nav-link" @click="CloseNavbar()" to="/"
-                  >Početna</RouterLink
-                >
+                <RouterLink class="nav-link" to="/">Početna</RouterLink>
               </h6>
             </div>
 
             <div class="col-md-2">
               <h6 class="text-uppercase">
-                <RouterLink
-                  class="nav-link"
-                  @click="CloseNavbar()"
-                  to="/gallery"
-                  >Galerija</RouterLink
-                >
+                <RouterLink class="nav-link" to="/gallery">Galerija</RouterLink>
               </h6>
             </div>
 
             <div class="col-md-2">
               <h6 class="text-uppercase">
-                <RouterLink
-                  class="nav-link"
-                  @click="CloseNavbar()"
-                  to="/aboutus"
-                  >O nama</RouterLink
-                >
+                <RouterLink class="nav-link" to="/aboutus">O nama</RouterLink>
               </h6>
             </div>
 
             <div class="col-md-2">
               <h6 class="text-uppercase">
-                <RouterLink
-                  class="nav-link"
-                  @click="CloseNavbar()"
-                  to="/contact"
-                  >Kontakt</RouterLink
-                >
+                <RouterLink class="nav-link" to="/contact">Kontakt</RouterLink>
               </h6>
             </div>
           </div>
