@@ -1,45 +1,12 @@
-.k1,
-.k2,
-.k3,
-.k4,
-.k5,
-.k6,
-.k7,
-.k8 {
-  font-size: 32px;
-}
-
 @font-face {
-  font-family: "bubbleboddyneue";
-  src: URL("fonts/bubbleboddy-neue-trial/bubbleboddyneue-regular trial.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "DancingScript";
-  src: URL("fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf")
-    format("truetype");
-}
-@font-face {
-  font-family: "Kulim_Park";
-  src: URL("fonts/Kulim_Park/KulimPark-Regular.ttf") format("truetype");
+  font-family: "Poiret_One";
+  src: URL("fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Montserrat";
   src: URL("fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
   font-weight: 100 1000;
-}
-@font-face {
-  font-family: "Nunito_Sans";
-  src: URL("fonts/Nunito_Sans/NunitoSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Poiret_One";
-  src: URL("fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Abel";
-  src: URL("fonts/Abel/Abel-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Poppins";
@@ -50,24 +17,9 @@
   font-family: Poiret_One;
 }
 .k2 {
-  font-family: bubbleboddyneue;
-}
-.k3 {
-  font-family: Kulim_Park;
-}
-.k4 {
-  font-family: Nunito_Sans;
-}
-.k5 {
-  font-family: DancingScript;
-}
-.k6 {
   font-family: Montserrat;
 }
-.k7 {
-  font-family: Abel;
-}
-.k8 {
+.k3 {
   font-family: Poppins;
 }
 

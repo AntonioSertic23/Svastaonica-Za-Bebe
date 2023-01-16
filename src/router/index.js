@@ -25,11 +25,6 @@ const router = createRouter({
       component: () => import("../views/ContactView.vue"),
     },
     {
-      path: "/fonts",
-      name: "fonts",
-      component: () => import("../views/FontsView.vue"),
-    },
-    {
       path: "/singleitem/:id",
       name: "singleitem",
       component: () => import("../views/SingleItemView.vue"),
