@@ -16,8 +16,9 @@
 
         <div class="middle-side col d-flex justify-content-center">
           <div class="middle-side-div">
-            <img class="image1" src="../../assets/img/67661.jpg" alt="" />
-            <img class="image2" src="../../assets/img/5.jpg" alt="" />
+            <img class="image1" src="../../assets/img/products/5.jpg" alt="" />
+            <img class="image2" src="../../assets/img/products/6.jpg" alt="" />
+
             <img class="image3" src="../../assets/img/bow.png" alt="" />
           </div>
         </div>
@@ -64,18 +65,22 @@
   position: relative;
   border-radius: 15px;
   box-shadow: 0px 5px 18px grey;
+  width: 100%;
 }
 
 .image1 {
   height: 200px;
+  width: 200px;
   position: absolute;
   left: -130px;
   bottom: -50px;
+  object-fit: cover;
   box-shadow: 0px 5px 18px grey;
 }
 .image2 {
-  /* height: 300px; */
   width: 100%;
+  height: 364px;
+  object-fit: cover;
 }
 .image3 {
   height: 100px;

@@ -1,6 +1,4 @@
-<script setup>
-import PageTitle from "../components/ui/PageTitle.vue";
-</script>
+<script setup></script>
 
 <template>
   <section class="contact-section py-4">

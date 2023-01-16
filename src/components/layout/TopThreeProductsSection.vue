@@ -6,7 +6,7 @@
       <div class="item col-3 mt-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/55.jpg" alt="" />
+            <img class="" src="../../assets/img/products/1.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape1"></div>
         </div>
@@ -16,7 +16,7 @@
       <div class="item col-3">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/55.jpg" alt="" />
+            <img class="" src="../../assets/img/products/2.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape2"></div>
         </div>
@@ -26,7 +26,7 @@
       <div class="item col-3 mt-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/55.jpg" alt="" />
+            <img class="" src="../../assets/img/products/3.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape3"></div>
         </div>
@@ -48,16 +48,11 @@
 
 img {
   width: 100%;
-  height: 100%;
   z-index: 1;
   box-shadow: 3px 3px 5px grey;
   border-radius: 15px;
-}
-
-.item-image {
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
+  height: 270px;
+  object-fit: cover;
 }
 
 img,

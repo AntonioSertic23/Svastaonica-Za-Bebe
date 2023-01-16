@@ -19,7 +19,7 @@
         <div class="background-connector"></div>
 
         <div class="col-4 section2-left">
-          <img class="image1" src="../assets/img/5.jpg" alt="" />
+          <img class="image1" src="../assets/img/aboutus2.jpg" alt="" />
 
           <p class="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -50,7 +50,7 @@
 
         <div class="col-4 section2-right">
           <h1 class="my-4">Naslov</h1>
-          <img class="image2" src="../assets/img/67661.jpg" alt="" />
+          <img class="image2" src="../assets/img/aboutus1.jpg" alt="" />
         </div>
       </div>
 
@@ -67,7 +67,11 @@
         </div>
 
         <div class="section3-2 col-3">
-          <img class="section3-image1" src="../assets/img/55.jpg" alt="" />
+          <img
+            class="section3-image1"
+            src="../assets/img/products.jpg"
+            alt=""
+          />
           <div class="circle1"></div>
           <div class="circle2"></div>
           <div class="circle3"></div>
@@ -93,7 +97,11 @@
           <div class="col-3">
             <div class="photo-div p-4">
               <div class="mark"></div>
-              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <img
+                class="photo-photo"
+                src="../assets/img/kidplaying1.jpg"
+                alt=""
+              />
               <h1 class="text-center mt-4">Naslov</h1>
             </div>
           </div>
@@ -103,7 +111,11 @@
           <div class="col-4">
             <div class="photo2-div p-4">
               <div class="mark"></div>
-              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <img
+                class="photo-photo"
+                src="../assets/img/kidplaying2.jpg"
+                alt=""
+              />
               <h1 class="text-center mt-4">Naslov</h1>
             </div>
           </div>
@@ -126,7 +138,11 @@
           <div class="col-3">
             <div class="photo-div p-4">
               <div class="mark"></div>
-              <img class="photo-photo" src="../assets/img/67661.jpg" alt="" />
+              <img
+                class="photo-photo"
+                src="../assets/img/kidplaying1.jpg"
+                alt=""
+              />
               <h1 class="text-center mt-4">Naslov</h1>
             </div>
           </div>
@@ -194,6 +210,13 @@
 .image1,
 .image2 {
   width: 100%;
+  object-fit: cover;
+}
+.image1 {
+  height: 370px;
+}
+.image2 {
+  height: 420px;
 }
 
 .social-media img {
@@ -236,8 +259,10 @@
 
 .section3-image1 {
   width: 480px;
+  height: 337px;
   margin-left: -87px;
   border-radius: 15px;
+  object-fit: cover;
   border: 2px solid gray;
 }
 
@@ -298,6 +323,12 @@
   transform: rotate(-10deg);
 }
 
+.photo2-div:before {
+  content: "";
+  float: left;
+  padding-top: 100%; /* initial ratio of 1:1*/
+}
+
 .mark {
   background-color: hotpink;
   border-radius: 10px;
@@ -311,6 +342,8 @@
 .photo-photo {
   width: 100%;
   border-radius: 15px;
+  aspect-ratio: 1 /1;
+  object-fit: cover;
 }
 
 /* < SECTION 4 */
