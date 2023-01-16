@@ -63,7 +63,11 @@ var data = sourceData.data;
 
               <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
                 <div class="border product-image-div">
-                  <img v-bind:src="item.thumbnail" alt="" />
+                  <img class="thumbnail" v-bind:src="item.thumbnail" alt="" />
+
+                  <div class="mask">
+                    <img src="/src/assets/img/share2.png" alt="" />
+                  </div>
                 </div>
               </RouterLink>
 
@@ -410,6 +414,10 @@ var data = sourceData.data;
   border-radius: 30px;
 }
 
+.product-image-div {
+  position: relative;
+}
+
 .product-image-div img,
 .soldout-div .product-image {
   height: 100%;
@@ -439,10 +447,37 @@ var data = sourceData.data;
   height: 110px;
 }
 
-img {
+.thumbnail {
   transition: transform 0.5s;
 }
-img:hover {
+
+.product-image-div:hover .mask {
+  visibility: visible;
+  opacity: 1;
+}
+.product-image-div:hover .thumbnail {
+  filter: brightness(60%);
   transform: scale(1.2);
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: fit-content;
+  height: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.mask img {
+  filter: invert(100%);
+  width: 96px;
 }
 </style>
