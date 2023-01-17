@@ -1,6 +1,7 @@
 <script setup>
 import sourceData from "@/data.json";
 import { useRoute } from "vue-router";
+import VLazyImage from "v-lazy-image";
 
 const route = useRoute();
 const paramId = parseInt(route.params.id);
@@ -88,7 +89,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
                   :key="image.id"
                   class="carousel-item"
                 >
-                  <img class="d-block" v-bind:src="image.path" alt="" />
+                  <v-lazy-image class="d-block" v-bind:src="image.path" />
                 </div>
               </div>
             </div>
@@ -180,7 +181,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 .carousel {
   height: 700px;
-  box-shadow: 0 0.25rem 1rem 0 grey;
+  box-shadow: 0px 5px 18px grey;
   border-radius: 15px;
   overflow: hidden;
 }

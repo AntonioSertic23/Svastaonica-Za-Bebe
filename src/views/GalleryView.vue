@@ -1,6 +1,7 @@
 <script setup>
 import sourceData from "@/data.json";
-import { RouterLink } from "vue-router";
+import VLazyImage from "v-lazy-image";
+import ProductCard from "../components/ui/ProductCard.vue";
 
 var data = sourceData.data;
 </script>
@@ -33,148 +34,7 @@ var data = sourceData.data;
         <div class="container text-center">
           <div class="row row-cols-3 g-5">
             <div class="col" v-for="item in data" :key="item.id">
-              <div class="image-div" v-if="item.badges.length == 1">
-                <div class="image-div-background oneBadge"></div>
-                <img
-                  v-bind:src="
-                    '/src/assets/img/badges/' + item.badges[0] + '.png'
-                  "
-                  alt=""
-                />
-              </div>
-
-              <div class="image-div" v-if="item.badges.length > 1">
-                <div class="image-div-background moreBadges"></div>
-                <img
-                  style="margin-left: 28%"
-                  v-bind:src="
-                    '/src/assets/img/badges/' + item.badges[0] + '.png'
-                  "
-                  alt=""
-                />
-                <img
-                  style="margin-right: 28%"
-                  v-bind:src="
-                    '/src/assets/img/badges/' + item.badges[1] + '.png'
-                  "
-                  alt=""
-                />
-              </div>
-
-              <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
-                <div class="product-image-div">
-                  <img class="thumbnail" v-bind:src="item.thumbnail" alt="" />
-
-                  <div class="mask">
-                    <img src="/src/assets/img/share2.png" alt="" />
-                  </div>
-                </div>
-              </RouterLink>
-
-              <h1>{{ item.name }}</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background oneBadge"></div>
-                <img src="../assets/img/badges/1.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/1.jpg" alt="" />
-              </div>
-              <h1>Lorem, ipsum dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="border product-image-div">
-                <img src="../assets/img/products/5.jpg" alt="" />
-              </div>
-              <h1>Lorem dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="border product-image-div">
-                <img src="../assets/img/products/6.jpg" alt="" />
-              </div>
-              <h1>Lorem ipsum</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/trending.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/2.jpg" alt="" />
-              </div>
-              <h1>Ipsum dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/gift-box.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/3.jpg" alt="" />
-              </div>
-              <h1>Dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/trending.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/4.jpg" alt="" />
-              </div>
-              <h1>Dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/discount.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/5.jpg" alt="" />
-              </div>
-              <h1>Lorem dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background"></div>
-                <img src="../assets/img/positive-vote.png" alt="" />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/6.jpg" alt="" />
-              </div>
-              <h1>Lorem ipsum</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div
-                  class="image-div-background moreBadge"
-                  style="width: 55%; border-radius: 40%; height: 110px"
-                ></div>
-                <img
-                  style="margin-left: 28%"
-                  src="../assets/img/badges/2.png"
-                  alt=""
-                />
-                <img
-                  style="margin-right: 28%"
-                  src="../assets/img/badges/4.png"
-                  alt=""
-                />
-              </div>
-              <div class="border product-image-div">
-                <img src="../assets/img/products/1.jpg" alt="" />
-              </div>
-              <h1>Lorem, ipsum</h1>
+              <ProductCard :cardData="item" />
             </div>
 
             <div class="col">
@@ -204,56 +64,10 @@ var data = sourceData.data;
             </div>
 
             <div class="col">
-              <div class="image-div">
-                <div class="image-div-background" style="z-index: 1"></div>
-                <img
-                  src="../assets/img/positive-vote.png"
-                  style="z-index: 1; filter: brightness(60%)"
-                  alt=""
-                />
-              </div>
-              <div class="border">
-                <div class="soldout-div showhim">
-                  <img
-                    src="../assets/img/products/3.jpg"
-                    class="product-image"
-                    alt=""
-                    style="filter: brightness(60%)"
-                  />
-                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
-                </div>
-              </div>
-              <h1 style="opacity: 0.5">Lorem dolor</h1>
-            </div>
-
-            <div class="col">
               <div class="border">
                 <div class="soldout-div showhim">
                   <img
                     src="../assets/img/products/4.jpg"
-                    class="product-image"
-                    alt=""
-                    style="filter: brightness(60%)"
-                  />
-                  <img src="../assets/img/sold-out.png" class="showme" alt="" />
-                </div>
-              </div>
-              <h1 style="opacity: 0.5">Lorem dolor</h1>
-            </div>
-
-            <div class="col">
-              <div class="image-div">
-                <div class="image-div-background" style="z-index: 1"></div>
-                <img
-                  src="../assets/img/trending.png"
-                  style="z-index: 1; filter: brightness(60%)"
-                  alt=""
-                />
-              </div>
-              <div class="border">
-                <div class="soldout-div showhim">
-                  <img
-                    src="../assets/img/products/5.jpg"
                     class="product-image"
                     alt=""
                     style="filter: brightness(60%)"
@@ -309,35 +123,7 @@ var data = sourceData.data;
   background-color: #a375bd;
 }
 
-.product-image-div {
-  height: 400px;
-  border-radius: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 4px 4px 4px lightgrey;
-}
-
-.section-cards .image-div img {
-  width: 70px;
-  position: absolute;
-
-  margin-top: -35px;
-  margin-right: auto;
-  margin-left: auto;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  transition: transform 0.5s;
-}
-.image-div {
-  position: relative;
-}
-
-.image-div img:hover {
-  transform: scale(1.2);
-}
-
-/* new - soldout item */
+/* new - soldout item --> */
 .soldout-div {
   position: relative;
   width: 100%;
@@ -368,14 +154,35 @@ var data = sourceData.data;
   opacity: 1;
 }
 
-.col h1 {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 32px;
-  font-weight: 300;
-  margin-bottom: 1rem;
+/* obrisat kasnije --> */
+
+.product-image-div {
+  height: 400px;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px lightgrey;
 }
-/* new */
+
+.section-cards .image-div img {
+  width: 70px;
+  position: absolute;
+
+  margin-top: -35px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: transform 0.5s;
+}
+.image-div {
+  position: relative;
+}
+
+.image-div img:hover {
+  transform: scale(1.2);
+}
 
 .section-cards2 .image-div img {
   width: 64px;
@@ -486,5 +293,13 @@ var data = sourceData.data;
 .mask img {
   filter: invert(100%);
   width: 96px;
+}
+
+.col h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 </style>
