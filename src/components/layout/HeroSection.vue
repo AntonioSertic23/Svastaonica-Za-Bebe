@@ -36,11 +36,24 @@
           </div>
         </div>
       </div>
+
+      <img class="gif" src="../../assets/img/gif.gif" alt="" />
     </div>
   </div>
 </template>
 
 <style scoped>
+.container {
+  position: relative;
+}
+
+.gif {
+  width: 192px;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+}
+
 .container {
   height: 450px;
 }

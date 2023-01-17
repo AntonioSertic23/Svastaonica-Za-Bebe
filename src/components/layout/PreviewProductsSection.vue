@@ -161,6 +161,7 @@ p {
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 .btn {

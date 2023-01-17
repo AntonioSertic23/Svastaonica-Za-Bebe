@@ -49,21 +49,27 @@
         </div>
 
         <div class="col-4 section2-right">
-          <h1 class="my-4">Naslov</h1>
+          <p class="my-3">Naslov</p>
           <img class="image2" src="../assets/img/aboutus1.jpg" alt="" />
         </div>
       </div>
 
       <div class="section3 row my-5 py-5 justify-content-around">
         <div class="background-image"></div>
-        <div class="section3-1 col-4">
+        <div class="section3-1 col-5">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            quam amet nemo nesciunt neque nulla autem. Architecto sunt possimus
-            minus ab ut recusandae expedita cumque non earum! Similique, sequi
+            quam amet nemo nesciunt neque nulla autem. non earum! Similique,
+            sequi ipsum.
+          </p>
+          <p>
+            Adipisicing elit. Voluptatum quam amet nemo nesciunt neque nulla
+            autem. Architecto sunt possimus.
+          </p>
+          <p>
+            Minus ab ut recusandae expedita cumque non earum! Similique, sequi
             ipsum.
           </p>
-          <button class="btn btn-primary btn-lg mt-3">nesto</button>
         </div>
 
         <div class="section3-2 col-3">
@@ -202,15 +208,24 @@
   margin-top: 140px;
 }
 
+.section2-left p {
+  font-size: 20px;
+}
+
 .section2-left,
 .section2-right {
   z-index: 1;
+}
+.section2-right p {
+  font-size: 39.06px;
 }
 
 .image1,
 .image2 {
   width: 100%;
   object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px grey;
 }
 .image1 {
   height: 370px;
@@ -220,8 +235,12 @@
 }
 
 .social-media img {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s;
+}
+.social-media img:hover {
+  transform: scale(1.2);
 }
 
 /* < SECTION 2 */
@@ -263,7 +282,7 @@
   margin-left: -87px;
   border-radius: 15px;
   object-fit: cover;
-  border: 2px solid gray;
+  box-shadow: 2px 2px 8px grey;
 }
 
 .circle1,
@@ -315,12 +334,14 @@
   border-radius: 15px;
   position: relative;
   transform: rotate(10deg);
+  box-shadow: 4px 4px 4px lightgrey;
 }
 .photo2-div {
   background-color: thistle;
   border-radius: 15px;
   position: relative;
   transform: rotate(-10deg);
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 .photo2-div:before {

@@ -9,8 +9,7 @@
         <img class="" src="../../assets/img/message.png" alt="" />
         <h3 class="mt-4">Message</h3>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          blanditiis quis dolores vel, illum laudantium?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
 
@@ -18,8 +17,8 @@
         <img class="" src="../../assets/img/handcraft.png" alt="" />
         <h3 class="mt-4">Crafting</h3>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Exercitationem, dolorum.
+          Lorem ipsum dolor, sit amet enim explicabo asperiores exercitationem
+          rerum.
         </p>
       </div>
 
@@ -27,9 +26,7 @@
         <img class="" src="../../assets/img/delivery.png" alt="" />
         <h3 class="mt-4">Delivery</h3>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus, harum deserunt enim explicabo asperiores
-          exercitationem rerum.
+          Lorem ipsum consectetur adipisicing harum deserunt.
         </p>
       </div>
     </div>
@@ -49,5 +46,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.col-3 h3 {
+  font-size: 31.25px;
+}
+.col-3 p {
+  font-size: 20px;
 }
 </style>

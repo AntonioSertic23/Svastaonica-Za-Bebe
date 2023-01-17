@@ -100,7 +100,7 @@
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 20px;
-  box-shadow: 0 0.25rem 1rem 0 grey;
+  box-shadow: -2px 2px 8px grey;
 }
 .call-btn:hover {
   background-color: #a375bd;

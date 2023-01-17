@@ -178,6 +178,7 @@ function closeMobileNavbar() {
 #dropdownMenuButton1 {
   font-weight: 600;
   border-radius: 15px;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 .form-control:focus {

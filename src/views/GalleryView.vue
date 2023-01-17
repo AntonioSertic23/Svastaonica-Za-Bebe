@@ -62,7 +62,7 @@ var data = sourceData.data;
               </div>
 
               <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
-                <div class="border product-image-div">
+                <div class="product-image-div">
                   <img class="thumbnail" v-bind:src="item.thumbnail" alt="" />
 
                   <div class="mask">
@@ -303,16 +303,18 @@ var data = sourceData.data;
   padding: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 .category-link:hover {
   background-color: #a375bd;
 }
 
-.border {
+.product-image-div {
   height: 400px;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 .section-cards .image-div img {
@@ -380,15 +382,15 @@ var data = sourceData.data;
   position: absolute;
   right: 0;
 }
-.section-cards2 .border img {
+.section-cards2 .product-image-div img {
   width: 100%;
   border-radius: 15px;
 }
-.section-cards2 .border {
+.section-cards2 .product-image-div {
   height: auto;
   border-radius: 15px;
 }
-.section-cards2 .border .btn {
+.section-cards2 .product-image-div .btn {
   font-size: 20px;
 }
 
