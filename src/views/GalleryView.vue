@@ -325,9 +325,14 @@ var data = sourceData.data;
   left: 0;
   right: 0;
   z-index: 2;
+  transition: transform 0.5s;
 }
 .image-div {
   position: relative;
+}
+
+.image-div img:hover {
+  transform: scale(1.2);
 }
 
 /* new - soldout item */

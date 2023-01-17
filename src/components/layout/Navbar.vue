@@ -93,11 +93,22 @@ function closeMobileNavbar() {
         </div>
         <div
           v-if="!isMobile"
-          class="ms-auto navbar-language-div d-grid me-lg-3 pe-4"
+          class="ms-auto navbar-language-div d-flex me-lg-3 pe-4"
         >
+          <div class="input-group search-div me-4">
+            <input type="text" class="form-control" placeholder="" />
+            <button
+              class="btn btn-outline-secondary px-3"
+              type="button"
+              id="button-addon2"
+            >
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+
           <div class="dropdown">
             <button
-              class="btn dropdown-toggle"
+              class="btn dropdown-toggle px-3 py-2"
               type="button"
               id="dropdownMenuButton1"
               data-bs-toggle="dropdown"
@@ -166,6 +177,37 @@ function closeMobileNavbar() {
 
 #dropdownMenuButton1 {
   font-weight: 600;
+  border-radius: 15px;
+}
+
+.form-control:focus {
+  border: none;
+  z-index: 0 !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-secondary:focus {
+  box-shadow: none !important;
+}
+
+.btn-outline-secondary {
+  background-color: rgb(205, 180, 219);
+  color: #222;
+  border: none;
+}
+.btn-outline-secondary:hover {
+  background-color: #a375bd;
+  color: #222;
+}
+
+.search-div {
+  box-shadow: 4px 4px 4px lightgrey;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.search-div input {
+  border: none;
 }
 
 /* kad je mobile da bude pozadina roza */
