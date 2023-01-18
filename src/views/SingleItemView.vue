@@ -22,6 +22,10 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
               {{ data.description }}
             </p>
 
+            <div v-if="data.soldout" class="my-5">
+              <h1>RASPRODANO</h1>
+            </div>
+
             <div class="age-div my-5">
               <p>Za uzraste od:</p>
               <div class="age">{{ data.age }}</div>

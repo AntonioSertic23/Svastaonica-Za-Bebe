@@ -10,36 +10,56 @@ var item = props.cardData;
 </script>
 
 <template>
-  <div class="image-div" v-if="item.badges.length == 1">
-    <div class="image-div-background oneBadge"></div>
-    <v-lazy-image
-      v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
-    />
-  </div>
-
-  <div class="image-div" v-if="item.badges.length > 1">
-    <div class="image-div-background moreBadges"></div>
-    <v-lazy-image
-      style="margin-left: 28%"
-      v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
-    />
-    <v-lazy-image
-      style="margin-right: 28%"
-      v-bind:src="'/src/assets/img/badges/' + item.badges[1] + '.png'"
-    />
-  </div>
-
-  <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
-    <div class="product-image-div">
-      <v-lazy-image class="thumbnail" v-bind:src="item.thumbnail" />
-
-      <div class="mask">
-        <img src="/src/assets/img/share2.png" alt="" />
-      </div>
+  <div class="">
+    <div class="image-div" v-if="item.badges.length == 1">
+      <div class="image-div-background oneBadge"></div>
+      <v-lazy-image
+        v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
+        v-bind:class="[item.soldout ? 'soldout-img' : '']"
+      />
     </div>
-  </RouterLink>
 
-  <h1>{{ item.name }}</h1>
+    <div class="image-div" v-if="item.badges.length > 1">
+      <div class="image-div-background moreBadges"></div>
+      <v-lazy-image
+        style="margin-left: 28%"
+        v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
+        v-bind:class="[item.soldout ? 'soldout-img' : '']"
+      />
+      <v-lazy-image
+        style="margin-right: 28%"
+        v-bind:src="'/src/assets/img/badges/' + item.badges[1] + '.png'"
+        v-bind:class="[item.soldout ? 'soldout-img' : '']"
+      />
+    </div>
+
+    <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
+      <div class="product-image-div">
+        <v-lazy-image
+          class="thumbnail"
+          v-bind:src="item.thumbnail"
+          v-bind:style="[item.soldout ? 'filter: brightness(60%)' : '']"
+        />
+
+        <div class="mask">
+          <img
+            v-if="item.soldout"
+            src="/src/assets/img/sold-out.png"
+            class="soldout-icon"
+            alt=""
+          />
+          <img
+            v-else
+            src="/src/assets/img/share2.png"
+            class="open-icon"
+            alt=""
+          />
+        </div>
+      </div>
+    </RouterLink>
+
+    <h1 v-bind:style="[item.soldout ? 'opacity: 0.5' : '']">{{ item.name }}</h1>
+  </div>
 </template>
 
 <style scoped>
@@ -177,7 +197,10 @@ var item = props.cardData;
   opacity: 0;
   transition: opacity 0.8s;
 }
-.mask img {
+.mask .soldout-icon {
+  width: 128px;
+}
+.mask .open-icon {
   filter: invert(100%);
   width: 96px;
 }
@@ -188,5 +211,10 @@ var item = props.cardData;
   font-size: 32px;
   font-weight: 300;
   margin-bottom: 1rem;
+}
+
+.soldout-img {
+  z-index: 1;
+  filter: brightness(60%);
 }
 </style>
