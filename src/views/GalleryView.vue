@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onUpdated } from "vue";
+import { ref } from "vue";
 import sourceData from "@/data.json";
 import VLazyImage from "v-lazy-image";
 import ProductCard from "../components/ui/ProductCard.vue";

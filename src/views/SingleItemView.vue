@@ -2,6 +2,8 @@
 import sourceData from "@/data.json";
 import { useRoute } from "vue-router";
 import VLazyImage from "v-lazy-image";
+import { onMounted } from "@vue/runtime-core";
+import { ref } from "vue";
 
 const route = useRoute();
 const paramId = parseInt(route.params.id);
@@ -9,14 +11,28 @@ const paramId = parseInt(route.params.id);
 var data = sourceData.data.find((d) => d.id === paramId);
 
 document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+//carousel
+
+var totalImages = ref(1);
+var currentIndex = ref(1);
+
+onMounted(() => {
+  totalImages.value = $(".carousel-item").length;
+});
+
+function updateNumber() {
+  currentIndex.value = $(".active").index() + 1;
+}
 </script>
 
 <template>
-  <section class="item-section py-5">
+  <section id="main-div" class="item-section py-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-6 item-info">
-          <div class="col-8 m-auto">
+          <div class="num"></div>
+          <div class="col-9 m-auto">
             <p class="mb-5 menu-title">{{ data.name }}</p>
             <p class="item-description">
               {{ data.description }}
@@ -69,46 +85,53 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="slider-div col-9 m-auto">
-            <button
-              class="carousel-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <img src="../assets/img/left-chevron.png" alt="" />
-              <span class="visually-hidden">Previous</span>
-            </button>
+        <div class="right-side col-6">
+          <div class="slider-div col-8 m-auto">
+            <div class="" style="position: relative">
+              <button
+                class="carousel-prev"
+                type="button"
+                data-bs-target="#singleItemCarousel"
+                data-bs-slide="prev"
+                v-on:click="updateNumber()"
+              >
+                <img src="../assets/img/left-chevron.png" alt="" />
+                <span class="visually-hidden">Previous</span>
+              </button>
 
-            <div
-              id="carouselExampleIndicators"
-              class="carousel carousel-fade carousel-dark"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner h-100">
-                <div
-                  v-for="image in data.images"
-                  :class="{ active: image.isActive }"
-                  :key="image.id"
-                  class="carousel-item"
-                >
-                  <v-lazy-image class="d-block" v-bind:src="image.path" />
+              <div
+                id="singleItemCarousel"
+                class="carousel carousel-fade carousel-dark"
+                data-bs-ride="carousel"
+                data-bs-interval="false"
+              >
+                <div class="carousel-inner h-100">
+                  <div
+                    v-for="image in data.images"
+                    :class="{ active: image.isActive }"
+                    :key="image.id"
+                    class="carousel-item"
+                  >
+                    <v-lazy-image class="d-block" v-bind:src="image.path" />
+                  </div>
                 </div>
               </div>
+
+              <button
+                class="carousel-next"
+                type="button"
+                data-bs-target="#singleItemCarousel"
+                data-bs-slide="next"
+                v-on:click="updateNumber()"
+              >
+                <img src="../assets/img/chevron.png" alt="" />
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
 
-            <button
-              class="carousel-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <img src="../assets/img/chevron.png" alt="" />
-              <span class="visually-hidden">Next</span>
-            </button>
-
-            <h1 class="text-center mt-4">3/20</h1>
+            <p class="carousel-numbers text-center mt-4">
+              {{ currentIndex }}/{{ totalImages }}
+            </p>
           </div>
         </div>
       </div>
@@ -184,7 +207,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
 /* right */
 
 .carousel {
-  height: 700px;
+  height: 650px;
   box-shadow: 0px 5px 18px grey;
   border-radius: 15px;
   overflow: hidden;
@@ -207,7 +230,7 @@ img {
 
 .slider-div {
   position: sticky;
-  top: 155px;
+  top: 100px;
 }
 
 .carousel-prev {
@@ -240,5 +263,11 @@ img {
 .carousel-next:hover {
   background-color: #ff85b1;
   transform: scale(1.2);
+}
+
+.carousel-numbers {
+  left: 0;
+  right: 0;
+  font-size: 48.83px;
 }
 </style>
