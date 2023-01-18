@@ -23,7 +23,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["1"],
-      "soldout": false
+      "soldout": false,
+      "categories": [1]
     },
 
     {
@@ -49,7 +50,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["2", "3"],
-      "soldout": false
+      "soldout": false,
+      "categories": [2]
     },
 
     {
@@ -75,7 +77,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["5"],
-      "soldout": false
+      "soldout": false,
+      "categories": [3]
     },
 
     {
@@ -101,7 +104,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["2", "3"],
-      "soldout": false
+      "soldout": false,
+      "categories": [4]
     },
 
     {
@@ -127,7 +131,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["5"],
-      "soldout": false
+      "soldout": false,
+      "categories": [1]
     },
 
     {
@@ -153,7 +158,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["1"],
-      "soldout": false
+      "soldout": false,
+      "categories": [2]
     },
 
     {
@@ -179,7 +185,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["5"],
-      "soldout": false
+      "soldout": false,
+      "categories": [3]
     },
 
     {
@@ -205,7 +212,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["1"],
-      "soldout": false
+      "soldout": false,
+      "categories": [4]
     },
 
     {
@@ -231,7 +239,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["2", "3"],
-      "soldout": false
+      "soldout": false,
+      "categories": [1]
     },
 
     {
@@ -257,7 +266,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["1"],
-      "soldout": true
+      "soldout": true,
+      "categories": [2]
     },
 
     {
@@ -283,7 +293,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["2", "3"],
-      "soldout": true
+      "soldout": true,
+      "categories": [3]
     },
 
     {
@@ -309,7 +320,8 @@
       "reviews": "...",
       "similarItems": "...",
       "badges": ["5"],
-      "soldout": true
+      "soldout": true,
+      "categories": [4]
     }
   ]
 }
