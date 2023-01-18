@@ -42,6 +42,15 @@ function updateNumber() {
               <h1>RASPRODANO</h1>
             </div>
 
+            <div class="keywords-div my-5">
+              <div class="row">
+                <div class="col" v-for="word in data.keywords" :key="word.id">
+                  <v-lazy-image class="d-block" v-bind:src="word.icon" />
+                  <p class="mt-3">{{ word.text }}</p>
+                </div>
+              </div>
+            </div>
+
             <div class="age-div my-5">
               <p>Za uzraste od:</p>
               <div class="age">{{ data.age }}</div>
@@ -174,6 +183,15 @@ function updateNumber() {
   font-size: 25px;
 }
 
+.keywords-div img {
+  width: 128px;
+}
+.keywords-div .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .age-div .age {
   background-color: rgb(205, 180, 219);
   width: 75px;
@@ -222,7 +240,7 @@ function updateNumber() {
   height: 100%;
 }
 
-img {
+.slider-div img {
   width: 100%;
   height: 100%;
   object-fit: cover;

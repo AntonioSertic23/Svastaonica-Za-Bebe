@@ -24,7 +24,17 @@
       "similarItems": "...",
       "badges": ["1"],
       "soldout": false,
-      "categories": [1]
+      "categories": [1],
+      "keywords": [
+        {
+          "text": "Siguran",
+          "icon": "/src/assets/img/shield.png"
+        },
+        {
+          "text": "100% zabavan",
+          "icon": "/src/assets/img/playtime.png"
+        }
+      ]
     },
 
     {
@@ -51,7 +61,13 @@
       "similarItems": "...",
       "badges": ["2", "3"],
       "soldout": false,
-      "categories": [2]
+      "categories": [2],
+      "keywords": [
+        {
+          "text": "Siguran",
+          "icon": "/src/assets/img/shield.png"
+        }
+      ]
     },
 
     {
@@ -78,7 +94,13 @@
       "similarItems": "...",
       "badges": ["5"],
       "soldout": false,
-      "categories": [3]
+      "categories": [3],
+      "keywords": [
+        {
+          "text": "100% zabavan",
+          "icon": "/src/assets/img/playtime.png"
+        }
+      ]
     },
 
     {
