@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
 
 <template>
   <section>
@@ -14,7 +16,7 @@
             onclick="history.back()"
             >Povratak</a
           >
-          <a class="home-link ms-3" href="">Početna</a>
+          <RouterLink class="home-link ms-3" to="/">Početna</RouterLink>
         </div>
       </div>
     </div>
