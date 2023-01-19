@@ -27,6 +27,11 @@ function GetSimilarItemName(id) {
   return item.name;
 }
 
+var currentImageToOpen = ref("");
+function ChangeCurrentImageToOpen(path) {
+  this.currentImageToOpen = path;
+}
+
 //carousel
 
 var totalImages = ref(1);
@@ -136,7 +141,13 @@ function updateNumber() {
                     :key="image.id"
                     class="carousel-item"
                   >
-                    <v-lazy-image class="d-block" v-bind:src="image.path" />
+                    <v-lazy-image
+                      class="d-block"
+                      v-bind:src="image.path"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      @click="ChangeCurrentImageToOpen(image.path)"
+                    />
                   </div>
                 </div>
               </div>
@@ -183,9 +194,58 @@ function updateNumber() {
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <div class="modal-body p-0">
+          <v-lazy-image v-bind:src="currentImageToOpen" />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.btn-close {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  opacity: 1;
+  padding: 1rem;
+  border-radius: 15px;
+  right: 20px;
+  top: 20px;
+}
+.btn-close:hover {
+  background-color: #aaa;
+  filter: invert(1);
+}
+
+.modal-body img {
+  width: 100%;
+  max-height: 93vh;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 .title {
   font-size: 39.06px;
 }
@@ -258,6 +318,15 @@ function updateNumber() {
   filter: invert(100%);
   width: 64px;
 }
+
+.active {
+  transition: transform 0.5s;
+}
+.active:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 /* for real */
 
 .menu-title {
