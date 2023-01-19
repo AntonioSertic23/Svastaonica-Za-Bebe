@@ -1,6 +1,6 @@
 <script setup>
 import sourceData from "@/data.json";
-import { useRoute } from "vue-router";
+import { useRoute, RouterLink } from "vue-router";
 import VLazyImage from "v-lazy-image";
 import { onMounted } from "@vue/runtime-core";
 import { ref } from "vue";
@@ -8,9 +8,24 @@ import { ref } from "vue";
 const route = useRoute();
 const paramId = parseInt(route.params.id);
 
-var data = sourceData.data.find((d) => d.id === paramId);
+var data = ref(sourceData.data.find((d) => d.id === paramId));
 
 document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+function RefreshData(id) {
+  this.data = sourceData.data.find((d) => d.id === id);
+  console.log("refreshed: " + id);
+}
+
+function GetSimilarImagePath(id) {
+  var item = sourceData.data.find((d) => d.id === id);
+  return item.thumbnail;
+}
+
+function GetSimilarItemName(id) {
+  var item = sourceData.data.find((d) => d.id === id);
+  return item.name;
+}
 
 //carousel
 
@@ -145,11 +160,26 @@ function updateNumber() {
         </div>
       </div>
 
-      <div class="row demo mt-5">
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
-        <div class="col-2"></div>
+      <div class="row similar-items-div mt-5">
+        <div
+          class="col-2 similar-item p-0"
+          v-for="item in data.similarItems"
+          :key="item.id"
+        >
+          <RouterLink :to="'/singleitem/' + item" @click="RefreshData(item)">
+            <v-lazy-image
+              class="d-block product-image"
+              v-bind:src="GetSimilarImagePath(item)"
+            />
+
+            <div class="mask">
+              <img src="/src/assets/img/share2.png" alt="" />
+            </div>
+            <div class="similar-item-name">
+              <p class="ms-3 mb-3">{{ GetSimilarItemName(item) }}</p>
+            </div>
+          </RouterLink>
+        </div>
       </div>
     </div>
   </section>
@@ -162,16 +192,72 @@ function updateNumber() {
 .name {
   font-size: 31.25px;
 }
-.demo {
+.similar-items-div {
   justify-content: center;
   gap: 25px;
 }
-.demo .col-2 {
+.similar-items-div .similar-item {
   background-color: rgb(205, 180, 219);
-  height: 200px;
+  height: 250px;
   border-radius: 15px;
 }
 
+.similar-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.similar-item:hover .product-image {
+  filter: brightness(60%);
+  transform: scale(1.2);
+}
+
+.similar-item:hover .mask {
+  visibility: visible;
+  opacity: 1;
+}
+
+.similar-item:hover .similar-item-name p {
+  color: white;
+}
+
+.similar-item-name p {
+  position: absolute;
+  font-size: 20px;
+  color: #222;
+  bottom: 0;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: fit-content;
+  height: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.mask img {
+  filter: invert(100%);
+  width: 64px;
+}
 /* for real */
 
 .menu-title {

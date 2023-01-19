@@ -1,90 +1,102 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
 
 <template>
   <div class="container py-5 px-5">
     <div class="row main-row px-5">
       <div class="col h-100">
-        <div class="item-big">
-          <img
-            class="product-image"
-            src="../../assets/img/products/1.jpg"
-            alt=""
-          />
-          <div class="mask">
-            <img src="../../assets/img/share2.png" alt="" />
+        <RouterLink to="/singleitem/1">
+          <div class="item-big">
+            <img
+              class="product-image"
+              src="../../assets/img/products/1.jpg"
+              alt=""
+            />
+            <div class="mask">
+              <img src="../../assets/img/share2.png" alt="" />
+            </div>
+            <div class="product-name">
+              <p class="ms-3 mb-3">Naziv proizvoda</p>
+            </div>
           </div>
-          <div class="product-name">
-            <p class="ms-3 mb-3">Naziv proizvoda</p>
-          </div>
-        </div>
+        </RouterLink>
       </div>
 
       <div class="col subrow h-100">
         <div class="row">
           <div class="item col-6">
-            <div class="item-small">
-              <img
-                class="product-image"
-                src="../../assets/img/products/2.jpg"
-                alt=""
-              />
-              <div class="mask">
-                <img src="../../assets/img/share2.png" alt="" />
+            <RouterLink to="/singleitem/2">
+              <div class="item-small">
+                <img
+                  class="product-image"
+                  src="../../assets/img/products/2.jpg"
+                  alt=""
+                />
+                <div class="mask">
+                  <img src="../../assets/img/share2.png" alt="" />
+                </div>
+                <div class="product-name">
+                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                </div>
               </div>
-              <div class="product-name">
-                <p class="ms-3 mb-3">Naziv proizvoda</p>
-              </div>
-            </div>
+            </RouterLink>
           </div>
 
           <div class="item col-6">
-            <div class="item-small">
-              <img
-                class="product-image"
-                src="../../assets/img/products/3.jpg"
-                alt=""
-              />
-              <div class="mask">
-                <img src="../../assets/img/share2.png" alt="" />
+            <RouterLink to="/singleitem/3">
+              <div class="item-small">
+                <img
+                  class="product-image"
+                  src="../../assets/img/products/3.jpg"
+                  alt=""
+                />
+                <div class="mask">
+                  <img src="../../assets/img/share2.png" alt="" />
+                </div>
+                <div class="product-name">
+                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                </div>
               </div>
-              <div class="product-name">
-                <p class="ms-3 mb-3">Naziv proizvoda</p>
-              </div>
-            </div>
+            </RouterLink>
           </div>
         </div>
 
         <div class="row">
           <div class="item col-6">
-            <div class="item-small">
-              <img
-                class="product-image"
-                src="../../assets/img/products/4.jpg"
-                alt=""
-              />
-              <div class="mask">
-                <img src="../../assets/img/share2.png" alt="" />
+            <RouterLink to="/singleitem/4">
+              <div class="item-small">
+                <img
+                  class="product-image"
+                  src="../../assets/img/products/4.jpg"
+                  alt=""
+                />
+                <div class="mask">
+                  <img src="../../assets/img/share2.png" alt="" />
+                </div>
+                <div class="product-name">
+                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                </div>
               </div>
-              <div class="product-name">
-                <p class="ms-3 mb-3">Naziv proizvoda</p>
-              </div>
-            </div>
+            </RouterLink>
           </div>
 
           <div class="item col-6">
-            <div class="item-small">
-              <img
-                class="product-image"
-                src="../../assets/img/products/6.jpg"
-                alt=""
-              />
-              <div class="mask">
-                <img src="../../assets/img/share2.png" alt="" />
+            <RouterLink to="/singleitem/6">
+              <div class="item-small">
+                <img
+                  class="product-image"
+                  src="../../assets/img/products/6.jpg"
+                  alt=""
+                />
+                <div class="mask">
+                  <img src="../../assets/img/share2.png" alt="" />
+                </div>
+                <div class="product-name">
+                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                </div>
               </div>
-              <div class="product-name">
-                <p class="ms-3 mb-3">Naziv proizvoda</p>
-              </div>
-            </div>
+            </RouterLink>
           </div>
         </div>
       </div>
@@ -127,8 +139,8 @@
   filter: brightness(60%);
   transform: scale(1.2);
 }
-.item-big:hover p,
-.item-small:hover p {
+.item-big:hover .product-name p,
+.item-small:hover .product-name p {
   color: white;
 }
 .item-big:hover .mask,
@@ -137,9 +149,10 @@
   opacity: 1;
 }
 
-p {
+.product-name p {
   position: absolute;
   font-size: 20px;
+  color: #222;
   bottom: 0;
 }
 

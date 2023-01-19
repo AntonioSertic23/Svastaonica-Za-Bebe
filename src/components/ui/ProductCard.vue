@@ -33,7 +33,7 @@ var item = props.cardData;
       />
     </div>
 
-    <RouterLink :to="'/singleitem/' + item.id" @click="scrollToTop()">
+    <RouterLink :to="'/singleitem/' + item.id">
       <div class="product-image-div">
         <v-lazy-image
           class="thumbnail"
