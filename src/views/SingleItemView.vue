@@ -95,20 +95,30 @@ function updateNumber() {
             <div class="reviews-div">
               <p class="title">Recenzije</p>
 
-              <div class="my-5">
-                <p class="name">Netko</p>
-                <p class="review">
-                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-                  consectetur.
-                </p>
+              <div class="my-5 row">
+                <div class="col image-div">
+                  <img src="/src/assets/img/profile_picture.jpg" alt="" />
+                </div>
+                <div class="col">
+                  <p class="name mb-0">Netko</p>
+                  <p class="review">
+                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                    consectetur.
+                  </p>
+                </div>
               </div>
 
-              <div class="my-5">
-                <p class="name">Netko 2</p>
-                <p class="review">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Labore amet dicta harum!
-                </p>
+              <div class="my-5 row">
+                <div class="col image-div">
+                  <img src="/src/assets/img/profile_picture.jpg" alt="" />
+                </div>
+                <div class="col">
+                  <p class="name mb-0">Netko Nekić</p>
+                  <p class="review">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore amet dicta harum!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -220,6 +230,22 @@ function updateNumber() {
 </template>
 
 <style scoped>
+.reviews-div .image-div {
+  max-width: 88px;
+}
+.reviews-div img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.reviews-div .name {
+  font-size: 25px;
+  font-weight: 500;
+}
+.reviews-div .review {
+  font-size: 20px;
+}
+
 .btn-close {
   position: absolute;
   z-index: 1;
