@@ -28,16 +28,6 @@ function closeNavbar() {
       <RouterLink class="nav-link" @click="closeNavbar()" to="/contact"
         >Kontakt</RouterLink
       >
-      <hr />
-      <button
-        class="btn dropdown-toggle language-btn"
-        type="button"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Jezik
-      </button>
     </div>
 
     <div></div>

@@ -71,17 +71,12 @@ function updateNumber() {
               </div>
             </div>
 
-            <div class="age-div my-5">
-              <p>Za uzraste od:</p>
-              <div class="age">{{ data.age }}</div>
-            </div>
-
-            <div class="sizes-div">
+            <!-- <div class="sizes-div">
               <p>Dostupne veličine:</p>
               <ul>
                 <li v-for="size in data.sizes" :key="size.id">{{ size }}</li>
               </ul>
-            </div>
+            </div> -->
 
             <div class="my-5 p-4 ingredients">
               <p>Korišteni materijali:</p>

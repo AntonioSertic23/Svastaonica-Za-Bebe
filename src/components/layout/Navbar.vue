@@ -105,26 +105,6 @@ function closeMobileNavbar() {
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
-
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle px-3 py-2"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Jezik
-            </button>
-            <!-- 
-            <a
-              class="ms-3"
-              style="font-family: Montserrat; color: black"
-              href=""
-              >+385 99 478 85 86</a
-            >
-             -->
-          </div>
         </div>
       </div>
     </div>
