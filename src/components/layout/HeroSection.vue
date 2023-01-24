@@ -2,37 +2,36 @@
 
 <template>
   <div>
-    <div class="container py-5 my-3">
+    <div class="container my-5 pt-3">
       <div class="row">
-        <div class="left-side col d-flex">
+        <div class="left-side col-4 d-flex">
           <div class="left-side-div pe-5">
             <h1>Dobrodošli na</h1>
             <p class="my-4">
               sretno mjesto na internetu gdje se mogu pronaći razne igračke za
               bebe!
             </p>
+
+            <a class="category-link mt-5 px-4" href="">Galerija</a>
           </div>
         </div>
 
-        <div class="middle-side col d-flex justify-content-center">
+        <div class="middle-side col-4 d-flex justify-content-center">
           <div class="middle-side-div">
-            <img class="image1" src="../../assets/img/products/5.jpg" alt="" />
-            <img class="image2" src="../../assets/img/products/6.jpg" alt="" />
-
+            <!-- <img class="image1" src="../../assets/img/products/1.jpg" alt="" /> -->
+            <img class="image2" src="../../assets/img/logo.jpe" alt="" />
             <img class="image3" src="../../assets/img/bow.png" alt="" />
           </div>
         </div>
 
         <div
-          class="right-side col d-flex justify-content-center align-items-center"
+          class="right-side col-4 d-flex justify-content-center align-items-top"
         >
           <div class="right-side-div ps-5">
             <p class="text-center">
               "Svi smo djeca. Jedina razlika je igračka koju imamo."
             </p>
-            <p class="text-end fst-italic fw-bold">Pablo Larrain</p>
-
-            <a class="category-link mt-5 px-4" href="">Galerija</a>
+            <p class="text-center fst-italic fw-bold">Pablo Larrain</p>
           </div>
         </div>
       </div>
@@ -50,18 +49,12 @@
 .gif {
   width: 192px;
   position: absolute;
-  left: 0;
-  bottom: -60px;
+  right: 100px;
+  bottom: 0;
 }
 
-.container {
-  height: 450px;
-}
-.row {
-  height: 330px;
-}
-
-.right-side {
+.right-side,
+.left-side {
   position: relative;
 }
 
@@ -119,8 +112,13 @@
   font-weight: 500;
   letter-spacing: 1px;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   box-shadow: -2px 2px 8px grey;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .category-link:hover {
   background-color: #a375bd;

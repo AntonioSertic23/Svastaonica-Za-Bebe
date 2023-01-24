@@ -3,12 +3,19 @@ import Hero from "../components/layout/HeroSection.vue";
 import AboutUs from "../components/layout/AboutUsSection.vue";
 import PreviewProducts from "../components/layout/PreviewProductsSection.vue";
 import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
+import Slider from "../components/ui/Slider.vue";
 </script>
 
 <template>
+  <!-- <p class="main-title text-center mt-3 mb-5">Svaštaonica Za Bebe</p> -->
+
   <Hero />
 
-  <div class="w-75 mx-auto py-5">
+  <div class="container slajder py-5">
+    <Slider />
+  </div>
+
+  <div class="w-75 mx-auto pb-5">
     <h1 class="text-center mt-5" style="font-family: Poiret_One">
       What I have got from my childhood aren't toys, but memories. And happy
       memories are better than any toy.
@@ -21,3 +28,16 @@ import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
 
   <AboutUs />
 </template>
+
+<style scoped>
+.main-title {
+  font-size: 61.03px;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.slajder {
+  display: flex;
+  justify-content: center;
+}
+</style>
