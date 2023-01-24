@@ -109,6 +109,7 @@ article {
   display: flex;
   width: 200%;
   animation: bannermove 15s linear infinite;
+  margin-bottom: 1rem;
 }
 
 article.paused {
@@ -134,6 +135,7 @@ li {
   border-radius: 15px;
   overflow: hidden;
   width: 220px;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
 @keyframes bannermove {

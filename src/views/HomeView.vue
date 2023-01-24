@@ -7,7 +7,7 @@ import Slider from "../components/ui/Slider.vue";
 </script>
 
 <template>
-  <!-- <p class="main-title text-center mt-3 mb-5">Svaštaonica Za Bebe</p> -->
+  <p class="main-title text-center mt-4 mb-5">Svaštaonica Za Bebe</p>
 
   <Hero />
 
@@ -31,7 +31,7 @@ import Slider from "../components/ui/Slider.vue";
 
 <style scoped>
 .main-title {
-  font-size: 61.03px;
+  font-size: 76.28px;
   font-family: "Montserrat";
   font-weight: 300;
 }

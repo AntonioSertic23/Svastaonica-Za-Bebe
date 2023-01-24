@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
 
 <template>
   <div>
@@ -12,7 +14,9 @@
               bebe!
             </p>
 
-            <a class="category-link mt-5 px-4" href="">Galerija</a>
+            <RouterLink class="category-link mt-5 px-4" to="/gallery"
+              >Galerija</RouterLink
+            >
           </div>
         </div>
 
