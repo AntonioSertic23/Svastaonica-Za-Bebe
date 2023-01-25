@@ -65,7 +65,7 @@
       "similarItems": [1, 3, 6],
       "badges": ["2", "3"],
       "soldout": false,
-      "categories": [2],
+      "categories": [1, 2],
       "keywords": [
         {
           "text": "Siguran",
@@ -98,7 +98,7 @@
       "similarItems": [2, 4, 6],
       "badges": ["5"],
       "soldout": false,
-      "categories": [3],
+      "categories": [1, 3],
       "keywords": [
         {
           "text": "100% zabavan",
@@ -131,7 +131,7 @@
       "similarItems": [2, 3, 6],
       "badges": ["2", "3"],
       "soldout": false,
-      "categories": [4],
+      "categories": [1, 4],
       "keywords": [
         {
           "text": "U trendu",

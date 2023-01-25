@@ -1,23 +1,31 @@
 <script setup>
 import { ref } from "vue";
 import sourceData from "@/data.json";
-import VLazyImage from "v-lazy-image";
 import ProductCard from "../components/ui/ProductCard.vue";
 
 var data = ref(sourceData.data);
 var currentSort = ref(0);
+var lsSortData = localStorage.getItem("sortData");
+
+if (lsSortData != null) {
+  currentSort.value = lsSortData;
+  data = sourceData.data.filter(function (el) {
+    return el.categories.includes(parseInt(currentSort.value));
+  });
+}
 
 function sortData(x) {
   if (currentSort.value == x) {
     this.currentSort = 0;
     this.data = sourceData.data;
+    localStorage.removeItem("sortData");
   } else {
     this.currentSort = x;
     this.data = sourceData.data.filter(function (el) {
       return el.categories.includes(x);
     });
+    localStorage.setItem("sortData", x);
   }
-  //console.log(data.value);
 }
 </script>
 
