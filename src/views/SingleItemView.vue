@@ -10,13 +10,6 @@ const paramId = parseInt(route.params.id);
 
 var data = ref(sourceData.data.find((d) => d.id === paramId));
 
-document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-function RefreshData(id) {
-  this.data = sourceData.data.find((d) => d.id === id);
-  console.log("refreshed: " + id);
-}
-
 function GetSimilarImagePath(id) {
   var item = sourceData.data.find((d) => d.id === id);
   return item.thumbnail;
@@ -182,7 +175,7 @@ function updateNumber() {
           v-for="item in data.similarItems"
           :key="item.id"
         >
-          <RouterLink :to="'/singleitem/' + item" @click="RefreshData(item)">
+          <RouterLink :to="'/singleitem/' + item">
             <v-lazy-image
               class="d-block product-image"
               v-bind:src="GetSimilarImagePath(item)"
