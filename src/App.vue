@@ -31,7 +31,7 @@ function updateNavbar() {
   <Navbar @update-navbar="updateNavbar" />
 
   <div class="body-div">
-    <RouterView />
+    <RouterView :key="$route.fullPath" />
   </div>
 
   <ScrollToTop />
