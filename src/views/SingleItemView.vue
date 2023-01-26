@@ -37,6 +37,24 @@ onMounted(() => {
 function updateNumber() {
   currentIndex.value = $(".active").index() + 1;
 }
+
+// share
+
+const share = (e) => {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Share my blog",
+        text: "Web development tutorial blogs",
+        url: "https://justforuse.github.io/blog/en-us/",
+      })
+      .then(() => console.log("thanks for share"))
+      .catch((error) => console.log("error", error));
+  }
+};
+if (!navigator.share) {
+  document.getElementById("tip").className = "show";
+}
 </script>
 
 <template>
@@ -44,12 +62,15 @@ function updateNumber() {
     <div class="container-fluid">
       <div class="row">
         <div class="col-6 item-info">
-          <div class="num"></div>
-          <div class="col-9 m-auto">
+          <div class="left-side col-9 m-auto">
             <p class="mb-5 menu-title">{{ data.name }}</p>
             <p class="item-description">
               {{ data.description }}
             </p>
+
+            <div class="share-section my-5">
+              <a class="shareBtn p-4" @click="share()"> Podijeli proizvod </a>
+            </div>
 
             <div v-if="data.soldout" class="my-5">
               <h1>RASPRODANO</h1>
@@ -456,5 +477,31 @@ function updateNumber() {
   left: 0;
   right: 0;
   font-size: 48.83px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.share-section {
+  display: flex;
+  justify-content: center;
+}
+
+.shareBtn {
+  background-color: rgb(205, 180, 219);
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 4px lightgrey;
+  font-size: 25px;
+}
+.shareBtn:hover {
+  background-color: #a375bd;
+  cursor: pointer;
 }
 </style>
