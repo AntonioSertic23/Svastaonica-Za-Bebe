@@ -70,6 +70,9 @@ if (!navigator.share) {
 
             <div class="share-section my-5">
               <a class="shareBtn p-4" @click="share()"> Podijeli proizvod </a>
+              <a class="shareBtn shareBtn2 ms-3" @click="share()">
+                <img src="/src/assets/img/share3.png" alt="" />
+              </a>
             </div>
 
             <div v-if="data.soldout" class="my-5">
@@ -503,5 +506,15 @@ if (!navigator.share) {
 .shareBtn:hover {
   background-color: #a375bd;
   cursor: pointer;
+}
+
+.shareBtn2 {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shareBtn2 img {
+  height: 40px;
 }
 </style>

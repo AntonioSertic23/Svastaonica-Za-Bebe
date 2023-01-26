@@ -50,10 +50,12 @@ var item = props.cardData;
           />
           <img
             v-else
-            src="/src/assets/img/share2.png"
+            src="/src/assets/img/share.png"
             class="open-icon"
             alt=""
           />
+          <!-- <div class="paragraph-div p-4"></div>
+          <p class="m-0">Otvori</p> -->
         </div>
       </div>
     </RouterLink>
@@ -203,6 +205,21 @@ var item = props.cardData;
 .mask .open-icon {
   filter: invert(100%);
   width: 96px;
+}
+.paragraph-div {
+  position: absolute;
+  opacity: 0.7;
+  border-radius: 15px;
+  background-color: #222;
+  left: -1rem;
+  right: -1rem;
+  top: -1rem;
+  bottom: -1rem;
+}
+.mask p {
+  position: relative;
+  color: white;
+  font-size: 31.25px;
 }
 
 .col h1 {

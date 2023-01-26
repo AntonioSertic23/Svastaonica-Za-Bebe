@@ -44,7 +44,7 @@ function sortData(x) {
         </div>
       </div>
 
-      <div class="row my-5 py-5">
+      <div class="row my-5 pt-3 pb-5">
         <div class="d-flex justify-content-center">
           <a
             class="mx-2 category-link"
