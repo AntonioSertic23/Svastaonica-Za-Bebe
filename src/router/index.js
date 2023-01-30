@@ -34,6 +34,11 @@ const router = createRouter({
       name: "pagenotfound",
       component: () => import("../views/PageNotFound.vue"),
     },
+    {
+      path: "/search/:search",
+      name: "search",
+      component: () => import("../views/SearchView.vue"),
+    },
   ],
   scrollBehavior: function (to, _from, savedPosition) {
     if (savedPosition) {

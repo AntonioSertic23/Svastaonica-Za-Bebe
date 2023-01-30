@@ -2,6 +2,7 @@
 import { RouterLink } from "vue-router";
 import NavbarMobile from "./NavbarMobile.vue";
 import { ref } from "vue";
+import SearchBar from "../ui/SearchBar.vue";
 
 // defining emits so we can call them from this script tags
 const emit = defineEmits(["updateNavbar"]);
@@ -93,18 +94,9 @@ function closeMobileNavbar() {
         </div>
         <div
           v-if="!isMobile"
-          class="ms-auto navbar-language-div d-flex me-lg-3 pe-4"
+          class="ms-auto navbar-search-div d-flex me-lg-3 pe-4"
         >
-          <div class="input-group search-div me-4">
-            <input type="text" class="form-control" placeholder="" />
-            <button
-              class="btn btn-outline-secondary px-3"
-              type="button"
-              id="button-addon2"
-            >
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
+          <SearchBar :isForNavbar="true" />
         </div>
       </div>
     </div>
@@ -139,70 +131,8 @@ function closeMobileNavbar() {
   color: #444 !important;
 }
 
-.dropdown button {
-  background-color: #ffafcc;
-  text-transform: capitalize;
-  font-size: 20px;
-}
-
-.dropdown-item {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-.dropdown-item img {
-  height: 40px;
-  width: 40px;
-}
-
-#dropdownMenuButton1 {
-  font-weight: 600;
-  border-radius: 15px;
-  box-shadow: 4px 4px 4px lightgrey;
-}
-
-.form-control:focus {
-  border: none;
-  z-index: 0 !important;
-  box-shadow: none !important;
-}
-
-.btn-outline-secondary:focus {
-  box-shadow: none !important;
-}
-
-.btn-outline-secondary {
-  background-color: rgb(205, 180, 219);
-  color: #222;
-  border: none;
-}
-.btn-outline-secondary:hover {
-  background-color: #a375bd;
-  color: #222;
-}
-
-.search-div {
-  box-shadow: 4px 4px 4px lightgrey;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.search-div input {
-  border: none;
-}
-
 /* kad je mobile da bude pozadina roza */
 @media (max-width: 992px) {
-  .dropdown button {
-    width: 100%;
-    height: 54px;
-    margin-top: 3px;
-  }
-  .dropdown ul {
-    width: 100%;
-    position: static;
-  }
-
   .navbar {
     position: fixed;
     top: 0;
@@ -216,11 +146,11 @@ function closeMobileNavbar() {
 /* podigne lijevu i desnu stranu da bi ovo uzelo u sredini cijelu duzinu i onda postavi u sredinu */
 @media (min-width: 992px) {
   .navbar-brand,
-  .navbar-language-div {
+  .navbar-search-div {
     position: absolute;
   }
 
-  .navbar-language-div {
+  .navbar-search-div {
     right: 0;
   }
 }
