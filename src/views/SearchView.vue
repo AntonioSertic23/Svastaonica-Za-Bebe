@@ -9,13 +9,13 @@ var data = ref(sourceData.data);
 
 const route = useRoute();
 data.value = sourceData.data.filter(function (el) {
-  return el.name.includes(route.params.search);
+  if (el.name.toLowerCase().includes(route.params.search.toLowerCase())) {
+    return el;
+  }
 });
 
 function FindData(text) {
   data.value = sourceData.data.filter(function (el) {
-    console.log(el.name.toLowerCase());
-    console.log(text.value.toLowerCase());
     if (el.name.toLowerCase().includes(text.value.toLowerCase())) {
       return el;
     }
