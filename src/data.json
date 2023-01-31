@@ -19,7 +19,31 @@
       ],
       "age": "0-5",
       "sizes": ["S", "L", "XL"],
-      "materials": ["Pamuk", "Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["1"],
@@ -60,7 +84,31 @@
       ],
       "age": "2-6",
       "sizes": ["L", "XL"],
-      "materials": ["Pamuk"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [1, 3, 6],
       "badges": ["2", "3"],
@@ -93,7 +141,31 @@
       ],
       "age": "1-4",
       "sizes": ["L"],
-      "materials": ["Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 4, 6],
       "badges": ["5"],
@@ -126,7 +198,31 @@
       ],
       "age": "2-6",
       "sizes": ["L", "XL"],
-      "materials": ["Pamuk"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["2", "3"],
@@ -163,7 +259,31 @@
       ],
       "age": "1-4",
       "sizes": ["L"],
-      "materials": ["Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["5"],
@@ -190,7 +310,31 @@
       ],
       "age": "0-5",
       "sizes": ["S", "L", "XL"],
-      "materials": ["Pamuk", "Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 5],
       "badges": ["1"],
@@ -217,7 +361,31 @@
       ],
       "age": "1-4",
       "sizes": ["L"],
-      "materials": ["Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["5"],
@@ -244,7 +412,31 @@
       ],
       "age": "0-5",
       "sizes": ["S", "L", "XL"],
-      "materials": ["Pamuk", "Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["1"],
@@ -271,7 +463,31 @@
       ],
       "age": "2-6",
       "sizes": ["L", "XL"],
-      "materials": ["Pamuk"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["2", "3"],
@@ -298,7 +514,31 @@
       ],
       "age": "0-5",
       "sizes": ["S", "L", "XL"],
-      "materials": ["Pamuk", "Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["1"],
@@ -325,7 +565,31 @@
       ],
       "age": "2-6",
       "sizes": ["L", "XL"],
-      "materials": ["Pamuk"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["2", "3"],
@@ -352,7 +616,31 @@
       ],
       "age": "1-4",
       "sizes": ["L"],
-      "materials": ["Plastika"],
+      "declaration": {
+        "materials": ["70% Pamuk", "30% Poliester"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/src/assets/img/textile-care/wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/src/assets/img/textile-care/ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/src/assets/img/textile-care/tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/src/assets/img/textile-care/dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/src/assets/img/textile-care/bleach.png"
+          }
+        ]
+      },
       "reviews": "...",
       "similarItems": [2, 3, 6],
       "badges": ["5"],

@@ -95,13 +95,31 @@ if (!navigator.share) {
               </ul>
             </div> -->
 
-            <div class="my-5 p-4 ingredients">
-              <p>Korišteni materijali:</p>
-              <ul>
-                <li v-for="material in data.materials" :key="material.id">
+            <div class="my-5 mx-5 px-5 py-4 declaration">
+              <p class="heading">Deklaracija</p>
+              <ul class="mt-4">
+                <li
+                  v-for="material in data.declaration.materials"
+                  :key="material.id"
+                >
                   {{ material }}
                 </li>
               </ul>
+
+              <div class="declaration-icons mt-4">
+                <div
+                  class="img-div"
+                  v-for="icon in data.declaration.icons"
+                  :key="icon.id"
+                  data-bs-toggle="tooltip"
+                  title="Tooltip on top"
+                >
+                  <img v-bind:src="icon.icon" v-bind:alt="icon.text" />
+                  <span class="tooltiptext">{{ icon.text }}</span>
+                </div>
+              </div>
+
+              <p class="mt-4 text-center">Proizvedeno u Hrvatskoj</p>
             </div>
 
             <div class="reviews-div">
@@ -410,9 +428,58 @@ if (!navigator.share) {
   border-radius: 15px;
 }
 
-.ingredients {
+.declaration {
   border: 2px dashed gray;
   border-radius: 15px;
+}
+.declaration .heading {
+  font-size: 31.25px;
+  text-align: center;
+}
+.declaration ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+.declaration-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.declaration-icons img {
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.img-div:hover img {
+  transform: scale(1.3);
+}
+
+/* Tooltip container */
+.img-div {
+  position: relative;
+  display: inline-block;
+}
+/* Tooltip text */
+.img-div .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #a375bd;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  font-size: 20px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.img-div:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* right */

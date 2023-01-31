@@ -28,22 +28,22 @@
 
           <div class="social-media mt-4">
             <a href="#" class="m-2">
-              <img src="../assets/img/facebook-messenger.png" />
+              <img src="../assets/img/social-media/facebook-messenger.png" />
             </a>
             <a href="#" class="m-2">
-              <img src="../assets/img/whatsapp.png" />
+              <img src="../assets/img/social-media/whatsapp.png" />
             </a>
             <a href="#" class="m-2">
-              <img src="../assets/img/facebook.png" />
+              <img src="../assets/img/social-media/facebook.png" />
             </a>
             <a href="#" class="m-2">
-              <img src="../assets/img/instagram.png" />
+              <img src="../assets/img/social-media/instagram.png" />
             </a>
             <a href="#" class="m-2">
-              <img src="../assets/img/viber.png" />
+              <img src="../assets/img/social-media/viber.png" />
             </a>
             <a href="#" class="m-2">
-              <img src="../assets/img/google.png" />
+              <img src="../assets/img/social-media/google.png" />
             </a>
           </div>
         </div>
