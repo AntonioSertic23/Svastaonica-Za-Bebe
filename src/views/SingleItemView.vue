@@ -20,6 +20,22 @@ function GetSimilarItemName(id) {
   return item.name;
 }
 
+var aBundles = [];
+if (data.value.isPartOfBundle) {
+  data.value.bundle.forEach((id) => {
+    var bundle = sourceData.data.find((d) => d.id === id);
+    aBundles.push(bundle);
+  });
+}
+
+var aItems = [];
+if (data.value.isBundle) {
+  data.value.bundleItems.forEach((id) => {
+    var item = sourceData.data.find((d) => d.id === id);
+    aItems.push(item);
+  });
+}
+
 var currentImageToOpen = ref("");
 function ChangeCurrentImageToOpen(path) {
   this.currentImageToOpen = path;
@@ -79,7 +95,7 @@ if (!navigator.share) {
               <h1>RASPRODANO</h1>
             </div>
 
-            <div class="keywords-div my-5">
+            <div class="keywords-div my-5" v-if="data.keywords != null">
               <div class="row">
                 <div class="col" v-for="word in data.keywords" :key="word.id">
                   <v-lazy-image class="d-block" v-bind:src="word.icon" />
@@ -94,6 +110,44 @@ if (!navigator.share) {
                 <li v-for="size in data.sizes" :key="size.id">{{ size }}</li>
               </ul>
             </div> -->
+
+            <div class="bundle-section" v-if="data.isPartOfBundle">
+              <p class="text-center">Ovaj proizvod je dio našeg promo paketa</p>
+
+              <div class="row">
+                <div class="col" v-for="item in aBundles" :key="item.id">
+                  <div
+                    class="bundle-card"
+                    v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
+                  >
+                    <v-lazy-image
+                      class="d-block bundle-img"
+                      v-bind:src="item.thumbnail"
+                    />
+                  </div>
+                  <p class="mt-3">{{ item.name }}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bundle-section" v-if="data.isBundle">
+              <p class="text-center">Proizvodi koji se nalaze u paketu</p>
+
+              <div class="row">
+                <div class="col" v-for="item in aItems" :key="item.id">
+                  <div
+                    class="bundle-card"
+                    v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
+                  >
+                    <v-lazy-image
+                      class="d-block bundle-img"
+                      v-bind:src="item.thumbnail"
+                    />
+                  </div>
+                  <p class="mt-3">{{ item.name }}</p>
+                </div>
+              </div>
+            </div>
 
             <div class="my-5 mx-5 px-5 py-4 declaration">
               <p class="heading">Deklaracija</p>
@@ -427,6 +481,34 @@ if (!navigator.share) {
   text-align: center;
   border-radius: 15px;
 }
+
+/* BUNDLES OR ITEMS */
+.bundle .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bundle-card {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+}
+.bundle-card:hover img {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.bundle-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.onlyone {
+  max-width: 300px;
+}
+
+/* DECLARATION */
 
 .declaration {
   border: 2px dashed gray;
