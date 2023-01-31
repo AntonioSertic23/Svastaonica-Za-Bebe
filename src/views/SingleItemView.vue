@@ -112,26 +112,35 @@ if (!navigator.share) {
             </div> -->
 
             <div class="bundle-section" v-if="data.isPartOfBundle">
-              <p class="text-center">Ovaj proizvod je dio našeg promo paketa</p>
+              <p class="heading text-center mb-4">
+                Ovaj proizvod je dio našeg promo paketa
+              </p>
 
               <div class="row">
                 <div class="col" v-for="item in aBundles" :key="item.id">
                   <div
                     class="bundle-card"
-                    v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
+                    v-bind:class="aBundles.length == 1 ? 'onlyone mx-auto' : ''"
                   >
                     <v-lazy-image
                       class="d-block bundle-img"
                       v-bind:src="item.thumbnail"
                     />
                   </div>
-                  <p class="mt-3">{{ item.name }}</p>
+                  <p
+                    class="mt-3 text-center"
+                    v-bind:class="aBundles.length == 1 ? 'onlyone mx-auto' : ''"
+                  >
+                    {{ item.name }}
+                  </p>
                 </div>
               </div>
             </div>
 
             <div class="bundle-section" v-if="data.isBundle">
-              <p class="text-center">Proizvodi koji se nalaze u paketu</p>
+              <p class="heading text-center mb-4">
+                Proizvodi koji se nalaze u paketu
+              </p>
 
               <div class="row">
                 <div class="col" v-for="item in aItems" :key="item.id">
@@ -144,7 +153,7 @@ if (!navigator.share) {
                       v-bind:src="item.thumbnail"
                     />
                   </div>
-                  <p class="mt-3">{{ item.name }}</p>
+                  <p class="mt-3 text-center">{{ item.name }}</p>
                 </div>
               </div>
             </div>
@@ -483,6 +492,11 @@ if (!navigator.share) {
 }
 
 /* BUNDLES OR ITEMS */
+
+.bundle-section .heading {
+  font-size: 31.25px;
+}
+
 .bundle .col {
   display: flex;
   flex-direction: column;
