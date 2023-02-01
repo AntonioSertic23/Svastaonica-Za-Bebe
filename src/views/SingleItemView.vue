@@ -10,7 +10,7 @@ const paramId = parseInt(route.params.id);
 
 var data = ref(sourceData.data.find((d) => d.id === paramId));
 
-function GetSimilarImagePath(id) {
+/* function GetSimilarImagePath(id) {
   var item = sourceData.data.find((d) => d.id === id);
   return item.thumbnail;
 }
@@ -18,7 +18,7 @@ function GetSimilarImagePath(id) {
 function GetSimilarItemName(id) {
   var item = sourceData.data.find((d) => d.id === id);
   return item.name;
-}
+} */
 
 var aBundles = [];
 if (data.value.isPartOfBundle) {
@@ -35,6 +35,12 @@ if (data.value.isBundle) {
     aItems.push(item);
   });
 }
+
+var aSimilarItems = [];
+data.value.similarItems.forEach((id) => {
+  var item = sourceData.data.find((d) => d.id === id);
+  aSimilarItems.push(item);
+});
 
 var currentImageToOpen = ref("");
 function ChangeCurrentImageToOpen(path) {
@@ -121,9 +127,23 @@ if (!navigator.share) {
                       <v-lazy-image
                         class="d-block bundle-img"
                         v-bind:src="item.thumbnail"
+                        v-bind:style="[
+                          item.soldout ? 'filter: brightness(60%)' : '',
+                        ]"
                       />
                       <div class="mask">
-                        <img src="/src/assets/img/share2.png" alt="" />
+                        <img
+                          v-if="item.soldout"
+                          src="/src/assets/img/sold-out.png"
+                          class="soldout-icon"
+                          alt=""
+                        />
+                        <img
+                          v-else
+                          src="/src/assets/img/share.png"
+                          class="open-icon"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </RouterLink>
@@ -152,9 +172,23 @@ if (!navigator.share) {
                       <v-lazy-image
                         class="d-block bundle-img"
                         v-bind:src="item.thumbnail"
+                        v-bind:style="[
+                          item.soldout ? 'filter: brightness(60%)' : '',
+                        ]"
                       />
                       <div class="mask">
-                        <img src="/src/assets/img/share2.png" alt="" />
+                        <img
+                          v-if="item.soldout"
+                          src="/src/assets/img/sold-out.png"
+                          class="soldout-icon"
+                          alt=""
+                        />
+                        <img
+                          v-else
+                          src="/src/assets/img/share.png"
+                          class="open-icon"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </RouterLink>
@@ -192,28 +226,18 @@ if (!navigator.share) {
             <div class="reviews-div">
               <p class="title">Recenzije</p>
 
-              <div class="my-5 row">
+              <div
+                class="my-5 row"
+                v-for="comment in data.reviews"
+                :key="comment.id"
+              >
                 <div class="col image-div">
-                  <img src="/src/assets/img/profile_picture.jpg" alt="" />
+                  <img v-bind:src="comment.image" alt="" />
                 </div>
                 <div class="col">
-                  <p class="name mb-0">Netko</p>
+                  <p class="name mb-0">{{ comment.name }}</p>
                   <p class="review">
-                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
-                    consectetur.
-                  </p>
-                </div>
-              </div>
-
-              <div class="my-5 row">
-                <div class="col image-div">
-                  <img src="/src/assets/img/profile_picture.jpg" alt="" />
-                </div>
-                <div class="col">
-                  <p class="name mb-0">Netko Nekić</p>
-                  <p class="review">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Labore amet dicta harum!
+                    {{ comment.comment }}
                   </p>
                 </div>
               </div>
@@ -287,20 +311,32 @@ if (!navigator.share) {
       <div class="row similar-items-div mt-5">
         <div
           class="col-2 similar-item p-0"
-          v-for="item in data.similarItems"
+          v-for="item in aSimilarItems"
           :key="item.id"
         >
-          <RouterLink :to="'/singleitem/' + item">
+          <RouterLink :to="'/singleitem/' + item.id">
             <v-lazy-image
               class="d-block product-image"
-              v-bind:src="GetSimilarImagePath(item)"
+              v-bind:src="item.thumbnail"
+              v-bind:style="[item.soldout ? 'filter: brightness(60%)' : '']"
             />
 
             <div class="mask">
-              <img src="/src/assets/img/share2.png" alt="" />
+              <img
+                v-if="item.soldout"
+                src="/src/assets/img/sold-out.png"
+                class="soldout-icon"
+                alt=""
+              />
+              <img
+                v-else
+                src="/src/assets/img/share.png"
+                class="open-icon"
+                alt=""
+              />
             </div>
             <div class="similar-item-name">
-              <p class="ms-3 mb-3">{{ GetSimilarItemName(item) }}</p>
+              <p class="ms-3 mb-3">{{ item.name }}</p>
             </div>
           </RouterLink>
         </div>
@@ -443,7 +479,10 @@ if (!navigator.share) {
   opacity: 0;
   transition: opacity 0.8s;
 }
-.mask img {
+.mask .soldout-icon {
+  width: 96px;
+}
+.mask .open-icon {
   filter: invert(100%);
   width: 64px;
 }
