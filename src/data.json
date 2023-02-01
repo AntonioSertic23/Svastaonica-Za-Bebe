@@ -17,7 +17,6 @@
           "path": "/src/assets/img/products/3.jpg"
         }
       ],
-      "age": "0-5",
       "sizes": ["S", "L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -86,7 +85,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "2-6",
       "sizes": ["L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -147,7 +145,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "1-4",
       "sizes": ["L"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -208,7 +205,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "2-6",
       "sizes": ["L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -273,7 +269,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "1-4",
       "sizes": ["L"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -324,7 +319,6 @@
           "path": "/src/assets/img/products/3.jpg"
         }
       ],
-      "age": "0-5",
       "sizes": ["S", "L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -375,7 +369,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "1-4",
       "sizes": ["L"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -426,7 +419,6 @@
           "path": "/src/assets/img/products/3.jpg"
         }
       ],
-      "age": "0-5",
       "sizes": ["S", "L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -477,7 +469,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "2-6",
       "sizes": ["L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -528,7 +519,6 @@
           "path": "/src/assets/img/products/3.jpg"
         }
       ],
-      "age": "0-5",
       "sizes": ["S", "L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -579,7 +569,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "2-6",
       "sizes": ["L", "XL"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],
@@ -630,7 +619,6 @@
           "path": "/src/assets/img/products/6.jpg"
         }
       ],
-      "age": "1-4",
       "sizes": ["L"],
       "declaration": {
         "materials": ["70% Pamuk", "30% Poliester"],

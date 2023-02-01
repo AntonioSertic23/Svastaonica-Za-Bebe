@@ -84,13 +84,6 @@ if (!navigator.share) {
               {{ data.description }}
             </p>
 
-            <div class="share-section my-5">
-              <a class="shareBtn p-4" @click="share()"> Podijeli proizvod </a>
-              <a class="shareBtn shareBtn2 ms-3" @click="share()">
-                <img src="/src/assets/img/share3.png" alt="" />
-              </a>
-            </div>
-
             <div v-if="data.soldout" class="my-5">
               <h1>RASPRODANO</h1>
             </div>
@@ -118,15 +111,22 @@ if (!navigator.share) {
 
               <div class="row">
                 <div class="col" v-for="item in aBundles" :key="item.id">
-                  <div
-                    class="bundle-card"
-                    v-bind:class="aBundles.length == 1 ? 'onlyone mx-auto' : ''"
-                  >
-                    <v-lazy-image
-                      class="d-block bundle-img"
-                      v-bind:src="item.thumbnail"
-                    />
-                  </div>
+                  <RouterLink :to="'/singleitem/' + item.id">
+                    <div
+                      class="bundle-card"
+                      v-bind:class="
+                        aBundles.length == 1 ? 'onlyone mx-auto' : ''
+                      "
+                    >
+                      <v-lazy-image
+                        class="d-block bundle-img"
+                        v-bind:src="item.thumbnail"
+                      />
+                      <div class="mask">
+                        <img src="/src/assets/img/share2.png" alt="" />
+                      </div>
+                    </div>
+                  </RouterLink>
                   <p
                     class="mt-3 text-center"
                     v-bind:class="aBundles.length == 1 ? 'onlyone mx-auto' : ''"
@@ -144,22 +144,26 @@ if (!navigator.share) {
 
               <div class="row">
                 <div class="col" v-for="item in aItems" :key="item.id">
-                  <div
-                    class="bundle-card"
-                    v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
-                  >
-                    <v-lazy-image
-                      class="d-block bundle-img"
-                      v-bind:src="item.thumbnail"
-                    />
-                  </div>
+                  <RouterLink :to="'/singleitem/' + item.id">
+                    <div
+                      class="bundle-card"
+                      v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
+                    >
+                      <v-lazy-image
+                        class="d-block bundle-img"
+                        v-bind:src="item.thumbnail"
+                      />
+                      <div class="mask">
+                        <img src="/src/assets/img/share2.png" alt="" />
+                      </div>
+                    </div>
+                  </RouterLink>
                   <p class="mt-3 text-center">{{ item.name }}</p>
                 </div>
               </div>
             </div>
 
             <div class="my-5 mx-5 px-5 py-4 declaration">
-              <p class="heading">Deklaracija</p>
               <ul class="mt-4">
                 <li
                   v-for="material in data.declaration.materials"
@@ -182,7 +186,7 @@ if (!navigator.share) {
                 </div>
               </div>
 
-              <p class="mt-4 text-center">Proizvedeno u Hrvatskoj</p>
+              <p class="mt-4 text-center">Proizvedeno u EU</p>
             </div>
 
             <div class="reviews-div">
@@ -252,6 +256,12 @@ if (!navigator.share) {
                       @click="ChangeCurrentImageToOpen(image.path)"
                     />
                   </div>
+                </div>
+
+                <div class="share-section">
+                  <a class="shareBtn" @click="share()">
+                    <img src="/src/assets/img/share3.png" alt="" />
+                  </a>
                 </div>
               </div>
 
@@ -458,7 +468,7 @@ if (!navigator.share) {
 }
 
 .keywords-div img {
-  width: 128px;
+  width: 120px;
 }
 .keywords-div .col {
   display: flex;
@@ -507,10 +517,12 @@ if (!navigator.share) {
   overflow: hidden;
   border-radius: 15px;
   width: 100%;
+  position: relative;
 }
-.bundle-card:hover img {
+.bundle-card:hover .bundle-img {
   cursor: pointer;
   transform: scale(1.2);
+  filter: brightness(60%);
 }
 .bundle-img {
   width: 100%;
@@ -520,6 +532,11 @@ if (!navigator.share) {
 }
 .onlyone {
   max-width: 300px;
+}
+
+.bundle-card:hover .mask {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* DECLARATION */
@@ -651,33 +668,25 @@ if (!navigator.share) {
 }
 
 .share-section {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
 }
 
 .shareBtn {
   background-color: rgb(205, 180, 219);
-  color: #222;
-  text-decoration: none;
-  text-transform: uppercase;
   border-radius: 15px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  box-shadow: 4px 4px 4px lightgrey;
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
 }
 .shareBtn:hover {
   background-color: #a375bd;
   cursor: pointer;
 }
-
-.shareBtn2 {
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.shareBtn2 img {
-  height: 40px;
+.shareBtn img {
+  height: 28px;
 }
 </style>
