@@ -10,16 +10,6 @@ const paramId = parseInt(route.params.id);
 
 var data = ref(sourceData.data.find((d) => d.id === paramId));
 
-/* function GetSimilarImagePath(id) {
-  var item = sourceData.data.find((d) => d.id === id);
-  return item.thumbnail;
-}
-
-function GetSimilarItemName(id) {
-  var item = sourceData.data.find((d) => d.id === id);
-  return item.name;
-} */
-
 var aBundles = [];
 if (data.value.isPartOfBundle) {
   data.value.bundle.forEach((id) => {

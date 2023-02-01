@@ -20,7 +20,9 @@
           </div>
           <div id="parallelogram" class="shape2"></div>
         </div>
-        <h3 class="text-center mt-3">Neki naslov</h3>
+        <h3 class="text-center mt-3" style="margin-bottom: 56px">
+          Neki naslov
+        </h3>
       </div>
 
       <div class="item col-3 mt-5">
@@ -37,6 +39,10 @@
 </template>
 
 <style scoped>
+.row {
+  height: 420px;
+}
+
 #parallelogram {
   width: 100%;
   height: 50px;
@@ -53,9 +59,17 @@ img {
   border-radius: 15px;
   height: 270px;
   object-fit: cover;
+
+  position: absolute;
+  width: 260px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20px;
+  transition: top ease 0.5s;
 }
 
-img,
 #parallelogram {
   position: relative;
 }
@@ -68,5 +82,17 @@ img,
 }
 .shape3 {
   transform: skew(20deg);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+}
+
+img:hover {
+  cursor: pointer;
+  top: 0;
 }
 </style>

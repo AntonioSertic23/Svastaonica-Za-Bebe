@@ -1,5 +1,10 @@
 <script setup>
+import sourceData from "@/data.json";
 import { RouterLink } from "vue-router";
+import VLazyImage from "v-lazy-image";
+import { ref } from "vue";
+
+var data = ref(sourceData.data.slice(0, 5));
 </script>
 
 <template>
@@ -8,16 +13,15 @@ import { RouterLink } from "vue-router";
       <div class="col h-100">
         <RouterLink to="/singleitem/1">
           <div class="item-big">
-            <img
+            <v-lazy-image
               class="product-image"
-              src="../../assets/img/products/1.jpg"
-              alt=""
+              v-bind:src="data[0].thumbnail"
             />
             <div class="mask">
-              <img src="../../assets/img/share2.png" alt="" />
+              <img src="../../assets/img/share.png" alt="" />
             </div>
             <div class="product-name">
-              <p class="ms-3 mb-3">Naziv proizvoda</p>
+              <p class="ms-3 mb-3">{{ data[0].name }}</p>
             </div>
           </div>
         </RouterLink>
@@ -28,16 +32,15 @@ import { RouterLink } from "vue-router";
           <div class="item col-6">
             <RouterLink to="/singleitem/2">
               <div class="item-small">
-                <img
+                <v-lazy-image
                   class="product-image"
-                  src="../../assets/img/products/2.jpg"
-                  alt=""
+                  v-bind:src="data[1].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share2.png" alt="" />
+                  <img src="../../assets/img/share.png" alt="" />
                 </div>
                 <div class="product-name">
-                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                  <p class="ms-3 mb-3">{{ data[1].name }}</p>
                 </div>
               </div>
             </RouterLink>
@@ -46,16 +49,15 @@ import { RouterLink } from "vue-router";
           <div class="item col-6">
             <RouterLink to="/singleitem/3">
               <div class="item-small">
-                <img
+                <v-lazy-image
                   class="product-image"
-                  src="../../assets/img/products/3.jpg"
-                  alt=""
+                  v-bind:src="data[2].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share2.png" alt="" />
+                  <img src="../../assets/img/share.png" alt="" />
                 </div>
                 <div class="product-name">
-                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                  <p class="ms-3 mb-3">{{ data[2].name }}</p>
                 </div>
               </div>
             </RouterLink>
@@ -66,16 +68,15 @@ import { RouterLink } from "vue-router";
           <div class="item col-6">
             <RouterLink to="/singleitem/4">
               <div class="item-small">
-                <img
+                <v-lazy-image
                   class="product-image"
-                  src="../../assets/img/products/4.jpg"
-                  alt=""
+                  v-bind:src="data[3].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share2.png" alt="" />
+                  <img src="../../assets/img/share.png" alt="" />
                 </div>
                 <div class="product-name">
-                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                  <p class="ms-3 mb-3">{{ data[3].name }}</p>
                 </div>
               </div>
             </RouterLink>
@@ -84,16 +85,15 @@ import { RouterLink } from "vue-router";
           <div class="item col-6">
             <RouterLink to="/singleitem/6">
               <div class="item-small">
-                <img
+                <v-lazy-image
                   class="product-image"
-                  src="../../assets/img/products/6.jpg"
-                  alt=""
+                  v-bind:src="data[4].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share2.png" alt="" />
+                  <img src="../../assets/img/share.png" alt="" />
                 </div>
                 <div class="product-name">
-                  <p class="ms-3 mb-3">Naziv proizvoda</p>
+                  <p class="ms-3 mb-3">{{ data[4].name }}</p>
                 </div>
               </div>
             </RouterLink>
@@ -103,7 +103,9 @@ import { RouterLink } from "vue-router";
     </div>
 
     <div class="text-center">
-      <a class="category-link mt-5 px-4" href="">Pogledaj sve</a>
+      <RouterLink class="category-link mt-5 px-4" to="/gallery"
+        >Pogledaj sve</RouterLink
+      >
     </div>
   </div>
 </template>

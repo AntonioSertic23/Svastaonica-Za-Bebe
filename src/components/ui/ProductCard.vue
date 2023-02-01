@@ -67,6 +67,7 @@ var item = props.cardData;
 <style scoped>
 .product-image-div {
   height: 400px;
+  width: 400px;
   border-radius: 15px;
   cursor: pointer;
   overflow: hidden;
