@@ -38,14 +38,14 @@
   font-size: 48.83px;
 }
 
-img {
-  height: 130px;
-}
-
 .col-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+img {
+  height: 130px;
 }
 
 .col-3 h3 {

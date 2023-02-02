@@ -87,18 +87,11 @@ if (!navigator.share) {
             <div class="keywords-div my-5" v-if="data.keywords != null">
               <div class="row">
                 <div class="col" v-for="word in data.keywords" :key="word.id">
-                  <v-lazy-image class="d-block" v-bind:src="word.icon" />
+                  <VLazyImage class="d-block" v-bind:src="word.icon" />
                   <p class="mt-3">{{ word.text }}</p>
                 </div>
               </div>
             </div>
-
-            <!-- <div class="sizes-div">
-              <p>Dostupne veličine:</p>
-              <ul>
-                <li v-for="size in data.sizes" :key="size.id">{{ size }}</li>
-              </ul>
-            </div> -->
 
             <div class="bundle-section" v-if="data.isPartOfBundle">
               <p class="heading text-center mb-4">
@@ -114,7 +107,7 @@ if (!navigator.share) {
                         aBundles.length == 1 ? 'onlyone mx-auto' : ''
                       "
                     >
-                      <v-lazy-image
+                      <VLazyImage
                         class="d-block bundle-img"
                         v-bind:src="item.thumbnail"
                         v-bind:style="[
@@ -159,7 +152,7 @@ if (!navigator.share) {
                       class="bundle-card"
                       v-bind:class="aBundles.length == 1 ? 'onlyone' : ''"
                     >
-                      <v-lazy-image
+                      <VLazyImage
                         class="d-block bundle-img"
                         v-bind:src="item.thumbnail"
                         v-bind:style="[
@@ -262,7 +255,7 @@ if (!navigator.share) {
                     :key="image.id"
                     class="carousel-item"
                   >
-                    <v-lazy-image
+                    <VLazyImage
                       class="d-block"
                       v-bind:src="image.path"
                       data-bs-toggle="modal"
@@ -305,7 +298,7 @@ if (!navigator.share) {
           :key="item.id"
         >
           <RouterLink :to="'/singleitem/' + item.id">
-            <v-lazy-image
+            <VLazyImage
               class="d-block product-image"
               v-bind:src="item.thumbnail"
               v-bind:style="[item.soldout ? 'filter: brightness(60%)' : '']"
@@ -351,7 +344,7 @@ if (!navigator.share) {
           aria-label="Close"
         ></button>
         <div class="modal-body p-0">
-          <v-lazy-image v-bind:src="currentImageToOpen" />
+          <VLazyImage v-bind:src="currentImageToOpen" />
         </div>
       </div>
     </div>

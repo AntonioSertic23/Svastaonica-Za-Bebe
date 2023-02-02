@@ -4,7 +4,7 @@ import { RouterLink } from "vue-router";
 
 <template>
   <div class="">
-    <footer class="text-center" style="background-color: #cdb4db">
+    <footer class="text-center">
       <div class="container">
         <section>
           <div class="row text-center d-flex justify-content-center pt-5">
@@ -50,31 +50,28 @@ import { RouterLink } from "vue-router";
         </section>
 
         <section class="text-center mb-5 social-media">
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/facebook-messenger.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/whatsapp.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/facebook.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/instagram.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/viber.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="#">
             <img src="../../assets/img/social-media/google.png" />
           </a>
         </section>
       </div>
 
-      <div
-        class="text-center p-3 footer-copyright-text"
-        style="background-color: rgba(0, 0, 0, 0.2)"
-      >
+      <div class="text-center p-3 footer-copyright-text">
         © 2020 Copyright: Svaštaonica za Bebe
       </div>
     </footer>
@@ -82,9 +79,8 @@ import { RouterLink } from "vue-router";
 </template>
 
 <style scoped>
-.social-media img {
-  width: 40px;
-  height: 40px;
+footer {
+  background-color: #cdb4db;
 }
 
 .nav-link {
@@ -96,7 +92,23 @@ import { RouterLink } from "vue-router";
   font-size: 20px;
 }
 
+.social-media a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.social-media img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.5s;
+}
+
+.social-media img:hover {
+  transform: scale(1.3);
+}
+
 .footer-copyright-text {
   font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 </style>

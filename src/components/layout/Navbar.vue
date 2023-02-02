@@ -24,11 +24,6 @@ $(window).on("resize", function () {
   }
 });
 
-// if link in DESKTOP navbar is pressed we scroll to top smoothly
-/* function closeDesktopNavbar() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-} */
-
 // if MOBILE navbar button is pressed we emit to update navbar
 function switchMobileNavbar() {
   emit("updateNavbar");
@@ -36,7 +31,6 @@ function switchMobileNavbar() {
 
 // if link in MOBILE navbar is pressed this is function that is called after emit
 function closeMobileNavbar() {
-  //window.scrollTo({ top: 0, behavior: "smooth" });
   emit("updateNavbar");
   if ($(".navbar-toggler").is(":visible")) {
     $(".navbar-collapse").collapse("toggle");
@@ -88,9 +82,6 @@ function closeMobileNavbar() {
             to="/contact"
             >Kontakt</RouterLink
           >
-          <!-- <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/fonts"
-            >Fonts</RouterLink
-          > -->
         </div>
         <div
           v-if="!isMobile"
@@ -114,9 +105,6 @@ function closeMobileNavbar() {
   font-size: 25px;
   color: #222;
 }
-.brand-icon img {
-  width: 40px;
-}
 
 .navbar-nav {
   gap: 1rem;
@@ -131,7 +119,7 @@ function closeMobileNavbar() {
   color: #444 !important;
 }
 
-/* kad je mobile da bude pozadina roza */
+/* kad je mobile */
 @media (max-width: 992px) {
   .navbar {
     position: fixed;

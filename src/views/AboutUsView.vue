@@ -3,6 +3,7 @@
 <template>
   <section class="aboutus-section py-4">
     <div class="container">
+      <!-- SECTION 1 -->
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Tko smo mi?</p>
         <div class="col-8">
@@ -15,6 +16,7 @@
         </div>
       </div>
 
+      <!-- SECTION 2 -->
       <div class="section2 row my-5 py-5 justify-content-evenly">
         <div class="background-connector"></div>
 
@@ -54,6 +56,7 @@
         </div>
       </div>
 
+      <!-- SECTION 3 -->
       <div class="section3 row my-5 py-5 justify-content-around">
         <div class="background-image"></div>
         <div class="section3-1 col-5">
@@ -85,12 +88,7 @@
         </div>
       </div>
 
-      <div class="container my-5">
-        <h1>Igračke kao umjetnost</h1>
-        <h1>Igračke za moderne obitelji</h1>
-        <h1>Igračke za zajedničko provođenje vremena</h1>
-      </div>
-
+      <!-- SECTION 4 -->
       <div class="section4 my-5 py-5">
         <div class="row justify-content-end">
           <div class="col-3 some-text-div me-5">
@@ -154,34 +152,13 @@
           </div>
         </div>
       </div>
-
-      <h1>Toys as art</h1>
-      <h1>Toys for modern families</h1>
-      <h1>Toys to spend time together</h1>
-
-      <div class="w-75 mx-auto">
-        <h1 class="text-center mt-5">
-          We are kids. The only difference is the toy we have.
-        </h1>
-        <h1 class="text-end mb-5"><i>Pablo Larrain</i></h1>
-
-        <h1 class="text-center mt-5">
-          Give children toys that are powered by their imagination, not by
-          batteries.
-        </h1>
-        <h1 class="text-end mb-5"><i>H. Jackson Brown, Jr.</i></h1>
-
-        <h1 class="text-center mt-5">
-          What I have got from my childhood aren't toys, but memories. And happy
-          memories are better than any toy.
-        </h1>
-        <h1 class="text-end mb-5"><i>River Phoenix</i></h1>
-      </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+/* SECTION 1 -> */
+
 .aboutus-section {
   position: relative;
 }
@@ -194,7 +171,7 @@
   font-size: 25px;
 }
 
-/* SECTION 2 > */
+/* SECTION 2 -> */
 
 .section2 {
   position: relative;
@@ -243,9 +220,7 @@
   transform: scale(1.2);
 }
 
-/* < SECTION 2 */
-
-/* SECTION 3 > */
+/* SECTION 3 -> */
 
 .section3 {
   height: 550px;
@@ -314,9 +289,7 @@
   bottom: 70px;
 }
 
-/* < SECTION 3 */
-
-/* SECTION 4 > */
+/* SECTION 4 -> */
 
 .some-text-div {
   display: flex;
@@ -366,6 +339,4 @@
   aspect-ratio: 1 /1;
   object-fit: cover;
 }
-
-/* < SECTION 4 */
 </style>

@@ -10,7 +10,7 @@
       <div class="col-8 p-4 py-0 mx-auto">
         <div class="contact-information px-md-4 mb-4">
           <div class="mb-5 text-center">
-            <p class="" style="font-size: 25px">
+            <p class="contact-description">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
               facilis tempora porro, suscipit ducimus delectus quaerat alias
               corporis a obcaecati, molestiae expedita dolorem nisi commodi
@@ -19,8 +19,6 @@
           </div>
 
           <div class="social-media py-5 mb-5 text-center">
-            <!-- <h1 class="getintouch mb-5">Get In Touch</h1> -->
-
             <a href="#" class="m-4">
               <img src="../assets/img/social-media/facebook-messenger.png" />
             </a>
@@ -72,10 +70,6 @@
 </template>
 
 <style scoped>
-.menu-title {
-  font-size: 48.83px;
-}
-
 .contact-section {
   font-size: 20px;
 }
@@ -86,9 +80,17 @@
   }
 }
 
+.menu-title {
+  font-size: 48.83px;
+}
+
 .contact-information {
   display: flex;
   flex-direction: column;
+}
+
+.contact-description {
+  font-size: 25px;
 }
 
 .call-btn {
@@ -120,11 +122,6 @@
   margin-bottom: 0.5rem !important;
   margin-top: 2rem !important;
   font-size: 31.25px;
-}
-
-.getintouch {
-  font-size: 48.83px;
-  font-weight: 300;
 }
 
 .social-media img {

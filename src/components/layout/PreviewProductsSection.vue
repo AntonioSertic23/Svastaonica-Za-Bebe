@@ -11,12 +11,9 @@ var data = ref(sourceData.data.slice(0, 5));
   <div class="container py-5 px-5">
     <div class="row main-row px-5">
       <div class="col h-100">
-        <RouterLink to="/singleitem/1">
+        <RouterLink v-bind:to="/singleitem/ + data[0].id">
           <div class="item-big">
-            <v-lazy-image
-              class="product-image"
-              v-bind:src="data[0].thumbnail"
-            />
+            <VLazyImage class="product-image" v-bind:src="data[0].thumbnail" />
             <div class="mask">
               <img src="../../assets/img/share.png" alt="" />
             </div>
@@ -30,9 +27,9 @@ var data = ref(sourceData.data.slice(0, 5));
       <div class="col subrow h-100">
         <div class="row">
           <div class="item col-6">
-            <RouterLink to="/singleitem/2">
+            <RouterLink v-bind:to="/singleitem/ + data[1].id">
               <div class="item-small">
-                <v-lazy-image
+                <VLazyImage
                   class="product-image"
                   v-bind:src="data[1].thumbnail"
                 />
@@ -47,9 +44,9 @@ var data = ref(sourceData.data.slice(0, 5));
           </div>
 
           <div class="item col-6">
-            <RouterLink to="/singleitem/3">
+            <RouterLink v-bind:to="/singleitem/ + data[2].id">
               <div class="item-small">
-                <v-lazy-image
+                <VLazyImage
                   class="product-image"
                   v-bind:src="data[2].thumbnail"
                 />
@@ -66,9 +63,9 @@ var data = ref(sourceData.data.slice(0, 5));
 
         <div class="row">
           <div class="item col-6">
-            <RouterLink to="/singleitem/4">
+            <RouterLink v-bind:to="/singleitem/ + data[3].id">
               <div class="item-small">
-                <v-lazy-image
+                <VLazyImage
                   class="product-image"
                   v-bind:src="data[3].thumbnail"
                 />
@@ -83,9 +80,9 @@ var data = ref(sourceData.data.slice(0, 5));
           </div>
 
           <div class="item col-6">
-            <RouterLink to="/singleitem/6">
+            <RouterLink v-bind:to="/singleitem/ + data[4].id">
               <div class="item-small">
-                <v-lazy-image
+                <VLazyImage
                   class="product-image"
                   v-bind:src="data[4].thumbnail"
                 />
@@ -115,15 +112,9 @@ var data = ref(sourceData.data.slice(0, 5));
   height: 550px;
 }
 
-.product-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.col-6 .product-image {
-  height: 263px;
+.subrow {
+  display: grid;
+  gap: 24px;
 }
 
 .item-big {
@@ -151,6 +142,17 @@ var data = ref(sourceData.data.slice(0, 5));
   opacity: 1;
 }
 
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.col-6 .product-image {
+  height: 263px;
+}
+
 .product-name p {
   position: absolute;
   font-size: 20px;
@@ -160,11 +162,6 @@ var data = ref(sourceData.data.slice(0, 5));
 
 .item-big p {
   font-size: 42px;
-}
-
-.subrow {
-  display: grid;
-  gap: 24px;
 }
 
 .item-small {
@@ -177,25 +174,6 @@ var data = ref(sourceData.data.slice(0, 5));
   overflow: hidden;
   cursor: pointer;
   box-shadow: 4px 4px 4px lightgrey;
-}
-
-.btn {
-  background-color: #a2d2ff;
-}
-
-.category-link {
-  display: inline-block;
-  color: #222;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: rgb(205, 180, 219);
-  border-radius: 15px;
-  padding: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.category-link:hover {
-  background-color: #a375bd;
 }
 
 .mask {
@@ -223,5 +201,20 @@ var data = ref(sourceData.data.slice(0, 5));
 }
 .item-small .mask img {
   width: 64px;
+}
+
+.category-link {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(205, 180, 219);
+  border-radius: 15px;
+  padding: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.category-link:hover {
+  background-color: #a375bd;
 }
 </style>

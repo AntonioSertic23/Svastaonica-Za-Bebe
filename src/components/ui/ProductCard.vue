@@ -13,7 +13,7 @@ var item = props.cardData;
   <div class="">
     <div class="image-div" v-if="item.badges.length == 1">
       <div class="image-div-background oneBadge"></div>
-      <v-lazy-image
+      <VLazyImage
         v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
@@ -21,12 +21,12 @@ var item = props.cardData;
 
     <div class="image-div" v-if="item.badges.length > 1">
       <div class="image-div-background moreBadges"></div>
-      <v-lazy-image
+      <VLazyImage
         style="margin-left: 28%"
         v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
-      <v-lazy-image
+      <VLazyImage
         style="margin-right: 28%"
         v-bind:src="'/src/assets/img/badges/' + item.badges[1] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
@@ -35,7 +35,7 @@ var item = props.cardData;
 
     <RouterLink :to="'/singleitem/' + item.id">
       <div class="product-image-div">
-        <v-lazy-image
+        <VLazyImage
           class="thumbnail"
           v-bind:src="item.thumbnail"
           v-bind:style="[item.soldout ? 'filter: brightness(60%)' : '']"
@@ -54,8 +54,6 @@ var item = props.cardData;
             class="open-icon"
             alt=""
           />
-          <!-- <div class="paragraph-div p-4"></div>
-          <p class="m-0">Otvori</p> -->
         </div>
       </div>
     </RouterLink>
@@ -65,15 +63,6 @@ var item = props.cardData;
 </template>
 
 <style scoped>
-.product-image-div {
-  height: 400px;
-  width: 400px;
-  border-radius: 15px;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 4px 4px 4px lightgrey;
-}
-
 .section-cards .image-div img {
   width: 70px;
   position: absolute;
@@ -94,23 +83,6 @@ var item = props.cardData;
   transform: scale(1.2);
 }
 
-.section-cards2 .image-div img {
-  width: 64px;
-  position: absolute;
-  right: 0;
-}
-.section-cards2 .product-image-div img {
-  width: 100%;
-  border-radius: 15px;
-}
-.section-cards2 .product-image-div {
-  height: auto;
-  border-radius: 15px;
-}
-.section-cards2 .product-image-div .btn {
-  font-size: 20px;
-}
-
 .badge {
   position: absolute;
   background-color: gray;
@@ -119,31 +91,17 @@ var item = props.cardData;
   border-radius: 0;
 }
 
-.coupon-div {
-  border-radius: 30px !important;
-}
-.coupon-div img {
-  border-radius: 30px;
-}
-.coupon-card {
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
-  position: absolute;
-  border: 5px dashed white;
-  top: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 30px;
-}
-
 .product-image-div {
   position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 
-.product-image-div img,
-.soldout-div .product-image {
+.product-image-div img {
   height: 100%;
   width: 100%;
   border-radius: 15px;

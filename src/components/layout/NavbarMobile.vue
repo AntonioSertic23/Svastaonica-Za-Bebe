@@ -34,22 +34,22 @@ function closeNavbar() {
 
     <div class="icons-div">
       <a href="#" class="m-2">
-        <img src="../../assets/img/facebook-messenger.png" />
+        <img src="../../assets/img/social-media/facebook-messenger.png" />
       </a>
       <a href="#" class="m-2">
-        <img src="../../assets/img/whatsapp.png" />
+        <img src="../../assets/img/social-media/whatsapp.png" />
       </a>
       <a href="#" class="m-2">
-        <img src="../../assets/img/facebook.png" />
+        <img src="../../assets/img/social-media/facebook.png" />
       </a>
       <a href="#" class="m-2">
-        <img src="../../assets/img/instagram.png" />
+        <img src="../../assets/img/social-media/instagram.png" />
       </a>
       <a href="#" class="m-2">
-        <img src="../../assets/img/viber.png" />
+        <img src="../../assets/img/social-media/viber.png" />
       </a>
       <a href="#" class="m-2">
-        <img src="../../assets/img/google.png" />
+        <img src="../../assets/img/social-media/google.png" />
       </a>
 
       <RouterLink class="nav-link mt-3" to="">+385 99 478 85 86</RouterLink>
@@ -74,14 +74,6 @@ function closeNavbar() {
   font-size: 25px !important;
   color: #222;
   margin-bottom: 1rem;
-}
-
-.language-btn {
-  background-color: #ffafcc;
-  text-transform: capitalize;
-  font-family: Poiret_One;
-  font-size: 25px;
-  width: 100%;
 }
 
 .links-div {

@@ -22,7 +22,6 @@ import { RouterLink } from "vue-router";
 
         <div class="middle-side col-4 d-flex justify-content-center">
           <div class="middle-side-div">
-            <!-- <img class="image1" src="../../assets/img/products/1.jpg" alt="" /> -->
             <img class="image2" src="../../assets/img/logo.jpe" alt="" />
             <img class="image3" src="../../assets/img/bow.png" alt="" />
           </div>
@@ -50,13 +49,6 @@ import { RouterLink } from "vue-router";
   position: relative;
 }
 
-.gif {
-  width: 192px;
-  position: absolute;
-  right: 100px;
-  bottom: 0;
-}
-
 .right-side,
 .left-side {
   position: relative;
@@ -69,40 +61,6 @@ import { RouterLink } from "vue-router";
 .left-side-div p,
 .right-side-div p {
   font-size: 25px;
-}
-
-.middle-side-div {
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0px 5px 18px grey;
-  width: 100%;
-}
-
-.image1 {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  left: -130px;
-  bottom: -50px;
-  object-fit: cover;
-  box-shadow: 0px 5px 18px grey;
-}
-.image2 {
-  width: 100%;
-  height: 364px;
-  object-fit: cover;
-}
-.image3 {
-  height: 100px;
-  position: absolute;
-  right: -25px;
-  top: 15px;
-}
-
-.image1,
-.image2,
-.image3 {
-  border-radius: 15px;
 }
 
 .category-link {
@@ -126,5 +84,36 @@ import { RouterLink } from "vue-router";
 }
 .category-link:hover {
   background-color: #a375bd;
+}
+
+.middle-side-div {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 5px 18px grey;
+  width: 100%;
+}
+
+.image2 {
+  width: 100%;
+  height: 364px;
+  object-fit: cover;
+}
+.image3 {
+  height: 100px;
+  position: absolute;
+  right: -25px;
+  top: 15px;
+}
+
+.image2,
+.image3 {
+  border-radius: 15px;
+}
+
+.gif {
+  width: 192px;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
 }
 </style>

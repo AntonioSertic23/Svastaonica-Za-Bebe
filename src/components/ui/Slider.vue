@@ -2,7 +2,7 @@
 
 <template>
   <section>
-    <div class="fading-2"></div>
+    <div class="fading-left"></div>
     <article>
       <div>
         <ul>
@@ -41,26 +41,12 @@
         </ul>
       </div>
     </article>
-    <div class="fading"></div>
+    <div class="fading-right"></div>
   </section>
 </template>
 
 <style scoped>
-.fading {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  display: block;
-  width: 70px;
-  height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    #ede4f2 100%
-  );
-}
-
-.fading-2 {
+.fading-left {
   position: absolute;
   left: 0px;
   top: 0;
@@ -74,23 +60,26 @@
     #ede4f2 100%
   );
 }
+.fading-right {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  display: block;
+  width: 70px;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    #ede4f2 100%
+  );
+}
 
 /* ------ */
 
 section {
   position: relative;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  width: 100%;
+  overflow: hidden;
 }
 
 img {
@@ -98,11 +87,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-section {
-  width: 100%;
-  overflow: hidden;
 }
 
 article {

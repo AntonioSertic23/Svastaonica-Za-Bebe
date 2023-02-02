@@ -43,13 +43,11 @@
   height: 420px;
 }
 
-#parallelogram {
-  width: 100%;
-  height: 50px;
-  background-color: #cdb4db;
-  border-radius: 15px;
-  margin-top: -20px;
-  box-shadow: 3px 3px 5px grey;
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
 }
 
 img {
@@ -69,8 +67,18 @@ img {
   top: 20px;
   transition: top ease 0.5s;
 }
+img:hover {
+  cursor: pointer;
+  top: 0;
+}
 
 #parallelogram {
+  width: 100%;
+  height: 50px;
+  background-color: #cdb4db;
+  border-radius: 15px;
+  margin-top: -20px;
+  box-shadow: 3px 3px 5px grey;
   position: relative;
 }
 
@@ -82,17 +90,5 @@ img {
 }
 .shape3 {
   transform: skew(20deg);
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-}
-
-img:hover {
-  cursor: pointer;
-  top: 0;
 }
 </style>

@@ -1,9 +1,9 @@
 <script setup>
 import Hero from "../components/layout/HeroSection.vue";
-import AboutUs from "../components/layout/AboutUsSection.vue";
-import PreviewProducts from "../components/layout/PreviewProductsSection.vue";
-import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
 import Slider from "../components/ui/Slider.vue";
+import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
+import PreviewProducts from "../components/layout/PreviewProductsSection.vue";
+import AboutUs from "../components/layout/AboutUsSection.vue";
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import Slider from "../components/ui/Slider.vue";
 
   <Hero />
 
-  <div class="container slajder py-5">
+  <div class="container slider py-5">
     <Slider />
   </div>
 
@@ -36,7 +36,7 @@ import Slider from "../components/ui/Slider.vue";
   font-weight: 300;
 }
 
-.slajder {
+.slider {
   display: flex;
   justify-content: center;
 }

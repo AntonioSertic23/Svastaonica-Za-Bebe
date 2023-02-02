@@ -1,6 +1,4 @@
 <script setup>
-//Scroll back to top
-
 (function ($) {
   "use strict";
 
@@ -52,12 +50,12 @@
     >
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
-    <img class="nesto" src="../../assets/img/up-arrow.png" alt="" />
+    <img class="icon" src="../../assets/img/up-arrow.png" alt="" />
   </div>
 </template>
 
 <style scoped>
-.nesto {
+.icon {
   position: absolute;
   top: 0;
   height: 54px;
@@ -66,18 +64,6 @@
   margin-top: 3px;
   margin-left: 3px;
   left: 0;
-}
-
-body {
-  background-color: white;
-}
-
-.blok:nth-of-type(odd) {
-  background-color: white;
-}
-
-.blok:nth-of-type(even) {
-  background-color: black;
 }
 
 @-webkit-keyframes border-transform {

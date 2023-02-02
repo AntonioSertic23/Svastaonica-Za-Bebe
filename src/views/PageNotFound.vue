@@ -7,7 +7,7 @@ import { RouterLink } from "vue-router";
     <div class="h-100 container">
       <div class="box">
         <h1 class="mb-5">Oops!</h1>
-        <p class="my-5">404 - PAGE NOT FOUND</p>
+        <p class="my-5">404 - Ova stranica nije pronađena</p>
 
         <div class="">
           <a
