@@ -69,6 +69,8 @@ import { RouterLink } from "vue-router";
             <img src="../../assets/img/social-media/google.png" />
           </a>
         </section>
+
+        <p class="my-4 text-center madeineu">Made in EU</p>
       </div>
 
       <div class="text-center p-3 footer-copyright-text">
@@ -105,6 +107,10 @@ footer {
 
 .social-media img:hover {
   transform: scale(1.3);
+}
+
+.madeineu {
+  font-size: 25px;
 }
 
 .footer-copyright-text {

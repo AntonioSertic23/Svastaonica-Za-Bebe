@@ -202,8 +202,6 @@ if (!navigator.share) {
                   <span class="tooltiptext">{{ icon.text }}</span>
                 </div>
               </div>
-
-              <p class="mt-4 text-center">Proizvedeno u EU</p>
             </div>
 
             <div class="reviews-div">
