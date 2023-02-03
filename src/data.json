@@ -45,12 +45,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -62,11 +62,11 @@
       "keywords": [
         {
           "text": "Siguran",
-          "icon": "/src/assets/img/shield.png"
+          "icon": "/src/assets/img/product-related/shield.png"
         },
         {
           "text": "100% zabavan",
-          "icon": "/src/assets/img/playtime.png"
+          "icon": "/src/assets/img/product-related/playtime.png"
         },
         {
           "text": "Novo u ponudi",
@@ -124,12 +124,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor!"
         }
@@ -141,7 +141,7 @@
       "keywords": [
         {
           "text": "Siguran",
-          "icon": "/src/assets/img/shield.png"
+          "icon": "/src/assets/img/product-related/shield.png"
         }
       ],
       "isBundle": false,
@@ -195,12 +195,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -212,7 +212,7 @@
       "keywords": [
         {
           "text": "100% zabavan",
-          "icon": "/src/assets/img/playtime.png"
+          "icon": "/src/assets/img/product-related/playtime.png"
         }
       ],
       "isBundle": false,
@@ -266,12 +266,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -341,12 +341,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -402,12 +402,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -463,12 +463,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -524,12 +524,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -589,12 +589,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -650,12 +650,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -715,12 +715,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -780,12 +780,12 @@
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/src/assets/img/reviews-profile-pictures/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }

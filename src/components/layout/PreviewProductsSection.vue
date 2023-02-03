@@ -15,7 +15,7 @@ var data = ref(sourceData.data.slice(0, 5));
           <div class="item-big">
             <VLazyImage class="product-image" v-bind:src="data[0].thumbnail" />
             <div class="mask">
-              <img src="../../assets/img/share.png" alt="" />
+              <img src="../../assets/img/action-icons/share.png" alt="" />
             </div>
             <div class="product-name">
               <p class="ms-3 mb-3">{{ data[0].name }}</p>
@@ -34,7 +34,7 @@ var data = ref(sourceData.data.slice(0, 5));
                   v-bind:src="data[1].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share.png" alt="" />
+                  <img src="../../assets/img/action-icons/share.png" alt="" />
                 </div>
                 <div class="product-name">
                   <p class="ms-3 mb-3">{{ data[1].name }}</p>
@@ -51,7 +51,7 @@ var data = ref(sourceData.data.slice(0, 5));
                   v-bind:src="data[2].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share.png" alt="" />
+                  <img src="../../assets/img/action-icons/share.png" alt="" />
                 </div>
                 <div class="product-name">
                   <p class="ms-3 mb-3">{{ data[2].name }}</p>
@@ -70,7 +70,7 @@ var data = ref(sourceData.data.slice(0, 5));
                   v-bind:src="data[3].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share.png" alt="" />
+                  <img src="../../assets/img/action-icons/share.png" alt="" />
                 </div>
                 <div class="product-name">
                   <p class="ms-3 mb-3">{{ data[3].name }}</p>
@@ -87,7 +87,7 @@ var data = ref(sourceData.data.slice(0, 5));
                   v-bind:src="data[4].thumbnail"
                 />
                 <div class="mask">
-                  <img src="../../assets/img/share.png" alt="" />
+                  <img src="../../assets/img/action-icons/share.png" alt="" />
                 </div>
                 <div class="product-name">
                   <p class="ms-3 mb-3">{{ data[4].name }}</p>

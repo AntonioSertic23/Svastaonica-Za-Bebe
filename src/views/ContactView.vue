@@ -46,19 +46,19 @@
 
           <div class="aboutus-cards-div row mt-4 py-5">
             <div class="col-4">
-              <img src="../assets/img/house.png" alt="" />
+              <img src="../assets/img/contact/house.png" alt="" />
               <h6 class="naslov">Mjesto</h6>
               <p class="info">Našice, Hrvatska</p>
             </div>
 
             <div class="col-4">
-              <img src="../assets/img/call.png" alt="" />
+              <img src="../assets/img/contact/call.png" alt="" />
               <h6 class="naslov">Telefon</h6>
               <p class="info">+091/091091</p>
             </div>
 
             <div class="col-4">
-              <img src="../assets/img/email.png" alt="" />
+              <img src="../assets/img/contact/email.png" alt="" />
               <h6 class="naslov">Email</h6>
               <p class="info">john.doe@gmail.com</p>
             </div>

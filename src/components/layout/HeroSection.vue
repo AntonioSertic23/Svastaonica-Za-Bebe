@@ -22,8 +22,12 @@ import { RouterLink } from "vue-router";
 
         <div class="middle-side col-4 d-flex justify-content-center">
           <div class="middle-side-div">
-            <img class="image2" src="../../assets/img/logo.jpe" alt="" />
-            <img class="image3" src="../../assets/img/bow.png" alt="" />
+            <img class="image2" src="/logo.jpe" alt="" />
+            <img
+              class="image3"
+              src="../../assets/img/decorative/bow.png"
+              alt=""
+            />
           </div>
         </div>
 
@@ -39,7 +43,7 @@ import { RouterLink } from "vue-router";
         </div>
       </div>
 
-      <img class="gif" src="../../assets/img/gif.gif" alt="" />
+      <img class="gif" src="../../assets/img/decorative/gif.gif" alt="" />
     </div>
   </div>
 </template>

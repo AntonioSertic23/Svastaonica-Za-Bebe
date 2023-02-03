@@ -6,7 +6,7 @@
 
     <div class="row justify-content-center">
       <div class="col-3">
-        <img class="" src="../../assets/img/message.png" alt="" />
+        <img class="" src="../../assets/img/process/message.png" alt="" />
         <h3 class="mt-4">Message</h3>
         <p class="mt-3 text-center px-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -14,7 +14,7 @@
       </div>
 
       <div class="col-3">
-        <img class="" src="../../assets/img/handcraft.png" alt="" />
+        <img class="" src="../../assets/img/process/handcraft.png" alt="" />
         <h3 class="mt-4">Crafting</h3>
         <p class="mt-3 text-center px-3">
           Lorem ipsum dolor, sit amet enim explicabo asperiores exercitationem
@@ -23,7 +23,7 @@
       </div>
 
       <div class="col-3">
-        <img class="" src="../../assets/img/delivery.png" alt="" />
+        <img class="" src="../../assets/img/process/delivery.png" alt="" />
         <h3 class="mt-4">Delivery</h3>
         <p class="mt-3 text-center px-3">
           Lorem ipsum consectetur adipisicing harum deserunt.

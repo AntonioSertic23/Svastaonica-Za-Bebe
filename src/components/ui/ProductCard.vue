@@ -44,13 +44,13 @@ var item = props.cardData;
         <div class="mask">
           <img
             v-if="item.soldout"
-            src="/src/assets/img/sold-out.png"
+            src="/src/assets/img/product-related/sold-out.png"
             class="soldout-icon"
             alt=""
           />
           <img
             v-else
-            src="/src/assets/img/share.png"
+            src="/src/assets/img/action-icons/share.png"
             class="open-icon"
             alt=""
           />

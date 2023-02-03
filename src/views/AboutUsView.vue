@@ -21,7 +21,11 @@
         <div class="background-connector"></div>
 
         <div class="col-4 section2-left">
-          <img class="image1" src="../assets/img/aboutus2.jpg" alt="" />
+          <img
+            class="image1"
+            src="../assets/img/about-us/aboutus2.jpg"
+            alt=""
+          />
 
           <p class="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -52,7 +56,11 @@
 
         <div class="col-4 section2-right">
           <p class="my-3">Naslov</p>
-          <img class="image2" src="../assets/img/aboutus1.jpg" alt="" />
+          <img
+            class="image2"
+            src="../assets/img/about-us/aboutus1.jpg"
+            alt=""
+          />
         </div>
       </div>
 
@@ -78,7 +86,7 @@
         <div class="section3-2 col-3">
           <img
             class="section3-image1"
-            src="../assets/img/products.jpg"
+            src="../assets/img/temp/products.jpg"
             alt=""
           />
           <div class="circle1"></div>
@@ -103,7 +111,7 @@
               <div class="mark"></div>
               <img
                 class="photo-photo"
-                src="../assets/img/kidplaying1.jpg"
+                src="../assets/img/about-us/kidplaying1.jpg"
                 alt=""
               />
               <h1 class="text-center mt-4">Naslov</h1>
@@ -117,7 +125,7 @@
               <div class="mark"></div>
               <img
                 class="photo-photo"
-                src="../assets/img/kidplaying2.jpg"
+                src="../assets/img/about-us/kidplaying2.jpg"
                 alt=""
               />
               <h1 class="text-center mt-4">Naslov</h1>
@@ -144,7 +152,7 @@
               <div class="mark"></div>
               <img
                 class="photo-photo"
-                src="../assets/img/kidplaying1.jpg"
+                src="../assets/img/about-us/kidplaying1.jpg"
                 alt=""
               />
               <h1 class="text-center mt-4">Naslov</h1>

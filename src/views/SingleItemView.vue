@@ -117,13 +117,13 @@ if (!navigator.share) {
                       <div class="mask">
                         <img
                           v-if="item.soldout"
-                          src="/src/assets/img/sold-out.png"
+                          src="/src/assets/img/product-related/sold-out.png"
                           class="soldout-icon"
                           alt=""
                         />
                         <img
                           v-else
-                          src="/src/assets/img/share.png"
+                          src="/src/assets/img/action-icons/share.png"
                           class="open-icon"
                           alt=""
                         />
@@ -162,13 +162,13 @@ if (!navigator.share) {
                       <div class="mask">
                         <img
                           v-if="item.soldout"
-                          src="/src/assets/img/sold-out.png"
+                          src="/src/assets/img/product-related/sold-out.png"
                           class="soldout-icon"
                           alt=""
                         />
                         <img
                           v-else
-                          src="/src/assets/img/share.png"
+                          src="/src/assets/img/action-icons/share.png"
                           class="open-icon"
                           alt=""
                         />
@@ -236,7 +236,7 @@ if (!navigator.share) {
                 data-bs-slide="prev"
                 v-on:click="updateNumber()"
               >
-                <img src="../assets/img/left-chevron.png" alt="" />
+                <img src="../assets/img/action-icons/left-chevron.png" alt="" />
                 <span class="visually-hidden">Previous</span>
               </button>
 
@@ -265,7 +265,7 @@ if (!navigator.share) {
 
                 <div class="share-section">
                   <a class="shareBtn" @click="share()">
-                    <img src="/src/assets/img/share3.png" alt="" />
+                    <img src="/src/assets/img/action-icons/share3.png" alt="" />
                   </a>
                 </div>
               </div>
@@ -277,7 +277,7 @@ if (!navigator.share) {
                 data-bs-slide="next"
                 v-on:click="updateNumber()"
               >
-                <img src="../assets/img/chevron.png" alt="" />
+                <img src="../assets/img/action-icons/chevron.png" alt="" />
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
@@ -305,13 +305,13 @@ if (!navigator.share) {
             <div class="mask">
               <img
                 v-if="item.soldout"
-                src="/src/assets/img/sold-out.png"
+                src="/src/assets/img/product-related/sold-out.png"
                 class="soldout-icon"
                 alt=""
               />
               <img
                 v-else
-                src="/src/assets/img/share.png"
+                src="/src/assets/img/action-icons/share.png"
                 class="open-icon"
                 alt=""
               />

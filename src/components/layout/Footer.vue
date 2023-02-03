@@ -86,8 +86,13 @@ footer {
 }
 
 .nav-link {
-  color: black;
+  color: #222;
   font-size: 20px;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: black;
+  font-weight: 600;
 }
 
 .footer-text {
