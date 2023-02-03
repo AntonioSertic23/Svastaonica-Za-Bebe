@@ -41,7 +41,12 @@ function closeMobileNavbar() {
 <template>
   <nav class="navbar navbar-expand-lg navbar-light py-4 px-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Svaštaonica Za Bebe</a>
+      <a
+        class="navbar-brand"
+        v-bind:class="isMobile ? 'navbar-brand-mobile' : ''"
+        href="#"
+        >Svaštaonica Za Bebe</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -104,6 +109,9 @@ function closeMobileNavbar() {
   font-weight: 600;
   font-size: 25px;
   color: #222;
+}
+.navbar-brand-mobile {
+  font-size: 20px;
 }
 
 .navbar-nav {

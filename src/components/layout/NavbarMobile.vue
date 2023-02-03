@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink } from "vue-router";
+import SearchBar from "../ui/SearchBar.vue";
 
 // defining emits so we can call them from this script tags
 const emit = defineEmits(["closeMobileNavbar"]);
@@ -12,6 +13,10 @@ function closeNavbar() {
 
 <template>
   <div class="navbar-nav">
+    <div class="searchbar-mobile-div">
+      <SearchBar :isForNavbar="true" />
+    </div>
+
     <div class="links-div text-center w-100 px-5">
       <RouterLink class="nav-link" @click="closeNavbar()" to="/"
         >Početna</RouterLink
@@ -59,11 +64,18 @@ function closeNavbar() {
 
 <style scoped>
 .navbar-nav {
-  height: calc(100vh - 95.5px);
+  height: calc(100vh - 65px);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding-bottom: 50px;
   align-items: center;
   font-family: Poiret_One;
+  position: relative;
+}
+
+.searchbar-mobile-div {
+  position: absolute;
+  top: 30px;
 }
 
 .nav-link {
