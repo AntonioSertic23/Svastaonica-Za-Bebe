@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="container py-5">
+  <div class="container my-5">
     <div class="row justify-content-center">
       <div class="item col-3 mt-5">
         <div class="top-card">

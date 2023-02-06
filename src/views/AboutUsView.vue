@@ -2,7 +2,7 @@
 
 <template>
   <section class="aboutus-section py-4">
-    <div class="container">
+    <div class="container d-flex flex-column">
       <!-- SECTION 1 -->
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Tko smo mi?</p>
@@ -65,28 +65,29 @@
       </div>
 
       <!-- SECTION 3 -->
-      <div class="section3 row my-5 py-5 justify-content-around">
+      <div class="section3 row my-5 justify-content-around">
         <div class="background-image"></div>
         <div class="section3-1 col-5">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            quam amet nemo nesciunt neque nulla autem. non earum! Similique,
-            sequi ipsum.
-          </p>
-          <p>
-            Adipisicing elit. Voluptatum quam amet nemo nesciunt neque nulla
-            autem. Architecto sunt possimus.
-          </p>
-          <p>
-            Minus ab ut recusandae expedita cumque non earum! Similique, sequi
-            ipsum.
-          </p>
+          <div class="item">
+            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <p>Igračke kao umjetnost</p>
+          </div>
+
+          <div class="item">
+            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <p>Igračke za moderne obitelji</p>
+          </div>
+
+          <div class="item">
+            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <p>Igračke za zajedničko provođenje vremena</p>
+          </div>
         </div>
 
         <div class="section3-2 col-3">
           <img
             class="section3-image1"
-            src="../assets/img/temp/products.jpg"
+            src="../assets/img/temp/products-2.jpg"
             alt=""
           />
           <div class="circle1"></div>
@@ -231,12 +232,12 @@
 /* SECTION 3 -> */
 
 .section3 {
-  height: 550px;
+  height: 400px;
 }
 
 .background-image {
   position: absolute;
-  height: 450px;
+  height: 400px;
   background-color: thistle;
   left: 0;
 }
@@ -246,9 +247,20 @@
   flex-direction: column;
   justify-content: center;
   z-index: 1;
+  row-gap: 15px;
+}
+.section3-1 .item {
+  display: flex;
+  align-items: center;
 }
 .section3-1 p {
-  font-size: 20px;
+  font-size: 31.25px;
+  margin: 0;
+}
+.section3-1 img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1rem;
 }
 
 .section3-2 {
@@ -260,12 +272,12 @@
 }
 
 .section3-image1 {
-  width: 480px;
-  height: 337px;
-  margin-left: -87px;
-  border-radius: 15px;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
+  border-radius: 15px;
   box-shadow: 2px 2px 8px grey;
+  transform: scale(1.5);
 }
 
 .circle1,
@@ -281,20 +293,20 @@
 }
 
 .circle1 {
-  left: -60px;
-  top: 70px;
+  left: -40px;
+  top: 60px;
 }
 .circle2 {
-  right: -60px;
-  top: 70px;
+  right: -40px;
+  top: 60px;
 }
 .circle3 {
-  left: -60px;
-  bottom: 70px;
+  left: -40px;
+  bottom: 60px;
 }
 .circle4 {
-  right: -60px;
-  bottom: 70px;
+  right: -40px;
+  bottom: 60px;
 }
 
 /* SECTION 4 -> */
