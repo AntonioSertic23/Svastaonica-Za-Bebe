@@ -38,24 +38,34 @@ function closeNavbar() {
     <div></div>
 
     <div class="icons-div">
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/facebook-messenger.png" />
-      </a>
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/whatsapp.png" />
-      </a>
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/facebook.png" />
-      </a>
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/instagram.png" />
-      </a>
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/viber.png" />
-      </a>
-      <a href="#" class="m-2">
-        <img src="../../assets/img/social-media/google.png" />
-      </a>
+      <div class="row justify-content-center">
+        <div class="col-3 icon-column">
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/facebook-messenger.png" />
+          </a>
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/whatsapp.png" />
+          </a>
+        </div>
+
+        <div class="col-3 icon-column">
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/facebook.png" />
+          </a>
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/instagram.png" />
+          </a>
+        </div>
+
+        <div class="col-3 icon-column">
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/viber.png" />
+          </a>
+          <a href="#" class="m-2">
+            <img src="../../assets/img/social-media/google.png" />
+          </a>
+        </div>
+      </div>
 
       <RouterLink class="nav-link mt-3" to="">+385 99 478 85 86</RouterLink>
     </div>
@@ -67,7 +77,7 @@ function closeNavbar() {
   height: calc(100vh - 65px);
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   align-items: center;
   font-family: Poiret_One;
   position: relative;
@@ -101,6 +111,12 @@ function closeNavbar() {
 .icons-div img {
   width: 40px;
   height: 40px;
+}
+
+.icon-column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes fadein {

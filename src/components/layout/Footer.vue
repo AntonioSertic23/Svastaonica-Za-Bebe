@@ -5,28 +5,30 @@ import { RouterLink } from "vue-router";
 <template>
   <div class="">
     <footer class="text-center">
-      <div class="container">
+      <div class="container d-flex flex-column">
         <section>
-          <div class="row text-center d-flex justify-content-center pt-5">
-            <div class="col-md-2">
+          <div
+            class="row row-cols-1 row-cols-lg-4 justify-content-center g-3 mt-4 col-lg-8 mx-auto"
+          >
+            <div class="">
               <h6 class="text-uppercase">
                 <RouterLink class="nav-link" to="/">Početna</RouterLink>
               </h6>
             </div>
 
-            <div class="col-md-2">
+            <div class="">
               <h6 class="text-uppercase">
                 <RouterLink class="nav-link" to="/gallery">Galerija</RouterLink>
               </h6>
             </div>
 
-            <div class="col-md-2">
+            <div class="">
               <h6 class="text-uppercase">
                 <RouterLink class="nav-link" to="/aboutus">O nama</RouterLink>
               </h6>
             </div>
 
-            <div class="col-md-2">
+            <div class="">
               <h6 class="text-uppercase">
                 <RouterLink class="nav-link" to="/contact">Kontakt</RouterLink>
               </h6>
@@ -49,7 +51,7 @@ import { RouterLink } from "vue-router";
           </div>
         </section>
 
-        <section class="text-center mb-5 social-media">
+        <section class="mb-5 social-media px-3 row g-4 justify-content-center">
           <a href="#">
             <img src="../../assets/img/social-media/facebook-messenger.png" />
           </a>
@@ -100,8 +102,7 @@ footer {
 }
 
 .social-media a {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: fit-content;
 }
 
 .social-media img {
@@ -121,5 +122,8 @@ footer {
 .footer-copyright-text {
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991.98px) {
 }
 </style>

@@ -2,12 +2,12 @@
 
 <template>
   <section class="contact-section py-4">
-    <div class="container">
+    <div class="container d-flex flex-column">
       <div class="row text-center">
         <p class="mb-5 menu-title">Kontakt</p>
       </div>
 
-      <div class="col-8 p-4 py-0 mx-auto">
+      <div class="col col-lg-8 p-4 py-0 mx-auto">
         <div class="contact-information px-md-4 mb-4">
           <div class="mb-5 text-center">
             <p class="contact-description">
@@ -18,46 +18,48 @@
             </p>
           </div>
 
-          <div class="social-media py-5 mb-5 text-center">
-            <a href="#" class="m-4">
+          <div class="social-media mb-5 row g-4 justify-content-center">
+            <a href="#" class="">
               <img src="../assets/img/social-media/facebook-messenger.png" />
             </a>
-            <a href="#" class="m-4">
+            <a href="#" class="">
               <img src="../assets/img/social-media/whatsapp.png" />
             </a>
-            <a href="#" class="m-4">
+            <a href="#" class="">
               <img src="../assets/img/social-media/facebook.png" />
             </a>
-            <a href="#" class="m-4">
+            <a href="#" class="">
               <img src="../assets/img/social-media/instagram.png" />
             </a>
-            <a href="#" class="m-4">
+            <a href="#" class="">
               <img src="../assets/img/social-media/viber.png" />
             </a>
-            <a href="#" class="m-4">
+            <a href="#" class="">
               <img src="../assets/img/social-media/google.png" />
             </a>
           </div>
 
-          <a class="call-btn btn mb-5 mx-auto py-3 px-4" href="tel:0919375976"
+          <a
+            class="call-btn btn mt-3 mb-5 mx-auto py-3 px-4"
+            href="tel:0919375976"
             ><i class="fa fa-phone me-2"></i>
             0919375976
           </a>
 
-          <div class="aboutus-cards-div row mt-4 py-5">
-            <div class="col-4">
+          <div class="aboutus-cards-div row row-cols-1 row-cols-lg-3 mt-5">
+            <div class="text-center">
               <img src="../assets/img/contact/house.png" alt="" />
               <h6 class="naslov">Mjesto</h6>
               <p class="info">Našice, Hrvatska</p>
             </div>
 
-            <div class="col-4">
+            <div class="text-center">
               <img src="../assets/img/contact/call.png" alt="" />
               <h6 class="naslov">Telefon</h6>
               <p class="info">+091/091091</p>
             </div>
 
-            <div class="col-4">
+            <div class="text-center">
               <img src="../assets/img/contact/email.png" alt="" />
               <h6 class="naslov">Email</h6>
               <p class="info">john.doe@gmail.com</p>
@@ -124,12 +126,28 @@
   font-size: 31.25px;
 }
 
+.social-media a {
+  width: fit-content;
+}
 .social-media img {
   width: 64px;
   transition: transform 0.5s;
 }
-
 .social-media img:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
+}
+
+@media (max-width: 991.98px) {
+  .contact-description {
+    font-size: 20px;
+  }
+
+  .social-media img {
+    width: 48px;
+  }
+
+  .aboutus-cards-div {
+    row-gap: 50px;
+  }
 }
 </style>
