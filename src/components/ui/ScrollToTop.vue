@@ -151,4 +151,18 @@
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
+@media (max-width: 991.98px) {
+  .progress-wrap {
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon {
+    height: 44px;
+    width: 44px;
+  }
+}
 </style>

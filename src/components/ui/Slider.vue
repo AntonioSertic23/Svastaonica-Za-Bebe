@@ -130,4 +130,25 @@ li {
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 991.98px) {
+  ul {
+    height: 200px;
+  }
+  div {
+    width: 200%;
+  }
+  article {
+    animation-duration: 15s;
+  }
+
+  @keyframes bannermove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+}
 </style>

@@ -123,7 +123,4 @@ footer {
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 991.98px) {
-}
 </style>

@@ -4,12 +4,12 @@ import { RouterLink } from "vue-router";
 
 <template>
   <div>
-    <div class="container my-5 pt-3">
-      <div class="row">
-        <div class="left-side col-4 d-flex">
-          <div class="left-side-div pe-5">
+    <div class="container mb-5 mt-0 mt-lg-3 pt-0 pt-lg-3">
+      <div class="row row-cols-1 row-cols-lg-3 px-4 px-lg-0">
+        <div class="order-2 order-lg-1 left-side d-flex">
+          <div class="left-side-div pe-0 pe-lg-5 mt-4 mt-lg-0">
             <h1>Dobrodošli na</h1>
-            <p class="my-4">
+            <p class="mt-2 mb-4 my-lg-4">
               sretno mjesto na internetu gdje se mogu pronaći razne igračke za
               bebe!
             </p>
@@ -20,7 +20,9 @@ import { RouterLink } from "vue-router";
           </div>
         </div>
 
-        <div class="middle-side col-4 d-flex justify-content-center">
+        <div
+          class="order-1 order-lg-2 middle-side d-flex justify-content-center"
+        >
           <div class="middle-side-div">
             <img class="image2" src="/logo.jpe" alt="" />
             <img
@@ -32,9 +34,9 @@ import { RouterLink } from "vue-router";
         </div>
 
         <div
-          class="right-side col-4 d-flex justify-content-center align-items-top"
+          class="order-3 order-lg-3 right-side d-flex justify-content-center align-items-top px-2"
         >
-          <div class="right-side-div ps-5">
+          <div class="right-side-div ps-0 ps-lg-5">
             <p class="text-center">
               "Svi smo djeca. Jedina razlika je igračka koju imamo."
             </p>
@@ -119,5 +121,33 @@ import { RouterLink } from "vue-router";
   position: absolute;
   right: 100px;
   bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .image3 {
+    height: 75px;
+    right: -25px;
+    top: 10px;
+  }
+
+  .left-side-div h1 {
+    font-size: 31.25px;
+  }
+  .left-side-div p,
+  .right-side-div p {
+    font-size: 20px;
+  }
+
+  .category-link {
+    position: relative;
+  }
+
+  .image2 {
+    height: 210px;
+  }
+
+  .gif {
+    display: none;
+  }
 }
 </style>

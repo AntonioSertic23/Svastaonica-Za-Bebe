@@ -2,8 +2,8 @@
 
 <template>
   <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="item col-3 mt-5">
+    <div class="row row-cols-1 row-cols-lg-3 px-5">
+      <div class="item mt-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
             <img class="" src="../../assets/img/products/1.jpg" alt="" />
@@ -13,7 +13,7 @@
         <h3 class="text-center mt-3">Neki naslov</h3>
       </div>
 
-      <div class="item col-3">
+      <div class="item">
         <div class="top-card">
           <div class="image p-4 pb-0">
             <img class="" src="../../assets/img/products/2.jpg" alt="" />
@@ -25,7 +25,7 @@
         </h3>
       </div>
 
-      <div class="item col-3 mt-5">
+      <div class="item mt-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
             <img class="" src="../../assets/img/products/3.jpg" alt="" />

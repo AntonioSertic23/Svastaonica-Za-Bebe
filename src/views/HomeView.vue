@@ -8,15 +8,17 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
 <template>
   <div class="d-flex flex-column">
-    <p class="main-title text-center mt-4 mb-5">Svaštaonica Za Bebe</p>
+    <p class="main-title text-center mt-4 mb-4 mb-lg-5 px-3">
+      Svaštaonica Za Bebe
+    </p>
 
     <Hero />
 
-    <div class="container slider py-5">
+    <div class="container slider py-0 py-lg-5">
       <Slider />
     </div>
 
-    <div class="container mb-5">
+    <div class="container mb-5 px-4">
       <h1 class="text-center mt-5" style="font-family: Poiret_One">
         Ono što dobijemo od djetinjstva nisu igračke, već uspomene. A sretne
         uspomene bolje su od bilo koje igračke.
@@ -25,7 +27,7 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
     <TopThreeProducts />
 
-    <div class="container mb-5">
+    <div class="container mb-5 px-4">
       <h1 class="text-center mt-5" style="font-family: Poiret_One">
         Darujte djeci igračke koje pokreće njihova mašta, a ne baterije.
       </h1>
@@ -47,5 +49,11 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 .slider {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .main-title {
+    font-size: 48.83px;
+  }
 }
 </style>
