@@ -71,10 +71,10 @@ if (!navigator.share) {
 
 <template>
   <section id="main-div" class="item-section py-5">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 item-info">
-          <div class="left-side col-9 m-auto">
+    <div class="container-fluid mt-5 mt-lg-0">
+      <div class="row wrapper">
+        <div class="col col-lg-6 item-info order-2 order-lg-1">
+          <div class="left-side mx-4 col col-lg-9 m-lg-auto">
             <p class="mb-5 menu-title">{{ data.name }}</p>
             <p class="item-description">
               {{ data.description }}
@@ -93,13 +93,18 @@ if (!navigator.share) {
               </div>
             </div>
 
+            <!-- basic item -->
             <div class="bundle-section" v-if="data.isPartOfBundle">
               <p class="heading text-center mb-4">
                 Ovaj proizvod je dio našeg promo paketa
               </p>
 
-              <div class="row">
-                <div class="col" v-for="item in aBundles" :key="item.id">
+              <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
+                <div
+                  class="col-10 col-lg-4"
+                  v-for="item in aBundles"
+                  :key="item.id"
+                >
                   <RouterLink :to="'/singleitem/' + item.id">
                     <div
                       class="bundle-card"
@@ -140,13 +145,18 @@ if (!navigator.share) {
               </div>
             </div>
 
+            <!-- bundle item -->
             <div class="bundle-section" v-if="data.isBundle">
               <p class="heading text-center mb-4">
                 Proizvodi koji se nalaze u paketu
               </p>
 
-              <div class="row">
-                <div class="col" v-for="item in aItems" :key="item.id">
+              <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
+                <div
+                  class="col-10 col-lg-4"
+                  v-for="item in aItems"
+                  :key="item.id"
+                >
                   <RouterLink :to="'/singleitem/' + item.id">
                     <div
                       class="bundle-card"
@@ -180,8 +190,8 @@ if (!navigator.share) {
               </div>
             </div>
 
-            <div class="my-5 mx-5 px-5 py-4 declaration">
-              <ul class="mt-4">
+            <div class="my-5 mx-lg-5 px-3 py-4 declaration">
+              <ul class="mt-3">
                 <li
                   v-for="material in data.declaration.materials"
                   :key="material.id"
@@ -190,7 +200,7 @@ if (!navigator.share) {
                 </li>
               </ul>
 
-              <div class="declaration-icons mt-4">
+              <div class="declaration-icons mt-4 flex-wrap mx-auto">
                 <div
                   class="img-div"
                   v-for="icon in data.declaration.icons"
@@ -208,16 +218,22 @@ if (!navigator.share) {
               <p class="title">Recenzije</p>
 
               <div
-                class="my-5 row"
+                class="my-5 row flex-column"
                 v-for="comment in data.reviews"
                 :key="comment.id"
               >
-                <div class="col image-div">
-                  <img v-bind:src="comment.image" alt="" />
+                <div class="col">
+                  <div class="row">
+                    <div class="col image-div">
+                      <img class="w-100" v-bind:src="comment.image" alt="" />
+                    </div>
+                    <p class="name mb-0 ps-0 col d-flex align-items-center">
+                      {{ comment.name }}
+                    </p>
+                  </div>
                 </div>
                 <div class="col">
-                  <p class="name mb-0">{{ comment.name }}</p>
-                  <p class="review">
+                  <p class="review mt-3">
                     {{ comment.comment }}
                   </p>
                 </div>
@@ -226,8 +242,8 @@ if (!navigator.share) {
           </div>
         </div>
 
-        <div class="right-side col-6">
-          <div class="slider-div col-8 m-auto">
+        <div class="right-side col col-lg-6 order-1 order-lg-2">
+          <div class="slider-div col-11 col-lg-8 m-auto">
             <div class="" style="position: relative">
               <button
                 class="carousel-prev"
@@ -289,9 +305,10 @@ if (!navigator.share) {
         </div>
       </div>
 
-      <div class="row similar-items-div mt-5">
+      <div class="row similar-items-div mt-5 px-4 px-lg-0">
+        slicni proizvodi
         <div
-          class="col-2 similar-item p-0"
+          class="col col-lg-2 similar-item p-0"
           v-for="item in aSimilarItems"
           :key="item.id"
         >
@@ -350,9 +367,6 @@ if (!navigator.share) {
 </template>
 
 <style scoped>
-.reviews-div .image-div {
-  max-width: 88px;
-}
 .reviews-div img {
   width: 100%;
   border-radius: 50%;
@@ -392,12 +406,16 @@ if (!navigator.share) {
   overflow: hidden;
 }
 
-.title {
+.reviews-div .title {
   font-size: 39.06px;
 }
-.name {
-  font-size: 31.25px;
+.reviews-div .name {
+  font-size: 25px;
 }
+.reviews-div .image-div {
+  max-width: 88px;
+}
+
 .similar-items-div {
   justify-content: center;
   gap: 25px;
@@ -708,5 +726,85 @@ if (!navigator.share) {
 }
 .shareBtn img {
   height: 28px;
+}
+
+@media (max-width: 991.98px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .slider-div {
+    position: static;
+  }
+
+  .carousel {
+    height: 350px;
+  }
+  .carousel-prev,
+  .carousel-next {
+    width: 56px;
+    height: 56px;
+  }
+  .carousel-prev {
+    left: -20px;
+  }
+
+  .carousel-next {
+    right: -20px;
+  }
+
+  .shareBtn {
+    padding: 0.8rem;
+  }
+  .shareBtn img {
+    height: 25px;
+  }
+
+  .carousel-numbers {
+    font-size: 39.06px;
+  }
+
+  #main-div {
+    position: relative;
+  }
+  .menu-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .item-description {
+    font-size: 20px;
+  }
+
+  .keywords-div img {
+    width: 80px;
+  }
+  .keywords-div .col p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .bundle-section .heading {
+    font-size: 25px;
+  }
+
+  .bundle-img {
+    height: 250px;
+  }
+
+  .declaration-icons {
+    max-width: 200px;
+  }
+
+  .reviews-div .title {
+    font-size: 31.25px;
+    text-align: center;
+  }
+
+  .similar-items-div {
+    flex-direction: column;
+  }
 }
 </style>

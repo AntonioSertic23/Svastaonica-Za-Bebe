@@ -65,12 +65,12 @@
           "icon": "/src/assets/img/product-related/shield.png"
         },
         {
-          "text": "100% zabavan",
-          "icon": "/src/assets/img/product-related/playtime.png"
-        },
-        {
           "text": "Novo u ponudi",
           "icon": "/src/assets/img/badges/1.png"
+        },
+        {
+          "text": "100% zabavan",
+          "icon": "/src/assets/img/product-related/playtime.png"
         }
       ],
       "isBundle": false,

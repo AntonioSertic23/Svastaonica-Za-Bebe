@@ -40,7 +40,7 @@ import { RouterLink } from "vue-router";
 
         <section class="mb-5">
           <div class="row d-flex justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 px-4">
               <p class="footer-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 distinctio earum repellat quaerat voluptatibus placeat nam,
