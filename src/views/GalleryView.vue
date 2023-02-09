@@ -34,7 +34,7 @@ function sortData(x) {
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Gallery</p>
-        <div class="col-8">
+        <div class="col col-lg-8 px-4">
           <p class="gallery-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
             facilis tempora porro, suscipit ducimus delectus quaerat alias
@@ -44,28 +44,30 @@ function sortData(x) {
         </div>
       </div>
 
-      <div class="row my-5 pt-3 pb-5">
-        <div class="d-flex justify-content-center">
+      <div class="row my-5 pb-5 col-10 mx-auto">
+        <div
+          class="sort-div d-flex justify-content-center flex-wrap row-cols-1 row-cols-lg-5 text-center"
+        >
           <a
-            class="mx-2 category-link"
+            class="category-link"
             v-on:click="sortData(1)"
             v-bind:class="currentSort == 1 ? 'active' : 'notactive'"
             >U trendu</a
           >
           <a
-            class="mx-2 category-link"
+            class="category-link"
             v-on:click="sortData(2)"
             v-bind:class="currentSort == 2 ? 'active' : 'notactive'"
             >Novo u ponudi</a
           >
           <a
-            class="mx-2 category-link"
+            class="category-link"
             v-on:click="sortData(3)"
             v-bind:class="currentSort == 3 ? 'active' : 'notactive'"
             >Akcija</a
           >
           <a
-            class="mx-2 category-link"
+            class="category-link"
             v-on:click="sortData(4)"
             v-bind:class="currentSort == 4 ? 'active' : 'notactive'"
             >Paketi</a
@@ -74,8 +76,8 @@ function sortData(x) {
       </div>
       <div class="section-cards row justify-content-evenly mb-5">
         <div class="container text-center">
-          <div class="row row-cols-3 g-5">
-            <div class="col" v-for="item in data" :key="item.id">
+          <div class="row row-cols-1 row-cols-lg-3 gy-5 g-lg-5">
+            <div class="col px-4" v-for="item in data" :key="item.id">
               <ProductCard :cardData="item" />
             </div>
           </div>
@@ -92,6 +94,10 @@ function sortData(x) {
 
 .gallery-description {
   font-size: 25px;
+}
+
+.sort-div {
+  gap: 24px;
 }
 
 .category-link {
@@ -114,5 +120,11 @@ function sortData(x) {
 }
 .notactive {
   background-color: rgb(205, 180, 219);
+}
+
+@media (max-width: 991.98px) {
+  .gallery-description {
+    font-size: 20px;
+  }
 }
 </style>

@@ -193,4 +193,10 @@ var item = props.cardData;
   z-index: 1;
   filter: brightness(60%);
 }
+@media (max-width: 991.98px) {
+  .product-image-div {
+    height: 350px;
+    width: 100%;
+  }
+}
 </style>
