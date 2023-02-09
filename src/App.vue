@@ -41,7 +41,7 @@ function updateNavbar() {
 <style scoped>
 @media (max-width: 992px) {
   .body-div {
-    margin-top: 62px;
+    margin-top: 88px;
   }
 }
 </style>

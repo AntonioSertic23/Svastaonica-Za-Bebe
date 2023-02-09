@@ -30,7 +30,7 @@ function sortData(x) {
 </script>
 
 <template>
-  <section class="gallery-section py-4">
+  <section class="gallery-section pt-4">
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Gallery</p>

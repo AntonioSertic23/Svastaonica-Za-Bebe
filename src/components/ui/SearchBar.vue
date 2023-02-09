@@ -87,4 +87,15 @@ function Search() {
 .search-btn-page {
   font-size: 20px;
 }
+
+@media (max-width: 991.98px) {
+  .search-input-page {
+    font-size: 20px;
+    padding: 0.7rem;
+  }
+
+  .search-btn-page {
+    font-size: 20px;
+  }
+}
 </style>

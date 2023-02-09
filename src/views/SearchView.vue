@@ -24,15 +24,15 @@ function FindData(text) {
 </script>
 
 <template>
-  <section class="container d-flex flex-column align-items-center my-5">
-    <div class="searchbar-div mb-5">
+  <section class="container d-flex flex-column align-items-center mt-5">
+    <div class="searchbar-div mb-5 mt-4 mt-lg-0 mx-2">
       <SearchBar @find-data="FindData" :isForNavbar="false" />
     </div>
 
     <div class="section-cards row justify-content-evenly my-5">
       <div class="container text-center">
-        <div class="row row-cols-3 g-5">
-          <div class="col" v-for="item in data" :key="item.id">
+        <div class="row row-cols-1 row-cols-lg-3 gy-5 g-lg-5">
+          <div class="col px-4" v-for="item in data" :key="item.id">
             <ProductCard :cardData="item" />
           </div>
         </div>
@@ -44,5 +44,11 @@ function FindData(text) {
 <style scoped>
 .searchbar-div {
   width: 500px;
+}
+
+@media (max-width: 991.98px) {
+  .searchbar-div {
+    width: auto;
+  }
 }
 </style>
