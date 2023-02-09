@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="container my-5">
+  <div class="container my-0 my-lg-5">
     <div class="row row-cols-1 row-cols-lg-3 px-5">
-      <div class="item mt-5">
+      <div class="item mt-0 mt-lg-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
             <img class="" src="../../assets/img/products/1.jpg" alt="" />
@@ -20,12 +20,10 @@
           </div>
           <div id="parallelogram" class="shape2"></div>
         </div>
-        <h3 class="text-center mt-3" style="margin-bottom: 56px">
-          Neki naslov
-        </h3>
+        <h3 class="text-center mt-3 middle-text">Neki naslov</h3>
       </div>
 
-      <div class="item mt-5">
+      <div class="item mt-0 mt-lg-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
             <img class="" src="../../assets/img/products/3.jpg" alt="" />
@@ -57,7 +55,6 @@ img {
   border-radius: 15px;
   height: 270px;
   object-fit: cover;
-
   position: absolute;
   width: 260px;
   left: 0;
@@ -90,5 +87,33 @@ img:hover {
 }
 .shape3 {
   transform: skew(20deg);
+}
+
+.middle-text {
+  margin-bottom: 56px;
+}
+
+@media (max-width: 991.98px) {
+  .row {
+    height: auto;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    top: 5px;
+  }
+
+  .shape1 {
+    transform: skew(0deg);
+  }
+  .shape3 {
+    transform: skew(0deg);
+  }
+
+  .middle-text {
+    margin-bottom: 0.5rem;
+  }
 }
 </style>

@@ -8,8 +8,8 @@ var data = ref(sourceData.data.slice(0, 5));
 </script>
 
 <template>
-  <div class="container p-5">
-    <div class="row main-row px-5">
+  <div class="container px-4">
+    <div class="row main-row px-0 px-lg-5">
       <div class="col h-100">
         <RouterLink v-bind:to="/singleitem/ + data[0].id">
           <div class="item-big">
@@ -100,7 +100,7 @@ var data = ref(sourceData.data.slice(0, 5));
     </div>
 
     <div class="text-center">
-      <RouterLink class="category-link mt-5 px-4" to="/gallery"
+      <RouterLink class="category-link mt-4 mt-lg-5 px-4" to="/gallery"
         >Pogledaj sve</RouterLink
       >
     </div>
@@ -161,7 +161,7 @@ var data = ref(sourceData.data.slice(0, 5));
 }
 
 .item-big p {
-  font-size: 42px;
+  font-size: 39.06px;
 }
 
 .item-small {
@@ -216,5 +216,30 @@ var data = ref(sourceData.data.slice(0, 5));
 }
 .category-link:hover {
   background-color: #a375bd;
+}
+
+@media (max-width: 991.98px) {
+  .main-row {
+    height: auto;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .item-big {
+    height: 250px;
+  }
+
+  .col-6 .product-image {
+    height: 200px;
+  }
+
+  .item-big p {
+    font-size: 31.25px;
+  }
+
+  .product-name p {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+  }
 }
 </style>
