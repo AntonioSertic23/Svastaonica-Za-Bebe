@@ -101,7 +101,7 @@ if (!navigator.share) {
 
               <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
                 <div
-                  class="col-10 col-lg-4"
+                  class="col-11 col-lg-4"
                   v-for="item in aBundles"
                   :key="item.id"
                 >
@@ -153,7 +153,7 @@ if (!navigator.share) {
 
               <div class="row row-cols-1 row-cols-lg-3 justify-content-center">
                 <div
-                  class="col-10 col-lg-4"
+                  class="col-11 col-lg-4"
                   v-for="item in aItems"
                   :key="item.id"
                 >
@@ -305,10 +305,10 @@ if (!navigator.share) {
         </div>
       </div>
 
-      <div class="row similar-items-div mt-5 px-4 px-lg-0">
-        slicni proizvodi
+      <div class="row similar-items-div px-4 px-lg-0 align-items-center">
+        <p class="title">Slični proizvodi</p>
         <div
-          class="col col-lg-2 similar-item p-0"
+          class="col-11 col-lg-2 similar-item p-0"
           v-for="item in aSimilarItems"
           :key="item.id"
         >
@@ -426,6 +426,11 @@ if (!navigator.share) {
   border-radius: 15px;
 }
 
+.similar-items-div .title {
+  font-size: 31.25px;
+  text-align: center;
+}
+
 .similar-item {
   position: relative;
   border-radius: 15px;
@@ -457,9 +462,11 @@ if (!navigator.share) {
 
 .similar-item-name p {
   position: absolute;
-  font-size: 20px;
+  font-size: 25px;
   color: #222;
   bottom: 0;
+  color: white;
+  text-shadow: 3px 3px 3px black;
 }
 
 .mask {

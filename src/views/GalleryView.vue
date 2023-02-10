@@ -110,10 +110,6 @@ function sortData(x) {
   letter-spacing: 1px;
   box-shadow: 4px 4px 4px lightgrey;
 }
-.category-link:hover {
-  background-color: #a375bd;
-  cursor: pointer;
-}
 
 .active {
   background-color: #a375bd;
@@ -125,6 +121,13 @@ function sortData(x) {
 @media (max-width: 991.98px) {
   .gallery-description {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .category-link:hover {
+    background-color: #a375bd;
+    cursor: pointer;
   }
 }
 </style>
