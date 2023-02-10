@@ -38,7 +38,7 @@ import { RouterLink } from "vue-router";
 
         <hr class="mt-4 mb-5" />
 
-        <section class="mb-5">
+        <section class="mb-4">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8 px-4">
               <p class="footer-text">
@@ -51,7 +51,7 @@ import { RouterLink } from "vue-router";
           </div>
         </section>
 
-        <section class="mb-5 social-media px-3 row g-4 justify-content-center">
+        <section class="mb-4 social-media px-3 row g-4 justify-content-center">
           <a href="#">
             <img src="../../assets/img/social-media/facebook-messenger.png" />
           </a>
@@ -72,7 +72,7 @@ import { RouterLink } from "vue-router";
           </a>
         </section>
 
-        <p class="my-4 text-center madeineu">Made in EU</p>
+        <p class="mb-4 text-center madeineu">Made in EU</p>
       </div>
 
       <div class="text-center p-3 footer-copyright-text">

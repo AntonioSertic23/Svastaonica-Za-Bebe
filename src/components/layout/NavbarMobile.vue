@@ -14,7 +14,7 @@ function closeNavbar() {
 <template>
   <div class="navbar-nav">
     <div class="searchbar-mobile-div">
-      <SearchBar :isForNavbar="true" />
+      <SearchBar @find-data="closeNavbar()" :isForNavbar="true" />
     </div>
 
     <div class="links-div text-center w-100 px-5">
