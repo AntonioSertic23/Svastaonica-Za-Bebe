@@ -14,7 +14,7 @@ var item = props.cardData;
     <div class="image-div" v-if="item.badges.length == 1">
       <div class="image-div-background oneBadge"></div>
       <VLazyImage
-        v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
+        v-bind:src="'/src/assets/img/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
     </div>
@@ -23,12 +23,12 @@ var item = props.cardData;
       <div class="image-div-background moreBadges"></div>
       <VLazyImage
         style="margin-left: 28%"
-        v-bind:src="'/src/assets/img/badges/' + item.badges[0] + '.png'"
+        v-bind:src="'/src/assets/img/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
       <VLazyImage
         style="margin-right: 28%"
-        v-bind:src="'/src/assets/img/badges/' + item.badges[1] + '.png'"
+        v-bind:src="'/src/assets/img/' + item.badges[1] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
     </div>
@@ -44,13 +44,13 @@ var item = props.cardData;
         <div class="mask">
           <img
             v-if="item.soldout"
-            src="/src/assets/img/product-related/sold-out.png"
+            src="/src/assets/img/sold-out.png"
             class="soldout-icon"
             alt=""
           />
           <img
             v-else
-            src="/src/assets/img/action-icons/share.png"
+            src="/src/assets/img/share.png"
             class="open-icon"
             alt=""
           />

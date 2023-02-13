@@ -6,7 +6,7 @@
       <div class="item mt-0 mt-lg-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/products/1.jpg" alt="" />
+            <img class="" src="../../assets/img/1.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape1"></div>
         </div>
@@ -16,7 +16,7 @@
       <div class="item">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/products/2.jpg" alt="" />
+            <img class="" src="../../assets/img/2.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape2"></div>
         </div>
@@ -26,7 +26,7 @@
       <div class="item mt-0 mt-lg-5">
         <div class="top-card">
           <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/products/3.jpg" alt="" />
+            <img class="" src="../../assets/img/3.jpg" alt="" />
           </div>
           <div id="parallelogram" class="shape3"></div>
         </div>

@@ -24,7 +24,7 @@ import VLazyImage from "v-lazy-image";
 
         <div class="col col-lg-4 section2-left order-2 order-lg-1">
           <VLazyImage
-            v-bind:src="'/src/assets/img/about-us/aboutus2.jpg'"
+            v-bind:src="'/src/assets/img/aboutus2.jpg'"
             class="image1"
           />
 
@@ -35,22 +35,22 @@ import VLazyImage from "v-lazy-image";
 
           <div class="social-media mt-4 d-flex gap-lg-3">
             <a href="#" class="">
-              <img src="../assets/img/social-media/facebook-messenger.png" />
+              <img src="../assets/img/sm-facebook-messenger.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/whatsapp.png" />
+              <img src="../assets/img/sm-whatsapp.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/facebook.png" />
+              <img src="../assets/img/sm-facebook.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/instagram.png" />
+              <img src="../assets/img/sm-instagram.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/viber.png" />
+              <img src="../assets/img/sm-viber.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/google.png" />
+              <img src="../assets/img/sm-google.png" />
             </a>
           </div>
         </div>
@@ -60,7 +60,7 @@ import VLazyImage from "v-lazy-image";
         >
           <p class="mb-3 my-lg-3">Naslov</p>
           <VLazyImage
-            v-bind:src="'/src/assets/img/about-us/aboutus1.jpg'"
+            v-bind:src="'/src/assets/img/aboutus1.jpg'"
             class="image2"
           />
         </div>
@@ -71,24 +71,24 @@ import VLazyImage from "v-lazy-image";
         <div class="background-image"></div>
         <div class="section3-1 px-3 col col-lg-5">
           <div class="item">
-            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <img src="../assets/img/bp1.png" alt="" />
             <p>Igračke kao umjetnost</p>
           </div>
 
           <div class="item">
-            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <img src="../assets/img/bp1.png" alt="" />
             <p>Igračke za moderne obitelji</p>
           </div>
 
           <div class="item">
-            <img src="../assets/img/bullet-points/3.png" alt="" />
+            <img src="../assets/img/bp1.png" alt="" />
             <p>Igračke za zajedničko provođenje vremena</p>
           </div>
         </div>
 
         <div class="section3-2 mt-5 mt-lg-0 col col-lg-3">
           <VLazyImage
-            v-bind:src="'/src/assets/img/temp/products-2.jpg'"
+            v-bind:src="'/src/assets/img/products-2.jpg'"
             class="section3-image1"
           />
           <div class="circle1"></div>
@@ -112,7 +112,7 @@ import VLazyImage from "v-lazy-image";
             <div class="photo-div p-4">
               <div class="mark"></div>
               <VLazyImage
-                v-bind:src="'/src/assets/img/about-us/kidplaying1.jpg'"
+                v-bind:src="'/src/assets/img/aboutus3.jpg'"
                 class="photo-photo"
               />
               <h1 class="text-center mt-4">Naslov</h1>
@@ -125,7 +125,7 @@ import VLazyImage from "v-lazy-image";
             <div class="photo2-div p-4">
               <div class="mark"></div>
               <VLazyImage
-                v-bind:src="'/src/assets/img/about-us/kidplaying2.jpg'"
+                v-bind:src="'/src/assets/img/aboutus4.jpg'"
                 class="photo-photo"
               />
               <h1 class="text-center mt-4">Naslov</h1>
@@ -151,7 +151,7 @@ import VLazyImage from "v-lazy-image";
             <div class="photo-div p-4">
               <div class="mark"></div>
               <VLazyImage
-                v-bind:src="'/src/assets/img/about-us/kidplaying1.jpg'"
+                v-bind:src="'/src/assets/img/aboutus3.jpg'"
                 class="photo-photo"
               />
               <h1 class="text-center mt-4">Naslov</h1>

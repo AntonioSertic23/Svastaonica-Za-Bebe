@@ -20,22 +20,22 @@
 
           <div class="social-media mb-5 row g-4 justify-content-center">
             <a href="#" class="">
-              <img src="../assets/img/social-media/facebook-messenger.png" />
+              <img src="../assets/img/sm-facebook-messenger.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/whatsapp.png" />
+              <img src="../assets/img/sm-whatsapp.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/facebook.png" />
+              <img src="../assets/img/sm-facebook.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/instagram.png" />
+              <img src="../assets/img/sm-instagram.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/viber.png" />
+              <img src="../assets/img/sm-viber.png" />
             </a>
             <a href="#" class="">
-              <img src="../assets/img/social-media/google.png" />
+              <img src="../assets/img/sm-google.png" />
             </a>
           </div>
 
@@ -48,19 +48,19 @@
 
           <div class="aboutus-cards-div row row-cols-1 row-cols-lg-3 mt-5">
             <div class="text-center">
-              <img src="../assets/img/contact/house.png" alt="" />
+              <img src="../assets/img/house.png" alt="" />
               <h6 class="naslov">Mjesto</h6>
               <p class="info">Našice, Hrvatska</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/img/contact/call.png" alt="" />
+              <img src="../assets/img/call.png" alt="" />
               <h6 class="naslov">Telefon</h6>
               <p class="info">+091/091091</p>
             </div>
 
             <div class="text-center">
-              <img src="../assets/img/contact/email.png" alt="" />
+              <img src="../assets/img/email.png" alt="" />
               <h6 class="naslov">Email</h6>
               <p class="info">john.doe@gmail.com</p>
             </div>

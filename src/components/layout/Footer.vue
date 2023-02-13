@@ -53,22 +53,22 @@ import { RouterLink } from "vue-router";
 
         <section class="mb-4 social-media px-3 row g-4 justify-content-center">
           <a href="#">
-            <img src="../../assets/img/social-media/facebook-messenger.png" />
+            <img src="../../assets/img/sm-facebook-messenger.png" />
           </a>
           <a href="#">
-            <img src="../../assets/img/social-media/whatsapp.png" />
+            <img src="../../assets/img/sm-whatsapp.png" />
           </a>
           <a href="#">
-            <img src="../../assets/img/social-media/facebook.png" />
+            <img src="../../assets/img/sm-facebook.png" />
           </a>
           <a href="#">
-            <img src="../../assets/img/social-media/instagram.png" />
+            <img src="../../assets/img/sm-instagram.png" />
           </a>
           <a href="#">
-            <img src="../../assets/img/social-media/viber.png" />
+            <img src="../../assets/img/sm-viber.png" />
           </a>
           <a href="#">
-            <img src="../../assets/img/social-media/google.png" />
+            <img src="../../assets/img/sm-google.png" />
           </a>
         </section>
 
