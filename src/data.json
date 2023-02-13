@@ -4,17 +4,17 @@
       "id": 1,
       "name": "Kockica",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "../assets/img/products/1.jpg",
+      "thumbnail": "@/assets/img/products/1.jpg",
       "images": [
         {
-          "path": "../assets/img/products/1.jpg",
+          "path": "@/assets/img/products/1.jpg",
           "isActive": true
         },
         {
-          "path": "../assets/img/products/2.jpg"
+          "path": "@/assets/img/products/2.jpg"
         },
         {
-          "path": "../assets/img/products/3.jpg"
+          "path": "@/assets/img/products/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
@@ -62,15 +62,15 @@
       "keywords": [
         {
           "text": "Siguran",
-          "icon": "../assets/img/product-related/shield.png"
+          "icon": "/src/assets/img/product-related/shield.png"
         },
         {
           "text": "Novo u ponudi",
-          "icon": "../assets/img/badges/1.png"
+          "icon": "/src/assets/img/badges/1.png"
         },
         {
           "text": "100% zabavan",
-          "icon": "../assets/img/product-related/playtime.png"
+          "icon": "/src/assets/img/product-related/playtime.png"
         }
       ],
       "isBundle": false,
