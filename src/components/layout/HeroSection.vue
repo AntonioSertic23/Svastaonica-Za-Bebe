@@ -24,7 +24,7 @@ import { RouterLink } from "vue-router";
           class="order-1 order-lg-2 middle-side d-flex justify-content-center"
         >
           <div class="middle-side-div">
-            <img class="image2" src="/logo.jpe" alt="" />
+            <img class="image2" src="/public/logo.jpg" alt="" />
             <img
               class="image3"
               src="../../assets/img/decorative/bow.png"
