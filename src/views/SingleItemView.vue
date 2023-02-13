@@ -67,9 +67,6 @@ const share = (e) => {
 if (!navigator.share) {
   document.getElementById("tip").className = "show";
 }
-
-const imageUrl = new URL("/src/assets/img/products/1.jpg", import.meta.url)
-  .href;
 </script>
 
 <template>
@@ -274,7 +271,7 @@ const imageUrl = new URL("/src/assets/img/products/1.jpg", import.meta.url)
                   >
                     <VLazyImage
                       class="d-block"
-                      v-bind:src="imageUrl"
+                      v-bind:src="image.path"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
                       @click="ChangeCurrentImageToOpen(image.path)"
