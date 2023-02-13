@@ -269,9 +269,9 @@ if (!navigator.share) {
                     :key="image.id"
                     class="carousel-item"
                   >
-                    <img
+                    <VLazyImage
                       class="d-block"
-                      :src="image.path"
+                      v-bind:src="image.path"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
                       @click="ChangeCurrentImageToOpen(image.path)"
