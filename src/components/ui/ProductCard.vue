@@ -7,6 +7,14 @@ const props = defineProps({
 });
 
 var item = props.cardData;
+var forDevelopment = false;
+var prefix = "";
+
+if (forDevelopment) {
+  prefix = "/src";
+} else {
+  prefix = "";
+}
 </script>
 
 <template>
@@ -14,7 +22,7 @@ var item = props.cardData;
     <div class="image-div" v-if="item.badges.length == 1">
       <div class="image-div-background oneBadge"></div>
       <VLazyImage
-        v-bind:src="'/src/assets/img/' + item.badges[0] + '.png'"
+        v-bind:src="prefix + '/assets/img/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
     </div>
@@ -23,12 +31,12 @@ var item = props.cardData;
       <div class="image-div-background moreBadges"></div>
       <VLazyImage
         style="margin-left: 28%"
-        v-bind:src="'/src/assets/img/' + item.badges[0] + '.png'"
+        v-bind:src="prefix + '/assets/img/' + item.badges[0] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
       <VLazyImage
         style="margin-right: 28%"
-        v-bind:src="'/src/assets/img/' + item.badges[1] + '.png'"
+        v-bind:src="prefix + '/assets/img/' + item.badges[1] + '.png'"
         v-bind:class="[item.soldout ? 'soldout-img' : '']"
       />
     </div>
@@ -37,7 +45,9 @@ var item = props.cardData;
       <div class="product-image-div">
         <VLazyImage
           class="thumbnail"
-          v-bind:src="item.thumbnail"
+          v-bind:src="
+            forDevelopment ? item.thumbnail : item.thumbnail.replace('/src', '')
+          "
           v-bind:style="[item.soldout ? 'filter: brightness(60%)' : '']"
         />
 
