@@ -271,7 +271,7 @@ if (!navigator.share) {
                   >
                     <img
                       class="d-block"
-                      v-bind:src="image.path"
+                      :src="image.path"
                       data-bs-toggle="modal"
                       data-bs-target="#exampleModal"
                       @click="ChangeCurrentImageToOpen(image.path)"
