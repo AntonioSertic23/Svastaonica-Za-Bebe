@@ -269,7 +269,7 @@ if (!navigator.share) {
                     :key="image.id"
                     class="carousel-item"
                   >
-                    <VLazyImage
+                    <img
                       class="d-block"
                       v-bind:src="image.path"
                       data-bs-toggle="modal"
