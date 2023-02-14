@@ -17,11 +17,11 @@ if (lsSortData != null) {
 function sortData(x) {
   if (currentSort.value == x) {
     currentSort.value = 0;
-    this.data = sourceData.data;
+    data.value = sourceData.data;
     localStorage.removeItem("sortData");
   } else {
     currentSort.value = x;
-    this.data = sourceData.data.filter(function (el) {
+    data.value = sourceData.data.filter(function (el) {
       return el.categories.includes(x);
     });
     localStorage.setItem("sortData", x);
