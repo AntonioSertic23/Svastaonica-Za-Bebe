@@ -34,7 +34,7 @@ function sortData(x) {
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Gallery</p>
-        <div class="col col-lg-8 px-4">
+        <div class="description-div col col-lg-8 px-4">
           <p class="gallery-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
             facilis tempora porro, suscipit ducimus delectus quaerat alias
@@ -100,6 +100,10 @@ function sortData(x) {
   font-size: 25px;
 }
 
+.description-div {
+  position: relative;
+}
+
 .sort-div {
   gap: 24px;
 }
@@ -122,9 +126,51 @@ function sortData(x) {
   background-color: rgb(205, 180, 219);
 }
 
+.background-icon {
+  position: absolute;
+  opacity: 0.1;
+  width: 100px;
+}
+.background-icon:nth-of-type(1) {
+  top: -10px;
+  left: 100px;
+}
+.background-icon:nth-of-type(2) {
+  top: 10px;
+  right: 300px;
+}
+.background-icon:nth-of-type(3) {
+  bottom: -10px;
+  left: 300px;
+}
+.background-icon:nth-of-type(4) {
+  bottom: 10px;
+  right: 150px;
+}
+
 @media (max-width: 991.98px) {
   .gallery-description {
     font-size: 20px;
+  }
+
+  .background-icon {
+    width: 80px;
+  }
+  .background-icon:nth-of-type(1) {
+    top: 0px;
+    left: 50px;
+  }
+  .background-icon:nth-of-type(2) {
+    top: 30px;
+    right: 70px;
+  }
+  .background-icon:nth-of-type(3) {
+    bottom: 70px;
+    left: 80px;
+  }
+  .background-icon:nth-of-type(4) {
+    bottom: 30px;
+    right: 100px;
   }
 }
 

@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="container py-5 px-3">
+  <div class="container py-5 px-3 px-lg-5">
     <p class="title text-center mb-5">Proces narudžbe</p>
 
-    <div class="row gy-5">
+    <div class="row gy-5 mx-lg-5">
       <div class="item col-lg-4">
         <img class="" src="../../assets/img/message.png" alt="" />
         <p class="mt-4 heading">Message</p>

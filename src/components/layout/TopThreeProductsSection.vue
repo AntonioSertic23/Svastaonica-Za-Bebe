@@ -1,35 +1,43 @@
-<script setup></script>
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
 
 <template>
   <div class="container my-0 my-lg-5">
-    <div class="row row-cols-1 row-cols-lg-3 px-5">
+    <div class="row row-cols-1 row-cols-lg-3 mx-lg-5 px-5">
       <div class="item mt-0 mt-lg-5">
-        <div class="top-card">
-          <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/1.jpg" alt="" />
+        <RouterLink to="/singleitem/1">
+          <div class="top-card">
+            <div class="image p-4 pb-0">
+              <img class="" src="/src/assets/img/1.jpg" alt="" />
+            </div>
+            <div id="parallelogram" class="shape1"></div>
           </div>
-          <div id="parallelogram" class="shape1"></div>
-        </div>
+        </RouterLink>
         <h3 class="text-center mt-3">Neki naslov</h3>
       </div>
 
       <div class="item">
-        <div class="top-card">
-          <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/2.jpg" alt="" />
+        <RouterLink to="/singleitem/2">
+          <div class="top-card">
+            <div class="image p-4 pb-0">
+              <img class="" src="/src/assets/img/2.jpg" alt="" />
+            </div>
+            <div id="parallelogram" class="shape2"></div>
           </div>
-          <div id="parallelogram" class="shape2"></div>
-        </div>
+        </RouterLink>
         <h3 class="text-center mt-3 middle-text">Neki naslov</h3>
       </div>
 
       <div class="item mt-0 mt-lg-5">
-        <div class="top-card">
-          <div class="image p-4 pb-0">
-            <img class="" src="../../assets/img/3.jpg" alt="" />
+        <RouterLink to="/singleitem/3">
+          <div class="top-card">
+            <div class="image p-4 pb-0">
+              <img class="" src="/src/assets/img/3.jpg" alt="" />
+            </div>
+            <div id="parallelogram" class="shape3"></div>
           </div>
-          <div id="parallelogram" class="shape3"></div>
-        </div>
+        </RouterLink>
         <h3 class="text-center mt-3">Neki naslov</h3>
       </div>
     </div>
@@ -114,6 +122,13 @@ img:hover {
 
   .middle-text {
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .item {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 </style>

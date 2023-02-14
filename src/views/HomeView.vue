@@ -27,8 +27,8 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
     <TopThreeProducts />
 
-    <div class="container mb-5 px-4">
-      <h1 class="text-center mt-5" style="font-family: Poiret_One">
+    <div class="container mt-5 mt-lg-3 mb-5 px-4">
+      <h1 class="text-center" style="font-family: Poiret_One">
         Darujte djeci igračke koje pokreće njihova mašta, a ne baterije.
       </h1>
     </div>
