@@ -66,27 +66,10 @@ function closeMobileNavbar() {
         />
 
         <div v-if="!isMobile" class="navbar-nav mx-auto">
-          <RouterLink class="nav-link" @click="closeDesktopNavbar()" to="/"
-            >Početna</RouterLink
-          >
-          <RouterLink
-            class="nav-link"
-            @click="closeDesktopNavbar()"
-            to="/gallery"
-            >Galerija</RouterLink
-          >
-          <RouterLink
-            class="nav-link"
-            @click="closeDesktopNavbar()"
-            to="/aboutus"
-            >O nama</RouterLink
-          >
-          <RouterLink
-            class="nav-link"
-            @click="closeDesktopNavbar()"
-            to="/contact"
-            >Kontakt</RouterLink
-          >
+          <RouterLink class="nav-link" to="/">Početna</RouterLink>
+          <RouterLink class="nav-link" to="/gallery">Galerija</RouterLink>
+          <RouterLink class="nav-link" to="/aboutus">O nama</RouterLink>
+          <RouterLink class="nav-link" to="/contact">Kontakt</RouterLink>
         </div>
         <div
           v-if="!isMobile"
