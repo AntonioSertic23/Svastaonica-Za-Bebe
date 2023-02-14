@@ -41,28 +41,28 @@ function closeNavbar() {
       <div class="row justify-content-center">
         <div class="col-3 icon-column">
           <a href="#" class="m-2">
-            <img src="../../assets/img/sm-facebook-messenger.png" />
+            <img src="/assets/img/sm-facebook-messenger.png" />
           </a>
           <a href="#" class="m-2">
-            <img src="../../assets/img/sm-whatsapp.png" />
-          </a>
-        </div>
-
-        <div class="col-3 icon-column">
-          <a href="#" class="m-2">
-            <img src="../../assets/img/sm-facebook.png" />
-          </a>
-          <a href="#" class="m-2">
-            <img src="../../assets/img/sm-instagram.png" />
+            <img src="/assets/img/sm-whatsapp.png" />
           </a>
         </div>
 
         <div class="col-3 icon-column">
           <a href="#" class="m-2">
-            <img src="../../assets/img/sm-viber.png" />
+            <img src="/assets/img/sm-facebook.png" />
           </a>
           <a href="#" class="m-2">
-            <img src="../../assets/img/sm-google.png" />
+            <img src="/assets/img/sm-instagram.png" />
+          </a>
+        </div>
+
+        <div class="col-3 icon-column">
+          <a href="#" class="m-2">
+            <img src="/assets/img/sm-viber.png" />
+          </a>
+          <a href="#" class="m-2">
+            <img src="/assets/img/sm-google.png" />
           </a>
         </div>
       </div>

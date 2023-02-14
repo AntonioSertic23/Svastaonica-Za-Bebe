@@ -4,17 +4,17 @@
       "id": 1,
       "name": "Kockica",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/1.jpg",
+      "thumbnail": "/assets/img/1.jpg",
       "images": [
         {
-          "path": "/src/assets/img/1.jpg",
+          "path": "/assets/img/1.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/2.jpg"
+          "path": "/assets/img/2.jpg"
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
@@ -23,34 +23,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -62,15 +62,15 @@
       "keywords": [
         {
           "text": "Siguran",
-          "icon": "/src/assets/img/shield.png"
+          "icon": "/assets/img/shield.png"
         },
         {
           "text": "Novo u ponudi",
-          "icon": "/src/assets/img/badge1.png"
+          "icon": "/assets/img/badge1.png"
         },
         {
           "text": "100% zabavan",
-          "icon": "/src/assets/img/playtime.png"
+          "icon": "/assets/img/playtime.png"
         }
       ],
       "isBundle": false,
@@ -83,17 +83,17 @@
       "id": 2,
       "name": "Nesto 2",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/4.jpg",
+      "thumbnail": "/assets/img/4.jpg",
       "images": [
         {
-          "path": "/src/assets/img/4.jpg",
+          "path": "/assets/img/4.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/5.jpg"
+          "path": "/assets/img/5.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L", "XL"],
@@ -102,34 +102,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor!"
         }
@@ -141,7 +141,7 @@
       "keywords": [
         {
           "text": "Siguran",
-          "icon": "/src/assets/img/shield.png"
+          "icon": "/assets/img/shield.png"
         }
       ],
       "isBundle": false,
@@ -154,17 +154,17 @@
       "id": 3,
       "name": "Nesto 33",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/5.jpg",
+      "thumbnail": "/assets/img/5.jpg",
       "images": [
         {
-          "path": "/src/assets/img/2.jpg",
+          "path": "/assets/img/2.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L"],
@@ -173,34 +173,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -212,7 +212,7 @@
       "keywords": [
         {
           "text": "100% zabavan",
-          "icon": "/src/assets/img/playtime.png"
+          "icon": "/assets/img/playtime.png"
         }
       ],
       "isBundle": false,
@@ -225,17 +225,17 @@
       "id": 4,
       "name": "Bundle 1",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/4.jpg",
+      "thumbnail": "/assets/img/4.jpg",
       "images": [
         {
-          "path": "/src/assets/img/4.jpg",
+          "path": "/assets/img/4.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/5.jpg"
+          "path": "/assets/img/5.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L", "XL"],
@@ -244,34 +244,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -283,11 +283,11 @@
       "keywords": [
         {
           "text": "U trendu",
-          "icon": "/src/assets/img/2.png"
+          "icon": "/assets/img/2.png"
         },
         {
           "text": "Preporuka kupaca",
-          "icon": "/src/assets/img/3.png"
+          "icon": "/assets/img/3.png"
         }
       ],
       "isBundle": true,
@@ -300,17 +300,17 @@
       "id": 5,
       "name": "Nesto 33",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/5.jpg",
+      "thumbnail": "/assets/img/5.jpg",
       "images": [
         {
-          "path": "/src/assets/img/2.jpg",
+          "path": "/assets/img/2.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L"],
@@ -319,34 +319,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -361,17 +361,17 @@
       "id": 6,
       "name": "Kockica",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/1.jpg",
+      "thumbnail": "/assets/img/1.jpg",
       "images": [
         {
-          "path": "/src/assets/img/1.jpg",
+          "path": "/assets/img/1.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/2.jpg"
+          "path": "/assets/img/2.jpg"
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
@@ -380,34 +380,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -422,17 +422,17 @@
       "id": 7,
       "name": "Nesto 33",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/5.jpg",
+      "thumbnail": "/assets/img/5.jpg",
       "images": [
         {
-          "path": "/src/assets/img/2.jpg",
+          "path": "/assets/img/2.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L"],
@@ -441,34 +441,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -483,17 +483,17 @@
       "id": 8,
       "name": "Bundle 2",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/1.jpg",
+      "thumbnail": "/assets/img/1.jpg",
       "images": [
         {
-          "path": "/src/assets/img/1.jpg",
+          "path": "/assets/img/1.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/2.jpg"
+          "path": "/assets/img/2.jpg"
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
@@ -502,34 +502,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -548,17 +548,17 @@
       "id": 9,
       "name": "Nesto 2",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/4.jpg",
+      "thumbnail": "/assets/img/4.jpg",
       "images": [
         {
-          "path": "/src/assets/img/4.jpg",
+          "path": "/assets/img/4.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/5.jpg"
+          "path": "/assets/img/5.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L", "XL"],
@@ -567,34 +567,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -609,17 +609,17 @@
       "id": 10,
       "name": "Kockica",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/1.jpg",
+      "thumbnail": "/assets/img/1.jpg",
       "images": [
         {
-          "path": "/src/assets/img/1.jpg",
+          "path": "/assets/img/1.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/2.jpg"
+          "path": "/assets/img/2.jpg"
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
@@ -628,34 +628,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -674,17 +674,17 @@
       "id": 11,
       "name": "Nesto 2",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/4.jpg",
+      "thumbnail": "/assets/img/4.jpg",
       "images": [
         {
-          "path": "/src/assets/img/4.jpg",
+          "path": "/assets/img/4.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/5.jpg"
+          "path": "/assets/img/5.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L", "XL"],
@@ -693,34 +693,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
@@ -739,17 +739,17 @@
       "id": 12,
       "name": "Nesto 33",
       "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/src/assets/img/5.jpg",
+      "thumbnail": "/assets/img/5.jpg",
       "images": [
         {
-          "path": "/src/assets/img/2.jpg",
+          "path": "/assets/img/2.jpg",
           "isActive": true
         },
         {
-          "path": "/src/assets/img/3.jpg"
+          "path": "/assets/img/3.jpg"
         },
         {
-          "path": "/src/assets/img/6.jpg"
+          "path": "/assets/img/6.jpg"
         }
       ],
       "sizes": ["L"],
@@ -758,34 +758,34 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/src/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash.png"
           },
           {
             "text": "ironing",
-            "icon": "/src/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing.png"
           },
           {
             "text": "tumble dry",
-            "icon": "/src/assets/img/tc-tumble-dry.png"
+            "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
             "text": "dry clean",
-            "icon": "/src/assets/img/tc-dry-clean.png"
+            "icon": "/assets/img/tc-dry-clean.png"
           },
           {
             "text": "bleach",
-            "icon": "/src/assets/img/tc-bleach.png"
+            "icon": "/assets/img/tc-bleach.png"
           }
         ]
       },
       "reviews": [
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko",
           "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
         },
         {
-          "image": "/src/assets/img/profile_picture.jpg",
+          "image": "/assets/img/profile_picture.jpg",
           "name": "Netko Nekić",
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }

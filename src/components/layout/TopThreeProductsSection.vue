@@ -9,7 +9,7 @@ import { RouterLink } from "vue-router";
         <RouterLink to="/singleitem/1">
           <div class="top-card">
             <div class="image p-4 pb-0">
-              <img class="" src="/src/assets/img/1.jpg" alt="" />
+              <img class="" src="/assets/img/1.jpg" alt="" />
             </div>
             <div id="parallelogram" class="shape1"></div>
           </div>
@@ -21,7 +21,7 @@ import { RouterLink } from "vue-router";
         <RouterLink to="/singleitem/2">
           <div class="top-card">
             <div class="image p-4 pb-0">
-              <img class="" src="/src/assets/img/2.jpg" alt="" />
+              <img class="" src="/assets/img/2.jpg" alt="" />
             </div>
             <div id="parallelogram" class="shape2"></div>
           </div>
@@ -33,7 +33,7 @@ import { RouterLink } from "vue-router";
         <RouterLink to="/singleitem/3">
           <div class="top-card">
             <div class="image p-4 pb-0">
-              <img class="" src="/src/assets/img/3.jpg" alt="" />
+              <img class="" src="/assets/img/3.jpg" alt="" />
             </div>
             <div id="parallelogram" class="shape3"></div>
           </div>

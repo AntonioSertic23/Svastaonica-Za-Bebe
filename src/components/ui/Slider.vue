@@ -7,37 +7,37 @@
       <div>
         <ul>
           <li>
-            <img src="../../assets/img/1.jpg" />
+            <img src="/assets/img/1.jpg" />
           </li>
           <li>
-            <img src="../../assets/img/2.jpg" />
+            <img src="/assets/img/2.jpg" />
           </li>
-          <li><img src="../../assets/img/3.jpg" /></li>
+          <li><img src="/assets/img/3.jpg" /></li>
           <li>
-            <img src="../../assets/img/4.jpg" />
+            <img src="/assets/img/4.jpg" />
           </li>
           <li>
-            <img src="../../assets/img/5.jpg" />
+            <img src="/assets/img/5.jpg" />
           </li>
-          <li><img src="../../assets/img/6.jpg" /></li>
+          <li><img src="/assets/img/6.jpg" /></li>
         </ul>
       </div>
       <div>
         <ul>
           <li>
-            <img src="../../assets/img/1.jpg" />
+            <img src="/assets/img/1.jpg" />
           </li>
           <li>
-            <img src="../../assets/img/2.jpg" />
+            <img src="/assets/img/2.jpg" />
           </li>
-          <li><img src="../../assets/img/3.jpg" /></li>
+          <li><img src="/assets/img/3.jpg" /></li>
           <li>
-            <img src="../../assets/img/4.jpg" />
+            <img src="/assets/img/4.jpg" />
           </li>
           <li>
-            <img src="../../assets/img/5.jpg" />
+            <img src="/assets/img/5.jpg" />
           </li>
-          <li><img src="../../assets/img/6.jpg" /></li>
+          <li><img src="/assets/img/6.jpg" /></li>
         </ul>
       </div>
     </article>

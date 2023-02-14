@@ -41,10 +41,10 @@ function sortData(x) {
             corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime
             nulla exercitationem illo dolores.
           </p>
-          <img class="background-icon" src="../assets/img/1.png" />
-          <img class="background-icon" src="../assets/img/2.png" />
-          <img class="background-icon" src="../assets/img/3.png" />
-          <img class="background-icon" src="../assets/img/4.png" />
+          <img class="background-icon" src="/assets/img/1.png" />
+          <img class="background-icon" src="/assets/img/2.png" />
+          <img class="background-icon" src="/assets/img/3.png" />
+          <img class="background-icon" src="/assets/img/4.png" />
         </div>
       </div>
 
