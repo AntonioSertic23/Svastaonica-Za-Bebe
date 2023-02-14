@@ -16,11 +16,11 @@ if (lsSortData != null) {
 
 function sortData(x) {
   if (currentSort.value == x) {
-    this.currentSort = 0;
+    currentSort.value = 0;
     this.data = sourceData.data;
     localStorage.removeItem("sortData");
   } else {
-    this.currentSort = x;
+    currentSort.value = x;
     this.data = sourceData.data.filter(function (el) {
       return el.categories.includes(x);
     });

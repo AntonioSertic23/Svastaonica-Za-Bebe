@@ -283,11 +283,11 @@
       "keywords": [
         {
           "text": "U trendu",
-          "icon": "/assets/img/2.png"
+          "icon": "/assets/img/badge2.png"
         },
         {
           "text": "Preporuka kupaca",
-          "icon": "/assets/img/3.png"
+          "icon": "/assets/img/badge3.png"
         }
       ],
       "isBundle": true,
