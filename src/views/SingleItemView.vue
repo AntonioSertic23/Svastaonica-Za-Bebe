@@ -51,14 +51,13 @@ function updateNumber() {
 }
 
 // share
-
 const share = (e) => {
   if (navigator.share) {
     navigator
       .share({
-        title: "Share my blog",
-        text: "Web development tutorial blogs",
-        url: "https://justforuse.github.io/blog/en-us/",
+        title: "Product share",
+        text: data.value.name,
+        url: "https://svastaonicazabebe.netlify.app" + route.fullPath,
       })
       .then(() => console.log("thanks for share"))
       .catch((error) => console.log("error", error));
