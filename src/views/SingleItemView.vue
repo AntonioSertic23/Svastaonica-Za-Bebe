@@ -562,6 +562,7 @@ if (!navigator.share) {
   border-radius: 15px;
   width: 100%;
   position: relative;
+  box-shadow: 4px 4px 4px lightgrey;
 }
 .bundle-card:hover .bundle-img {
   cursor: pointer;
