@@ -6,7 +6,6 @@ import ProductCard from "../components/ui/ProductCard.vue";
 import SearchBar from "../components/ui/SearchBar.vue";
 
 var data = ref(sourceData.data);
-
 const route = useRoute();
 data.value = sourceData.data.filter(function (el) {
   if (el.name.toLowerCase().includes(route.params.search.toLowerCase())) {
@@ -21,6 +20,8 @@ function FindData(text) {
     }
   });
 }
+
+var isEmpty = data.value.length == 0;
 </script>
 
 <template>
@@ -36,6 +37,11 @@ function FindData(text) {
             <ProductCard :cardData="item" />
           </div>
         </div>
+        <div class="message-div my-5 px-4 px-lg-0" v-if="isEmpty">
+          <p class="message m-0">
+            Nažalost nismo pronašli niti jedan proizvod toga imena.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -46,9 +52,23 @@ function FindData(text) {
   width: 500px;
 }
 
+.message-div {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.message {
+  font-size: 31.25px;
+}
+
 @media (max-width: 991.98px) {
   .searchbar-div {
     width: auto;
+  }
+
+  .message {
+    font-size: 25px;
   }
 }
 </style>
