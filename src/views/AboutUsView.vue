@@ -7,13 +7,27 @@ import VLazyImage from "v-lazy-image";
     <div class="container d-flex flex-column">
       <!-- SECTION 1 -->
       <div class="row justify-content-center text-center">
-        <p class="mb-5 menu-title">Tko smo mi?</p>
+        <p class="mb-5 menu-title">Ukratko o nama</p>
+        <p>-mjesto gdje se susreću mašta,kreativa & pozitiva-</p>
         <div class="col col-lg-8 px-4">
           <p class="aboutus-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            facilis tempora porro, suscipit ducimus delectus quaerat alias
-            corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime
-            nulla exercitationem illo dolores.
+            Svaštaonica za bebe nastala je kao nastavak dugogodišnjeg hobija, a
+            zatim smo rasli i sazrijevali u svojoj kreativi zahvaljujući
+            ponajprije svima vama, divnim i vjernim kupcima, koji ste nas
+            inspirirali, nadahnjivali i davali vjetar u leđa svakoj svojom
+            idejom i narudžbom!
+            <br />
+            <br />
+            Svaki proizvod je ručni rad, proizašao iz malene radionice,
+            napravljen s mnoštvom ljubavi i pažnje, te provjeren, poslikan i
+            pojašnjen kupcu prije slanja, kako bi do Vas stigao točno onakav
+            kakvog ste ga i zamislili. <br />
+            <br />
+            Naše radno vijeme nema početka ni kraja, jer takvo se stvaralaštvo
+            jedostavno živi, uz trud i pristup svakom kupcu individualno, uz
+            neizostavan „personal touch“, kako bi svaka suradnje bila čim
+            uspješnija, a vi kao kupci zadovoljni, štp nas zapravo i motivira u
+            ustrajnosti i daljnjem rastu, razvoju i osvajanu novih tržišta.
           </p>
         </div>
       </div>
@@ -23,7 +37,7 @@ import VLazyImage from "v-lazy-image";
         <div class="background-connector"></div>
 
         <div class="col col-lg-4 section2-left order-2 order-lg-1">
-          <VLazyImage v-bind:src="'/assets/img/aboutus2.jpg'" class="image1" />
+          <VLazyImage v-bind:src="'/assets/img/aboutus2'" class="image1" />
 
           <p class="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -56,7 +70,7 @@ import VLazyImage from "v-lazy-image";
           class="col col-lg-4 section2-right order-1 order-lg-2 mb-5 mb-lg-0"
         >
           <p class="mb-3 my-lg-3">Naslov</p>
-          <VLazyImage v-bind:src="'/assets/img/aboutus1.jpg'" class="image2" />
+          <VLazyImage v-bind:src="'/assets/img/aboutus1'" class="image2" />
         </div>
       </div>
 
@@ -74,10 +88,10 @@ import VLazyImage from "v-lazy-image";
             <p>Igračke za moderne obitelji</p>
           </div>
 
-          <div class="item">
+          <!--           <div class="item">
             <img src="/assets/img/bp1.png" alt="" />
             <p>Igračke za zajedničko provođenje vremena</p>
-          </div>
+          </div> -->
         </div>
 
         <div class="section3-2 mt-5 mt-lg-0 col col-lg-3">
@@ -93,7 +107,7 @@ import VLazyImage from "v-lazy-image";
       </div>
 
       <!-- SECTION 4 -->
-      <div class="section4 mb-5">
+      <!--       <div class="section4 mb-5">
         <div class="row justify-content-end">
           <div class="col px-4 col-lg-3 some-text-div me-5 order-2 order-lg-1">
             <p class="some-text">
@@ -152,7 +166,7 @@ import VLazyImage from "v-lazy-image";
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

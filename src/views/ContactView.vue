@@ -10,12 +10,7 @@
       <div class="col col-lg-8 p-4 py-0 mx-auto">
         <div class="contact-information px-md-4 mb-4">
           <div class="mb-5 text-center">
-            <p class="contact-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-              facilis tempora porro, suscipit ducimus delectus quaerat alias
-              corporis a obcaecati, molestiae expedita dolorem nisi commodi
-              maxime nulla exercitationem illo dolores.
-            </p>
+            <p class="contact-description">Obratite nam se putem:</p>
           </div>
 
           <div class="social-media mb-5 row g-4 justify-content-center">
@@ -25,7 +20,7 @@
             <a href="#" class="">
               <img src="/assets/img/sm-whatsapp.png" />
             </a>
-            <a href="#" class="">
+            <a href="https://www.facebook.com/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook.png" />
             </a>
             <a href="#" class="">
@@ -46,6 +41,10 @@
             0919375976
           </a>
 
+          <div class="text-center short-message">
+            <p>Radujemo se svakom vašem upitu i narudžbi!</p>
+          </div>
+
           <div class="aboutus-cards-div row row-cols-1 row-cols-lg-3 mt-5">
             <div class="text-center">
               <img src="/assets/img/house.png" alt="" />
@@ -56,13 +55,13 @@
             <div class="text-center">
               <img src="/assets/img/call.png" alt="" />
               <h6 class="naslov">Telefon</h6>
-              <p class="info">+091/091091</p>
+              <p class="info">091 937 59 76</p>
             </div>
 
             <div class="text-center">
               <img src="/assets/img/email.png" alt="" />
               <h6 class="naslov">Email</h6>
-              <p class="info">john.doe@gmail.com</p>
+              <p class="info">svastaonicazabebe@gmail.com</p>
             </div>
           </div>
         </div>
@@ -135,6 +134,10 @@
 }
 .social-media img:hover {
   transform: scale(1.3);
+}
+
+.short-message p {
+  font-size: 25px;
 }
 
 @media (max-width: 991.98px) {
