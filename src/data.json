@@ -2,24 +2,134 @@
   "data": [
     {
       "id": 1,
-      "name": "Kockica",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/1.jpg",
+      "name": "Didaktička Kocka",
+      "description": "Dizajnirano kao poklon, stvoreno kao uspomena. Personalizirane zveckave kocke, posebno su dizajnirane u veselim bojama i šarenim uzorcima kako bi odmah privukle pozornost bebinih okica! Ispunjene su mekim punjenjem, zveckavcem u sredini, šuškavom stranicom i mnoštvom etiketa i trakica koje pospješuju razvoj fine motorike, ponajprije hvatanja, prepoznavanja boja, vježbe sluha kroz igru, ravnoteže te pokretanje cijelog lokomotornog sustava. Kvaliteta tkanina i izrada preduvjet su ovako kvalitetnog i dugotrajnog proizvoda. Svaku kocku možete sami dizajnirati, samostalnim odabirom tkanina iz ponude, boja, dezena, imena.",
+      "thumbnail": "/assets/img/kocke/1.jpg",
       "images": [
         {
-          "path": "/assets/img/1.jpg",
+          "path": "/assets/img/kocke/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/2.jpg"
+          "path": "/assets/img/kocke/2.jpg"
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/kocke/3.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/4.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/5.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/6.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/7.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/8.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/9.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/10.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/11.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/12.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/13.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/14.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/15.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/16.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/17.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/18.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/19.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/20.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/21.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/22.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/23.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/24.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/25.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/26.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/27.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/28.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/29.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/30.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/31.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/32.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/33.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/34.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/35.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/36.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/37.jpg"
+        },
+        {
+          "path": "/assets/img/kocke/38.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": [
+          "90% Pamuk",
+          "10% Poliester",
+          "10x10x10 cm",
+          "Tkanine posjeduju OEKO-TEX 100- standard"
+        ],
         "icons": [
           {
             "text": "wash",
@@ -56,7 +166,7 @@
         }
       ],
       "similarItems": [2, 10, 11],
-      "badges": ["badge1"],
+      "badges": ["bow"],
       "soldout": false,
       "categories": [1],
       "keywords": [
@@ -81,24 +191,53 @@
 
     {
       "id": 2,
-      "name": "Nesto 2",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/4.jpg",
+      "name": "Slinček",
+      "description": "...jer slinčeka nikad nema dovoljno... Slinček/partikla/bavarin/balavac/podbradnjak/barbajol-> mnoštvo imena za jedan nezamjenjiv proizvod! Spoj kvalitetnog pamuka u raznim dezenima i pamučnog frotira, nosiv s obje strane (lica) a u potpunosti nepromočiv, neizostavan je dodatak pri svakom hranjenju, a posebice pri pojačanom slinjenju uzrokovanog rastom zubića. Kopčanje je na drukere, na dva nivoa, što omogućuje lakšu prilagodbu svakom vratiću.",
+      "thumbnail": "/assets/img/slinceki/12.jpg",
       "images": [
         {
-          "path": "/assets/img/4.jpg",
+          "path": "/assets/img/slinceki/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/5.jpg"
+          "path": "/assets/img/slinceki/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/slinceki/3.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/4.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/5.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/6.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/7.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/8.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/9.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/10.jpg"
+        },
+        {
+          "path": "/assets/img/slinceki/11.jpg"
         }
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": [
+          "97% pamuk",
+          "2% poliester",
+          "Znakići za tkanine",
+          "Tkanine posjeduju OEKO-TEX 100- standard"
+        ],
         "icons": [
           {
             "text": "wash",
@@ -135,9 +274,9 @@
         }
       ],
       "similarItems": [1, 3, 6],
-      "badges": ["badge2", "badge3"],
+      "badges": ["badge2", "badge4"],
       "soldout": false,
-      "categories": [1, 2],
+      "categories": [1, 3],
       "keywords": [
         {
           "text": "Siguran",
@@ -152,24 +291,48 @@
 
     {
       "id": 3,
-      "name": "Nesto 33",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/5.jpg",
+      "name": "Silikonska vezica",
+      "description": "...jer cucla bez vezice dobije krila... Silikonska vezica neizostavan je modni dodatak, a svrsihodan u sprječavanju padanja na pod i gubitka dude. Izrađena je od akril kopče i imena po Vašoj želji, te silikonskih perli i oblika bez štetnih tvari, koji su otporni na sva grickanja, slinu i zubiće. Izrada u preporučenim dužinama po EU standardima 22-25cm (bez kopče), ali dužine mogu biti prilagođene željama i potrebama kupca.",
+      "thumbnail": "/assets/img/vezice/12.jpg",
       "images": [
         {
-          "path": "/assets/img/2.jpg",
+          "path": "/assets/img/vezice/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/vezice/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/vezice/3.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/4.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/5.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/6.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/7.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/8.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/9.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/10.jpg"
+        },
+        {
+          "path": "/assets/img/vezice/11.jpg"
         }
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["90% silikon", "10% akril", "BPA free"],
         "icons": [
           {
             "text": "wash",
@@ -206,9 +369,9 @@
         }
       ],
       "similarItems": [2, 4, 6],
-      "badges": ["badge4"],
+      "badges": ["badge6"],
       "soldout": false,
-      "categories": [1, 3],
+      "categories": [1],
       "keywords": [
         {
           "text": "100% zabavan",
@@ -223,24 +386,54 @@
 
     {
       "id": 4,
-      "name": "Bundle 1",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/4.jpg",
+      "name": "Patkice za nehodače",
+      "description": "...i prije hodanja je bitno... Patikice za nehodače u ponudi su u raznim dezenima, ovisno o stanju, veličine ug 11cm (0-6mj) te po Vašoj želji personalizirane akrilnim imenom. Modni dodatak koji bi svatko poželio. Poklon koji bi svatko imao. A zatim uspomena koju bi svatko volio!",
+      "thumbnail": "/assets/img/shuze/1.jpg",
       "images": [
         {
-          "path": "/assets/img/4.jpg",
+          "path": "/assets/img/shuze/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/5.jpg"
+          "path": "/assets/img/shuze/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/shuze/3.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/4.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/5.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/6.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/7.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/8.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/9.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/10.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/11.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/12.jpg"
+        },
+        {
+          "path": "/assets/img/shuze/13.jpg"
         }
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["Veličina 11 cm (0-6mj)", "Razni dezeni"],
         "icons": [
           {
             "text": "wash",
@@ -277,9 +470,9 @@
         }
       ],
       "similarItems": [2, 3, 6],
-      "badges": ["badge2", "badge5"],
+      "badges": ["badge2"],
       "soldout": false,
-      "categories": [1, 4],
+      "categories": [1],
       "keywords": [
         {
           "text": "U trendu",
@@ -298,24 +491,42 @@
 
     {
       "id": 5,
-      "name": "Nesto 33",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/5.jpg",
+      "name": "Privjesci za ključeve",
+      "description": "...poklončić koji je uvijek uz vas...Privjesci suu zradi po Vašoj želji i personalizaciji, s jednim ili više imena, ili pak bez. Maleni znak pažnje a poklončić od srca.",
+      "thumbnail": "/assets/img/privj/1.jpg",
       "images": [
         {
-          "path": "/assets/img/2.jpg",
+          "path": "/assets/img/privj/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/privj/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/privj/3.jpg"
+        },
+        {
+          "path": "/assets/img/privj/4.jpg"
+        },
+        {
+          "path": "/assets/img/privj/5.jpg"
+        },
+        {
+          "path": "/assets/img/privj/6.jpg"
+        },
+        {
+          "path": "/assets/img/privj/7.jpg"
+        },
+        {
+          "path": "/assets/img/privj/8.jpg"
+        },
+        {
+          "path": "/assets/img/privj/9.jpg"
         }
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["70% akril", "20% metal", "10% drvo"],
         "icons": [
           {
             "text": "wash",
@@ -352,31 +563,49 @@
         }
       ],
       "similarItems": [2, 3, 6],
-      "badges": ["badge5"],
+      "badges": ["badge3"],
       "soldout": false,
       "categories": [1]
     },
 
     {
       "id": 6,
-      "name": "Kockica",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/1.jpg",
+      "name": "Krunice i desetice",
+      "description": "„Zapovijediti ću anđelima da idu pred tobom“ Sakralni poklončić za uspomenu na sakrament Krštenja, Prve pričesti, Svete potvrde, sklapanja braka ili za osobne potrebe molitve. Boje, oblici i imena po Vašem izboru.",
+      "thumbnail": "/assets/img/krun/1.jpg",
       "images": [
         {
-          "path": "/assets/img/1.jpg",
+          "path": "/assets/img/krun/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/2.jpg"
+          "path": "/assets/img/krun/2.jpg"
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/krun/3.jpg"
+        },
+        {
+          "path": "/assets/img/krun/4.jpg"
+        },
+        {
+          "path": "/assets/img/krun/5.jpg"
+        },
+        {
+          "path": "/assets/img/krun/6.jpg"
+        },
+        {
+          "path": "/assets/img/krun/7.jpg"
+        },
+        {
+          "path": "/assets/img/krun/8.jpg"
+        },
+        {
+          "path": "/assets/img/krun/9.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["80% akril", "20% metal"],
         "icons": [
           {
             "text": "wash",
@@ -413,31 +642,188 @@
         }
       ],
       "similarItems": [2, 3, 5],
-      "badges": ["badge1"],
+      "badges": ["badge3"],
       "soldout": false,
-      "categories": [2]
+      "categories": []
     },
 
     {
       "id": 7,
-      "name": "Nesto 33",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/5.jpg",
+      "name": "Okvir",
+      "description": "Savršeni način za sačuvati uspomenu na Vama važan događaj. Trebate li poklon za uspomenu na rođenje, mjesto za čuvanje narukvica iz rodilišta, uspomenu na svete sakramente ili razne prigode – okvir je pravi izbor za Vas! Okvir je bijele boje, može stajati samostalno ili na zidu, a izrada je po primjerku ili u potpunosti po Vašoj želji.",
+      "thumbnail": "/assets/img/okviri/10.jpg",
       "images": [
         {
-          "path": "/assets/img/2.jpg",
+          "path": "/assets/img/okviri/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/okviri/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/okviri/3.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/4.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/5.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/6.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/7.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/8.jpg"
+        },
+        {
+          "path": "/assets/img/okviri/9.jpg"
         }
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["90% drvo", "10% staklo", "26x26x4cm"],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/assets/img/tc-wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/assets/img/tc-ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/assets/img/tc-tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/assets/img/tc-dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/assets/img/tc-bleach.png"
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "image": "/assets/img/profile_picture.jpg",
+          "name": "Netko",
+          "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
+        },
+        {
+          "image": "/assets/img/profile_picture.jpg",
+          "name": "Netko Nekić",
+          "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
+        }
+      ],
+      "similarItems": [2, 3, 6],
+      "badges": ["badge3"],
+      "soldout": false,
+      "categories": []
+    },
+
+    {
+      "id": 8,
+      "name": "Pamučne gricke",
+      "description": "..nijedna slina neće proći... Pamučne gricke neizostavna su oprema  za sve male grickače! Izrađene po mjeri, od pamuka i frotira s kočanjem na drukere, osigurati će svaki pojas u nosiljci, jajetu, hranilici, kolicima ili automobilu od sline i grickanja, te zaštititi vratić od iritacije pojasom. Dezene, boje i uzorke možete i sami odabrati.",
+      "thumbnail": "/assets/img/gricke/1.jpg",
+      "images": [
+        {
+          "path": "/assets/img/gricke/1.jpg",
+          "isActive": true
+        },
+        {
+          "path": "/assets/img/gricke/2.jpg"
+        },
+        {
+          "path": "/assets/img/gricke/3.jpg"
+        },
+        {
+          "path": "/assets/img/gricke/4.jpg"
+        }
+      ],
+      "sizes": ["S", "L", "XL"],
+      "declaration": {
+        "materials": [
+          "90% pamuk",
+          "10% poliester",
+          "Cca 15 cm visine",
+          "Znakići za tkanine",
+          "Tkanine posjeduju OEKO-TEX 100- standard"
+        ],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/assets/img/tc-wash.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/assets/img/tc-ironing.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/assets/img/tc-tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/assets/img/tc-dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/assets/img/tc-bleach.png"
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "image": "/assets/img/profile_picture.jpg",
+          "name": "Netko",
+          "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
+        },
+        {
+          "image": "/assets/img/profile_picture.jpg",
+          "name": "Netko Nekić",
+          "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
+        }
+      ],
+      "similarItems": [2, 3, 6],
+      "badges": ["badge3"],
+      "soldout": false,
+      "categories": [],
+      "isBundle": true,
+      "bundleItems": [1, 10, 11],
+      "isPartOfBundle": false,
+      "bundle": []
+    },
+
+    {
+      "id": 9,
+      "name": "Trakice",
+      "description": "Koliko trakica je dovoljno trakica!? Raznobojne trake za glavu, pogodne za svaki outfit, kje karakterizira velika trendy mašna. Izrađene su od extra rastezljivog materijala, što omogućuje dugotrajno korištenje. Široke su i korisne u pokrivanju ušeka u vjetrovitim danima, dok su istovremeno uočljiv modni dodatak.",
+      "thumbnail": "/assets/img/trake/1.jpg",
+      "images": [
+        {
+          "path": "/assets/img/trake/1.jpg",
+          "isActive": true
+        },
+        {
+          "path": "/assets/img/trake/2.jpg"
+        },
+        {
+          "path": "/assets/img/trake/3.jpg"
+        }
+      ],
+      "sizes": ["L", "XL"],
+      "declaration": {
+        "materials": [
+          "100%poliester",
+          "Uni size do 2g",
+          "Izrada i po mjeri OG"
+        ],
         "icons": [
           {
             "text": "wash",
@@ -480,151 +866,25 @@
     },
 
     {
-      "id": 8,
-      "name": "Bundle 2",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/1.jpg",
-      "images": [
-        {
-          "path": "/assets/img/1.jpg",
-          "isActive": true
-        },
-        {
-          "path": "/assets/img/2.jpg"
-        },
-        {
-          "path": "/assets/img/3.jpg"
-        }
-      ],
-      "sizes": ["S", "L", "XL"],
-      "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
-      },
-      "reviews": [
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko",
-          "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
-        },
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko Nekić",
-          "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
-        }
-      ],
-      "similarItems": [2, 3, 6],
-      "badges": ["badge1"],
-      "soldout": true,
-      "categories": [4],
-      "isBundle": true,
-      "bundleItems": [1, 10, 11],
-      "isPartOfBundle": false,
-      "bundle": []
-    },
-
-    {
-      "id": 9,
-      "name": "Nesto 2",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/4.jpg",
-      "images": [
-        {
-          "path": "/assets/img/4.jpg",
-          "isActive": true
-        },
-        {
-          "path": "/assets/img/5.jpg"
-        },
-        {
-          "path": "/assets/img/6.jpg"
-        }
-      ],
-      "sizes": ["L", "XL"],
-      "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
-      },
-      "reviews": [
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko",
-          "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
-        },
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko Nekić",
-          "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
-        }
-      ],
-      "similarItems": [2, 3, 6],
-      "badges": ["badge2", "badge3"],
-      "soldout": false,
-      "categories": [1]
-    },
-
-    {
       "id": 10,
-      "name": "Kockica",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis tempora porro, suscipit ducimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/1.jpg",
+      "name": "Kugle",
+      "description": "Kuglica osvjetljava drvce čarobnom svjetlošću Božića. Personalizirane božićne kugle, idealan poklon za blagadane koji će unijeti dašak topline na svako božićno drvce.",
+      "thumbnail": "/assets/img/kugle/1.jpg",
       "images": [
         {
-          "path": "/assets/img/1.jpg",
+          "path": "/assets/img/kugle/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/2.jpg"
+          "path": "/assets/img/kugle/2.jpg"
         },
         {
-          "path": "/assets/img/3.jpg"
+          "path": "/assets/img/kugle/3.jpg"
         }
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["100% akril", "o fi 8cm"],
         "icons": [
           {
             "text": "wash",
@@ -661,9 +921,9 @@
         }
       ],
       "similarItems": [2, 3, 6],
-      "badges": ["badge1"],
+      "badges": [],
       "soldout": true,
-      "categories": [2],
+      "categories": [],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": true,
@@ -672,24 +932,24 @@
 
     {
       "id": 11,
-      "name": "Nesto 2",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/4.jpg",
+      "name": "Blagdanske čizme",
+      "description": "Personalizirane blagdanske čizmice, u potpunosti ručni rad, sa strojno uvezenim imenom, služe kao dekoracija ili za punjenje poklonima za Sv.Nikolu ili Božić.Savršen su dodatak božićnim dekoracijama u svaom domu!",
+      "thumbnail": "/assets/img/cizme/1.jpg",
       "images": [
         {
-          "path": "/assets/img/4.jpg",
+          "path": "/assets/img/cizme/1.jpg",
           "isActive": true
         },
         {
-          "path": "/assets/img/5.jpg"
+          "path": "/assets/img/cizme/2.jpg"
         },
         {
-          "path": "/assets/img/6.jpg"
+          "path": "/assets/img/cizme/3.jpg"
         }
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
+        "materials": ["Dužine cca 40 cm", "Širine cca 15 cm", "100% flis"],
         "icons": [
           {
             "text": "wash",
@@ -726,74 +986,13 @@
         }
       ],
       "similarItems": [2, 3, 6],
-      "badges": ["badge4", "badge3"],
+      "badges": [],
       "soldout": true,
-      "categories": [3],
+      "categories": [],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": true,
       "bundle": [8]
-    },
-
-    {
-      "id": 12,
-      "name": "Nesto 33",
-      "description": "Lorem ipsum dolor, cimus delectus quaerat alias corporis a obcaecati, maxime nulla exercitationem illo dolores.",
-      "thumbnail": "/assets/img/5.jpg",
-      "images": [
-        {
-          "path": "/assets/img/2.jpg",
-          "isActive": true
-        },
-        {
-          "path": "/assets/img/3.jpg"
-        },
-        {
-          "path": "/assets/img/6.jpg"
-        }
-      ],
-      "sizes": ["L"],
-      "declaration": {
-        "materials": ["70% Pamuk", "30% Poliester"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
-      },
-      "reviews": [
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko",
-          "comment": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur."
-        },
-        {
-          "image": "/assets/img/profile_picture.jpg",
-          "name": "Netko Nekić",
-          "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
-        }
-      ],
-      "similarItems": [2, 3, 6],
-      "badges": ["badge5"],
-      "soldout": true,
-      "categories": [4]
     }
   ]
 }

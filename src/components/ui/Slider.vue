@@ -7,37 +7,37 @@
       <div>
         <ul>
           <li>
-            <img src="/assets/img/1.jpg" />
+            <img src="/assets/img/cizme/1.jpg" />
           </li>
           <li>
-            <img src="/assets/img/2.jpg" />
+            <img src="/assets/img/gricke/1.jpg" />
           </li>
-          <li><img src="/assets/img/3.jpg" /></li>
+          <li><img src="/assets/img/kocke/1.jpg" /></li>
           <li>
-            <img src="/assets/img/4.jpg" />
+            <img src="/assets/img/krun/1.jpg" />
           </li>
           <li>
-            <img src="/assets/img/5.jpg" />
+            <img src="/assets/img/kugle/1.jpg" />
           </li>
-          <li><img src="/assets/img/6.jpg" /></li>
+          <li><img src="/assets/img/okviri/10.jpg" /></li>
         </ul>
       </div>
       <div>
         <ul>
           <li>
-            <img src="/assets/img/1.jpg" />
+            <img src="/assets/img/privj/1.jpg" />
           </li>
           <li>
-            <img src="/assets/img/2.jpg" />
+            <img src="/assets/img/set/6.jpg" />
           </li>
-          <li><img src="/assets/img/3.jpg" /></li>
+          <li><img src="/assets/img/shuze/1.jpg" /></li>
           <li>
-            <img src="/assets/img/4.jpg" />
+            <img src="/assets/img/slinceki/12.jpg" />
           </li>
           <li>
-            <img src="/assets/img/5.jpg" />
+            <img src="/assets/img/trake/1.jpg" />
           </li>
-          <li><img src="/assets/img/6.jpg" /></li>
+          <li><img src="/assets/img/vezice/12.jpg" /></li>
         </ul>
       </div>
     </article>
