@@ -25,7 +25,7 @@ import { RouterLink } from "vue-router";
         >
           <div class="middle-side-div">
             <img class="image2" src="/logo.jpg" alt="" />
-            <img class="image3" src="/assets/img/bow.png" alt="" />
+            <!-- <img class="image3" src="/assets/img/bow.png" alt="" /> -->
           </div>
         </div>
 

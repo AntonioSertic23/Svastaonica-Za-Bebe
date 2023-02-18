@@ -7,26 +7,29 @@
     <div class="row gy-5 mx-lg-5">
       <div class="item col-lg-4">
         <img class="" src="/assets/img/message.png" alt="" />
-        <p class="mt-4 heading">Message</p>
+        <p class="mt-4 heading">Kontakt</p>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Za sve informacije obratite nam se putem mreže po vašem izboru.
+          Posjetite našu <a href="">kontakt stranicu</a>.
         </p>
       </div>
 
       <div class="item col-lg-4">
         <img class="" src="/assets/img/handcraft.png" alt="" />
-        <p class="mt-4 heading">Crafting</p>
+        <p class="mt-4 heading">Izrada</p>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum dolor, sit amet enim explicabo asperiores exercitationem
-          rerum.
+          Vašu narudžbu izađujemo u najkraćem mogućem roku, te po izradi
+          dobivate fotografiju narudžbe prije samog slanja.
         </p>
       </div>
 
       <div class="item col-lg-4">
         <img class="" src="/assets/img/delivery.png" alt="" />
-        <p class="mt-4 heading">Delivery</p>
+        <p class="mt-4 heading">Dostava</p>
         <p class="mt-3 text-center px-3">
-          Lorem ipsum consectetur adipisicing harum deserunt.
+          Vašu narudžbu dostavljamo putem: <b>Hrvatske pošte</b>,
+          <b>Paketomata</b>, <b>Tiska</b>, a moguće je i
+          <b>osobno preuzimanje</b>.
         </p>
       </div>
     </div>
