@@ -85,7 +85,7 @@ section {
 img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -133,13 +133,13 @@ li {
 
 @media (max-width: 991.98px) {
   ul {
-    height: 200px;
+    height: 300px;
   }
   div {
     width: 200%;
   }
   article {
-    animation-duration: 15s;
+    animation-duration: 20s;
   }
 
   @keyframes bannermove {
@@ -147,7 +147,7 @@ li {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-200%);
+      transform: translateX(-350%);
     }
   }
 }

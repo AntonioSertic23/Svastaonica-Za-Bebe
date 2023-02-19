@@ -156,8 +156,9 @@ var data = ref(sourceData.data.slice(0, 5));
 .product-name p {
   position: absolute;
   font-size: 20px;
-  color: #222;
   bottom: 0;
+  color: white;
+  text-shadow: 3px 3px 3px black;
 }
 
 .item-big p {

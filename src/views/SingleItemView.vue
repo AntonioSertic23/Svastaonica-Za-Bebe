@@ -462,7 +462,6 @@ if (!navigator.share) {
 .similar-item-name p {
   position: absolute;
   font-size: 25px;
-  color: #222;
   bottom: 0;
   color: white;
   text-shadow: 3px 3px 3px black;
