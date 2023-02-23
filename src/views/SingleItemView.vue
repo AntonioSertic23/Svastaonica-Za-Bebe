@@ -74,14 +74,14 @@ if (!navigator.share) {
       <div class="row wrapper">
         <div class="col col-lg-6 item-info order-2 order-lg-1">
           <div class="left-side mx-4 col col-lg-9 m-lg-auto">
+            <div v-if="data.soldout" class="mb-5 text-center soldout-text">
+              <p>RASPRODANO</p>
+            </div>
+
             <p class="mb-5 menu-title">{{ data.name }}</p>
             <p class="item-description">
               {{ data.description }}
             </p>
-
-            <div v-if="data.soldout" class="my-5">
-              <h1>RASPRODANO</h1>
-            </div>
 
             <div class="keywords-div my-5" v-if="data.keywords != null">
               <div class="row">
@@ -735,6 +735,11 @@ if (!navigator.share) {
 }
 .shareBtn img {
   height: 28px;
+}
+
+.soldout-text {
+  color: crimson;
+  font-size: 48.83px;
 }
 
 @media (max-width: 991.98px) {

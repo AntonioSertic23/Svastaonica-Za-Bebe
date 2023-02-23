@@ -185,8 +185,8 @@
       ],
       "isBundle": false,
       "bundleItems": [],
-      "isPartOfBundle": true,
-      "bundle": [4, 8]
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -468,8 +468,8 @@
       ],
       "isBundle": false,
       "bundleItems": [],
-      "isPartOfBundle": true,
-      "bundle": [4]
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -668,8 +668,8 @@
       ],
       "isBundle": false,
       "bundleItems": [],
-      "isPartOfBundle": true,
-      "bundle": [4]
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -771,8 +771,8 @@
           "icon": "/assets/img/badge3.png"
         }
       ],
-      "isBundle": true,
-      "bundleItems": [1, 2, 3],
+      "isBundle": false,
+      "bundleItems": [],
       "isPartOfBundle": false,
       "bundle": []
     },
@@ -895,7 +895,11 @@
       "similarItems": [8, 9, 2, 3],
       "badges": ["badge3"],
       "soldout": false,
-      "categories": [1]
+      "categories": [1],
+      "isBundle": false,
+      "bundleItems": [],
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -1079,7 +1083,11 @@
       "similarItems": [9, 7, 3, 1],
       "badges": ["badge3"],
       "soldout": false,
-      "categories": []
+      "categories": [],
+      "isBundle": false,
+      "bundleItems": [],
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -1368,7 +1376,11 @@
       "similarItems": [1, 2, 4, 5],
       "badges": ["badge3"],
       "soldout": false,
-      "categories": []
+      "categories": [],
+      "isBundle": false,
+      "bundleItems": [],
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -1439,8 +1451,8 @@
       "badges": ["badge3"],
       "soldout": false,
       "categories": [],
-      "isBundle": true,
-      "bundleItems": [1, 10, 11],
+      "isBundle": false,
+      "bundleItems": [],
       "isPartOfBundle": false,
       "bundle": []
     },
@@ -1519,7 +1531,11 @@
       "similarItems": [3, 1, 6, 4],
       "badges": ["badge4"],
       "soldout": false,
-      "categories": [3]
+      "categories": [3],
+      "isBundle": false,
+      "bundleItems": [],
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -1667,8 +1683,8 @@
       "categories": [],
       "isBundle": false,
       "bundleItems": [],
-      "isPartOfBundle": true,
-      "bundle": [8]
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
@@ -1804,8 +1820,8 @@
       "categories": [],
       "isBundle": false,
       "bundleItems": [],
-      "isPartOfBundle": true,
-      "bundle": [8]
+      "isPartOfBundle": false,
+      "bundle": []
     },
 
     {
