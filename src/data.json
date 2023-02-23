@@ -133,11 +133,11 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash-one.png"
           },
           {
             "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-no-ironing.png"
           },
           {
             "text": "tumble dry",
@@ -424,11 +424,11 @@
         "icons": [
           {
             "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
+            "icon": "/assets/img/tc-wash-two.png"
           },
           {
             "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
+            "icon": "/assets/img/tc-ironing-two.png"
           },
           {
             "text": "tumble dry",
@@ -620,29 +620,7 @@
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["90% silikon", "10% akril", "BPA free"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["90% silikon", "10% akril", "BPA free"]
       },
       "reviews": [
         {
@@ -721,29 +699,7 @@
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": ["Veličina 11 cm (0-6mj)", "Razni dezeni"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["Veličina 11 cm (0-6mj)", "Razni dezeni"]
       },
       "reviews": [
         {
@@ -856,29 +812,7 @@
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["70% akril", "20% metal", "10% drvo"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["70% akril", "20% metal", "10% drvo"]
       },
       "reviews": [
         {
@@ -1044,29 +978,7 @@
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": ["80% akril", "20% metal"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["80% akril", "20% metal"]
       },
       "reviews": [
         {
@@ -1337,29 +1249,7 @@
       ],
       "sizes": ["L"],
       "declaration": {
-        "materials": ["90% drvo", "10% staklo", "26x26x4cm"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["90% drvo", "10% staklo", "26x26x4cm"]
       },
       "reviews": [
         {
@@ -1411,28 +1301,6 @@
           "Cca 15 cm visine",
           "Znakići za tkanine",
           "Tkanine posjeduju OEKO-TEX 100- standard"
-        ],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
         ]
       },
       "reviews": [
@@ -1488,33 +1356,7 @@
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": [
-          "100%poliester",
-          "Uni size do 2g",
-          "Izrada i po mjeri OG"
-        ],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["100%poliester", "Uni size do 2g", "Izrada i po mjeri OG"]
       },
       "reviews": [
         {
@@ -1641,29 +1483,7 @@
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": ["100% akril", "o fi 8cm"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["100% akril", "o fi 8cm"]
       },
       "reviews": [
         {
@@ -1778,29 +1598,7 @@
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": ["Dužine cca 40 cm", "Širine cca 15 cm", "100% flis"],
-        "icons": [
-          {
-            "text": "wash",
-            "icon": "/assets/img/tc-wash.png"
-          },
-          {
-            "text": "ironing",
-            "icon": "/assets/img/tc-ironing.png"
-          },
-          {
-            "text": "tumble dry",
-            "icon": "/assets/img/tc-tumble-dry.png"
-          },
-          {
-            "text": "dry clean",
-            "icon": "/assets/img/tc-dry-clean.png"
-          },
-          {
-            "text": "bleach",
-            "icon": "/assets/img/tc-bleach.png"
-          }
-        ]
+        "materials": ["Dužine cca 40 cm", "Širine cca 15 cm", "100% flis"]
       },
       "reviews": [
         {

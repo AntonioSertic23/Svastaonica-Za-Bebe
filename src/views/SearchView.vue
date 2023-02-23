@@ -32,7 +32,7 @@ var isEmpty = data.value.length == 0;
 
     <div class="section-cards row justify-content-evenly my-5">
       <div class="container text-center">
-        <div class="row row-cols-1 row-cols-lg-3 gy-5 g-lg-5">
+        <div class="row row-cols-1 row-cols-lg-auto gy-5 g-lg-5">
           <div class="col px-4" v-for="item in data" :key="item.id">
             <ProductCard :cardData="item" />
           </div>

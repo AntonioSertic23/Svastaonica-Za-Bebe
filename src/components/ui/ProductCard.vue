@@ -42,12 +42,7 @@ var item = props.cardData;
         />
 
         <div class="mask">
-          <img
-            v-if="item.soldout"
-            src="/assets/img/sold-out.png"
-            class="soldout-icon"
-            alt=""
-          />
+          <p v-if="item.soldout">Rasprodano</p>
           <img v-else src="/assets/img/share.png" class="open-icon" alt="" />
         </div>
       </div>
@@ -167,7 +162,7 @@ var item = props.cardData;
   height: fit-content;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.8s;
+  transition: opacity 0.5s;
 }
 .mask .soldout-icon {
   width: 128px;
@@ -189,7 +184,7 @@ var item = props.cardData;
 .product-image-div .mask p {
   position: relative;
   color: white;
-  font-size: 31.25px;
+  font-size: 48.83px;
 }
 
 .col h1 {
