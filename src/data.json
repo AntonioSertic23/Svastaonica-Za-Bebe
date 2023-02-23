@@ -1806,6 +1806,15 @@
       "bundleItems": [],
       "isPartOfBundle": true,
       "bundle": [8]
+    },
+
+    {
+      "id": 12,
+      "name": "Uskoro u ponudi",
+      "thumbnail": "/assets/img/set/1.jpg",
+      "badges": [],
+      "categories": [2],
+      "comingSoon": true
     }
   ]
 }

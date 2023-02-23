@@ -33,7 +33,7 @@ var item = props.cardData;
       />
     </div>
 
-    <RouterLink :to="'/singleitem/' + item.id">
+    <RouterLink :to="'/singleitem/' + item.id" v-if="!item.comingSoon">
       <div class="product-image-div">
         <VLazyImage
           class="thumbnail"
@@ -53,7 +53,21 @@ var item = props.cardData;
       </div>
     </RouterLink>
 
-    <h1 v-bind:style="[item.soldout ? 'opacity: 0.5' : '']">{{ item.name }}</h1>
+    <div class="product-image-div-coming-soon" v-else>
+      <VLazyImage
+        class="thumbnail"
+        :class="item.comingSoon ? 'coming-soon' : ''"
+        v-bind:src="item.thumbnail"
+      />
+
+      <div class="mask px-lg-5">
+        <p>Uskoro u ponudi</p>
+      </div>
+    </div>
+
+    <h1 v-bind:style="[item.soldout || item.comingSoon ? 'opacity: 0.5' : '']">
+      {{ item.name }}
+    </h1>
   </div>
 </template>
 
@@ -86,7 +100,8 @@ var item = props.cardData;
   border-radius: 0;
 }
 
-.product-image-div {
+.product-image-div,
+.product-image-div-coming-soon {
   position: relative;
   height: 400px;
   width: 400px;
@@ -96,7 +111,8 @@ var item = props.cardData;
   box-shadow: 4px 4px 4px lightgrey;
 }
 
-.product-image-div img {
+.product-image-div img,
+.product-image-div-coming-soon img {
   height: 100%;
   width: 100%;
   border-radius: 15px;
@@ -137,7 +153,7 @@ var item = props.cardData;
   transform: scale(1.2);
 }
 
-.mask {
+.product-image-div .mask {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -170,7 +186,7 @@ var item = props.cardData;
   top: -1rem;
   bottom: -1rem;
 }
-.mask p {
+.product-image-div .mask p {
   position: relative;
   color: white;
   font-size: 31.25px;
@@ -188,6 +204,40 @@ var item = props.cardData;
   z-index: 1;
   filter: brightness(60%);
 }
+
+.coming-soon {
+  filter: blur(5px) brightness(60%);
+}
+
+.product-image-div-coming-soon {
+  cursor: default;
+}
+
+.product-image-div-coming-soon .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: fit-content;
+  height: fit-content;
+  transition: transform 0.5s;
+}
+
+.product-image-div-coming-soon:hover .mask {
+  transform: scale(1.2);
+}
+
+.product-image-div-coming-soon .mask p {
+  position: relative;
+  color: white;
+  font-size: 48.83px;
+}
+
 @media (max-width: 991.98px) {
   .product-image-div {
     height: 350px;
