@@ -239,7 +239,8 @@ var item = props.cardData;
 }
 
 @media (max-width: 991.98px) {
-  .product-image-div {
+  .product-image-div,
+  .product-image-div-coming-soon {
     height: 350px;
     width: 100%;
   }

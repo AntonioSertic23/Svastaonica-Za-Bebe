@@ -304,7 +304,10 @@ if (!navigator.share) {
         </div>
       </div>
 
-      <div class="row similar-items-div px-4 px-lg-0 align-items-center">
+      <div
+        class="row similar-items-div px-4 px-lg-0 align-items-center"
+        v-if="aSimilarItems.length > 0"
+      >
         <p class="title">Slični proizvodi</p>
         <div
           class="col-11 col-lg-2 similar-item p-0"

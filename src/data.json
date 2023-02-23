@@ -165,7 +165,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 10, 11],
+      "similarItems": [4, 5, 7, 8],
       "badges": ["bow"],
       "soldout": false,
       "categories": [1],
@@ -456,7 +456,7 @@
           "comment": "Lorem ipsum dolor!"
         }
       ],
-      "similarItems": [1, 3, 6],
+      "similarItems": [5, 6, 8, 9],
       "badges": ["badge2", "badge4"],
       "soldout": false,
       "categories": [1, 3],
@@ -656,7 +656,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 4, 6],
+      "similarItems": [6, 4, 9, 7],
       "badges": ["badge6"],
       "soldout": false,
       "categories": [1],
@@ -757,7 +757,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [7, 8, 1, 2],
       "badges": ["badge2"],
       "soldout": false,
       "categories": [1],
@@ -892,7 +892,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [8, 9, 2, 3],
       "badges": ["badge3"],
       "soldout": false,
       "categories": [1]
@@ -1076,7 +1076,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 5],
+      "similarItems": [9, 7, 3, 1],
       "badges": ["badge3"],
       "soldout": false,
       "categories": []
@@ -1365,7 +1365,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [1, 2, 4, 5],
       "badges": ["badge3"],
       "soldout": false,
       "categories": []
@@ -1435,7 +1435,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [2, 3, 5, 6],
       "badges": ["badge3"],
       "soldout": false,
       "categories": [],
@@ -1516,7 +1516,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [3, 1, 6, 4],
       "badges": ["badge4"],
       "soldout": false,
       "categories": [3]
@@ -1661,7 +1661,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [],
       "badges": [],
       "soldout": true,
       "categories": [],
@@ -1798,7 +1798,7 @@
           "comment": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet dicta harum!"
         }
       ],
-      "similarItems": [2, 3, 6],
+      "similarItems": [],
       "badges": [],
       "soldout": true,
       "categories": [],

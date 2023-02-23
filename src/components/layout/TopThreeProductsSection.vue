@@ -17,7 +17,7 @@ import { RouterLink } from "vue-router";
             <div id="parallelogram" class="shape1"></div>
           </div>
         </RouterLink>
-        <h3 class="text-center mt-3">Neki naslov</h3>
+        <h3 class="text-center mt-3">Slinček</h3>
       </div>
 
       <div class="item order-3 order-lg-2">
@@ -32,7 +32,7 @@ import { RouterLink } from "vue-router";
             <div id="parallelogram" class="shape2"></div>
           </div>
         </RouterLink>
-        <h3 class="text-center mt-3 middle-text">Neki naslov</h3>
+        <h3 class="text-center mt-3 middle-text">Didaktička Kocka</h3>
       </div>
 
       <div class="item mt-0 mt-lg-5 order-1 order-lg-3">
@@ -47,7 +47,7 @@ import { RouterLink } from "vue-router";
             <div id="parallelogram" class="shape3"></div>
           </div>
         </RouterLink>
-        <h3 class="text-center mt-3">Neki naslov</h3>
+        <h3 class="text-center mt-3">Silikonska vezica</h3>
       </div>
     </div>
   </div>
