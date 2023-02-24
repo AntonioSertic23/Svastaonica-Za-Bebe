@@ -1301,6 +1301,28 @@
           "Cca 15 cm visine",
           "Znakići za tkanine",
           "Tkanine posjeduju OEKO-TEX 100- standard"
+        ],
+        "icons": [
+          {
+            "text": "wash",
+            "icon": "/assets/img/tc-wash-two.png"
+          },
+          {
+            "text": "ironing",
+            "icon": "/assets/img/tc-ironing-two.png"
+          },
+          {
+            "text": "tumble dry",
+            "icon": "/assets/img/tc-tumble-dry.png"
+          },
+          {
+            "text": "dry clean",
+            "icon": "/assets/img/tc-dry-clean.png"
+          },
+          {
+            "text": "bleach",
+            "icon": "/assets/img/tc-bleach.png"
+          }
         ]
       },
       "reviews": [

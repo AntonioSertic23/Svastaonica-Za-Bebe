@@ -10,8 +10,8 @@ import { RouterLink } from "vue-router";
           <div class="left-side-div pe-0 pe-lg-5 mt-4 mt-lg-0">
             <h1>Dobrodošli na</h1>
             <p class="mt-2 mb-4 my-lg-4">
-              sretno mjesto na internetu gdje se mogu pronaći razne igračke za
-              bebe!
+              sretno mjesto na internetu gdje se mogu pronaći razni poklončići
+              za bebe!
             </p>
 
             <RouterLink class="category-link mt-5 px-4" to="/gallery"
