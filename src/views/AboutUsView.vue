@@ -43,7 +43,7 @@ import VLazyImage from "v-lazy-image";
         <div class="background-connector"></div>
 
         <div class="col col-lg-4 section2-left order-2 order-lg-1">
-          <VLazyImage v-bind:src="'/assets/img/aboutus/6.jpg'" class="image1" />
+          <VLazyImage v-bind:src="'/assets/img/aboutus/4.jpg'" class="image1" />
 
           <p class="mt-4">
             „Mašta je važija od znanja. Znanje je ograničeno. Mašta okružuje
@@ -112,7 +112,7 @@ import VLazyImage from "v-lazy-image";
 
         <div class="section3-2 mt-5 mt-lg-0 col col-lg-3">
           <VLazyImage
-            v-bind:src="'/assets/img/aboutus/.jpg'"
+            v-bind:src="'/assets/img/aboutus/5.jpg'"
             class="section3-image1"
           />
           <div class="circle1"></div>
@@ -198,42 +198,36 @@ import VLazyImage from "v-lazy-image";
 
       <!-- SECTION 5 -->
       <div class="section5 mb-5">
-        <img src="/assets/img/aboutus/1.jpg" alt="" />
-        <img src="/assets/img/aboutus/2.jpg" alt="" />
-        <img src="/assets/img/aboutus/3.jpg" alt="" />
-        <img src="/assets/img/aboutus/4.jpg" alt="" />
-        <img src="/assets/img/aboutus/5.jpg" alt="" />
-        <img src="/assets/img/aboutus/6.jpg" alt="" />
-        <p>
-          Paleta raznolikosti može se pratiti prema bojama tkanina čiji je
-          raspon od potpuno bijele, preko pastelnih i zemljanih boja, zatim
-          jakog intenziteta crvene do izrazito tamnih i crnih tkanina. Detalji
-          uzoraka na pamučnim tkaninama, koji su najčešće u kontrastu s
-          pozadinom, sadrže niz različitih geometrijskih, biljnih te apstraktnih
-          motiva. Obujam stilske različitosti i prosperitetnost tvrtke svakako
-          dokazuju da su tekstilni vizuali u skladu sa sezonskim trendovima i
-          prigodama.
-        </p>
+        <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
+          <div class="col col-lg-8 px-4">
+            <img src="/assets/img/aboutus/3.jpg" alt="" />
+            <p class="section5-text">
+              Paleta raznolikosti može se pratiti prema bojama tkanina čiji je
+              raspon od potpuno bijele, preko pastelnih i zemljanih boja, zatim
+              jakog intenziteta crvene do izrazito tamnih i crnih tkanina.
+              <br /><br />
+              Detalji uzoraka na pamučnim tkaninama, koji su najčešće u
+              kontrastu s pozadinom, sadrže niz različitih geometrijskih,
+              biljnih te apstraktnih motiva. <br /><br />
+              Obujam stilske različitosti i prosperitetnost tvrtke svakako
+              dokazuju da su tekstilni vizuali u skladu sa sezonskim trendovima
+              i prigodama.
+            </p>
+          </div>
+        </div>
 
-        <p>
-          Posao mora biti zabavan i izražavati kreativni instinkt! Kreativnost
-          je proces stvaranja nečeg novog. Kreativnost zahtijeva strast i
-          predanost. Osvještava nam ono što je prije bilo skriveno i upućuje na
-          novi život. Iskustvo je stanje povišene svijesti ili jednom rječju
-          ekstaza.
-        </p>
-
-        <p>
-          Često možemo čuti kako je jako bitno biti dobro (ili čak odlično)
-          organiziran i da je to čak pola obavljenog posla, budući uz dobru
-          organizaciju uspijemo sve planirane aktivnosti obaviti u željenom
-          roku.
-        </p>
-
-        <p>
-          „Izaberi posao koji voliš, i nečeš morati raditi ni jedan dan u
-          životu“ -Konfucije-
-        </p>
+        <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
+          <div class="col col-lg-8 px-4">
+            <img src="/assets/img/aboutus/6.jpg" alt="" />
+            <p class="section5-text">
+              Posao mora biti zabavan i izražavati kreativni instinkt!
+              <br /><br />
+              Kreativnost je proces stvaranja nečeg novog. Kreativnost zahtijeva
+              strast i predanost. Osvještava nam ono što je prije bilo skriveno
+              i upućuje na novi život.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -270,6 +264,10 @@ import VLazyImage from "v-lazy-image";
 
 .aboutus-description {
   font-size: 25px;
+}
+
+.section5-text {
+  font-size: 20px;
 }
 
 @media (max-width: 991.98px) {

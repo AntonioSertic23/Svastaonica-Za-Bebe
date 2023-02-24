@@ -10,7 +10,8 @@
         <p class="mt-4 heading">Kontakt</p>
         <p class="mt-3 text-center px-3">
           Za sve informacije obratite nam se putem mreže po vašem izboru.
-          Posjetite našu <a href="">kontakt stranicu</a>.
+          Posjetite našu <br />
+          <a class="contact-page-link" href="">kontakt stranicu</a>.
         </p>
       </div>
 
@@ -27,9 +28,11 @@
         <img class="" src="/assets/img/delivery.png" alt="" />
         <p class="mt-4 heading">Dostava</p>
         <p class="mt-3 text-center px-3">
-          Vašu narudžbu dostavljamo putem: <b>Hrvatske pošte</b>,
-          <b>Paketomata</b>, <b>Tiska</b>, a moguće je i
-          <b>osobno preuzimanje</b>.
+          Vašu narudžbu dostavljamo putem:
+          <span class="bolded-text">Hrvatske pošte</span>,
+          <span class="bolded-text">Paketomata</span>,
+          <span class="bolded-text">Tiska</span>, a moguće je i
+          <span class="bolded-text">osobno preuzimanje</span>.
         </p>
       </div>
     </div>
@@ -58,6 +61,14 @@ img {
   font-size: 31.25px;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.contact-page-link {
+  text-decoration: none;
+}
+
+.bolded-text {
+  font-weight: 600;
 }
 
 @media (max-width: 991.98px) {
