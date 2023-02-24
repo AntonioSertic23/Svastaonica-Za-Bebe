@@ -7,44 +7,55 @@ import VLazyImage from "v-lazy-image";
     <div class="container d-flex flex-column">
       <!-- SECTION 1 -->
       <div class="row justify-content-center text-center">
-        <p class="mb-5 menu-title">Ukratko o nama</p>
-        <p>-mjesto gdje se susreću mašta,kreativa & pozitiva-</p>
-        <div class="col col-lg-8 px-4">
+        <p class="mb-4 mb-lg-2 menu-title">Ukratko o nama</p>
+        <p class="mb-0 mb-lg-4 subheading">
+          <img
+            class="start-icon me-3"
+            src="/assets/img/floral-design.png"
+            alt=""
+          />
+          mjesto gdje se susreću mašta,kreativa i pozitiva
+          <img
+            class="end-icon ms-3"
+            src="/assets/img/floral-design.png"
+            alt=""
+          />
+        </p>
+
+        <div class="heading-decoration">
+          <img class="start-icon" src="/assets/img/floral-design.png" alt="" />
+          <img class="end-icon" src="/assets/img/floral-design.png" alt="" />
+        </div>
+
+        <div class="mt-4 mt-lg-0 col col-lg-8 px-4">
           <p class="aboutus-description">
             Svaštaonica za bebe nastala je kao nastavak dugogodišnjeg hobija, a
             zatim smo rasli i sazrijevali u svojoj kreativi zahvaljujući
             ponajprije svima vama, divnim i vjernim kupcima, koji ste nas
-            inspirirali, nadahnjivali i davali vjetar u leđa svakoj svojom
+            inspirirali, nadahnjivali i davali vjetar u leđa svakom svojom
             idejom i narudžbom!
-            <br />
-            <br />
-            Svaki proizvod je ručni rad, proizašao iz malene radionice,
-            napravljen s mnoštvom ljubavi i pažnje, te provjeren, poslikan i
-            pojašnjen kupcu prije slanja, kako bi do Vas stigao točno onakav
-            kakvog ste ga i zamislili. <br />
-            <br />
-            Naše radno vijeme nema početka ni kraja, jer takvo se stvaralaštvo
-            jedostavno živi, uz trud i pristup svakom kupcu individualno, uz
-            neizostavan „personal touch“, kako bi svaka suradnje bila čim
-            uspješnija, a vi kao kupci zadovoljni, štp nas zapravo i motivira u
-            ustrajnosti i daljnjem rastu, razvoju i osvajanu novih tržišta.
           </p>
         </div>
       </div>
 
       <!-- SECTION 2 -->
-      <div class="section2 row my-5 py-lg-5 mx-1 justify-content-evenly">
+      <div class="section2 row mt-5 mb-4 py-lg-4 mx-1 justify-content-evenly">
         <div class="background-connector"></div>
 
         <div class="col col-lg-4 section2-left order-2 order-lg-1">
-          <VLazyImage v-bind:src="'/assets/img/aboutus2'" class="image1" />
+          <VLazyImage v-bind:src="'/assets/img/aboutus/6.jpg'" class="image1" />
 
           <p class="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            soluta quae reprehenderit dolorem deleniti eos.
+            „Mašta je važija od znanja. Znanje je ograničeno. Mašta okružuje
+            svijet.“
           </p>
+          <p class="who"><i>Albert Einstein</i></p>
+        </div>
 
-          <div class="social-media mt-4 d-flex gap-lg-3">
+        <div
+          class="col col-lg-4 section2-right order-1 order-lg-2 mb-5 mb-lg-0"
+        >
+          <div class="social-media mb-4 d-flex gap-lg-3">
             <a href="#" class="">
               <img src="/assets/img/sm-facebook-messenger.png" />
             </a>
@@ -64,18 +75,23 @@ import VLazyImage from "v-lazy-image";
               <img src="/assets/img/sm-google.png" />
             </a>
           </div>
+          <VLazyImage v-bind:src="'/assets/img/aboutus/2.jpg'" class="image2" />
         </div>
+      </div>
 
-        <div
-          class="col col-lg-4 section2-right order-1 order-lg-2 mb-5 mb-lg-0"
-        >
-          <p class="mb-3 my-lg-3">Naslov</p>
-          <VLazyImage v-bind:src="'/assets/img/aboutus1'" class="image2" />
+      <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
+        <div class="col col-lg-8 px-4">
+          <p class="aboutus-description">
+            Svaki proizvod je ručni rad, proizašao iz malene radionice,
+            napravljen s mnoštvom ljubavi i pažnje, te provjeren, poslikan i
+            pojašnjen kupcu prije slanja, kako bi do Vas stigao točno onakav
+            kakvog ste ga i zamislili.
+          </p>
         </div>
       </div>
 
       <!-- SECTION 3 -->
-      <div class="section3 row mt-3 mb-5 justify-content-around">
+      <div class="section3 row mb-5 justify-content-around">
         <div class="background-image"></div>
         <div class="section3-1 px-3 col col-lg-5">
           <div class="item">
@@ -96,13 +112,25 @@ import VLazyImage from "v-lazy-image";
 
         <div class="section3-2 mt-5 mt-lg-0 col col-lg-3">
           <VLazyImage
-            v-bind:src="'/assets/img/products-2.jpg'"
+            v-bind:src="'/assets/img/aboutus/.jpg'"
             class="section3-image1"
           />
           <div class="circle1"></div>
           <div class="circle2"></div>
           <div class="circle3"></div>
           <div class="circle4"></div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
+        <div class="col col-lg-8 px-4">
+          <p class="aboutus-description">
+            Naše radno vijeme nema početka ni kraja, jer takvo se stvaralaštvo
+            jedostavno živi, uz trud i pristup svakom kupcu individualno, uz
+            neizostavan „personal touch“, kako bi svaka suradnja bila čim
+            uspješnija, a vi kao kupci zadovoljni, što nas zapravo i motivira u
+            ustrajnosti i daljnjem rastu, razvoju i osvajanju novih tržišta.
+          </p>
         </div>
       </div>
 
@@ -167,6 +195,46 @@ import VLazyImage from "v-lazy-image";
           </div>
         </div>
       </div> -->
+
+      <!-- SECTION 5 -->
+      <div class="section5 mb-5">
+        <img src="/assets/img/aboutus/1.jpg" alt="" />
+        <img src="/assets/img/aboutus/2.jpg" alt="" />
+        <img src="/assets/img/aboutus/3.jpg" alt="" />
+        <img src="/assets/img/aboutus/4.jpg" alt="" />
+        <img src="/assets/img/aboutus/5.jpg" alt="" />
+        <img src="/assets/img/aboutus/6.jpg" alt="" />
+        <p>
+          Paleta raznolikosti može se pratiti prema bojama tkanina čiji je
+          raspon od potpuno bijele, preko pastelnih i zemljanih boja, zatim
+          jakog intenziteta crvene do izrazito tamnih i crnih tkanina. Detalji
+          uzoraka na pamučnim tkaninama, koji su najčešće u kontrastu s
+          pozadinom, sadrže niz različitih geometrijskih, biljnih te apstraktnih
+          motiva. Obujam stilske različitosti i prosperitetnost tvrtke svakako
+          dokazuju da su tekstilni vizuali u skladu sa sezonskim trendovima i
+          prigodama.
+        </p>
+
+        <p>
+          Posao mora biti zabavan i izražavati kreativni instinkt! Kreativnost
+          je proces stvaranja nečeg novog. Kreativnost zahtijeva strast i
+          predanost. Osvještava nam ono što je prije bilo skriveno i upućuje na
+          novi život. Iskustvo je stanje povišene svijesti ili jednom rječju
+          ekstaza.
+        </p>
+
+        <p>
+          Često možemo čuti kako je jako bitno biti dobro (ili čak odlično)
+          organiziran i da je to čak pola obavljenog posla, budući uz dobru
+          organizaciju uspijemo sve planirane aktivnosti obaviti u željenom
+          roku.
+        </p>
+
+        <p>
+          „Izaberi posao koji voliš, i nečeš morati raditi ni jedan dan u
+          životu“ -Konfucije-
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -182,11 +250,47 @@ import VLazyImage from "v-lazy-image";
   font-size: 48.83px;
 }
 
+.subheading {
+  font-size: 31.25px;
+}
+.subheading .start-icon {
+  width: 96px;
+}
+.subheading .end-icon {
+  width: 96px;
+  transform: scaleX(-1);
+}
+
+.heading-decoration {
+  display: none;
+}
+.heading-decoration .end-icon {
+  transform: scaleX(-1);
+}
+
 .aboutus-description {
   font-size: 25px;
 }
 
 @media (max-width: 991.98px) {
+  .subheading {
+    font-size: 25px;
+  }
+  .subheading .start-icon,
+  .subheading .end-icon {
+    display: none;
+  }
+
+  .heading-decoration {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .heading-decoration .start-icon,
+  .heading-decoration .end-icon {
+    width: 80px;
+  }
+
   .aboutus-description {
     font-size: 20px;
   }
@@ -218,6 +322,10 @@ import VLazyImage from "v-lazy-image";
   font-size: 39.06px;
 }
 
+.section2-left .who {
+  font-weight: 300;
+}
+
 .image1,
 .image2 {
   width: 100%;
@@ -232,6 +340,9 @@ import VLazyImage from "v-lazy-image";
   height: 420px;
 }
 
+.social-media {
+  justify-content: center;
+}
 .social-media img {
   width: 48px;
   height: 48px;
@@ -244,6 +355,10 @@ import VLazyImage from "v-lazy-image";
 @media (max-width: 991.98px) {
   .section2 {
     flex-direction: column;
+  }
+
+  .section2-left p {
+    text-align: center;
   }
 
   .background-connector {
@@ -459,5 +574,16 @@ import VLazyImage from "v-lazy-image";
   .photo2-div {
     transform: rotate(-5deg) scale(0.8);
   }
+}
+
+/* SECTION 5 -> */
+
+.section5 img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
 }
 </style>
