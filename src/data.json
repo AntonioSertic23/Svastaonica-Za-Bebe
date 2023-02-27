@@ -171,15 +171,15 @@
       "categories": [1],
       "keywords": [
         {
-          "text": "Siguran",
-          "icon": "/assets/img/shield.png"
+          "text": "Najprodavaniji proizvod",
+          "icon": "/assets/img/medal1.png"
         },
         {
-          "text": "Novo u ponudi",
-          "icon": "/assets/img/badge1.png"
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
         },
         {
-          "text": "100% zabavan",
+          "text": "100% zabavno",
           "icon": "/assets/img/playtime.png"
         }
       ],
@@ -462,8 +462,20 @@
       "categories": [1, 3],
       "keywords": [
         {
-          "text": "Siguran",
-          "icon": "/assets/img/shield.png"
+          "text": "Drugi najprodavaniji proizvod",
+          "icon": "/assets/img/medal2.png"
+        },
+        {
+          "text": "U trendu",
+          "icon": "/assets/img/badge2.png"
+        },
+        {
+          "text": "Na akciji",
+          "icon": "/assets/img/badge4.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
         }
       ],
       "isBundle": false,
@@ -640,8 +652,16 @@
       "categories": [1],
       "keywords": [
         {
-          "text": "100% zabavan",
-          "icon": "/assets/img/playtime.png"
+          "text": "Treći najprodavaniji proizvod",
+          "icon": "/assets/img/medal3.png"
+        },
+        {
+          "text": "Siguran za vaše dijete",
+          "icon": "/assets/img/badge6.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
         }
       ],
       "isBundle": false,
@@ -723,8 +743,16 @@
           "icon": "/assets/img/badge2.png"
         },
         {
-          "text": "Preporuka kupaca",
-          "icon": "/assets/img/badge3.png"
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Izvrsno kao poklon",
+          "icon": "/assets/img/gift.png"
+        },
+        {
+          "text": "Siguran za vaše dijete",
+          "icon": "/assets/img/badge6.png"
         }
       ],
       "isBundle": false,
@@ -830,6 +858,20 @@
       "badges": ["badge3"],
       "soldout": false,
       "categories": [1],
+      "keywords": [
+        {
+          "text": "Preporuka kupaca",
+          "icon": "/assets/img/badge3.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Izvrsno kao poklon",
+          "icon": "/assets/img/gift.png"
+        }
+      ],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -996,6 +1038,20 @@
       "badges": ["badge3"],
       "soldout": false,
       "categories": [],
+      "keywords": [
+        {
+          "text": "Preporuka kupaca",
+          "icon": "/assets/img/badge3.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Rađeno s ljubavlju",
+          "icon": "/assets/img/give-love.png"
+        }
+      ],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1267,6 +1323,20 @@
       "badges": ["badge3"],
       "soldout": false,
       "categories": [],
+      "keywords": [
+        {
+          "text": "Preporuka kupaca",
+          "icon": "/assets/img/badge3.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Izvrsno kao poklon",
+          "icon": "/assets/img/gift.png"
+        }
+      ],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1341,6 +1411,24 @@
       "badges": ["badge3"],
       "soldout": false,
       "categories": [],
+      "keywords": [
+        {
+          "text": "Preporuka kupaca",
+          "icon": "/assets/img/badge3.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Očuvanje planete",
+          "icon": "/assets/img/planet-earth.png"
+        },
+        {
+          "text": "Siguran za vaše dijete",
+          "icon": "/assets/img/badge6.png"
+        }
+      ],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1396,6 +1484,24 @@
       "badges": ["badge4"],
       "soldout": false,
       "categories": [3],
+      "keywords": [
+        {
+          "text": "Na akciji",
+          "icon": "/assets/img/badge4.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Očuvanje planete",
+          "icon": "/assets/img/planet-earth.png"
+        },
+        {
+          "text": "Rađeno s ljubavlju",
+          "icon": "/assets/img/give-love.png"
+        }
+      ],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1523,6 +1629,7 @@
       "badges": [],
       "soldout": true,
       "categories": [],
+      "keywords": [],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1638,6 +1745,7 @@
       "badges": [],
       "soldout": true,
       "categories": [],
+      "keywords": [],
       "isBundle": false,
       "bundleItems": [],
       "isPartOfBundle": false,
@@ -1649,6 +1757,7 @@
       "name": "Uskoro u ponudi",
       "thumbnail": "/assets/img/set/1.jpg",
       "badges": [],
+      "keywords": [],
       "categories": [2],
       "comingSoon": true
     }

@@ -83,7 +83,7 @@ if (!navigator.share) {
               {{ data.description }}
             </p>
 
-            <div class="keywords-div my-5" v-if="data.keywords != null">
+            <div class="keywords-div my-5" v-if="data.keywords.length > 0">
               <div class="row">
                 <div class="col" v-for="word in data.keywords" :key="word.id">
                   <VLazyImage class="d-block" v-bind:src="word.icon" />
@@ -213,7 +213,7 @@ if (!navigator.share) {
               </div>
             </div>
 
-            <div class="reviews-div">
+            <!-- <div class="reviews-div">
               <p class="title">Recenzije</p>
 
               <div
@@ -237,7 +237,7 @@ if (!navigator.share) {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -514,12 +514,19 @@ if (!navigator.share) {
 }
 
 .keywords-div img {
-  width: 120px;
+  width: 100px;
+  transition: transform 0.5s;
+}
+.keywords-div img:hover {
+  transform: scale(1.3);
 }
 .keywords-div .col {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.keywords-div p {
+  text-align: center;
 }
 
 .age-div .age {

@@ -19,18 +19,17 @@ var item = props.cardData;
       />
     </div>
 
-    <div class="image-div" v-if="item.badges.length > 1">
-      <div class="image-div-background moreBadges"></div>
-      <VLazyImage
-        style="margin-left: 28%"
-        v-bind:src="'/assets/img/' + item.badges[0] + '.png'"
-        v-bind:class="[item.soldout ? 'soldout-img' : '']"
-      />
-      <VLazyImage
-        style="margin-right: 28%"
-        v-bind:src="'/assets/img/' + item.badges[1] + '.png'"
-        v-bind:class="[item.soldout ? 'soldout-img' : '']"
-      />
+    <div class="multi-image-div" v-if="item.badges.length > 1">
+      <div class="image-div-background moreBadges gap-3">
+        <VLazyImage
+          v-bind:src="'/assets/img/' + item.badges[0] + '.png'"
+          v-bind:class="[item.soldout ? 'soldout-img' : '']"
+        />
+        <VLazyImage
+          v-bind:src="'/assets/img/' + item.badges[1] + '.png'"
+          v-bind:class="[item.soldout ? 'soldout-img' : '']"
+        />
+      </div>
     </div>
 
     <RouterLink :to="'/singleitem/' + item.id" v-if="!item.comingSoon">
@@ -79,12 +78,26 @@ var item = props.cardData;
   z-index: 2;
   transition: transform 0.5s;
 }
-.image-div {
+.image-div,
+.multi-image-div {
   position: relative;
 }
 
-.image-div img:hover {
+.image-div img:hover,
+.multi-image-div img:hover {
   transform: scale(1.2);
+}
+
+.section-cards .multi-image-div img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.5s;
+}
+
+.multi-image-div .moreBadges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge {
@@ -130,7 +143,7 @@ var item = props.cardData;
   height: 100px;
 }
 .moreBadges {
-  width: 55%;
+  width: 200px;
   border-radius: 40%;
   height: 110px;
 }
