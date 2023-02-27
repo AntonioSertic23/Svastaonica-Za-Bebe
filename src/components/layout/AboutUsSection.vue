@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="container py-5 px-3 px-lg-5">
+  <div class="container my-3 my-lg-4 py-5 px-3 px-lg-5 d-flex flex-column">
     <p class="title text-center mb-5">Proces narudžbe</p>
 
-    <div class="row gy-5 mx-lg-5">
+    <div class="row gy-5 mx-lg-5 mt-lg-0">
       <div class="item col-lg-4">
         <img class="" src="/assets/img/message.png" alt="" />
         <p class="mt-4 heading">Kontakt</p>
@@ -15,6 +15,10 @@
         </p>
       </div>
 
+      <div class="arrow-section1">
+        <img src="/assets/img/arrow.png" alt="" />
+      </div>
+
       <div class="item col-lg-4">
         <img class="" src="/assets/img/handcraft.png" alt="" />
         <p class="mt-4 heading">Izrada</p>
@@ -22,6 +26,10 @@
           Vašu narudžbu izađujemo u najkraćem mogućem roku, te po izradi
           dobivate fotografiju narudžbe prije samog slanja.
         </p>
+      </div>
+
+      <div class="arrow-section2">
+        <img src="/assets/img/arrow.png" alt="" />
       </div>
 
       <div class="item col-lg-4">
@@ -44,6 +52,11 @@
   font-size: 48.83px;
 }
 
+.row {
+  position: relative;
+  row-gap: 25px;
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -63,6 +76,23 @@ img {
   margin-bottom: 0;
 }
 
+.arrow-section1,
+.arrow-section2 {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+}
+.arrow-section1 {
+  left: 27%;
+  top: -30px;
+  transform: rotate(180deg);
+}
+.arrow-section2 {
+  right: 27%;
+  top: 30px;
+  transform: scaleX(-1);
+}
+
 .contact-page-link {
   text-decoration: none;
 }
@@ -74,6 +104,17 @@ img {
 @media (max-width: 991.98px) {
   .title {
     font-size: 39.06px;
+  }
+
+  .arrow-section1 {
+    left: -16px;
+    top: 25%;
+    transform: scaleX(-1) rotate(-90deg);
+  }
+  .arrow-section2 {
+    right: -16px;
+    top: 62%;
+    transform: rotate(-90deg);
   }
 }
 </style>
