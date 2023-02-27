@@ -39,7 +39,7 @@ import VLazyImage from "v-lazy-image";
       </div>
 
       <!-- SECTION 2 -->
-      <div class="section2 row mt-5 mb-4 py-lg-4 mx-1 justify-content-evenly">
+      <div class="section2 row mt-5 mb-4 py-lg-4 mx-2 justify-content-evenly">
         <div class="background-connector"></div>
 
         <div class="col col-lg-4 section2-left order-2 order-lg-1">
@@ -122,9 +122,11 @@ import VLazyImage from "v-lazy-image";
         </div>
       </div>
 
-      <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
-        <div class="col col-lg-8 px-4">
-          <p class="aboutus-description">
+      <div
+        class="row justify-content-center text-center mt-3 mt-lg-0 mb-5 py-4 py-lg-5"
+      >
+        <div class="col col-lg-9 px-4">
+          <p class="aboutus-description m-0">
             Naše radno vijeme nema početka ni kraja, jer takvo se stvaralaštvo
             jedostavno živi, uz trud i pristup svakom kupcu individualno, uz
             neizostavan „personal touch“, kako bi svaka suradnja bila čim
@@ -197,35 +199,53 @@ import VLazyImage from "v-lazy-image";
       </div> -->
 
       <!-- SECTION 5 -->
-      <div class="section5 mb-5">
-        <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
-          <div class="col col-lg-8 px-4">
-            <img src="/assets/img/aboutus/3.jpg" alt="" />
-            <p class="section5-text">
-              Paleta raznolikosti može se pratiti prema bojama tkanina čiji je
-              raspon od potpuno bijele, preko pastelnih i zemljanih boja, zatim
-              jakog intenziteta crvene do izrazito tamnih i crnih tkanina.
-              <br /><br />
-              Detalji uzoraka na pamučnim tkaninama, koji su najčešće u
-              kontrastu s pozadinom, sadrže niz različitih geometrijskih,
-              biljnih te apstraktnih motiva. <br /><br />
-              Obujam stilske različitosti i prosperitetnost tvrtke svakako
-              dokazuju da su tekstilni vizuali u skladu sa sezonskim trendovima
-              i prigodama.
-            </p>
+      <div class="section5 py-3 py-lg-0 mb-5 mx-3">
+        <div class="section5-inner d-flex flex-column flex-lg-row">
+          <div class="col">
+            <div class="section5-card">
+              <p class="heading mb-3">Paleta raznolikosti</p>
+              <p class="text">
+                može se pratiti prema bojama tkanina čiji je raspon od potpuno
+                bijele, preko pastelnih i zemljanih boja, zatim jakog
+                intenziteta crvene do izrazito tamnih i crnih tkanina.
+              </p>
+              <div class="icons mt-4 mt-lg-5">
+                <img src="/assets/img/aboutus/palette1.png" alt="" />
+                <img src="/assets/img/aboutus/palette2.png" alt="" />
+                <img src="/assets/img/aboutus/palette3.png" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
-          <div class="col col-lg-8 px-4">
-            <img src="/assets/img/aboutus/6.jpg" alt="" />
-            <p class="section5-text">
-              Posao mora biti zabavan i izražavati kreativni instinkt!
-              <br /><br />
-              Kreativnost je proces stvaranja nečeg novog. Kreativnost zahtijeva
-              strast i predanost. Osvještava nam ono što je prije bilo skriveno
-              i upućuje na novi život.
-            </p>
+          <div class="col">
+            <div class="section5-card mt-4 mt-lg-0">
+              <p class="heading mb-3">Detalji uzoraka</p>
+              <p class="text">
+                na pamučnim tkaninama, koji su najčešće u kontrastu s pozadinom,
+                sadrže niz različitih geometrijskih, biljnih te apstraktnih
+                motiva.
+              </p>
+              <div class="icons mt-4 mt-lg-5">
+                <img src="/assets/img/aboutus/shapes1.png" alt="" />
+                <img src="/assets/img/aboutus/shapes5.png" alt="" />
+                <img src="/assets/img/aboutus/flowers3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="section5-card">
+              <p class="heading mb-3">Obujam stilske različitostii</p>
+              <p class="text">
+                i prosperitetnost tvrtke svakako dokazuju da su tekstilni
+                vizuali u skladu sa sezonskim trendovima i prigodama.
+              </p>
+              <div class="icons mt-4 mt-lg-5">
+                <img src="/assets/img/aboutus/creativity1.png" alt="" />
+                <img src="/assets/img/aboutus/creativity2.png" alt="" />
+                <img src="/assets/img/aboutus/creativity3.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,10 +284,6 @@ import VLazyImage from "v-lazy-image";
 
 .aboutus-description {
   font-size: 25px;
-}
-
-.section5-text {
-  font-size: 20px;
 }
 
 @media (max-width: 991.98px) {
@@ -576,12 +592,70 @@ import VLazyImage from "v-lazy-image";
 
 /* SECTION 5 -> */
 
+.section5 .section5-inner {
+  gap: 2rem;
+}
+
+.section5 .section5-card {
+  background-color: thistle;
+  border-radius: 15px;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .section5 img {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 
+.section5 .heading {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
+
+.section5 .text {
+  font-size: 20px;
+  text-align: center;
+  min-height: 180px;
+}
+
+.section5 .icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section5 .icons img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.5s;
+}
+.section5 .icons img:hover {
+  transform: scale(1.3);
+}
+
+.section5 .icons-last {
+  height: 288px;
+  align-items: center;
+}
+.section5 .icons-last img {
+  width: 128px;
+  height: 128px;
+}
+
 @media (max-width: 991.98px) {
+  .section5 .icons img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section5 .icons-last img {
+    width: 96px;
+    height: 96px;
+  }
 }
 </style>
