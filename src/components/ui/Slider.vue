@@ -20,10 +20,6 @@
             <img src="/assets/img/kugle/1.jpg" />
           </li>
           <li><img src="/assets/img/okviri/10.jpg" /></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
           <li>
             <img src="/assets/img/privj/1.jpg" />
           </li>
@@ -136,10 +132,10 @@ li {
     height: 300px;
   }
   div {
-    width: 200%;
+    width: 500%;
   }
   article {
-    animation-duration: 20s;
+    animation-duration: 15s;
   }
 
   @keyframes bannermove {
@@ -147,7 +143,7 @@ li {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-350%);
+      transform: translateX(-330%);
     }
   }
 }

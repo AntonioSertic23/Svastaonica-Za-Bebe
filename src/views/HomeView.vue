@@ -14,7 +14,7 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
     <Hero />
 
-    <div class="container slider py-0 py-lg-5">
+    <div class="container slider py-0 py-lg-5 p-0">
       <Slider />
     </div>
 

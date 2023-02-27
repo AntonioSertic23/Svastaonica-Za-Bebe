@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
   <div class="container my-0 my-lg-5">
     <div class="row row-cols-1 row-cols-lg-3 mx-lg-5 px-5">
       <div class="item mt-0 mt-lg-5 order-2 order-lg-1">
-        <RouterLink to="/singleitem/1">
+        <RouterLink to="/singleitem/2">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
               <img class="image" src="/assets/img/slinceki/12.jpg" alt="" />
@@ -21,7 +21,7 @@ import { RouterLink } from "vue-router";
       </div>
 
       <div class="item order-3 order-lg-2">
-        <RouterLink to="/singleitem/2">
+        <RouterLink to="/singleitem/1">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
               <img class="image" src="/assets/img/kocke/23.jpg" alt="" />

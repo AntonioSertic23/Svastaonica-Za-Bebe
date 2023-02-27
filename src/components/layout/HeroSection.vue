@@ -7,7 +7,7 @@ import { RouterLink } from "vue-router";
     <div class="container mb-5 mt-0 mt-lg-3 pt-0 pt-lg-3">
       <div class="row row-cols-1 row-cols-lg-3 px-4 px-lg-0">
         <div class="order-2 order-lg-1 left-side d-flex">
-          <div class="left-side-div pe-0 pe-lg-5 mt-4 mt-lg-0">
+          <div class="left-side-div pe-0 pe-lg-5 mt-5 mt-lg-0">
             <h1>Dobrodošli na</h1>
             <p class="mt-2 mb-4 my-lg-4">
               sretno mjesto na internetu gdje se mogu pronaći razni poklončići
@@ -29,9 +29,7 @@ import { RouterLink } from "vue-router";
           </div>
         </div>
 
-        <div
-          class="order-3 order-lg-3 right-side d-flex justify-content-center align-items-top px-2"
-        >
+        <div class="order-3 order-lg-3 right-side px-2">
           <div class="right-side-div ps-0 ps-lg-5">
             <p class="text-center">
               "Svi smo djeca. Jedina razlika je igračka koju imamo."
@@ -95,6 +93,12 @@ import { RouterLink } from "vue-router";
   width: 100%;
 }
 
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
 .image2 {
   width: 100%;
   height: 364px;
@@ -126,6 +130,10 @@ import { RouterLink } from "vue-router";
     top: 10px;
   }
 
+  .left-side-div {
+    text-align: center;
+  }
+
   .left-side-div h1 {
     font-size: 31.25px;
   }
@@ -142,7 +150,8 @@ import { RouterLink } from "vue-router";
     height: 210px;
   }
 
-  .gif {
+  .gif,
+  .right-side {
     display: none;
   }
 }
