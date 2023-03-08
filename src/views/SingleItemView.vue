@@ -51,7 +51,7 @@ function updateNumber() {
 } */
 
 // share
-/* const share = (e) => {
+const share = (e) => {
   if (navigator.share) {
     navigator
       .share({
@@ -62,7 +62,7 @@ function updateNumber() {
       .then(() => console.log("thanks for share"))
       .catch((error) => console.log("error", error));
   }
-}; */
+};
 </script>
 
 <template>
@@ -276,8 +276,7 @@ function updateNumber() {
                 </div>
 
                 <div class="share-section">
-                  <a class="shareBtn">
-                    <!-- @click="share()" -->
+                  <a class="shareBtn" @click="share()">
                     <img src="/assets/img/share3.png" alt="" />
                   </a>
                 </div>
