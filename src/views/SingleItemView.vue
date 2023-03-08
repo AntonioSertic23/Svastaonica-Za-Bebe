@@ -63,7 +63,6 @@ const share = (e) => {
       .catch((error) => console.log("error", error));
   }
 };
-var canShare = navigator.canShare();
 </script>
 
 <template>
@@ -276,7 +275,7 @@ var canShare = navigator.canShare();
                   </div>
                 </div>
 
-                <div class="share-section" v-if="canShare">
+                <div class="share-section">
                   <a class="shareBtn" @click="share()">
                     <img src="/assets/img/share3.png" alt="" />
                   </a>
