@@ -4,12 +4,12 @@ import { useRoute, RouterLink } from "vue-router";
 import VLazyImage from "v-lazy-image";
 import { onMounted } from "@vue/runtime-core";
 import { ref } from "vue";
-alert("1");
+
 const route = useRoute();
 const paramId = parseInt(route.params.id);
-alert("2");
+
 var data = ref(sourceData.data.find((d) => d.id === paramId));
-alert("3");
+
 var aBundles = [];
 if (data.value.isPartOfBundle) {
   data.value.bundle.forEach((id) => {
@@ -31,12 +31,12 @@ data.value.similarItems.forEach((id) => {
   var item = sourceData.data.find((d) => d.id === id);
   aSimilarItems.push(item);
 });
-alert("4");
+
 var currentImageToOpen = ref("");
 function ChangeCurrentImageToOpen(path) {
   this.currentImageToOpen = path;
 }
-alert("5");
+
 //carousel
 
 var totalImages = ref(1);
@@ -45,11 +45,11 @@ var currentIndex = ref(1);
 onMounted(() => {
   totalImages.value = $(".carousel-item").length;
 });
-alert("6");
+
 function updateNumber() {
   currentIndex.value = $(".active").index() + 1;
 }
-alert("7");
+
 // share
 const share = (e) => {
   if (navigator.share) {
@@ -63,11 +63,7 @@ const share = (e) => {
       .catch((error) => console.log("error", error));
   }
 };
-alert("8");
-if (!navigator.share) {
-  document.getElementById("tip").className = "show";
-}
-alert("9");
+var canShare = navigator.canShare();
 </script>
 
 <template>
@@ -280,7 +276,7 @@ alert("9");
                   </div>
                 </div>
 
-                <div class="share-section">
+                <div class="share-section" v-if="canShare">
                   <a class="shareBtn" @click="share()">
                     <img src="/assets/img/share3.png" alt="" />
                   </a>
