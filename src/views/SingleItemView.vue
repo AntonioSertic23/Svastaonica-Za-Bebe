@@ -39,7 +39,7 @@ function ChangeCurrentImageToOpen(path) {
 
 //carousel
 
-var totalImages = ref(1);
+/* var totalImages = ref(1);
 var currentIndex = ref(1);
 
 onMounted(() => {
@@ -48,10 +48,10 @@ onMounted(() => {
 
 function updateNumber() {
   currentIndex.value = $(".active").index() + 1;
-}
+} */
 
 // share
-const share = (e) => {
+/* const share = (e) => {
   if (navigator.share) {
     navigator
       .share({
@@ -62,7 +62,7 @@ const share = (e) => {
       .then(() => console.log("thanks for share"))
       .catch((error) => console.log("error", error));
   }
-};
+}; */
 </script>
 
 <template>
@@ -276,7 +276,8 @@ const share = (e) => {
                 </div>
 
                 <div class="share-section">
-                  <a class="shareBtn" @click="share()">
+                  <a class="shareBtn">
+                    <!-- @click="share()" -->
                     <img src="/assets/img/share3.png" alt="" />
                   </a>
                 </div>
@@ -295,7 +296,7 @@ const share = (e) => {
             </div>
 
             <p class="carousel-numbers text-center mt-4">
-              {{ currentIndex }}/{{ totalImages }}
+              <!-- {{ currentIndex }}/{{ totalImages }} -->
             </p>
           </div>
         </div>
