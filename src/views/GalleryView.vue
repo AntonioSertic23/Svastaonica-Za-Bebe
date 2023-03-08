@@ -41,10 +41,6 @@ function sortData(x) {
             corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime
             nulla exercitationem illo dolores.
           </p>
-          <img class="background-icon" src="/assets/img/1.png" />
-          <img class="background-icon" src="/assets/img/2.png" />
-          <img class="background-icon" src="/assets/img/3.png" />
-          <img class="background-icon" src="/assets/img/4.png" />
         </div>
       </div>
 
@@ -126,51 +122,9 @@ function sortData(x) {
   background-color: rgb(205, 180, 219);
 }
 
-.background-icon {
-  position: absolute;
-  opacity: 0.1;
-  width: 100px;
-}
-.background-icon:nth-of-type(1) {
-  top: -10px;
-  left: 100px;
-}
-.background-icon:nth-of-type(2) {
-  top: 10px;
-  right: 300px;
-}
-.background-icon:nth-of-type(3) {
-  bottom: -10px;
-  left: 300px;
-}
-.background-icon:nth-of-type(4) {
-  bottom: 10px;
-  right: 150px;
-}
-
 @media (max-width: 991.98px) {
   .gallery-description {
     font-size: 20px;
-  }
-
-  .background-icon {
-    width: 80px;
-  }
-  .background-icon:nth-of-type(1) {
-    top: 0px;
-    left: 50px;
-  }
-  .background-icon:nth-of-type(2) {
-    top: 30px;
-    right: 70px;
-  }
-  .background-icon:nth-of-type(3) {
-    bottom: 70px;
-    left: 80px;
-  }
-  .background-icon:nth-of-type(4) {
-    bottom: 30px;
-    right: 100px;
   }
 }
 

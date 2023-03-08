@@ -65,10 +65,11 @@ const share = (e) => {
 </script>
 
 <template>
-  <section id="main-div" class="item-section py-5">
-    <div class="container-fluid mt-5 mt-lg-0">
+  <section id="main-div" class="item-section py-lg-5">
+    <div class="container-fluid">
       <div class="row wrapper">
-        <div class="col col-lg-6 item-info order-2 order-lg-1">
+        <p class="mb-5 menu-title-mobile order-1">{{ data.name }}</p>
+        <div class="col col-lg-6 item-info order-3 order-lg-1">
           <div class="left-side mx-4 col col-lg-9 m-lg-auto">
             <div v-if="data.soldout" class="mb-5 text-center soldout-text">
               <p>RASPRODANO</p>
@@ -237,7 +238,7 @@ const share = (e) => {
           </div>
         </div>
 
-        <div class="right-side col col-lg-6 order-1 order-lg-2">
+        <div class="right-side col col-lg-6 order-2 order-lg-2">
           <div class="slider-div col-11 col-lg-8 m-auto">
             <div class="" style="position: relative">
               <button
@@ -348,8 +349,8 @@ const share = (e) => {
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+    <div class="modal-dialog">
+      <div class="modal-content mx-auto">
         <button
           type="button"
           class="btn-close"
@@ -357,7 +358,7 @@ const share = (e) => {
           aria-label="Close"
         ></button>
         <div class="modal-body p-0">
-          <VLazyImage v-bind:src="currentImageToOpen" />
+          <img :src="currentImageToOpen" />
         </div>
       </div>
     </div>
@@ -393,15 +394,20 @@ const share = (e) => {
   filter: invert(1);
 }
 
+.modal-dialog {
+  max-width: none;
+}
+
 .modal-body img {
   width: 100%;
-  max-height: 93vh;
 }
 
 .modal-content {
   border: none;
   border-radius: 15px;
   overflow: hidden;
+  height: 90vh;
+  width: fit-content;
 }
 
 .reviews-div .title {
@@ -745,6 +751,10 @@ const share = (e) => {
   font-size: 48.83px;
 }
 
+.menu-title-mobile {
+  display: none;
+}
+
 @media (max-width: 991.98px) {
   .wrapper {
     flex-direction: column;
@@ -785,10 +795,7 @@ const share = (e) => {
     position: relative;
   }
   .menu-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    display: none;
   }
 
   .item-description {
@@ -822,6 +829,21 @@ const share = (e) => {
 
   .similar-items-div {
     flex-direction: column;
+  }
+
+  .modal.show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    height: fit-content;
+  }
+
+  .menu-title-mobile {
+    display: block;
+    font-size: 48.83px;
+    text-align: center;
   }
 }
 </style>
