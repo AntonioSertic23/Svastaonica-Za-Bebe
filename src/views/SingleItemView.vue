@@ -42,9 +42,7 @@ var totalImages = ref(1);
 var currentIndex = ref(1);
 
 onMounted(() => {
-  alert("0");
   totalImages.value = $(".carousel-item").length;
-  alert("totalImages.value: " + totalImages.value);
 });
 
 function updateNumber() {
