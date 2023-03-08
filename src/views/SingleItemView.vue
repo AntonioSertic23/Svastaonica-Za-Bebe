@@ -2,8 +2,7 @@
 import sourceData from "@/data.json";
 import { useRoute, RouterLink } from "vue-router";
 import VLazyImage from "v-lazy-image";
-import { onMounted } from "@vue/runtime-core";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const route = useRoute();
 const paramId = parseInt(route.params.id);
@@ -39,16 +38,18 @@ function ChangeCurrentImageToOpen(path) {
 
 //carousel
 
-/* var totalImages = ref(1);
+var totalImages = ref(1);
 var currentIndex = ref(1);
 
 onMounted(() => {
+  alert("0");
   totalImages.value = $(".carousel-item").length;
+  alert("totalImages.value: " + totalImages.value);
 });
 
 function updateNumber() {
   currentIndex.value = $(".active").index() + 1;
-} */
+}
 
 // share
 const share = (e) => {
@@ -295,7 +296,7 @@ const share = (e) => {
             </div>
 
             <p class="carousel-numbers text-center mt-4">
-              <!-- {{ currentIndex }}/{{ totalImages }} -->
+              {{ currentIndex }}/{{ totalImages }}
             </p>
           </div>
         </div>
