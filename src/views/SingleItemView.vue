@@ -75,21 +75,24 @@ const share = (e) => {
 </script>
 
 <template>
-  <section id="main-div" class="item-section py-lg-5">
+  <section id="main-div" class="item-section pt-lg-5 pb-5">
     <div class="container-fluid">
       <div class="row wrapper">
-        <p class="mb-4 menu-title-mobile order-1">{{ data.name }}</p>
+        <p class="mb-2 menu-title-mobile order-1">{{ data.name }}</p>
+        <p class="sub-title-mobile mb-4 px-3 order-2">{{ data.subheading }}</p>
 
-        <div class="col col-lg-6 item-info order-3 order-lg-1">
-          <div class="left-side mx-4 col col-lg-9 m-lg-auto">
+        <div class="col col-lg-6 item-info order-4 order-lg-1">
+          <div class="left-side mx-4 col col-lg-9 ms-lg-auto me-lg-5">
             <div v-if="data.soldout" class="mb-5 text-center soldout-text">
               <p>RASPRODANO</p>
             </div>
 
-            <p class="mb-5 menu-title">{{ data.name }}</p>
-            <p class="item-description">
-              {{ data.description }}
-            </p>
+            <p class="menu-title mb-2">{{ data.name }}</p>
+            <p class="sub-title mb-5">{{ data.subheading }}</p>
+            <p
+              class="item-description text-center"
+              v-html="data.description"
+            ></p>
 
             <div class="keywords-div my-5" v-if="data.keywords.length > 0">
               <div class="row">
@@ -207,16 +210,24 @@ const share = (e) => {
                 </li>
               </ul>
 
-              <div class="declaration-icons mt-4 flex-wrap mx-auto">
+              <div
+                class="standards"
+                v-for="standard in data.declaration.standards"
+                :key="standard.id"
+              >
+                <img :src="standard.image" alt="" />
+              </div>
+
+              <div
+                class="declaration-icons mt-4 flex-wrap mx-auto"
+                v-if="data.declaration.icons"
+              >
                 <div
                   class="img-div"
                   v-for="icon in data.declaration.icons"
                   :key="icon.id"
-                  data-bs-toggle="tooltip"
-                  title="Tooltip on top"
                 >
                   <img v-bind:src="icon.icon" v-bind:alt="icon.text" />
-                  <span class="tooltiptext">{{ icon.text }}</span>
                 </div>
               </div>
             </div>
@@ -249,8 +260,8 @@ const share = (e) => {
           </div>
         </div>
 
-        <div class="right-side col col-lg-6 order-2 order-lg-2">
-          <div class="slider-div col-11 col-lg-8 m-auto">
+        <div class="right-side col col-lg-6 order-3 order-lg-2">
+          <div class="slider-div col-11 col-lg-8 m-auto me-lg-auto ms-lg-5">
             <div class="" style="position: relative">
               <button
                 class="carousel-prev"
@@ -532,6 +543,10 @@ const share = (e) => {
   font-size: 48.83px;
   text-align: center;
 }
+.sub-title {
+  font-size: 31.25px;
+  text-align: center;
+}
 
 .item-info {
   font-size: 25px;
@@ -647,30 +662,12 @@ const share = (e) => {
   transform: scale(1.3);
 }
 
-/* Tooltip container */
-.img-div {
-  position: relative;
-  display: inline-block;
+.declaration .standards {
+  display: flex;
+  justify-content: center;
 }
-/* Tooltip text */
-.img-div .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #a375bd;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  font-size: 20px;
-}
-/* Show the tooltip text when you mouse over the tooltip container */
-.img-div:hover .tooltiptext {
-  visibility: visible;
+.declaration .standards img {
+  height: 100px;
 }
 
 /* right */
@@ -784,6 +781,9 @@ const share = (e) => {
 .menu-title-mobile {
   display: none;
 }
+.sub-title-mobile {
+  display: none;
+}
 
 @media (max-width: 991.98px) {
   .wrapper {
@@ -825,6 +825,9 @@ const share = (e) => {
     position: relative;
   }
   .menu-title {
+    display: none;
+  }
+  .sub-title {
     display: none;
   }
 
@@ -875,9 +878,22 @@ const share = (e) => {
     font-size: 48.83px;
     text-align: center;
   }
+  .sub-title-mobile {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+  }
 
   .modal-dialog {
     margin: 0 1rem;
+  }
+
+  .soldout-text {
+    font-size: 39.06px;
+  }
+
+  .declaration .standards img {
+    height: 75px;
   }
 }
 </style>

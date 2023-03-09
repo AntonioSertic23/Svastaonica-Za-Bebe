@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Didaktička Kocka",
-      "description": "Dizajnirano kao poklon, stvoreno kao uspomena. Personalizirane zveckave kocke, posebno su dizajnirane u veselim bojama i šarenim uzorcima kako bi odmah privukle pozornost bebinih okica! Ispunjene su mekim punjenjem, zveckavcem u sredini, šuškavom stranicom i mnoštvom etiketa i trakica koje pospješuju razvoj fine motorike, ponajprije hvatanja, prepoznavanja boja, vježbe sluha kroz igru, ravnoteže te pokretanje cijelog lokomotornog sustava. Kvaliteta tkanina i izrada preduvjet su ovako kvalitetnog i dugotrajnog proizvoda. Svaku kocku možete sami dizajnirati, samostalnim odabirom tkanina iz ponude, boja, dezena, imena.",
+      "subheading": "... dizajnirano kao poklon, stvoreno kao uspomena ...",
+      "description": "Personalizirane zveckave kocke, posebno su dizajnirane u veselim bojama i šarenim uzorcima kako bi odmah privukle pozornost bebinih okica! <br><br> Ispunjene su mekim punjenjem, zveckavcem u sredini, šuškavom stranicom i mnoštvom etiketa i trakica koje pospješuju razvoj fine motorike, ponajprije hvatanja, prepoznavanja boja, vježbe sluha kroz igru, ravnoteže te pokretanje cijelog lokomotornog sustava.<br><br> Kvaliteta tkanina i izrada preduvjet su ovako kvalitetnog i dugotrajnog proizvoda. <br><br> <span class='important'>Svaku kocku možete sami dizajnirati, samostalnim odabirom tkanina iz ponude, boja, dezena, imena.</span>",
       "thumbnail": "/assets/img/kocke/1.jpg",
       "images": [
         {
@@ -124,31 +125,27 @@
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": [
-          "90% Pamuk",
-          "10% Poliester",
-          "10x10x10 cm",
-          "Tkanine posjeduju OEKO-TEX 100- standard"
+        "materials": ["90% Pamuk", "10% Poliester", "10x10x10 cm"],
+        "standards": [
+          {
+            "name": "OEKO-TEX 100- standard",
+            "image": "/assets/img/OekoTexStandard100.png"
+          }
         ],
         "icons": [
           {
-            "text": "wash",
             "icon": "/assets/img/tc-wash-one.png"
           },
           {
-            "text": "ironing",
             "icon": "/assets/img/tc-no-ironing.png"
           },
           {
-            "text": "tumble dry",
             "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
-            "text": "dry clean",
             "icon": "/assets/img/tc-dry-clean.png"
           },
           {
-            "text": "bleach",
             "icon": "/assets/img/tc-bleach.png"
           }
         ]
@@ -192,7 +189,8 @@
     {
       "id": 2,
       "name": "Slinček",
-      "description": "...jer slinčeka nikad nema dovoljno... Slinček/partikla/bavarin/balavac/podbradnjak/barbajol-> mnoštvo imena za jedan nezamjenjiv proizvod! Spoj kvalitetnog pamuka u raznim dezenima i pamučnog frotira, nosiv s obje strane (lica) a u potpunosti nepromočiv, neizostavan je dodatak pri svakom hranjenju, a posebice pri pojačanom slinjenju uzrokovanog rastom zubića. Kopčanje je na drukere, na dva nivoa, što omogućuje lakšu prilagodbu svakom vratiću.",
+      "subheading": "... jer slinčeka nikad nema dovoljno ...",
+      "description": "<i>Slinček, partikla, bavarin, balavac, podbradnjak, barbajol </i>- mnoštvo imena za jedan nezamjenjiv proizvod! <br><br> Spoj kvalitetnog pamuka u raznim dezenima i pamučnog frotira, nosiv s obje strane (lica) a u potpunosti nepromočiv, neizostavan je dodatak pri svakom hranjenju, a posebice pri pojačanom slinjenju uzrokovanog rastom zubića. <br><br> Kopčanje je na drukere, na dva nivoa, što omogućuje lakšu prilagodbu svakom vratiću.",
       "thumbnail": "/assets/img/slinceki/12.jpg",
       "images": [
         {
@@ -415,31 +413,27 @@
       ],
       "sizes": ["L", "XL"],
       "declaration": {
-        "materials": [
-          "97% pamuk",
-          "2% poliester",
-          "Znakići za tkanine",
-          "Tkanine posjeduju OEKO-TEX 100- standard"
+        "materials": ["97% pamuk", "2% poliester", "Znakići za tkanine"],
+        "standards": [
+          {
+            "name": "OEKO-TEX 100- standard",
+            "image": "/assets/img/OekoTexStandard100.png"
+          }
         ],
         "icons": [
           {
-            "text": "wash",
             "icon": "/assets/img/tc-wash-two.png"
           },
           {
-            "text": "ironing",
             "icon": "/assets/img/tc-ironing-two.png"
           },
           {
-            "text": "tumble dry",
             "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
-            "text": "dry clean",
             "icon": "/assets/img/tc-dry-clean.png"
           },
           {
-            "text": "bleach",
             "icon": "/assets/img/tc-bleach.png"
           }
         ]
@@ -487,7 +481,8 @@
     {
       "id": 3,
       "name": "Silikonska vezica",
-      "description": "...jer cucla bez vezice dobije krila... Silikonska vezica neizostavan je modni dodatak, a svrsihodan u sprječavanju padanja na pod i gubitka dude. Izrađena je od akril kopče i imena po Vašoj želji, te silikonskih perli i oblika bez štetnih tvari, koji su otporni na sva grickanja, slinu i zubiće. Izrada u preporučenim dužinama po EU standardima 22-25cm (bez kopče), ali dužine mogu biti prilagođene željama i potrebama kupca.",
+      "subheading": "... jer cucla bez vezice dobije krila ...",
+      "description": "Silikonska vezica neizostavan je modni dodatak, a svrsihodan u sprječavanju padanja na pod i gubitka dude.<br><br> Izrađena je od akril kopče i imena po Vašoj želji, te silikonskih perli i oblika bez štetnih tvari, koji su otporni na sva grickanja, slinu i zubiće.<br><br> Izrada u preporučenim dužinama po EU standardima 22-25cm (bez kopče), ali <span class='important'>dužine mogu biti prilagođene željama i potrebama kupca.</span>",
       "thumbnail": "/assets/img/vezice/12.jpg",
       "images": [
         {
@@ -673,7 +668,8 @@
     {
       "id": 4,
       "name": "Patikice za nehodače",
-      "description": "...i prije hodanja je bitno... Patikice za nehodače u ponudi su u raznim dezenima, ovisno o stanju, veličine ug 11cm (0-6mj) te po Vašoj želji personalizirane akrilnim imenom. Modni dodatak koji bi svatko poželio. Poklon koji bi svatko imao. A zatim uspomena koju bi svatko volio!",
+      "subheading": "... i prije hodanja je bitno ...",
+      "description": "Patikice za nehodače u ponudi su u raznim dezenima, ovisno o stanju, veličine ug 11cm (0-6mj) te po Vašoj želji personalizirane akrilnim imenom.<br><br> Modni dodatak koji bi svatko poželio.<br><br> Poklon koji bi svatko imao.<br><br> A zatim uspomena koju bi svatko volio!",
       "thumbnail": "/assets/img/shuze/1.jpg",
       "images": [
         {
@@ -764,7 +760,8 @@
     {
       "id": 5,
       "name": "Privjesci za ključeve",
-      "description": "...poklončić koji je uvijek uz vas...Privjesci suu zradi po Vašoj želji i personalizaciji, s jednim ili više imena, ili pak bez. Maleni znak pažnje a poklončić od srca.",
+      "subheading": "... poklončić koji je uvijek uz vas ...",
+      "description": "Privjesci suu zradi po Vašoj želji i personalizaciji, s jednim ili više imena, ili pak bez.<br><br> Maleni znak pažnje a poklončić od srca.",
       "thumbnail": "/assets/img/privj/1.jpg",
       "images": [
         {
@@ -881,7 +878,8 @@
     {
       "id": 6,
       "name": "Krunice i desetice",
-      "description": "„Zapovijediti ću anđelima da idu pred tobom“ Sakralni poklončić za uspomenu na sakrament Krštenja, Prve pričesti, Svete potvrde, sklapanja braka ili za osobne potrebe molitve. Boje, oblici i imena po Vašem izboru.",
+      "subheading": "... zapovijediti ću anđelima da idu pred tobom ...",
+      "description": "Sakralni poklončić za uspomenu na sakrament Krštenja, Prve pričesti, Svete potvrde, sklapanja braka ili za osobne potrebe molitve.<br><br><span class='important'> Boje, oblici i imena po Vašem izboru.</span>",
       "thumbnail": "/assets/img/krun/1.jpg",
       "images": [
         {
@@ -1061,7 +1059,8 @@
     {
       "id": 7,
       "name": "Okvir",
-      "description": "Savršeni način za sačuvati uspomenu na Vama važan događaj. Trebate li poklon za uspomenu na rođenje, mjesto za čuvanje narukvica iz rodilišta, uspomenu na svete sakramente ili razne prigode – okvir je pravi izbor za Vas! Okvir je bijele boje, može stajati samostalno ili na zidu, a izrada je po primjerku ili u potpunosti po Vašoj želji.",
+      "subheading": "... savršeni način za sačuvati uspomenu na Vama važan događaj ...",
+      "description": "Trebate li poklon za uspomenu na rođenje, mjesto za čuvanje narukvica iz rodilišta, uspomenu na svete sakramente ili razne prigode<br><span class='important'> – Okvir je pravi izbor za Vas!</span><br><br> Okvir je bijele boje, može stajati samostalno ili na zidu, a <span class='important'>izrada je po primjerku ili u potpunosti po Vašoj želji.</span>",
       "thumbnail": "/assets/img/okviri/10.jpg",
       "images": [
         {
@@ -1346,7 +1345,8 @@
     {
       "id": 8,
       "name": "Pamučne gricke",
-      "description": "..nijedna slina neće proći... Pamučne gricke neizostavna su oprema  za sve male grickače! Izrađene po mjeri, od pamuka i frotira s kočanjem na drukere, osigurati će svaki pojas u nosiljci, jajetu, hranilici, kolicima ili automobilu od sline i grickanja, te zaštititi vratić od iritacije pojasom. Dezene, boje i uzorke možete i sami odabrati.",
+      "subheading": "... nijedna slina neće proći ...",
+      "description": "Pamučne gricke neizostavna su oprema za sve male grickače!<br><br> Izrađene po mjeri, od pamuka i frotira s kočanjem na drukere, osigurati će svaki pojas u nosiljci, jajetu, hranilici, kolicima ili automobilu od sline i grickanja, te zaštititi vratić od iritacije pojasom.<br><br> <span class='important'>Dezene, boje i uzorke možete i sami odabrati.</span>",
       "thumbnail": "/assets/img/gricke/1.jpg",
       "images": [
         {
@@ -1369,28 +1369,28 @@
           "90% pamuk",
           "10% poliester",
           "Cca 15 cm visine",
-          "Znakići za tkanine",
-          "Tkanine posjeduju OEKO-TEX 100- standard"
+          "Znakići za tkanine"
+        ],
+        "standards": [
+          {
+            "name": "OEKO-TEX 100- standard",
+            "image": "/assets/img/OekoTexStandard100.png"
+          }
         ],
         "icons": [
           {
-            "text": "wash",
             "icon": "/assets/img/tc-wash-two.png"
           },
           {
-            "text": "ironing",
             "icon": "/assets/img/tc-ironing-two.png"
           },
           {
-            "text": "tumble dry",
             "icon": "/assets/img/tc-tumble-dry.png"
           },
           {
-            "text": "dry clean",
             "icon": "/assets/img/tc-dry-clean.png"
           },
           {
-            "text": "bleach",
             "icon": "/assets/img/tc-bleach.png"
           }
         ]
@@ -1438,7 +1438,8 @@
     {
       "id": 9,
       "name": "Trakice",
-      "description": "Koliko trakica je dovoljno trakica!? Raznobojne trake za glavu, pogodne za svaki outfit, kje karakterizira velika trendy mašna. Izrađene su od extra rastezljivog materijala, što omogućuje dugotrajno korištenje. Široke su i korisne u pokrivanju ušeka u vjetrovitim danima, dok su istovremeno uočljiv modni dodatak.",
+      "subheading": "... koliko trakica je dovoljno trakica!? ...",
+      "description": "Raznobojne trake za glavu, pogodne za svaki outfit, koje karakterizira velika trendy mašna.<br><br> Izrađene su od extra rastezljivog materijala, što omogućuje dugotrajno korištenje.<br><br> Široke su i korisne u pokrivanju ušeka u vjetrovitim danima, dok su istovremeno uočljiv modni dodatak.",
       "thumbnail": "/assets/img/trake/1.jpg",
       "images": [
         {
@@ -1511,7 +1512,8 @@
     {
       "id": 10,
       "name": "Kugle",
-      "description": "Kuglica osvjetljava drvce čarobnom svjetlošću Božića. Personalizirane božićne kugle, idealan poklon za blagadane koji će unijeti dašak topline na svako božićno drvce.",
+      "subheading": "... kuglica osvjetljava drvce čarobnom svjetlošću Božića ...",
+      "description": "Personalizirane božićne kugle, idealan poklon za blagadane koji će unijeti dašak topline na svako božićno drvce.",
       "thumbnail": "/assets/img/kugle/1.jpg",
       "images": [
         {
@@ -1639,7 +1641,7 @@
     {
       "id": 11,
       "name": "Blagdanske čizme",
-      "description": "Personalizirane blagdanske čizmice, u potpunosti ručni rad, sa strojno uvezenim imenom, služe kao dekoracija ili za punjenje poklonima za Sv.Nikolu ili Božić.Savršen su dodatak božićnim dekoracijama u svaom domu!",
+      "description": "Personalizirane blagdanske čizmice, u potpunosti ručni rad, sa strojno uvezenim imenom, služe kao dekoracija ili za punjenje poklonima za Sv.Nikolu ili Božić.<br><br> Savršen su dodatak božićnim dekoracijama u svakom domu!",
       "thumbnail": "/assets/img/cizme/1.jpg",
       "images": [
         {

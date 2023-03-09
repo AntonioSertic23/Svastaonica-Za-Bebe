@@ -47,6 +47,11 @@ body {
   overflow: hidden;
 }
 
+/* SingleItemView.vue -> ovo je globalno jer se nece prihavatit scoped css ako se koristi v-html*/
+.item-description .important {
+  font-weight: 500;
+}
+
 * {
   font-family: Montserrat;
 }
