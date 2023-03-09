@@ -33,12 +33,19 @@ data.value.similarItems.forEach((id) => {
 
 var currentImageToOpen = ref("/assets/img/kocke/8.jpg");
 function ChangeCurrentImageToOpen(path) {
-  alert("path: " + path);
+  alert("0. path: " + path);
   this.currentImageToOpen = path;
-  alert("this.currentImageToOpen: " + this.currentImageToOpen);
+  alert("1. this.currentImageToOpen: " + this.currentImageToOpen);
 }
 
-//carousel
+// modal
+
+function getCurrentImageToOpen() {
+  alert("2. this.currentImageToOpen: " + this.currentImageToOpen);
+  return this.currentImageToOpen;
+}
+
+// carousel
 
 var totalImages = ref(1);
 var currentIndex = ref(1);
@@ -361,7 +368,7 @@ const share = (e) => {
           aria-label="Close"
         ></button>
         <div class="modal-body p-0">
-          <img :src="currentImageToOpen" />
+          <img :src="getCurrentImageToOpen()" />
         </div>
       </div>
     </div>
