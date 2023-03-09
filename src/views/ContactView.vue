@@ -17,19 +17,24 @@
             <a href="http://m.me/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook-messenger.png" />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=50600000000" class="">
+
+            <a href="https://api.whatsapp.com/send?phone=0919375976" class="">
               <img src="/assets/img/sm-whatsapp.png" />
             </a>
+
             <a href="https://www.facebook.com/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="http://instagram.com/_u/svastaonica_za_bebe/" class="">
               <img src="/assets/img/sm-instagram.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="viber://chat?number=0919375976" class="">
               <img src="/assets/img/sm-viber.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="mailto:svastaonicazabebe@gmail.com" class="">
               <img src="/assets/img/sm-google.png" />
             </a>
           </div>
