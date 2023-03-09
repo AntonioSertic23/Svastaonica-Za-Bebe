@@ -41,17 +41,12 @@ import { RouterLink } from "vue-router";
         <section class="mb-4">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8 px-4">
-              <p class="footer-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                distinctio earum repellat quaerat voluptatibus placeat nam,
-                commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                aliquam sequi voluptate quas.
-              </p>
+              <p class="footer-text m-0">Obratite nam se putem:</p>
             </div>
           </div>
         </section>
 
-        <section class="mb-4 social-media px-3 row g-4 justify-content-center">
+        <section class="my-0 social-media px-3 row g-4 justify-content-center">
           <a href="#">
             <img src="/assets/img/sm-facebook-messenger.png" />
           </a>
@@ -72,6 +67,9 @@ import { RouterLink } from "vue-router";
           </a>
         </section>
 
+        <p class="my-3 footer-text">
+          Radujemo se svakom vašem upitu i narudžbi!
+        </p>
         <p class="mb-4 text-center madeineu">Made in EU</p>
       </div>
 
@@ -98,11 +96,16 @@ footer {
 }
 
 .footer-text {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.social-media {
+  row-gap: 24px;
 }
 
 .social-media a {
   width: fit-content;
+  margin-top: 0;
 }
 
 .social-media img {

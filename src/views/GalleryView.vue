@@ -34,17 +34,17 @@ function sortData(x) {
     <div class="container">
       <div class="row justify-content-center text-center">
         <p class="mb-5 menu-title">Gallery</p>
-        <div class="description-div col col-lg-8 px-4">
+        <!--         <div class="description-div col col-lg-8 px-4">
           <p class="gallery-description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
             facilis tempora porro, suscipit ducimus delectus quaerat alias
             corporis a obcaecati, molestiae expedita dolorem nisi commodi maxime
             nulla exercitationem illo dolores.
           </p>
-        </div>
+        </div> -->
       </div>
 
-      <div class="row my-5 pb-5 col-10 mx-auto">
+      <div class="row mb-5 pb-5 col-10 mx-auto">
         <div
           class="sort-div d-flex justify-content-center flex-wrap row-cols-1 row-cols-lg-5 text-center"
         >

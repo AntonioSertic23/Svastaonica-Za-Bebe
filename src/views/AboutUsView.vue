@@ -82,10 +82,10 @@ import VLazyImage from "v-lazy-image";
       <div class="row justify-content-center text-center mt-3 mt-lg-0 mb-5">
         <div class="col col-lg-8 px-4">
           <p class="aboutus-description">
-            Svaki proizvod je ručni rad, proizašao iz malene radionice,
-            napravljen s mnoštvom ljubavi i pažnje, te provjeren, poslikan i
-            pojašnjen kupcu prije slanja, kako bi do Vas stigao točno onakav
-            kakvog ste ga i zamislili.
+            Svaki proizvod je <span class="important">ručni rad</span>,
+            proizašao iz malene radionice, napravljen s mnoštvom ljubavi i
+            pažnje, te provjeren, poslikan i pojašnjen kupcu prije slanja, kako
+            bi do Vas stigao točno onakav kakvog ste ga i zamislili.
           </p>
         </div>
       </div>
@@ -129,9 +129,10 @@ import VLazyImage from "v-lazy-image";
           <p class="aboutus-description m-0">
             Naše radno vijeme nema početka ni kraja, jer takvo se stvaralaštvo
             jedostavno živi, uz trud i pristup svakom kupcu individualno, uz
-            neizostavan „personal touch“, kako bi svaka suradnja bila čim
-            uspješnija, a vi kao kupci zadovoljni, što nas zapravo i motivira u
-            ustrajnosti i daljnjem rastu, razvoju i osvajanju novih tržišta.
+            neizostavan <span class="important">„personal touch“</span>, kako bi
+            svaka suradnja bila čim uspješnija, a vi kao kupci zadovoljni, što
+            nas zapravo i motivira u ustrajnosti i daljnjem rastu, razvoju i
+            osvajanju novih tržišta.
           </p>
         </div>
       </div>
@@ -284,6 +285,10 @@ import VLazyImage from "v-lazy-image";
 
 .aboutus-description {
   font-size: 25px;
+}
+
+.aboutus-description .important {
+  font-weight: 500;
 }
 
 @media (max-width: 991.98px) {
