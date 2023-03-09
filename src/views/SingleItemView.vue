@@ -31,9 +31,11 @@ data.value.similarItems.forEach((id) => {
   aSimilarItems.push(item);
 });
 
-var currentImageToOpen = ref("");
+var currentImageToOpen = ref("/assets/img/kocke/8.jpg");
 function ChangeCurrentImageToOpen(path) {
+  alert("path: " + path);
   this.currentImageToOpen = path;
+  alert("this.currentImageToOpen: " + this.currentImageToOpen);
 }
 
 //carousel
@@ -68,7 +70,8 @@ const share = (e) => {
   <section id="main-div" class="item-section py-lg-5">
     <div class="container-fluid">
       <div class="row wrapper">
-        <p class="mb-5 menu-title-mobile order-1">{{ data.name }}</p>
+        <p class="mb-4 menu-title-mobile order-1">{{ data.name }}</p>
+
         <div class="col col-lg-6 item-info order-3 order-lg-1">
           <div class="left-side mx-4 col col-lg-9 m-lg-auto">
             <div v-if="data.soldout" class="mb-5 text-center soldout-text">
@@ -269,7 +272,7 @@ const share = (e) => {
                       class="d-block"
                       v-bind:src="image.path"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#imageModal"
                       @click="ChangeCurrentImageToOpen(image.path)"
                     />
                   </div>
@@ -344,9 +347,9 @@ const share = (e) => {
   <!-- Modal -->
   <div
     class="modal fade"
-    id="exampleModal"
+    id="imageModal"
     tabindex="-1"
-    aria-labelledby="exampleModalLabel"
+    aria-labelledby="imageModalLabel"
     aria-hidden="true"
   >
     <div class="modal-dialog">
