@@ -31,18 +31,18 @@ data.value.similarItems.forEach((id) => {
   aSimilarItems.push(item);
 });
 
+// modal
+
 var currentImageToOpen = ref("/assets/img/kocke/8.jpg");
 function ChangeCurrentImageToOpen(path) {
   alert("0. path: " + path);
-  this.currentImageToOpen = path;
-  alert("1. this.currentImageToOpen: " + this.currentImageToOpen);
+  currentImageToOpen.value = path;
+  alert("1. this.currentImageToOpen.value: " + currentImageToOpen.value);
 }
 
-// modal
-
 function getCurrentImageToOpen() {
-  alert("2. this.currentImageToOpen: " + this.currentImageToOpen);
-  return this.currentImageToOpen;
+  alert("2. this.currentImageToOpen.value: " + currentImageToOpen.value);
+  return currentImageToOpen.value;
 }
 
 // carousel
