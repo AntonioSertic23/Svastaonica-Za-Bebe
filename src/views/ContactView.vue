@@ -14,10 +14,10 @@
           </div>
 
           <div class="social-media mb-5 row g-4 justify-content-center">
-            <a href="#" class="">
+            <a href="http://m.me/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook-messenger.png" />
             </a>
-            <a href="#" class="">
+            <a href="https://api.whatsapp.com/send?phone=50600000000" class="">
               <img src="/assets/img/sm-whatsapp.png" />
             </a>
             <a href="https://www.facebook.com/svastaonicazabebe" class="">
