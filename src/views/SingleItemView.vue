@@ -65,7 +65,11 @@ const share = (e) => {
         url: "https://svastaonicazabebe.netlify.app" + route.fullPath,
       })
       .then(() => console.log("thanks for share"))
-      .catch((error) => console.log("error", error));
+      .catch((error) =>
+        alert(
+          "Nažalost mogućnost dijeljenja proizvoda nije moguća za vaš uređaj ili preglednika."
+        )
+      );
   }
 };
 </script>
@@ -279,13 +283,21 @@ const share = (e) => {
                       data-bs-target="#imageModal"
                       @click="ChangeCurrentImageToOpen(image.path)"
                     />
-                  </div>
-                </div>
 
-                <div class="share-section">
-                  <a class="shareBtn" @click="share()">
-                    <img src="/assets/img/share3.png" alt="" />
-                  </a>
+                    <div class="share-section">
+                      <a
+                        class="shareBtn"
+                        :href="image.path"
+                        :download="data.name + currentIndex"
+                      >
+                        <img src="/assets/img/download.png" alt="" />
+                      </a>
+
+                      <a class="shareBtn" @click="share()">
+                        <img src="/assets/img/share3.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -503,10 +515,10 @@ const share = (e) => {
   width: 64px;
 }
 
-.active {
+.active img {
   transition: transform 0.5s;
 }
-.active:hover {
+.active img:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -734,6 +746,14 @@ const share = (e) => {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 1;
+  display: flex;
+  column-gap: 20px;
+}
+.share-section-down {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   z-index: 1;
 }
 
