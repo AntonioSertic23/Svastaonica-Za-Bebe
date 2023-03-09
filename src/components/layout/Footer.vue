@@ -46,23 +46,31 @@ import { RouterLink } from "vue-router";
           </div>
         </section>
 
-        <section class="my-0 social-media px-3 row g-4 justify-content-center">
-          <a href="#">
+        <section class="my-0 social-media px-3 row g-3 justify-content-center">
+          <a href="http://m.me/svastaonicazabebe" class="">
             <img src="/assets/img/sm-facebook-messenger.png" />
           </a>
-          <a href="#">
+
+          <a href="https://api.whatsapp.com/send?phone=0919375976" class="">
             <img src="/assets/img/sm-whatsapp.png" />
           </a>
-          <a href="#">
+
+          <a href="https://www.facebook.com/svastaonicazabebe" class="">
             <img src="/assets/img/sm-facebook.png" />
           </a>
-          <a href="#">
+
+          <a href="http://instagram.com/_u/svastaonica_za_bebe/" class="">
             <img src="/assets/img/sm-instagram.png" />
           </a>
-          <a href="#">
-            <img src="/assets/img/sm-viber.png" />
-          </a>
-          <a href="#">
+
+          <!--             <a
+              href="viber://pa?chatURI=<URI> viber://chat?number=0919375976"
+              class=""
+            >
+              <img src="/assets/img/sm-viber.png" />
+            </a> -->
+
+          <a href="mailto:svastaonicazabebe@gmail.com" class="">
             <img src="/assets/img/sm-google.png" />
           </a>
         </section>

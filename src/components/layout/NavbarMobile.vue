@@ -38,21 +38,36 @@ function closeNavbar() {
     <div></div>
 
     <div class="icons-div">
-      <div class="row justify-content-center">
-        <div class="col-3 icon-column">
-          <a href="#" class="m-2">
+      <div class="d-flex flex-row justify-content-center gap-3">
+        <a href="http://m.me/svastaonicazabebe" class="">
+          <img src="/assets/img/sm-facebook-messenger.png" />
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=0919375976" class="">
+          <img src="/assets/img/sm-whatsapp.png" />
+        </a>
+        <a href="https://www.facebook.com/svastaonicazabebe" class="">
+          <img src="/assets/img/sm-facebook.png" />
+        </a>
+        <a href="http://instagram.com/_u/svastaonica_za_bebe/" class="">
+          <img src="/assets/img/sm-instagram.png" />
+        </a>
+        <a href="mailto:svastaonicazabebe@gmail.com" class="">
+          <img src="/assets/img/sm-google.png" />
+        </a>
+        <!--         <div class="col-3 icon-column">
+          <a href="http://m.me/svastaonicazabebe" class="m-2">
             <img src="/assets/img/sm-facebook-messenger.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="https://api.whatsapp.com/send?phone=0919375976" class="m-2">
             <img src="/assets/img/sm-whatsapp.png" />
           </a>
         </div>
 
         <div class="col-3 icon-column">
-          <a href="#" class="m-2">
+          <a href="https://www.facebook.com/svastaonicazabebe" class="m-2">
             <img src="/assets/img/sm-facebook.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="http://instagram.com/_u/svastaonica_za_bebe/" class="m-2">
             <img src="/assets/img/sm-instagram.png" />
           </a>
         </div>
@@ -61,10 +76,10 @@ function closeNavbar() {
           <a href="#" class="m-2">
             <img src="/assets/img/sm-viber.png" />
           </a>
-          <a href="#" class="m-2">
+          <a href="mailto:svastaonicazabebe@gmail.com" class="m-2">
             <img src="/assets/img/sm-google.png" />
           </a>
-        </div>
+        </div> -->
       </div>
 
       <RouterLink class="nav-link mt-3" to="">+385 99 478 85 86</RouterLink>

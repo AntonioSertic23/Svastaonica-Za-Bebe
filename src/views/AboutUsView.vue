@@ -56,22 +56,30 @@ import VLazyImage from "v-lazy-image";
           class="col col-lg-4 section2-right order-1 order-lg-2 mb-5 mb-lg-0"
         >
           <div class="social-media mb-4 d-flex gap-lg-3">
-            <a href="#" class="">
+            <a href="http://m.me/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook-messenger.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="https://api.whatsapp.com/send?phone=0919375976" class="">
               <img src="/assets/img/sm-whatsapp.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="https://www.facebook.com/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook.png" />
             </a>
-            <a href="#" class="">
+
+            <a href="http://instagram.com/_u/svastaonica_za_bebe/" class="">
               <img src="/assets/img/sm-instagram.png" />
             </a>
-            <a href="#" class="">
+
+            <!--             <a
+              href="viber://pa?chatURI=<URI> viber://chat?number=0919375976"
+              class=""
+            >
               <img src="/assets/img/sm-viber.png" />
-            </a>
-            <a href="#" class="">
+            </a> -->
+
+            <a href="mailto:svastaonicazabebe@gmail.com" class="">
               <img src="/assets/img/sm-google.png" />
             </a>
           </div>

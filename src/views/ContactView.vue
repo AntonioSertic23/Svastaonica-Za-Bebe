@@ -7,13 +7,13 @@
         <p class="mb-5 menu-title">Kontakt</p>
       </div>
 
-      <div class="col col-lg-8 p-4 py-0 mx-auto">
+      <div class="col col-lg-8 pb-4 py-0 mx-auto">
         <div class="contact-information px-md-4 mb-4">
-          <div class="mb-5 text-center">
+          <div class="mb-3 text-center">
             <p class="contact-description">Obratite nam se putem:</p>
           </div>
 
-          <div class="social-media mb-5 row g-4 justify-content-center">
+          <div class="social-media mb-5 row g-3 justify-content-center">
             <a href="http://m.me/svastaonicazabebe" class="">
               <img src="/assets/img/sm-facebook-messenger.png" />
             </a>
@@ -30,9 +30,12 @@
               <img src="/assets/img/sm-instagram.png" />
             </a>
 
-            <a href="viber://chat?number=0919375976" class="">
+            <!--             <a
+              href="viber://pa?chatURI=<URI> viber://chat?number=0919375976"
+              class=""
+            >
               <img src="/assets/img/sm-viber.png" />
-            </a>
+            </a> -->
 
             <a href="mailto:svastaonicazabebe@gmail.com" class="">
               <img src="/assets/img/sm-google.png" />
@@ -96,7 +99,7 @@
 }
 
 .contact-description {
-  font-size: 25px;
+  font-size: 31.25px;
 }
 
 .call-btn {
@@ -147,7 +150,7 @@
 
 @media (max-width: 991.98px) {
   .contact-description {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .social-media img {
