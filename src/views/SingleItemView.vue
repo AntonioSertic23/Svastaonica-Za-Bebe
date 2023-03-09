@@ -33,15 +33,12 @@ data.value.similarItems.forEach((id) => {
 
 // modal
 
-var currentImageToOpen = ref("/assets/img/kocke/8.jpg");
+var currentImageToOpen = ref("");
 function ChangeCurrentImageToOpen(path) {
-  alert("0. path: " + path);
   currentImageToOpen.value = path;
-  alert("1. this.currentImageToOpen.value: " + currentImageToOpen.value);
 }
 
 function getCurrentImageToOpen() {
-  alert("2. this.currentImageToOpen.value: " + currentImageToOpen.value);
   return currentImageToOpen.value;
 }
 
