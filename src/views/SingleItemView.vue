@@ -416,9 +416,12 @@ const share = (e) => {
 .modal-dialog {
   max-width: none;
 }
-
+.modal-body {
+  height: 100%;
+}
 .modal-body img {
   width: 100%;
+  height: 100%;
 }
 
 .modal-content {
@@ -871,6 +874,10 @@ const share = (e) => {
     display: block;
     font-size: 48.83px;
     text-align: center;
+  }
+
+  .modal-dialog {
+    margin: 0 1rem;
   }
 }
 </style>
