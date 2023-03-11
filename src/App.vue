@@ -2,7 +2,8 @@
 import Navbar from "./components/layout/Navbar.vue";
 import Footer from "./components/layout/Footer.vue";
 import ScrollToTop from "./components/ui/ScrollToTop.vue";
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
 
 var isNavbarOpen = ref(false);
 
@@ -24,6 +25,31 @@ function updateNavbar() {
     $("#progress-wrap").removeClass("active-progress");
   }
 }
+
+// postavljanje pozadine u odnosu na stranicu na kojoj se nalazimo
+const route = useRoute();
+watch(
+  () => route.name,
+  () => {
+    const appElement = document.getElementById("app");
+    appElement.className = "";
+    if (route.name === "home") {
+      $("#app").addClass("pozadina-pocetna");
+    } else if (route.name === "gallery") {
+      $("#app").addClass("pozadina-galerija");
+    } else if (route.name === "aboutus") {
+      $("#app").addClass("pozadina-onama");
+    } else if (route.name === "contact") {
+      $("#app").addClass("pozadina-kontakt");
+    } else if (route.name === "singleitem") {
+      $("#app").addClass("pozadina-singleitem");
+    } else if (route.name === "pagenotfound") {
+      $("#app").addClass("pozadina-notfound");
+    } else if (route.name === "search") {
+      $("#app").addClass("pozadina-pretraga");
+    }
+  }
+);
 </script>
 
 <template>

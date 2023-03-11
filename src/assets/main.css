@@ -58,13 +58,52 @@ body {
 
 #app {
   /*background-color: #ede4f2;*/
-  background-image: url("/assets/img/background.png");
   background-size: 100%;
 }
 
+.pozadina-pocetna {
+  background-image: url("/assets/img/background.png");
+}
+.pozadina-galerija {
+  background-image: url("/assets/img/background-galerija.png");
+}
+.pozadina-onama {
+  background-image: url("/assets/img/background-onama.png");
+}
+.pozadina-kontakt {
+  background-image: url("/assets/img/background-kontakt.png");
+}
+.pozadina-pretraga {
+  background-image: url("/assets/img/background-pretraga.png");
+}
+.pozadina-notfound {
+  background-image: url("/assets/img/background-notfound.png");
+}
+.pozadina-singleitem {
+  background-image: url("/assets/img/background-singleitem.png");
+}
+
 @media (max-width: 991.98px) {
-  #app {
+  .pozadina-pocetna {
     background-image: url("/assets/img/background-mobile.png");
+  }
+  .pozadina-galerija {
+    background-image: url("/assets/img/background-mobile-galerija.png");
+  }
+  .pozadina-onama {
+    background-image: url("/assets/img/background-mobile-onama.png");
+  }
+  .pozadina-kontakt {
+    background-image: url("/assets/img/background-mobile-kontakt.png");
+  }
+  .pozadina-pretraga {
+    background-image: url("/assets/img/background-mobile-pretraga.png");
+  }
+  .pozadina-notfound {
+    background-image: url("/assets/img/background-mobile-notfound.png");
+  }
+  .pozadina-singleitem {
+    background-image: url("/assets/img/background-mobile-singleitem.png");
   }
 }
 
