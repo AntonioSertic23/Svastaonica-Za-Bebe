@@ -4,9 +4,9 @@ import { RouterLink } from "vue-router";
 
 <template>
   <section>
-    <div class="h-100 container">
+    <div class="container">
       <div class="box">
-        <h1 class="mb-5">Oops!</h1>
+        <h1 class="mb-3 mb-lg-5">Oops!</h1>
         <p class="my-5">404 - Ova stranica nije pronađena</p>
 
         <div class="">
@@ -24,6 +24,10 @@ import { RouterLink } from "vue-router";
 </template>
 
 <style scoped>
+.container {
+  height: 100%;
+}
+
 section {
   height: calc(100vh - 107px);
 }
@@ -62,5 +66,15 @@ p {
 
 .first {
   background-color: #b391ca;
+}
+
+@media (max-width: 991.98px) {
+  h1 {
+    scale: 2;
+  }
+
+  section {
+    height: calc(100vh - 88px);
+  }
 }
 </style>

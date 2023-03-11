@@ -53,7 +53,7 @@ var isEmpty = data.value.length == 0;
 }
 
 .message-div {
-  min-height: 80px;
+  min-height: 103px;
   display: flex;
   align-items: center;
 }
