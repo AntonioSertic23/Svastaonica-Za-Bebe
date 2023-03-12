@@ -1,11 +1,89 @@
 <script setup>
 import { RouterLink } from "vue-router";
+
+console.log(window.innerHeight);
+
+$(window).on("scroll", function () {
+  if (window.innerWidth < 992) {
+    if (window.innerHeight <= 740) {
+      // item1
+      if (window.pageYOffset < 1050) {
+        document.getElementById("item1").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 1050) {
+        document.getElementById("item1").style = "transform: translateX(0%)";
+      }
+
+      // item2
+      if (window.pageYOffset < 1350) {
+        document.getElementById("item2").style = "transform: translateX(120%)";
+      }
+      if (window.pageYOffset > 1350) {
+        document.getElementById("item2").style = "transform: translateX(0%)";
+      }
+
+      // item3
+      if (window.pageYOffset < 1650) {
+        document.getElementById("item3").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 1650) {
+        document.getElementById("item3").style = "transform: translateX(0%)";
+      }
+    } else if (window.innerHeight > 740 && window.innerHeight <= 840) {
+      if (window.pageYOffset < 950) {
+        document.getElementById("item1").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 950) {
+        document.getElementById("item1").style = "transform: translateX(0%)";
+      }
+
+      // item2
+      if (window.pageYOffset < 1250) {
+        document.getElementById("item2").style = "transform: translateX(120%)";
+      }
+      if (window.pageYOffset > 1250) {
+        document.getElementById("item2").style = "transform: translateX(0%)";
+      }
+
+      // item3
+      if (window.pageYOffset < 1550) {
+        document.getElementById("item3").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 1550) {
+        document.getElementById("item3").style = "transform: translateX(0%)";
+      }
+    } else if (window.innerHeight > 840) {
+      if (window.pageYOffset < 850) {
+        document.getElementById("item1").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 850) {
+        document.getElementById("item1").style = "transform: translateX(0%)";
+      }
+
+      // item2
+      if (window.pageYOffset < 1150) {
+        document.getElementById("item2").style = "transform: translateX(120%)";
+      }
+      if (window.pageYOffset > 1150) {
+        document.getElementById("item2").style = "transform: translateX(0%)";
+      }
+
+      // item3
+      if (window.pageYOffset < 1450) {
+        document.getElementById("item3").style = "transform: translateX(-120%)";
+      }
+      if (window.pageYOffset > 1450) {
+        document.getElementById("item3").style = "transform: translateX(0%)";
+      }
+    }
+  }
+});
 </script>
 
 <template>
   <div class="container my-0 my-lg-5">
     <div class="row row-cols-1 row-cols-lg-3 mx-lg-5 px-5">
-      <div class="item mt-0 mt-lg-5 order-2 order-lg-1">
+      <div id="item2" class="item mt-0 mt-lg-5 order-2 order-lg-1">
         <RouterLink to="/singleitem/2">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
@@ -20,7 +98,7 @@ import { RouterLink } from "vue-router";
         <h3 class="text-center mt-3">Slinček</h3>
       </div>
 
-      <div class="item order-3 order-lg-2">
+      <div id="item3" class="item order-3 order-lg-2">
         <RouterLink to="/singleitem/1">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
@@ -35,7 +113,7 @@ import { RouterLink } from "vue-router";
         <h3 class="text-center mt-3 middle-text">Didaktička Kocka</h3>
       </div>
 
-      <div class="item mt-0 mt-lg-5 order-1 order-lg-3">
+      <div id="item1" class="item mt-0 mt-lg-5 order-1 order-lg-3">
         <RouterLink to="/singleitem/3">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
@@ -132,6 +210,7 @@ import { RouterLink } from "vue-router";
 @media (max-width: 991.98px) {
   .row {
     height: auto;
+    overflow-x: hidden;
   }
 
   .image-div {
@@ -159,6 +238,16 @@ import { RouterLink } from "vue-router";
 
   .middle-text {
     margin-bottom: 0.5rem;
+  }
+
+  #item1,
+  #item3 {
+    transform: translateX(-120%);
+    transition: transform 1s;
+  }
+  #item2 {
+    transform: translateX(120%);
+    transition: transform 1s;
   }
 }
 
