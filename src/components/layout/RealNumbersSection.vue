@@ -6,7 +6,7 @@
           <div class="image-div">
             <img src="/assets/img/clock.png" alt="" />
           </div>
-          <p class="rn-numbers">200+</p>
+          <p class="rn-numbers">3600+</p>
           <p class="rn-description">uloženih sati rada</p>
         </div>
       </div>
@@ -17,8 +17,8 @@
             <img src="/assets/img/playtime.png" alt="" />
             <img src="/assets/img/playtime.png" alt="" />
           </div>
-          <p class="rn-numbers">100+</p>
-          <p class="rn-description">razveseljene djeces</p>
+          <p class="rn-numbers">1500+</p>
+          <p class="rn-description">razveseljene djece</p>
         </div>
       </div>
 
@@ -27,7 +27,7 @@
           <div class="image-div">
             <img src="/assets/img/mother.png" alt="" />
           </div>
-          <p class="rn-numbers">100+</p>
+          <p class="rn-numbers">1500+</p>
           <p class="rn-description">zadovoljnih mama</p>
         </div>
       </div>
