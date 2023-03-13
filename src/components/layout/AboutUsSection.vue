@@ -1,10 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="container my-3 my-lg-4 py-5 px-3 px-lg-5 d-flex flex-column">
-    <p class="title text-center mb-5">Proces narudžbe</p>
+  <div
+    class="container my-3 mt-lg-4 mb-lg-0 py-5 px-3 px-lg-5 d-flex flex-column"
+  >
+    <p class="title text-center mb-5 mb-lg-3">Proces narudžbe</p>
 
-    <div class="row gy-5 mx-lg-5 mt-lg-0">
+    <div class="row process gy-5 mx-lg-5 mt-lg-0">
       <div class="item col-lg-4">
         <img class="" src="/assets/img/message.png" alt="" />
         <p class="mt-4 heading">Kontakt</p>
@@ -63,7 +65,7 @@
   align-items: center;
 }
 
-img {
+.process img {
   height: 130px;
 }
 

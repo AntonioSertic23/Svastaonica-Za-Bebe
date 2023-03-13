@@ -8,7 +8,7 @@ var data = ref(sourceData.data.slice(0, 5));
 </script>
 
 <template>
-  <div class="container px-4">
+  <div class="container px-4 mt-lg-5">
     <div class="row main-row px-0 px-lg-5">
       <div class="col h-100">
         <RouterLink v-bind:to="/singleitem/ + data[0].id">

@@ -617,6 +617,7 @@ import VLazyImage from "v-lazy-image";
   padding-right: 2rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  box-shadow: 2px 2px 8px grey;
 }
 
 .section5 img {
