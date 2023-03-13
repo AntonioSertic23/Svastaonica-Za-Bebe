@@ -4,6 +4,7 @@ import Slider from "../components/ui/Slider.vue";
 import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
 import PreviewProducts from "../components/layout/PreviewProductsSection.vue";
 import AboutUs from "../components/layout/AboutUsSection.vue";
+import RealNumbers from "../components/layout/RealNumbersSection.vue";
 </script>
 
 <template>
@@ -27,7 +28,7 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
     <TopThreeProducts />
 
-    <div class="container mt-5 mt-lg-3 mb-5 px-4">
+    <div class="container mt-5 mb-5 px-4">
       <h1 class="text-center" style="font-family: Poiret_One">
         Darujte djeci igračke koje pokreće njihova mašta, a ne baterije.
       </h1>
@@ -35,7 +36,22 @@ import AboutUs from "../components/layout/AboutUsSection.vue";
 
     <PreviewProducts />
 
+    <div class="container pt-5 mt-lg-5 px-4">
+      <h1 class="text-center" style="font-family: Poiret_One">
+        Nitko nikada ne zaboravlja igračku koja ga je u djetinjstvu iznimno
+        veselila.
+      </h1>
+    </div>
+
     <AboutUs />
+
+    <div class="container mt-0 mt-lg-5 px-4">
+      <h1 class="text-center" style="font-family: Poiret_One">
+        Igračke su dječje riječi, a igra njihov jezik.
+      </h1>
+    </div>
+
+    <RealNumbers />
   </div>
 </template>
 
