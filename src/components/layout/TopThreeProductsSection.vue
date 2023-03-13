@@ -1,10 +1,8 @@
 <script setup>
 import { RouterLink } from "vue-router";
 
-console.log(window.innerHeight);
-
-$(window).on("scroll", function () {
-  if (window.innerWidth < 992) {
+if (window.innerWidth < 992) {
+  $(window).on("scroll", function () {
     if (window.innerHeight <= 740) {
       // item1
       if (window.pageYOffset < 1050) {
@@ -76,8 +74,8 @@ $(window).on("scroll", function () {
         document.getElementById("item3").style = "transform: translateX(0%)";
       }
     }
-  }
-});
+  });
+}
 </script>
 
 <template>
