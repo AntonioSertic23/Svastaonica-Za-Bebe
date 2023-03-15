@@ -70,6 +70,7 @@ function closeMobileNavbar() {
           <RouterLink class="nav-link" to="/gallery">Galerija</RouterLink>
           <RouterLink class="nav-link" to="/aboutus">O nama</RouterLink>
           <RouterLink class="nav-link" to="/contact">Kontakt</RouterLink>
+          <!-- <RouterLink class="nav-link" to="/blog">Blog</RouterLink> -->
         </div>
         <div
           v-if="!isMobile"

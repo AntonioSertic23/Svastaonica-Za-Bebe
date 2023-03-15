@@ -47,6 +47,10 @@ watch(
       $("#app").addClass("pozadina-notfound");
     } else if (route.name === "search") {
       $("#app").addClass("pozadina-pretraga");
+    } else if (route.name === "blog") {
+      $("#app").addClass("pozadina-pocetna");
+    } else if (route.name === "singleblog") {
+      $("#app").addClass("pozadina-pocetna");
     }
   }
 );
