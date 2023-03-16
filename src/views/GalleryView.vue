@@ -4,6 +4,28 @@ import sourceData from "@/data.json";
 import ProductCard from "../components/ui/ProductCard.vue";
 
 var data = ref(sourceData.data);
+var comingSoonData = [];
+var soldoutData = [];
+
+/* uklanjanje coming soon i soldout proizvoda kako bi se prikazali na kraju */
+data.value = data.value.filter(function (el) {
+  if (el.comingSoon == true) {
+    comingSoonData.push(el);
+  }
+  if (el.soldout == true) {
+    soldoutData.push(el);
+  }
+  return el.comingSoon == false || el.soldout == false;
+});
+
+/* sortiramo po id i onda okrenemo da prikazuje od najnovijih */
+data.value.sort(function (a, b) {
+  return a.id - b.id;
+});
+data.value.reverse();
+
+/* SORTIRANJE PO KATEGORIJAMA */
+/* klikom na kategoriju hocu da se iz sourceData filtriraju ti ajtemi sa tom kategorijom i dodaju u data */
 var currentSort = ref(0);
 var lsSortData = localStorage.getItem("sortData");
 
@@ -24,6 +46,7 @@ function sortData(x) {
     data.value = sourceData.data.filter(function (el) {
       return el.categories.includes(x);
     });
+    data.value.reverse();
     localStorage.setItem("sortData", x);
   }
 }
@@ -80,6 +103,18 @@ function sortData(x) {
             <div class="col px-4" v-for="item in data" :key="item.id">
               <ProductCard :cardData="item" />
             </div>
+            <template v-if="currentSort == 0">
+              <div class="col px-4" v-for="item in soldoutData" :key="item.id">
+                <ProductCard :cardData="item" />
+              </div>
+              <div
+                class="col px-4"
+                v-for="item in comingSoonData"
+                :key="item.id"
+              >
+                <ProductCard :cardData="item" />
+              </div>
+            </template>
           </div>
         </div>
       </div>
