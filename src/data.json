@@ -1511,6 +1511,79 @@
 
     {
       "id": 10,
+      "name": "Zahvalnice za razne prigode",
+      "description": "Zahvalnice za Krštenje, Pričest, Krizmu i ostale prigode",
+      "thumbnail": "/assets/img/zahvalnice/1.jpg",
+      "images": [
+        {
+          "path": "/assets/img/zahvalnice/1.jpg",
+          "isActive": true
+        },
+        {
+          "path": "/assets/img/zahvalnice/2.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/3.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/4.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/5.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/6.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/7.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/8.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/9.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/10.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/11.jpg"
+        },
+        {
+          "path": "/assets/img/zahvalnice/12.jpg"
+        }
+      ],
+      "sizes": [],
+      "declaration": {
+        "materials": []
+      },
+      "reviews": [],
+      "similarItems": [7, 6, 5, 3],
+      "badges": ["badge1"],
+      "soldout": false,
+      "categories": [2],
+      "keywords": [
+        {
+          "text": "Novo u prodaji",
+          "icon": "/assets/img/badge1.png"
+        },
+        {
+          "text": "Ručna izrada",
+          "icon": "/assets/img/sewing.png"
+        },
+        {
+          "text": "Izvrsno kao poklon",
+          "icon": "/assets/img/gift.png"
+        }
+      ],
+      "isBundle": false,
+      "bundleItems": [],
+      "isPartOfBundle": false,
+      "bundle": []
+    },
+
+    {
+      "id": 11,
       "name": "Kugle",
       "subheading": "... kuglica osvjetljava drvce čarobnom svjetlošću Božića ...",
       "description": "Personalizirane božićne kugle, idealan poklon za blagadane koji će unijeti dašak topline na svako božićno drvce.",
@@ -1639,7 +1712,7 @@
     },
 
     {
-      "id": 11,
+      "id": 12,
       "name": "Blagdanske čizme",
       "description": "Personalizirane blagdanske čizmice, u potpunosti ručni rad, sa strojno uvezenim imenom, služe kao dekoracija ili za punjenje poklonima za Sv.Nikolu ili Božić.<br><br> Savršen su dodatak božićnim dekoracijama u svakom domu!",
       "thumbnail": "/assets/img/cizme/1.jpg",
@@ -1755,7 +1828,7 @@
     },
 
     {
-      "id": 12,
+      "id": 13,
       "name": "Uskoro u ponudi",
       "thumbnail": "/assets/img/set/1.jpg",
       "badges": [],
@@ -1764,6 +1837,7 @@
       "comingSoon": true
     }
   ],
+
   "blogs": [
     {
       "id": 4,

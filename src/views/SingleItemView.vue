@@ -200,7 +200,10 @@ const share = (e) => {
               </div>
             </div>
 
-            <div class="my-5 mx-lg-5 px-3 py-4 declaration">
+            <div
+              class="my-5 mx-lg-5 px-3 py-4 declaration"
+              v-if="data.declaration.materials.length > 0"
+            >
               <ul class="mt-3">
                 <li
                   v-for="material in data.declaration.materials"
