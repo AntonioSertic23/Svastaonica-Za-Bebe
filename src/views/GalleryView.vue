@@ -2,27 +2,37 @@
 import { ref } from "vue";
 import sourceData from "@/data.json";
 import ProductCard from "../components/ui/ProductCard.vue";
+import { onBeforeRouteUpdate } from "vue-router";
 
 var data = ref(sourceData.data);
 var comingSoonData = [];
 var soldoutData = [];
+data.value = setDefaultGallery();
 
-/* uklanjanje coming soon i soldout proizvoda kako bi se prikazali na kraju */
-data.value = data.value.filter(function (el) {
-  if (el.comingSoon == true) {
-    comingSoonData.push(el);
-  }
-  if (el.soldout == true) {
-    soldoutData.push(el);
-  }
-  return el.comingSoon == false || el.soldout == false;
-});
+// kad se ruta promjeni traba ocistiti sortiranje
+onBeforeRouteUpdate(localStorage.removeItem("sortData"));
 
-/* sortiramo po id i onda okrenemo da prikazuje od najnovijih */
-data.value.sort(function (a, b) {
-  return a.id - b.id;
-});
-data.value.reverse();
+function setDefaultGallery() {
+  comingSoonData = [];
+  soldoutData = [];
+  /* uklanjanje coming soon i soldout proizvoda kako bi se prikazali na kraju */
+  var tempData = sourceData.data.filter(function (el) {
+    if (el.comingSoon == true) {
+      comingSoonData.push(el);
+    } else if (el.soldout == true) {
+      soldoutData.push(el);
+    }
+    return el.comingSoon == false || el.soldout == false;
+  });
+
+  /* sortiramo po id i onda okrenemo da prikazuje od najnovijih */
+  tempData.sort(function (a, b) {
+    return a.id - b.id;
+  });
+  tempData.reverse();
+
+  return tempData;
+}
 
 /* SORTIRANJE PO KATEGORIJAMA */
 /* klikom na kategoriju hocu da se iz sourceData filtriraju ti ajtemi sa tom kategorijom i dodaju u data */
@@ -38,10 +48,12 @@ if (lsSortData != null) {
 
 function sortData(x) {
   if (currentSort.value == x) {
+    // ako je vrijendost ista znaci da se uklonilo sortiranje
     currentSort.value = 0;
-    data.value = sourceData.data;
+    data.value = setDefaultGallery();
     localStorage.removeItem("sortData");
   } else {
+    // ako je vrijendost razlicita znaci da se dodalo sortiranje
     currentSort.value = x;
     data.value = sourceData.data.filter(function (el) {
       return el.categories.includes(x);
