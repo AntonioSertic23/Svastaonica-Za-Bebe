@@ -82,7 +82,7 @@ if (window.innerWidth < 992) {
   <div class="container my-0 my-lg-5">
     <div class="row row-cols-1 row-cols-lg-3 mx-lg-5 px-5">
       <div id="item2" class="item mt-0 mt-lg-5 order-2 order-lg-1">
-        <RouterLink to="/singleitem/2">
+        <RouterLink to="/singleitem/8">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
               <img class="image" src="/assets/img/slinceki/12.jpg" alt="" />
@@ -97,7 +97,7 @@ if (window.innerWidth < 992) {
       </div>
 
       <div id="item3" class="item order-3 order-lg-2">
-        <RouterLink to="/singleitem/1">
+        <RouterLink to="/singleitem/9">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
               <img class="image" src="/assets/img/kocke/23.jpg" alt="" />
@@ -112,7 +112,7 @@ if (window.innerWidth < 992) {
       </div>
 
       <div id="item1" class="item mt-0 mt-lg-5 order-1 order-lg-3">
-        <RouterLink to="/singleitem/3">
+        <RouterLink to="/singleitem/7">
           <div class="top-card">
             <div class="image-div p-4 pb-0">
               <img class="image" src="/assets/img/vezice/10.jpg" alt="" />
