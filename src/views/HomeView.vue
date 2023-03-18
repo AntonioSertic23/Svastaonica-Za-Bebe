@@ -5,6 +5,7 @@ import TopThreeProducts from "../components/layout/TopThreeProductsSection.vue";
 import PreviewProducts from "../components/layout/PreviewProductsSection.vue";
 import AboutUs from "../components/layout/AboutUsSection.vue";
 import RealNumbers from "../components/layout/RealNumbersSection.vue";
+import NewInStore from "../components/layout/NewInStoreSection.vue";
 </script>
 
 <template>
@@ -18,6 +19,8 @@ import RealNumbers from "../components/layout/RealNumbersSection.vue";
     <div class="container slider py-0 py-lg-5 p-0">
       <Slider />
     </div>
+
+    <!-- <NewInStore /> -->
 
     <div class="container mb-5 px-4">
       <h1 class="text-center mt-5" style="font-family: Poiret_One">
