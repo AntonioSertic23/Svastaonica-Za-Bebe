@@ -14,8 +14,16 @@
       <div class="col-12 col-lg-4">
         <div class="rn-card p-5">
           <div class="image-div">
-            <img src="/assets/img/playtime.png" alt="" />
-            <img src="/assets/img/playtime.png" alt="" />
+            <img
+              src="/assets/img/baby.png"
+              style="transform: rotate(-15deg)"
+              alt=""
+            />
+            <img
+              src="/assets/img/baby-girl.png"
+              style="transform: rotate(15deg)"
+              alt=""
+            />
           </div>
           <p class="rn-numbers">1500+</p>
           <p class="rn-description">razveseljene djece</p>
@@ -52,13 +60,16 @@
 .real-numbers-div .rn-card .image-div {
   display: flex;
   justify-content: center;
+  background-color: #ede4f2;
+  border-radius: 15px;
+  padding: 1rem;
 }
 .real-numbers-div .rn-card .image-div img {
   width: 96px;
   height: 96px;
 }
 .rn-numbers {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 48.83px;
 }
 .rn-description {
