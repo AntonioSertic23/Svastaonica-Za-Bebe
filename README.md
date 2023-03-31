@@ -1,14 +1,20 @@
-# Svastaonica-Za-Bebace
+# Svaštaonica Za Bebe
 
-This template should help get you started developing with Vue 3 in Vite.
+## Službena stranica Svaštaonice Za Bebe
 
-## Recommended IDE Setup
+Stranica Svaštaonica Za Bebe je mali strasteveni projekt preko kojega sam želio usavršiti znanje Vue.js-a te pokazati svoju kreativnost. Isto tako kreirana je za potrebe klijenta u svrhu lijepog prikaza svih njegovih proizvoda na jednome mjestu.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Stranica je rađena kao **Single Page Application** te su se za izradu stranice koristile sljedeće tehnologije: **HTML**, **CSS** uz **Bootstrap 5.0.2**, te je od JavaScript frameworka izabran najnoviji **Vue.js 3** kao podloga uz **Composition API**. Stranica je osim desktop uređaja prilagođena i mobilnim uređajima.
 
-## Customize configuration
+[![My Skills](https://skills.thijs.gg/icons?i=vue,html,css,bootstrap,js)](https://skills.thijs.gg)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Dizajn stranice je popraćen modernim web dizajn pravilima kao što su skaliranje fonta, razmaci između elemenata i tekstova i razne druge stvari. Sadrži dosta interaktivnih _hover_ efekata koji ujedno i nisu previše "napadni".
+
+Izgledom podsjeća na osobnu web trgovinu sa dodatkom vlastite kreativnosti i _nečeg novog_.
+
+Stranica je hostana na Netlify-u te ju se može posjetiti preko sljedećg linka:
+
+<a href="https://svastaonicazabebe.netlify.app" style="color: blue">Link za stranicu</a>
 
 ## Project Setup
 
