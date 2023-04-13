@@ -6,17 +6,17 @@ Stranica Svaštaonica Za Bebe je mali strasteveni projekt preko kojega sam želi
 
 Stranica je rađena kao **Single Page Application** te su se za izradu stranice koristile sljedeće tehnologije: **HTML**, **CSS** uz **Bootstrap 5.0.2**, te je od JavaScript frameworka izabran najnoviji **Vue.js 3** kao podloga uz **Composition API**. Stranica je osim desktop uređaja prilagođena i mobilnim uređajima.
 
-[![My Skills](https://skills.thijs.gg/icons?i=vue,html,css,bootstrap,js)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=vue,bootstrap,netlify)](https://skills.thijs.gg)
 
 Dizajn stranice je popraćen modernim web dizajn pravilima kao što su skaliranje fonta, razmaci između elemenata i tekstova i razne druge stvari. Sadrži dosta interaktivnih _hover_ efekata koji ujedno i nisu previše "napadni".
 
 Izgledom podsjeća na osobnu web trgovinu sa dodatkom vlastite kreativnosti i _nečeg novog_.
 
-Stranica je hostana na Netlify-u te ju se može posjetiti preko sljedećg linka:
+Stranica je hostana na Netlify-u te ju se može posjetiti [putem ove poveznice](https://svastaonicazabebe.netlify.app).
 
-<a href="https://svastaonicazabebe.netlify.app" style="color: blue">Link za stranicu</a>
+---
 
-## Project Setup
+### Pokretanje projekta
 
 ```sh
 npm install
