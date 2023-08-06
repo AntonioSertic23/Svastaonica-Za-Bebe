@@ -1,38 +1,38 @@
 # Svaštaonica Za Bebe
 
-## Web stranica Svaštaonice Za Bebe
+## Website for Svaštaonica Za Bebe
 
-Stranica Svaštaonica Za Bebe je mali strasteveni projekt preko kojega sam proširio znanje Vue.js-a i želio pokazati svoju kreativnost. Isto tako kreirana je za potrebe klijenta u svrhu prikaza svih njegovih proizvoda na jednome mjestu.
+The Svaštaonica Za Bebe website is a small passion-driven project through which I expanded my knowledge of Vue.js and wanted to showcase my creativity. It was also created for the client's needs to showcase all their products in one place.
 
-Stranica je rađena kao **Single Page Application**, a za izradu koristili su se najnoviji **Vue.js 3** uz **Composition API** i **Bootstrap 5.0.2** za dizajn.
+The website was built as a **Single Page Application**, using the latest **Vue.js 3** with the **Composition API** and **Bootstrap 5.0.2** for design.
 
 [![My Skills](https://skills.thijs.gg/icons?i=vue,js,bootstrap,netlify)](https://skills.thijs.gg)
 
-Dizajn stranice je popraćen modernim web dizajn pravilima kao što su skaliranje fonta, razmaci između elemenata i tekstova i razne druge stvari. Sadrži dosta interaktivnih _hover_ efekata koji ujedno i nisu previše "napadni".
+The website design follows modern web design principles, such as font scaling, spacing between elements and texts, and various other aspects. It contains several interactive _hover_ effects that are not overly intrusive.
 
-Stranica je osim desktop uređaja prilagođena i mobilnim uređajima.
+The website is responsive and adapted for both desktop and mobile devices.
 
-Izgledom podsjeća na osobnu web trgovinu sa dodatkom vlastite kreativnosti i "nečeg novog".
+The appearance resembles a personal web store with a touch of creativity and something new.
 
-Stranica je hostana na **Netlify-u** te ju se može posjetiti [putem ove poveznice](https://svastaonicazabebe.netlify.app).
-
----
-
-### Stranica sadrži preglede:
-
-- kratkih poruka vezanih za djecu i igračke
-- istaknutih i/ili najprodavanijih proizvoda
-- procesa narudžbe
-- galerije sa svim proizvodima uz mogućnost sortiranja
-- pojedinačnih proizvoda uz opise, slike, slične proizvode i deklaracije
-- "o nama" sa pričom o nastanku i rastu
-- svih kontakata
+The website is hosted on **Netlify** and can be visited [through this link](https://svastaonicazabebe.netlify.app).
 
 ---
 
-### Pokretanje projekta
+### The website includes sections for:
 
-Potrebno je otvoriti projekt u Visual Studio Code-u i u terminalu pokenuti sljedeće linije koda.
+- Short messages related to children and toys.
+- Featured and/or best-selling products.
+- Order process.
+- Gallery with all products and sorting options.
+- Individual products with descriptions, images, related products, and specifications.
+- "About us" section with a story about its origin and growth.
+- All contact information.
+
+---
+
+### Project Setup
+
+To start the project, open it in Visual Studio Code and in the terminal, run the following commands:
 
 ```sh
 npm install
