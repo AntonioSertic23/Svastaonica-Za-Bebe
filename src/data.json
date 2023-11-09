@@ -97,12 +97,7 @@
       ],
       "sizes": ["S", "L", "XL"],
       "declaration": {
-        "materials": [
-          "90% pamuk",
-          "10% poliester",
-          "Cca 15 cm visine",
-          "Znakići za tkanine"
-        ],
+        "materials": ["90% pamuk", "10% poliester", "Cca 15 cm visine", "Znakići za tkanine"],
         "standards": [
           {
             "name": "OEKO-TEX 100- standard",
@@ -1757,7 +1752,7 @@
       ],
       "similarItems": [],
       "badges": [],
-      "soldout": true,
+      "soldout": false,
       "categories": [],
       "keywords": [],
       "isBundle": false,
