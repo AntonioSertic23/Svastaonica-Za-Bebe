@@ -6,7 +6,7 @@ The Svaštaonica Za Bebe website is a small passion-driven project through which
 
 The website was built as a **Single Page Application**, using the latest **Vue.js 3** with the **Composition API** and **Bootstrap 5.0.2** for design.
 
-[![My Skills](https://skills.thijs.gg/icons?i=vue,js,bootstrap,netlify)](https://skills.thijs.gg)
+[![My Skills](https://skillicons.dev/icons?i=vue,js,bootstrap,netlify)](https://skillicons.dev)
 
 The website design follows modern web design principles, such as font scaling, spacing between elements and texts, and various other aspects. It contains several interactive _hover_ effects that are not overly intrusive.
 
